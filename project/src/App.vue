@@ -27,13 +27,6 @@ import Footer from "./components/Footer.vue";
   --color10: black;
 }
 #app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
-}
-body {
   margin: 0;
   padding: 0;
 }
