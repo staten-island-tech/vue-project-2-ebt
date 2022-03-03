@@ -8,6 +8,7 @@
       <Restaurant />
       <Shop />
       <Tickets />
+      <Attractions />
     </div>
   </div>
 </template>
