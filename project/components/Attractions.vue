@@ -1,14 +1,16 @@
 <template>
   <div class="attractions-home">
     <h1 class="attractions-title">Attractions</h1>
-    <div
-      class="attractions-card"
-      v-for="attraction in attractions"
-      :key="attraction.name"
-    >
-      <h2 class="attractions-card-title">{{ attraction.name }}</h2>
-      <img src="attractions.image" alt="" />
-    </div>
+    <section class="display">
+      <div
+        class="attractions-card"
+        v-for="attraction in attractions"
+        :key="attraction.name"
+      >
+        <h2 class="attractions-card-title">{{ attraction.name }}</h2>
+        <img src="" alt="" />
+      </div>
+    </section>
   </div>
 </template>
 
@@ -47,12 +49,13 @@ export default {
 
 <style>
 .attractions-title {
-  color: red;
-  font-size: 10rem;
-  background-color: #010101;
+  font-size: 4rem;
+  margin: 0rem;
 }
 .attractions-home {
-  height: 1rem;
+  text-align: center;
+}
+.display {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -61,7 +64,7 @@ export default {
   width: 30rem;
   background-color: #f44336;
   height: 30rem;
-  margin: 20rem auto;
+  margin: 8rem;
   color: #010101;
   text-align: center;
 }
