@@ -13,9 +13,7 @@
 
 export default {
   name: "Home",
-  components: {
-    Card,
-  },
+
   data() {
     return {};
   },

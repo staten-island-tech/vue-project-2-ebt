@@ -5,6 +5,9 @@
       <Footer class="footer" />
       <h2>test</h2>
       <h1 class="test">hi</h1>
+      <Restaurant />
+      <Shop />
+      <Tickets />
     </div>
   </div>
 </template>
