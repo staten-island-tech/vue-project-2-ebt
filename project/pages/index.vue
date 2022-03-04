@@ -6,7 +6,7 @@
       <h2>test</h2>
       <h1 class="test">hi</h1>
       <Restaurant />
-      <Shop />
+      <Shop ref="shop" />
       <Tickets />
     </div>
   </div>
@@ -15,6 +15,9 @@
 <script>
 export default {
   name: "IndexPage",
+  test() {
+    console.log("hi");
+  },
 };
 </script>
 <style>

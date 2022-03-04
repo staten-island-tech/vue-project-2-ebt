@@ -5,7 +5,13 @@
     </div>
     <div class="bar"></div>
     <div class="bottomline">
-      <h2 v-for="link in links" :key="link.label">{{ link.label }}</h2>
+      <h2
+        v-for="link in links"
+        :key="link.label"
+        @click="scrollMeTo('link.link')"
+      >
+        {{ link.label }}
+      </h2>
     </div>
   </div>
 </template>
@@ -20,12 +26,19 @@ export default {
         { label: "MISSION", link: "" },
         { label: "PLAN", link: "" },
         { label: "CONTACT", link: "" },
-        { label: "SHOP", link: "" },
+        { label: "SHOP", link: "shop" },
         { label: "ATTRACTIONS", link: "" },
         { label: "REVIEWS", link: "" },
         { label: "GALLERY", link: "" },
       ],
     };
+  },
+  methods: {
+    scrollMeTo(ref) {
+      let el = this.$refs.ref;
+      let top = el.offsetTop;
+      window.scrollTo(0, top);
+    },
   },
 };
 </script>
