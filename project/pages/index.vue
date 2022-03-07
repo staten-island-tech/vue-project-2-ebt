@@ -6,6 +6,7 @@
     <Shop ref="shop" />
     <Tickets />
     <Attractions />
+    <Gallery />
     <Footer class="footer" />
   </div>
 </template>
