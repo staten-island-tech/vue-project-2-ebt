@@ -2,9 +2,9 @@
   <div id="page">
     <Header class="header" />
     <div class="filler"></div>
-    <Restaurant />
-    <Shop ref="shop" />
-    <Tickets />
+    <Restaurant class="section" />
+    <Shop ref="shop" class="section" />
+    <Tickets class="section" />
     <Footer class="footer" />
   </div>
 </template>
@@ -43,5 +43,13 @@ export default {
 #page {
   margin: 0;
   padding: 0;
+}
+.section {
+  background-color: black;
+  color: var(--primaryText);
+  border-radius: 30px;
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
 }
 </style>
