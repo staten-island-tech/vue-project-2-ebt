@@ -1,22 +1,27 @@
 <template>
-  <div>
+  <div id="page">
     <Header class="header" />
-    <div id="page">
-      <Footer class="footer" />
-      <h2>test</h2>
-      <h1 class="test">hi</h1>
-      <Restaurant />
-      <Shop ref="shop" />
-      <Tickets />
-    </div>
+    <div class="filler"></div>
+    <Restaurant />
+    <Shop ref="shop" />
+    <Tickets />
+    <Footer class="footer" />
   </div>
 </template>
 
 <script>
 export default {
   name: "IndexPage",
-  test() {
-    console.log("hi");
+  methods: {
+    scrollMeTo() {
+      let el = this.$refs.shop;
+      let top = el.offsetTop;
+      window.scrollTo(0, top);
+      console.log(top);
+    },
+    test() {
+      console.log("hi");
+    },
   },
 };
 </script>
@@ -31,5 +36,12 @@ export default {
 }
 .footer {
   margin-top: 100%;
+}
+.filler {
+  margin-bottom: 120px;
+}
+#page {
+  margin: 0;
+  padding: 0;
 }
 </style>

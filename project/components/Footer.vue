@@ -10,7 +10,7 @@
   color: var(--primaryText);
   bottom: 0;
   left: 0;
-  position: fixed;
+  position: relative;
   width: 100%;
   text-align: center;
 }

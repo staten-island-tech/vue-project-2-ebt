@@ -5,11 +5,7 @@
     </div>
     <div class="bar"></div>
     <div class="bottomline">
-      <h2
-        v-for="link in links"
-        :key="link.label"
-        @click="scrollMeTo('link.link')"
-      >
+      <h2 v-for="link in links" :key="link.label">
         {{ link.label }}
       </h2>
     </div>
