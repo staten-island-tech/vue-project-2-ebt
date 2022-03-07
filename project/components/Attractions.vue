@@ -81,8 +81,8 @@ export default {
   color: #010101;
   text-align: center;
 }
-.attractions-card.title {
-  font-size: 10rem;
+.attractions-card-title {
+  font-size: 2rem;
 }
 .attractions-image {
   width: 85%;
