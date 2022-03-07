@@ -5,12 +5,15 @@
     <Restaurant class="section" />
     <Shop ref="shop" class="section" />
     <Tickets class="section" />
+    <Attractions class="section" />
     <Footer class="footer" />
   </div>
 </template>
 
 <script>
+import Attractions from "../components/Attractions.vue";
 export default {
+  components: { Attractions },
   name: "IndexPage",
   methods: {
     scrollMeTo() {
