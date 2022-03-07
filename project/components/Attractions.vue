@@ -1,14 +1,24 @@
 <template>
   <div class="attractions-home">
     <h1 class="attractions-title">Attractions</h1>
-    <div
-      class="attractions-card"
-      v-for="attraction in attractions"
-      :key="attraction.name"
-    >
-      <h2 class="attractions-card-title">{{ attraction.name }}</h2>
-      <img src="attractions.image" alt="" />
-    </div>
+    <h2 class="attractions-header">
+      See all our wonderful and unique attractions!
+    </h2>
+    <section class="display">
+      <div
+        class="attractions-card"
+        v-for="attraction in attractions"
+        :key="attraction.name"
+      >
+        <h2 class="attractions-card-title">{{ attraction.name }}</h2>
+        <img
+          class="attractions-image"
+          v-bind:src="attraction.image"
+          v-bind:alt="attraction.alt"
+        />
+        <h3 class="attractions-description">{{ attraction.description }}</h3>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -18,28 +28,29 @@ export default {
     return {
       attractions: [
         {
-          name: "Stone Face",
-
-          image: "../arcade.jpg",
+          name: "Stone Temple",
+          image: "/statue.jpg",
+          alt: "wacky statue",
+          description:
+            "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",
         },
         {
           name: "Garden",
-
-          image: "../garden.jpg",
+          image: "/garden.jpg",
+          alt: "nice flowers and grass",
+          description:
+            "You can come here and touch grass because most of you need to",
         },
         {
           name: "Arcade",
-
-          image: "../arcade.jpg",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
         },
       ],
     };
   },
-  computed: {
-    getImage: function () {
-      return this.image;
-    },
-  },
+  computed: {},
 
   methods: {},
 };
@@ -47,12 +58,17 @@ export default {
 
 <style>
 .attractions-title {
-  color: red;
-  font-size: 10rem;
-  background-color: #010101;
+  font-size: 4rem;
+  text-align: center;
+}
+.attractions-header {
+  font-size: 2rem;
+  text-align: center;
 }
 .attractions-home {
-  height: 1rem;
+  text-align: center;
+}
+.display {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -61,14 +77,14 @@ export default {
   width: 30rem;
   background-color: #f44336;
   height: 30rem;
-  margin: 20rem auto;
+  margin: 5rem;
   color: #010101;
   text-align: center;
 }
-.attractions-card.title {
-  font-size: 10rem;
+.attractions-card-title {
+  font-size: 2rem;
 }
-img {
-  width: 65%;
+.attractions-image {
+  width: 85%;
 }
 </style>
