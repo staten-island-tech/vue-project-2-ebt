@@ -5,9 +5,9 @@
     <main class="home">
       <section class="display">
         <div class="display2">
-        <button class="btn1">3 Nights</button>
-        <button class="btn1">6 Nights</button>
-        <button class="btn1">12 Nights</button>
+        <button @click="displayOption()" class="btn1">3 Nights</button>
+        <button @click="displayOption()" class="btn1">6 Nights</button>
+        <button @click="displayOption()" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
@@ -24,9 +24,11 @@
 </template>
 
 <script>
+import TicketCard from './TicketCard.vue';
 // @ is an alias to /src
 
 export default {
+  components: { TicketCard },
   name: "Home",
 
   data() {
@@ -35,28 +37,50 @@ export default {
         {
           nights: 3,
           size: "small",
+          price: 1200, 
         },
         {
           nights: 6,
           size: "small",
+          price: 2000, 
         },
         {
           nights: 12,
           size: "small",
+          price: 3600, 
         },
         {
           nights: 3,
           size: "medium",
+          price: 1500, 
         },
         {
           nights: 6,
           size: "medium",
+          price: 2500, 
         },
         {
           nights: 12,
           size: "medium",
+          price: 4200, 
         },
-      ]
+        {
+          nights: 3,
+          size: "large",
+          price: 2100, 
+        },
+        {
+          nights: 6,
+          size: "large",
+          price: 3000, 
+        },
+        {
+          nights: 12,
+          size: "large",
+          price: 5000, 
+        },
+      ],
+      order:[]
     };
   },
   methods: {
@@ -64,10 +88,13 @@ export default {
       let pricenum = Number(prices).toFixed(2);
       return `$${pricenum}`;
     },
-     addItem( items ) {
+     addItem ( items ) {
       this.order.push(items);
       this.orderPrice = this.orderPrice + items.price;
     },
+    displayOption ( items ) {
+      this.order.push(items);
+    }
   },
 };
 </script>
