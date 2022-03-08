@@ -1,10 +1,10 @@
 <template>
   <div class="header">
-    <div class="topline">
+    <div class="header-topline">
       <h1>EBT HOTEL</h1>
     </div>
     <div class="bar"></div>
-    <div class="bottomline">
+    <div class="header-bottomline">
       <h2 v-for="link in links" :key="link.label">
         {{ link.label }}
       </h2>
@@ -13,7 +13,13 @@
 </template>
 
 <script>
+import gsap from "gsap";
 export default {
+  mounted() {
+    const tl = gsap.timeline({ delay: 0.2 });
+    tl.from(".header", { y: -120, duration: 1 });
+    tl.from(".header-bottomline", { x: 1000, duration: 0.75 });
+  },
   data() {
     return {
       links: [
@@ -39,6 +45,7 @@ export default {
 };
 </script>
 
+
 <style scoped>
 .header {
   top: 0;
@@ -49,10 +56,10 @@ export default {
   left: 0;
   text-align: center;
 }
-.topline {
+.header-topline {
   height: 45px;
 }
-.bottomline {
+.header-bottomline {
   height: 30px;
   font-size: 7.5px;
   display: flex;

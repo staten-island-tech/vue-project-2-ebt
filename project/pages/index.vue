@@ -11,9 +11,9 @@
 </template>
 
 <script>
-import Attractions from "../components/Attractions.vue";
+import gsap from "gsap";
 export default {
-  components: { Attractions },
+  data() {},
   name: "IndexPage",
   methods: {
     scrollMeTo() {
