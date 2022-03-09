@@ -24,12 +24,15 @@
 </template>
 
 <script>
-import TicketCard from './TicketCard.vue';
+
 // @ is an alias to /src
 
 export default {
-  components: { TicketCard },
+
   name: "Home",
+
+  mounted(){
+  },
 
   data() {
     return {
@@ -80,7 +83,6 @@ export default {
           price: 5000, 
         },
       ],
-      order:[]
     };
   },
   methods: {
@@ -92,10 +94,14 @@ export default {
       this.order.push(items);
       this.orderPrice = this.orderPrice + items.price;
     },
-    displayOption ( items ) {
-      this.order.push(items);
-    }
+    threeNights: function sortNights() {
+      clear();
+      stocks.forEach((item) => {
+        cards(item)
+      });
+    },
   },
+  filters: {},
 };
 </script>
 
