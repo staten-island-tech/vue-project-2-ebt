@@ -8,9 +8,6 @@
 .footer {
   background-color: var(--primary);
   color: var(--primaryText);
-  bottom: 0;
-  left: 0;
-  position: relative;
   width: 100%;
   text-align: center;
 }

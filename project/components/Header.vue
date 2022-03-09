@@ -50,23 +50,34 @@ export default {
 .header {
   top: 0;
   position: fixed;
-  background-color: var(--primary);
   color: var(--primaryText);
   width: 100%;
   left: 0;
   text-align: center;
 }
 .header-topline {
-  height: 45px;
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  height: 5px;
+  margin-top: -10px;
+  background-color: var(--primary);
 }
 .header-bottomline {
+  position: fixed;
+  background-color: var(--primary);
+  width: 100%;
+  top: 55px;
   height: 30px;
   font-size: 7.5px;
   display: flex;
   justify-content: space-around;
 }
 .bar {
-  background-color: white;
+  width: 100%;
+  top: 45px;
+  position: fixed;
+  background-color: green;
   height: 10px;
 }
 </style>

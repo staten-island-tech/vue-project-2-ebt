@@ -13,6 +13,7 @@
 <script>
 import gsap from "gsap";
 export default {
+  mounted() {},
   data() {},
   name: "IndexPage",
   methods: {
@@ -34,14 +35,14 @@ export default {
   --secondary: gray;
   --primaryText: white;
 }
-.header {
-  margin-bottom: 100px;
-}
-.footer {
-  margin-top: 100%;
-}
+
 .filler {
   margin-bottom: 120px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 #page {
   margin: 0;
