@@ -2,10 +2,10 @@
   <div id="page">
     <Header class="header" />
     <div class="filler"></div>
-    <Restaurant class="section" />
-    <Shop ref="shop" class="section" />
-    <Tickets class="section" />
-    <Attractions class="section" />
+    <div ref="restaurant"><Restaurant class="section" /></div>
+    <div ref="shop"><Shop class="section" /></div>
+    <div ref="tickets"><Tickets class="section" /></div>
+    <div ref="attractions"><Attractions class="section" /></div>
     <Footer class="footer" />
   </div>
 </template>
@@ -17,11 +17,11 @@ export default {
   data() {},
   name: "IndexPage",
   methods: {
-    scrollMeTo() {
-      let el = this.$refs.shop;
-      let top = el.offsetTop;
+    scrollMeTo(ref) {
+      const el = this.$refs.shop;
+      const top = el.offsetTop;
       window.scrollTo(0, top);
-      console.log(top);
+      console.log(el);
     },
     test() {
       console.log("hi");

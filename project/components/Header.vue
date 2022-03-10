@@ -5,7 +5,12 @@
     </div>
     <div class="bar"></div>
     <div class="header-bottomline">
-      <h2 v-for="link in links" :key="link.label">
+      <h2
+        class="link"
+        v-for="link in links"
+        :key="link.label"
+        @click="send(link.ref)"
+      >
         {{ link.label }}
       </h2>
     </div>
@@ -14,32 +19,31 @@
 
 <script>
 import gsap from "gsap";
+import indexVue from "../pages/index.vue";
 export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });
     tl.from(".header", { y: -120, duration: 1 });
-    tl.from(".header-bottomline", { x: 1000, duration: 0.75 });
+    tl.from(".link", { opacity: 0, stagger: { each: 0.1, from: "left" } });
   },
   data() {
     return {
       links: [
-        { label: "HOME", link: "" },
-        { label: "FOOD", link: "" },
-        { label: "MISSION", link: "" },
-        { label: "PLAN", link: "" },
-        { label: "CONTACT", link: "" },
-        { label: "SHOP", link: "shop" },
-        { label: "ATTRACTIONS", link: "" },
-        { label: "REVIEWS", link: "" },
-        { label: "GALLERY", link: "" },
+        { label: "HOME", ref: "" },
+        { label: "FOOD", ref: "" },
+        { label: "MISSION", ref: "" },
+        { label: "PLAN", ref: "" },
+        { label: "CONTACT", ref: "" },
+        { label: "SHOP", ref: "shop" },
+        { label: "ATTRACTIONS", ref: "" },
+        { label: "REVIEWS", ref: "" },
+        { label: "GALLERY", ref: "" },
       ],
     };
   },
   methods: {
-    scrollMeTo(ref) {
-      let el = this.$refs.ref;
-      let top = el.offsetTop;
-      window.scrollTo(0, top);
+    send(ref) {
+      this.$emit();
     },
   },
 };
@@ -59,7 +63,7 @@ export default {
   top: 0px;
   width: 100%;
   position: fixed;
-  height: 5px;
+  height: 60px;
   margin-top: -10px;
   background-color: var(--primary);
 }
@@ -67,7 +71,7 @@ export default {
   position: fixed;
   background-color: var(--primary);
   width: 100%;
-  top: 55px;
+  top: 57.5px;
   height: 30px;
   font-size: 7.5px;
   display: flex;
@@ -75,9 +79,9 @@ export default {
 }
 .bar {
   width: 100%;
-  top: 45px;
+  top: 50px;
   position: fixed;
-  background-color: green;
+  background-color: white;
   height: 10px;
 }
 </style>
