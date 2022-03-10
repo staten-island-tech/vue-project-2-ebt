@@ -5,16 +5,14 @@
     <main class="home">
       <section class="display">
         <div class="display2">
-        <button @click="displayOption()" class="btn1">3 Nights</button>
-        <button @click="displayOption()" class="btn1">6 Nights</button>
-        <button @click="displayOption()" class="btn1">12 Nights</button>
+        <button @click="roomCard()" class="btn1">3 Nights</button>
+        <button @click="sixNights()" class="btn1">6 Nights</button>
+        <button @click="twelveNights()" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
-        <section class="display">
-          <img src="arcade.jpg" alt="">
-          <img src="arcade.jpg" alt="">
-          <img src="arcade.jpg" alt="">
+        <section class="roomdisplay">
+           <li class="space1" v-for="items in order" :key="items.name">{{ items.name }} {{pricetag(items.price)}} </li>
         </section>
         <button class="checkout-btn">More options</button>
       </div>
@@ -83,6 +81,7 @@ export default {
           price: 5000, 
         },
       ],
+      order: [],
     };
   },
   methods: {
@@ -92,8 +91,15 @@ export default {
     },
      addItem ( items ) {
       this.order.push(items);
-      this.orderPrice = this.orderPrice + items.price;
     },
+    roomCard() {
+      this.$refs.roomDisplay.insertAdjacentHTML(
+        "afterbegin",
+        `<Card>
+        test
+        </Card>`
+      )
+    } ,
     threeNights: function sortNights() {
       clear();
       stocks.forEach((item) => {
@@ -121,7 +127,7 @@ export default {
   margin: auto;
 }
 
-.display {
+.display, .roomDisplay {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -129,6 +135,7 @@ export default {
   height: auto;
   margin: 1rem auto;
 }
+
 .display2 {
   display: flex;
   flex-direction: column;
