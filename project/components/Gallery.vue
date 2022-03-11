@@ -3,10 +3,14 @@
     <h1 class="gallery-title">Gallery</h1>
     <h2 class="gallery-header">Famous people ye</h2>
     <div class="gallery-card">
-      <img class="gallery-img" src="/arcade.jpg" alt="" />
+      <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
     </div>
-    <button class="gallery-button">left arrow</button>
-    <button class="gallery-button">right arrow</button>
+    <button class="gallery-button" @click="switchImageLeft()">
+      left arrow
+    </button>
+    <button class="gallery-button" @click="switchImageRight()">
+      right arrow
+    </button>
   </div>
 </template>
 
@@ -14,6 +18,15 @@
 export default {
   data() {
     return {
+      index: 0,
+      image: null,
+      currentImage: {
+        name: "Blob",
+        url: "/statue.jpg",
+        alt: "stuff",
+        description: "Nrfhedhnmdrugebng",
+        id: 0,
+      },
       //get images lol
       images: [
         {
@@ -21,30 +34,35 @@ export default {
           url: "/statue.jpg",
           alt: "stuff",
           description: "Nrfhedhnmdrugebng",
+          id: 0,
         },
         {
           name: "this",
           url: "/statue.jpg",
           alt: "stuff",
           description: "Nrfhedhnmdrugebng",
+          id: 1,
         },
         {
           name: "this",
           url: "/arcade.jpg",
           alt: "stuff",
           description: "Nrfhedhnmdrugebng",
+          id: 2,
         },
         {
           name: "this",
           url: "/statue.jpg",
           alt: "stuff",
           description: "Nrfhedhnmdrugebng",
+          id: 3,
         },
         {
           name: "this",
           url: "/statue.jpg",
           alt: "stuff",
           description: "Nrfhedhnmdrugebng",
+          id: 4,
         },
       ],
     };
@@ -56,9 +74,19 @@ export default {
     this.switchImage();
   },
   methods: {
-    switchImage() {
-      this.image = this.images[this.index];
-      this.index = (this.index + 1) % this.images.length;
+    switchImageLeft() {
+      if (this.currentImage.id === 4) {
+        this.currentImage = this.images[0];
+      } else {
+        this.currentImage = this.images[this.currentImage.id + 1];
+      }
+    },
+    switchImageRight() {
+      if (this.currentImage.id === 0) {
+        this.currentImage = this.images[4];
+      } else {
+        this.currentImage = this.images[this.currentImage.id - 1];
+      }
     },
   },
 };
