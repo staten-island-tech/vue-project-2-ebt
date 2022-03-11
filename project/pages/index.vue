@@ -1,6 +1,6 @@
 <template>
   <div id="page">
-    <Header class="header" />
+    <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler"></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
@@ -18,8 +18,8 @@ export default {
   name: "IndexPage",
   methods: {
     scrollMeTo(ref) {
-      const el = this.$refs.shop;
-      const top = el.offsetTop;
+      const el = this.$refs[ref];
+      const top = el.offsetTop - 100;
       window.scrollTo(0, top);
       console.log(el);
     },
@@ -47,6 +47,7 @@ body {
 #page {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .section {
   background-color: black;

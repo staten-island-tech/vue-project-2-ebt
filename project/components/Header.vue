@@ -30,12 +30,12 @@ export default {
     return {
       links: [
         { label: "HOME", ref: "" },
-        { label: "FOOD", ref: "" },
+        { label: "FOOD", ref: "restaurant" },
         { label: "MISSION", ref: "" },
-        { label: "PLAN", ref: "" },
+        { label: "TICKETS", ref: "tickets" },
         { label: "CONTACT", ref: "" },
         { label: "SHOP", ref: "shop" },
-        { label: "ATTRACTIONS", ref: "" },
+        { label: "ATTRACTIONS", ref: "attractions" },
         { label: "REVIEWS", ref: "" },
         { label: "GALLERY", ref: "" },
       ],
@@ -43,7 +43,7 @@ export default {
   },
   methods: {
     send(ref) {
-      this.$emit();
+      this.$emit("send", `${ref}`);
     },
   },
 };
@@ -51,6 +51,9 @@ export default {
 
 
 <style scoped>
+.link:hover {
+  background-color: gray;
+}
 .header {
   top: 0;
   position: fixed;
