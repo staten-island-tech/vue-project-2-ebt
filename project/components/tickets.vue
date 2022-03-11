@@ -5,15 +5,21 @@
     <main class="home">
       <section class="display">
         <div class="display2">
-        <button @click="roomCard()" class="btn1">3 Nights</button>
-        <button @click="sixNights()" class="btn1">6 Nights</button>
-        <button @click="twelveNights()" class="btn1">12 Nights</button>
+        <button @click="addItem()" class="btn1">3 Nights</button>
+        <button @click="addItem()" class="btn1">6 Nights</button>
+        <button @click="addItem()" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
-        <section class="roomdisplay">
-           <li class="space1" v-for="items in order" :key="items.name">{{ items.name }} {{pricetag(items.price)}} </li>
+        <main v-if="active" class="roomdisplay">
+          <h2>test</h2>
+        <section class="space1" v-for="items in order" :key="items.nights">
+          <div>Nights: {{ items.nights }}</div>
+          <div>Small: {{pricetag(items.priceSmall)}} </div>
+          <div>Medium: {{pricetag(items.priceMedium)}}</div>
+          <div>Large: {{pricetag(items.priceLarge)}}</div>  
         </section>
+        </main>
         <button class="checkout-btn">More options</button>
       </div>
       </section>
@@ -37,51 +43,44 @@ export default {
       rooms: [
         {
           nights: 3,
-          size: "small",
-          price: 1200, 
+          priceSmall: 1200, 
+          priceMedium: 1500, 
+          priceLarge: 2100, 
         },
         {
           nights: 6,
-          size: "small",
-          price: 2000, 
+          priceSmall: 2000, 
+          priceMedium: 2500, 
+          priceLarge: 3000, 
         },
         {
           nights: 12,
-          size: "small",
-          price: 3600, 
-        },
-        {
-          nights: 3,
-          size: "medium",
-          price: 1500, 
-        },
-        {
-          nights: 6,
-          size: "medium",
-          price: 2500, 
-        },
-        {
-          nights: 12,
-          size: "medium",
-          price: 4200, 
-        },
-        {
-          nights: 3,
-          size: "large",
-          price: 2100, 
-        },
-        {
-          nights: 6,
-          size: "large",
-          price: 3000, 
-        },
-        {
-          nights: 12,
-          size: "large",
-          price: 5000, 
+          priceSmall: 3600, 
+          priceMedium: 4200, 
+          priceLarge: 5000, 
         },
       ],
-      order: [],
+      order: [
+        {
+          nights: 3,
+          priceSmall: 1200, 
+          priceMedium: 1500, 
+          priceLarge: 2100, 
+        },
+        {
+          nights: 6,
+          priceSmall: 2000, 
+          priceMedium: 2500, 
+          priceLarge: 3000, 
+        },
+        {
+          nights: 12,
+          priceSmall: 3600, 
+          priceMedium: 4200, 
+          priceLarge: 5000, 
+        },
+        ],
+      active: false,
     };
   },
   methods: {
@@ -89,25 +88,11 @@ export default {
       let pricenum = Number(prices).toFixed(2);
       return `$${pricenum}`;
     },
-     addItem ( items ) {
-      this.order.push(items);
+     addItem () {
+      this.active = !this.active;
     },
-    roomCard() {
-      this.$refs.roomDisplay.insertAdjacentHTML(
-        "afterbegin",
-        `<Card>
-        test
-        </Card>`
-      )
-    } ,
-    threeNights: function sortNights() {
-      clear();
-      stocks.forEach((item) => {
-        cards(item)
-      });
-    },
+
   },
-  filters: {},
 };
 </script>
 
@@ -143,6 +128,13 @@ export default {
   width: 40%;
   height: auto;
   margin: 1rem auto;
+}
+
+.space1 {
+  width: 100%;
+  height: auto;
+  margin: 0.5rem auto;
+  font-size: 1.5rem;
 }
 
 .btn1 {
