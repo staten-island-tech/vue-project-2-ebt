@@ -1,11 +1,16 @@
 <template>
   <div class="header">
-    <div class="topline">
+    <div class="header-topline">
       <h1>EBT HOTEL</h1>
     </div>
     <div class="bar"></div>
-    <div class="bottomline">
-      <h2 v-for="link in links" :key="link.label">
+    <div class="header-bottomline">
+      <h2
+        class="link"
+        v-for="link in links"
+        :key="link.label"
+        @click="send(link.ref)"
+      >
         {{ link.label }}
       </h2>
     </div>
@@ -13,52 +18,72 @@
 </template>
 
 <script>
+import gsap from "gsap";
+import indexVue from "../pages/index.vue";
 export default {
+  mounted() {
+    const tl = gsap.timeline({ delay: 0.2 });
+    tl.from(".header", { y: -120, duration: 1 });
+    tl.from(".link", { opacity: 0, stagger: { each: 0.1, from: "left" } });
+  },
   data() {
     return {
       links: [
-        { label: "HOME", link: "" },
-        { label: "FOOD", link: "" },
-        { label: "MISSION", link: "" },
-        { label: "PLAN", link: "" },
-        { label: "CONTACT", link: "" },
-        { label: "SHOP", link: "shop" },
-        { label: "ATTRACTIONS", link: "" },
-        { label: "REVIEWS", link: "" },
-        { label: "GALLERY", link: "" },
+        { label: "HOME", ref: "home" },
+        { label: "FOOD", ref: "restaurant" },
+        { label: "MISSION", ref: "mission" },
+        { label: "TICKETS", ref: "tickets" },
+        { label: "CONTACT", ref: "contact" },
+        { label: "SHOP", ref: "shop" },
+        { label: "ATTRACTIONS", ref: "attractions" },
+        { label: "REVIEWS", ref: "reviews" },
+        { label: "GALLERY", ref: "gallery" },
       ],
     };
   },
   methods: {
-    scrollMeTo(ref) {
-      let el = this.$refs.ref;
-      let top = el.offsetTop;
-      window.scrollTo(0, top);
+    send(ref) {
+      this.$emit("send", `${ref}`);
     },
   },
 };
 </script>
 
+
 <style scoped>
+.link:hover {
+  background-color: gray;
+}
 .header {
   top: 0;
   position: fixed;
-  background-color: var(--primary);
   color: var(--primaryText);
   width: 100%;
   left: 0;
   text-align: center;
 }
-.topline {
-  height: 45px;
+.header-topline {
+  top: 0px;
+  width: 100%;
+  position: fixed;
+  height: 60px;
+  margin-top: -10px;
+  background-color: var(--primary);
 }
-.bottomline {
+.header-bottomline {
+  position: fixed;
+  background-color: var(--primary);
+  width: 100%;
+  top: 57.5px;
   height: 30px;
   font-size: 7.5px;
   display: flex;
   justify-content: space-around;
 }
 .bar {
+  width: 100%;
+  top: 50px;
+  position: fixed;
   background-color: white;
   height: 10px;
 }

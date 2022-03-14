@@ -6,12 +6,12 @@
 
 <style scoped>
 .footer {
-  background-color: var(--primary);
+  bottom: -10;
+  position: absolute;
   color: var(--primaryText);
-  bottom: 0;
-  left: 0;
-  position: relative;
+  background-color: var(--primary);
   width: 100%;
+  left: 0;
   text-align: center;
 }
 </style>
