@@ -1,18 +1,18 @@
 <template>
   <div class="header">
     <div class="header-topline">
-      <h1>EBT HOTEL</h1>
+      <h1 class="header-topline-text">EBT HOTEL</h1>
     </div>
     <div class="bar"></div>
     <div class="header-bottomline">
-      <h2
+      <h4
         class="link"
         v-for="link in links"
         :key="link.label"
         @click="send(link.ref)"
       >
         {{ link.label }}
-      </h2>
+      </h4>
     </div>
   </div>
 </template>
@@ -52,7 +52,10 @@ export default {
 
 <style scoped>
 .link:hover {
-  background-color: gray;
+  background-color: var(--secondary);
+}
+.header-topline-text {
+  margin-top: 5px;
 }
 .header {
   top: 0;
@@ -62,12 +65,15 @@ export default {
   left: 0;
   text-align: center;
 }
+.link {
+  margin: auto;
+}
 .header-topline {
-  top: 0px;
+  top: 0;
   width: 100%;
   position: fixed;
   height: 60px;
-  margin-top: -10px;
+  margin-top: 0px;
   background-color: var(--primary);
 }
 .header-bottomline {

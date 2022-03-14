@@ -1,6 +1,9 @@
 <template>
   <div class="footer">
-    <h2>I am not legally responsible for any stupid things you do here</h2>
+    <h2>
+      We are not associated with anything else named EBT, it's our name. We
+      should sue you.
+    </h2>
   </div>
 </template>
 

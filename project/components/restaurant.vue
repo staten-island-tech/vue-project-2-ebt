@@ -1,7 +1,7 @@
 <template>
   <div class="none">
-    <h1 class="title-text">Cuisine</h1>
-    <h2 class="head-text">Freshly Imported. Fairest Prices. Highly Rated.</h2>
+    <h2 class="title-text">Cuisine</h2>
+    <h3 class="head-text">Freshly Imported. Fairest Prices. Highly Rated.</h3>
     <main class="home">
       <section class="display">
         <Card
@@ -70,11 +70,11 @@ export default {
 
 <style>
 .title-text {
-  font-size: 4rem;
+  font-size: var(--h1);
   text-align: center;
 }
 .head-text {
-  font-size: 2rem;
+  font-size: var(--h3);
   text-align: center;
 }
 
