@@ -60,26 +60,7 @@ export default {
           priceLarge: 5000, 
         },
       ],
-      order: [
-        {
-          nights: 3,
-          priceSmall: 1200, 
-          priceMedium: 1500, 
-          priceLarge: 2100, 
-        },
-        {
-          nights: 6,
-          priceSmall: 2000, 
-          priceMedium: 2500, 
-          priceLarge: 3000, 
-        },
-        {
-          nights: 12,
-          priceSmall: 3600, 
-          priceMedium: 4200, 
-          priceLarge: 5000, 
-        },
-        ],
+      order: [],
       active: false,
     };
   },
