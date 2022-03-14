@@ -70,9 +70,7 @@ export default {
     //v-bind and declarative rendering don't work rn for some reason, figure it out
     //make a method/function or whatever for buttons
   },
-  mounted() {
-    this.switchImage();
-  },
+  mounted() {},
   methods: {
     switchImageLeft() {
       if (this.currentImage.id === 4) {
