@@ -29,15 +29,15 @@ export default {
   data() {
     return {
       links: [
-        { label: "HOME", ref: "" },
+        { label: "HOME", ref: "home" },
         { label: "FOOD", ref: "restaurant" },
-        { label: "MISSION", ref: "" },
+        { label: "MISSION", ref: "mission" },
         { label: "TICKETS", ref: "tickets" },
-        { label: "CONTACT", ref: "" },
+        { label: "CONTACT", ref: "contact" },
         { label: "SHOP", ref: "shop" },
         { label: "ATTRACTIONS", ref: "attractions" },
-        { label: "REVIEWS", ref: "" },
-        { label: "GALLERY", ref: "" },
+        { label: "REVIEWS", ref: "reviews" },
+        { label: "GALLERY", ref: "gallery" },
       ],
     };
   },

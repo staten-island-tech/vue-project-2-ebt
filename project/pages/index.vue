@@ -1,7 +1,7 @@
 <template>
   <div id="page">
     <Header class="header" @send="scrollMeTo($event)" />
-    <div class="filler"></div>
+    <div class="filler" ref="home"></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
