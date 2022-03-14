@@ -5,6 +5,7 @@
     <div class="gallery-card">
       <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
     </div>
+
     <button class="gallery-button" @click="switchImageLeft()">
       left arrow
     </button>
@@ -67,8 +68,6 @@ export default {
       ],
     };
     //need to v-bind images, look at whatever
-    //v-bind and declarative rendering don't work rn for some reason, figure it out
-    //make a method/function or whatever for buttons
   },
   mounted() {},
   methods: {
@@ -101,14 +100,18 @@ export default {
   font-size: 2rem;
 }
 .gallery-card {
-  width: 90rem;
+  width: 40rem;
   background-color: #f44336;
-  height: 70rem;
+  height: 27rem;
   color: #010101;
+  display: flex;
+  justify-content: space-around;
   text-align: center;
+  align-items: center;
+  margin: 2rem;
 }
 .gallery-img {
-  width: 85%;
+  height: 25rem;
 }
 /* find way to center card and image */
 .gallery-button {
