@@ -1,26 +1,27 @@
 <template>
   <div id="page">
-    <Header class="header" />
-    <div class="filler"></div>
-    <Restaurant class="section" />
-    <Shop ref="shop" class="section" />
-    <Tickets class="section" />
-    <Attractions class="section" />
+    <Header class="header" @send="scrollMeTo($event)" />
+    <div class="filler" ref="home"></div>
+    <div ref="restaurant"><Restaurant class="section" /></div>
+    <div ref="shop"><Shop class="section" /></div>
+    <div ref="tickets"><Tickets class="section" /></div>
+    <div ref="attractions"><Attractions class="section" /></div>
     <Footer class="footer" />
   </div>
 </template>
 
 <script>
-import Attractions from "../components/Attractions.vue";
+import gsap from "gsap";
 export default {
-  components: { Attractions },
+  mounted() {},
+  data() {},
   name: "IndexPage",
   methods: {
-    scrollMeTo() {
-      let el = this.$refs.shop;
-      let top = el.offsetTop;
+    scrollMeTo(ref) {
+      const el = this.$refs[ref];
+      const top = el.offsetTop - 100;
       window.scrollTo(0, top);
-      console.log(top);
+      console.log(el);
     },
     test() {
       console.log("hi");
@@ -34,18 +35,19 @@ export default {
   --secondary: gray;
   --primaryText: white;
 }
-.header {
-  margin-bottom: 100px;
-}
-.footer {
-  margin-top: 100%;
-}
+
 .filler {
   margin-bottom: 120px;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
 }
 #page {
   margin: 0;
   padding: 0;
+  position: relative;
 }
 .section {
   background-color: black;
