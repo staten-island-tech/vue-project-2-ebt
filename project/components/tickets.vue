@@ -12,7 +12,7 @@
 
         <div class="display2">
         <main v-if="active" class="roomdisplay">
-          <h2>test</h2>
+          <img src="arcade.jpg" alt="hotelo" class="img2">
         <section class="space1" v-for="items in order" :key="items.nights">
           <div>Nights: {{ items.nights }}</div>
           <div>Small: {{pricetag(items.priceSmall)}} </div>
@@ -60,7 +60,14 @@ export default {
           priceLarge: 5000, 
         },
       ],
-      order: [],
+      order: [
+           {
+          nights: 3,
+          priceSmall: 1200, 
+          priceMedium: 1500, 
+          priceLarge: 2100, 
+        },
+      ],
       active: false,
     };
   },
@@ -78,6 +85,10 @@ export default {
 </script>
 
 <style>
+.img2 {
+  width: 200px;
+  height: auto;
+}
 .title-text {
   font-size: 4rem;
   text-align: center;
