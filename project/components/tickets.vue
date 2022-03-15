@@ -5,13 +5,24 @@
     <main class="home">
       <section class="display">
         <div class="display2">
-        <button @click="addItem()" class="btn1">3 Nights</button>
-        <button @click="addItem()" class="btn1">6 Nights</button>
-        <button @click="addItem()" class="btn1">12 Nights</button>
+        <button @click="switchRoom(0)" class="btn1">3 Nights</button>
+        <button @click="switchRoom(1)" class="btn1">6 Nights</button>
+        <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
-        <main v-if="active" class="roomdisplay">
+        <main class="roomdisplay">
+          <img src="arcade.jpg" alt="hotelo" class="img2">
+        <section class="space1">
+          <div>Nights: {{ active.nights }}</div>
+          <div>Small: {{pricetag(active.priceSmall)}} </div>
+          <div>Medium: {{pricetag(active.priceMedium)}}</div>
+          <div>Large: {{pricetag(active.priceLarge)}}</div>  
+        </section>
+        </main>
+
+
+<!--         <main v-if="active" class="roomdisplay">
           <img src="arcade.jpg" alt="hotelo" class="img2">
         <section class="space1" v-for="items in order" :key="items.nights">
           <div>Nights: {{ items.nights }}</div>
@@ -19,7 +30,7 @@
           <div>Medium: {{pricetag(items.priceMedium)}}</div>
           <div>Large: {{pricetag(items.priceLarge)}}</div>  
         </section>
-        </main>
+        </main> -->
         <button class="checkout-btn">More options</button>
       </div>
       </section>
@@ -60,15 +71,13 @@ export default {
           priceLarge: 5000, 
         },
       ],
-      order: [
-           {
-          nights: 3,
-          priceSmall: 1200, 
-          priceMedium: 1500, 
-          priceLarge: 2100, 
+
+      active: {
+          nights: 0,
+          priceSmall: 0, 
+          priceMedium: 0, 
+          priceLarge: 0, 
         },
-      ],
-      active: false,
     };
   },
   methods: {
@@ -76,8 +85,8 @@ export default {
       let pricenum = Number(prices).toFixed(2);
       return `$${pricenum}`;
     },
-     addItem () {
-      this.active = !this.active;
+    switchRoom: function (numero) {
+      this.active = this.rooms[numero];
     },
 
   },
@@ -86,7 +95,7 @@ export default {
 
 <style>
 .img2 {
-  width: 200px;
+  width: 250px;
   height: auto;
 }
 .title-text {
