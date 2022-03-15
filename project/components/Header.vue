@@ -1,7 +1,7 @@
 <template>
   <div class="header">
     <div class="header-topline">
-      <h1 class="header-topline-text">EBT HOTEL</h1>
+      <h1 class="header-topline-text">HOTEL²</h1>
     </div>
     <div class="bar"></div>
     <div class="header-bottomline">
@@ -19,7 +19,6 @@
 
 <script>
 import gsap from "gsap";
-import indexVue from "../pages/index.vue";
 export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });

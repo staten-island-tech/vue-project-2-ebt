@@ -1,9 +1,6 @@
 <template>
   <div class="footer">
-    <h2>
-      We are not associated with anything else named EBT, it's our name. We
-      should sue you.
-    </h2>
+    <h2>israel</h2>
   </div>
 </template>
 

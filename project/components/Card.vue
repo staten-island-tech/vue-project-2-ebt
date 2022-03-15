@@ -35,7 +35,7 @@ export default {
 
 .title {
   color: #212121;
-  font-size: 2rem;
+  font-size: var(--h3);
   box-sizing: border-box;
   margin: auto;
   text-align: center;

@@ -98,10 +98,10 @@ export default {
   font-size: var(--h1);
 }
 .gallery-header {
-  font-size: 2rem;
+  font-size: var(--h3);
 }
 .gallery-card {
-  width: 90rem;
+  width: 100%;
   background-color: #f44336;
   height: 70rem;
   color: var(--primary);
