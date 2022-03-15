@@ -5,23 +5,35 @@
     <main class="home">
       <section class="display">
         <div class="display2">
-          <button @click="addItem()" class="btn1">3 Nights</button>
-          <button @click="addItem()" class="btn1">6 Nights</button>
-          <button @click="addItem()" class="btn1">12 Nights</button>
+
+        <button @click="switchRoom(0)" class="btn1">3 Nights</button>
+        <button @click="switchRoom(1)" class="btn1">6 Nights</button>
+        <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
-          <main v-if="active" class="roomdisplay">
-            <h3>test</h3>
-            <section class="space1" v-for="items in order" :key="items.nights">
-              <div>Nights: {{ items.nights }}</div>
-              <div>Small: {{ pricetag(items.priceSmall) }}</div>
-              <div>Medium: {{ pricetag(items.priceMedium) }}</div>
-              <div>Large: {{ pricetag(items.priceLarge) }}</div>
-            </section>
-          </main>
-          <button class="checkout-btn">More options</button>
-        </div>
+        <main class="roomdisplay">
+          <img src="arcade.jpg" alt="hotelo" class="img2">
+        <section class="space1">
+          <div>Nights: {{ active.nights }}</div>
+          <div>Small: {{pricetag(active.priceSmall)}} </div>
+          <div>Medium: {{pricetag(active.priceMedium)}}</div>
+          <div>Large: {{pricetag(active.priceLarge)}}</div>  
+        </section>
+        </main>
+
+
+<!--         <main v-if="active" class="roomdisplay">
+          <img src="arcade.jpg" alt="hotelo" class="img2">
+        <section class="space1" v-for="items in order" :key="items.nights">
+          <div>Nights: {{ items.nights }}</div>
+          <div>Small: {{pricetag(items.priceSmall)}} </div>
+          <div>Medium: {{pricetag(items.priceMedium)}}</div>
+          <div>Large: {{pricetag(items.priceLarge)}}</div>  
+        </section>
+        </main> -->
+        <button class="checkout-btn">More options</button>
+      </div>
       </section>
     </main>
   </div>
@@ -57,8 +69,13 @@ export default {
           priceLarge: 5000,
         },
       ],
-      order: [],
-      active: false,
+
+      active: {
+          nights: 0,
+          priceSmall: 0, 
+          priceMedium: 0, 
+          priceLarge: 0, 
+        },
     };
   },
   methods: {
@@ -66,14 +83,18 @@ export default {
       let pricenum = Number(prices).toFixed(2);
       return `$${pricenum}`;
     },
-    addItem() {
-      this.active = !this.active;
+    switchRoom: function (numero) {
+      this.active = this.rooms[numero];
     },
   },
 };
 </script>
 
 <style>
+.img2 {
+  width: 250px;
+  height: auto;
+}
 .title-text {
   font-size: var(--h1);
   text-align: center;
