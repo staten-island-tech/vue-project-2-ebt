@@ -2,10 +2,15 @@
   <div class="gallery-home">
     <h1 class="gallery-title">Gallery</h1>
     <h2 class="gallery-header">Famous people ye</h2>
-    <div class="gallery-card">
-      <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
+    <div class="gallery-parent">
+      <div class="gallery-card">
+        <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
+      </div>
+      <div class="gallery-description">
+        <h2 id="desc-title">Description:</h2>
+        {{ currentImage.description }}
+      </div>
     </div>
-
     <button class="gallery-button" @click="switchImageLeft()">
       left arrow
     </button>
@@ -19,8 +24,6 @@
 export default {
   data() {
     return {
-      index: 0,
-      image: null,
       currentImage: {
         name: "Blob",
         url: "/statue.jpg",
@@ -31,38 +34,38 @@ export default {
       //get images lol
       images: [
         {
-          name: "Blob",
+          name: "1",
           url: "/statue.jpg",
           alt: "stuff",
-          description: "Nrfhedhnmdrugebng",
+          description: "description 1",
           id: 0,
         },
         {
-          name: "this",
+          name: "2",
           url: "/statue.jpg",
           alt: "stuff",
-          description: "Nrfhedhnmdrugebng",
+          description: "description 2",
           id: 1,
         },
         {
-          name: "this",
+          name: "3",
           url: "/arcade.jpg",
           alt: "stuff",
-          description: "Nrfhedhnmdrugebng",
+          description: "description 3",
           id: 2,
         },
         {
-          name: "this",
+          name: "4",
           url: "/statue.jpg",
           alt: "stuff",
-          description: "Nrfhedhnmdrugebng",
+          description: "description 4",
           id: 3,
         },
         {
-          name: "this",
+          name: "5",
           url: "/statue.jpg",
           alt: "stuff",
-          description: "Nrfhedhnmdrugebng",
+          description: "description 5",
           id: 4,
         },
       ],
@@ -80,6 +83,7 @@ export default {
     },
     switchImageRight() {
       if (this.currentImage.id === 0) {
+        z;
         this.currentImage = this.images[4];
       } else {
         this.currentImage = this.images[this.currentImage.id - 1];
@@ -99,10 +103,17 @@ export default {
 .gallery-header {
   font-size: 2rem;
 }
+.gallery-parent {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  align-items: center;
+}
 .gallery-card {
-  width: 40rem;
+  width: 37%;
+  height: 25rem;
   background-color: #f44336;
-  height: 27rem;
   color: #010101;
   display: flex;
   justify-content: space-around;
@@ -111,10 +122,18 @@ export default {
   margin: 2rem;
 }
 .gallery-img {
-  height: 25rem;
+  width: 90%;
+  height: auto;
+}
+.gallery-description {
+  margin-bottom: 20rem;
+  margin-right: 5rem;
 }
 /* find way to center card and image */
 .gallery-button {
   color: red;
+}
+#desc-title {
+  font-size: 3rem;
 }
 </style>
