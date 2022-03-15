@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <h2 class="title">{{ title }}</h2>
+    <h3 class="title">{{ title }}</h3>
     <img class="img1" :src="image" alt="" />
-    <h3 class="pricetag">{{ desc }}</h3>
+    <h4 class="pricetag">{{ desc }}</h4>
   </div>
 </template>
 
@@ -35,7 +35,7 @@ export default {
 
 .title {
   color: #212121;
-  font-size: 2rem;
+  font-size: var(--h3);
   box-sizing: border-box;
   margin: auto;
   text-align: center;

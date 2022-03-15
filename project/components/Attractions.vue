@@ -1,22 +1,22 @@
 <template>
   <div class="attractions-home">
-    <h1 class="attractions-title">Attractions</h1>
-    <h2 class="attractions-header">
+    <h2 class="attractions-title">Attractions</h2>
+    <h3 class="attractions-header">
       See all our wonderful and unique attractions!
-    </h2>
+    </h3>
     <section class="display">
       <div
         class="attractions-card"
         v-for="attraction in attractions"
         :key="attraction.name"
       >
-        <h2 class="attractions-card-title">{{ attraction.name }}</h2>
+        <h3 class="attractions-card-title">{{ attraction.name }}</h3>
         <img
           class="attractions-image"
           v-bind:src="attraction.image"
           v-bind:alt="attraction.alt"
         />
-        <h3 class="attractions-description">{{ attraction.description }}</h3>
+        <h4 class="attractions-description">{{ attraction.description }}</h4>
       </div>
     </section>
   </div>
@@ -58,11 +58,11 @@ export default {
 
 <style>
 .attractions-title {
-  font-size: 4rem;
+  font-size: var(--h1);
   text-align: center;
 }
 .attractions-header {
-  font-size: 2rem;
+  font-size: var(--h3);
   text-align: center;
 }
 .attractions-home {
@@ -78,11 +78,11 @@ export default {
   background-color: #f44336;
   height: 30rem;
   margin: 5rem;
-  color: #010101;
+  color: var(--primary);
   text-align: center;
 }
 .attractions-card-title {
-  font-size: 2rem;
+  font-size: var(--h3);
 }
 .attractions-image {
   width: 85%;

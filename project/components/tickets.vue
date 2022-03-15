@@ -1,10 +1,11 @@
 <template>
   <div class="none">
-    <h1 class="title-text">Tickets</h1>
-    <h2 class="head-text">Order!</h2>
+    <h2 class="title-text">Tickets</h2>
+    <h3 class="head-text">Order!</h3>
     <main class="home">
       <section class="display">
         <div class="display2">
+
         <button @click="switchRoom(0)" class="btn1">3 Nights</button>
         <button @click="switchRoom(1)" class="btn1">6 Nights</button>
         <button @click="switchRoom(2)" class="btn1">12 Nights</button>
@@ -39,36 +40,33 @@
 </template>
 
 <script>
-
 // @ is an alias to /src
 
 export default {
-
   name: "Home",
 
-  mounted(){
-  },
+  mounted() {},
 
   data() {
     return {
       rooms: [
         {
           nights: 3,
-          priceSmall: 1200, 
-          priceMedium: 1500, 
-          priceLarge: 2100, 
+          priceSmall: 1200,
+          priceMedium: 1500,
+          priceLarge: 2100,
         },
         {
           nights: 6,
-          priceSmall: 2000, 
-          priceMedium: 2500, 
-          priceLarge: 3000, 
+          priceSmall: 2000,
+          priceMedium: 2500,
+          priceLarge: 3000,
         },
         {
           nights: 12,
-          priceSmall: 3600, 
-          priceMedium: 4200, 
-          priceLarge: 5000, 
+          priceSmall: 3600,
+          priceMedium: 4200,
+          priceLarge: 5000,
         },
       ],
 
@@ -88,7 +86,6 @@ export default {
     switchRoom: function (numero) {
       this.active = this.rooms[numero];
     },
-
   },
 };
 </script>
@@ -99,11 +96,11 @@ export default {
   height: auto;
 }
 .title-text {
-  font-size: 4rem;
+  font-size: var(--h1);
   text-align: center;
 }
 .head-text {
-  font-size: 2rem;
+  font-size: var(--h3);
   text-align: center;
 }
 
@@ -113,7 +110,8 @@ export default {
   margin: auto;
 }
 
-.display, .roomDisplay {
+.display,
+.roomDisplay {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
@@ -139,23 +137,22 @@ export default {
 }
 
 .btn1 {
-display: inline-block;
-text-transform: uppercase;
-outline: none;
-cursor: pointer;
-font-weight: 600;
-border-radius: 3px;
-padding: 12px 24px;
-border: 0;
-color: #fff;
-background: #ff5000;
-line-height: 1.15;
-font-size: 16px;
-margin: 2rem;
+  display: inline-block;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: #fff;
+  background: #ff5000;
+  line-height: 1.15;
+  font-size: 16px;
+  margin: 2rem;
 }
 .btn1:hover {
-transition: all .1s ease;
-box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
-                
 </style>
