@@ -2,6 +2,7 @@
   <div id="page">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
+    <div ref="mission"><About class="section" /></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -70,11 +71,17 @@ body,
   position: relative;
 }
 .section {
+  text-align: center;
   background-color: black;
   color: var(--primaryText);
   border-radius: 30px;
   width: 90%;
   height: auto;
   margin: 50px auto;
+}
+.flex-parent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
 }
 </style>

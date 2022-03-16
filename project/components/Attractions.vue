@@ -4,7 +4,7 @@
     <h3 class="attractions-header">
       See all our wonderful and unique attractions!
     </h3>
-    <section class="display">
+    <section class="flex-parent">
       <div
         class="attractions-card"
         v-for="attraction in attractions"
@@ -67,11 +67,6 @@ export default {
 }
 .attractions-home {
   text-align: center;
-}
-.display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
 }
 .attractions-card {
   width: 30rem;

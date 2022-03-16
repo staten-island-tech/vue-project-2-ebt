@@ -3,7 +3,7 @@
     <h2 class="title-text">Cuisine</h2>
     <h3 class="head-text">Freshly Imported. Fairest Prices. Highly Rated.</h3>
     <main class="home">
-      <section class="display">
+      <section class="display flex-parent">
         <Card
           v-for="food in food"
           :key="food.name"
@@ -85,9 +85,6 @@ export default {
 }
 
 .display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   width: 80%;
   height: auto;
   margin: 1rem auto;

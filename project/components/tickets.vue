@@ -5,25 +5,23 @@
     <main class="home">
       <section class="display">
         <div class="display2">
-
-        <button @click="switchRoom(0)" class="btn1">3 Nights</button>
-        <button @click="switchRoom(1)" class="btn1">6 Nights</button>
-        <button @click="switchRoom(2)" class="btn1">12 Nights</button>
+          <button @click="switchRoom(0)" class="btn1">3 Nights</button>
+          <button @click="switchRoom(1)" class="btn1">6 Nights</button>
+          <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
-        <main class="roomdisplay">
-          <img src="arcade.jpg" alt="hotelo" class="img2">
-        <section class="space1">
-          <div>Nights: {{ active.nights }}</div>
-          <div>Small: {{pricetag(active.priceSmall)}} </div>
-          <div>Medium: {{pricetag(active.priceMedium)}}</div>
-          <div>Large: {{pricetag(active.priceLarge)}}</div>  
-        </section>
-        </main>
+          <main class="roomdisplay">
+            <img src="arcade.jpg" alt="hotelo" class="img2" />
+            <section class="space1">
+              <div>Nights: {{ active.nights }}</div>
+              <div>Small: {{ pricetag(active.priceSmall) }}</div>
+              <div>Medium: {{ pricetag(active.priceMedium) }}</div>
+              <div>Large: {{ pricetag(active.priceLarge) }}</div>
+            </section>
+          </main>
 
-
-<!--         <main v-if="active" class="roomdisplay">
+          <!--         <main v-if="active" class="roomdisplay">
           <img src="arcade.jpg" alt="hotelo" class="img2">
         <section class="space1" v-for="items in order" :key="items.nights">
           <div>Nights: {{ items.nights }}</div>
@@ -32,8 +30,8 @@
           <div>Large: {{pricetag(items.priceLarge)}}</div>  
         </section>
         </main> -->
-        <button class="checkout-btn">More options</button>
-      </div>
+          <button class="checkout-btn">More options</button>
+        </div>
       </section>
     </main>
   </div>
@@ -71,11 +69,11 @@ export default {
       ],
 
       active: {
-          nights: 0,
-          priceSmall: 0, 
-          priceMedium: 0, 
-          priceLarge: 0, 
-        },
+        nights: 0,
+        priceSmall: 0,
+        priceMedium: 0,
+        priceLarge: 0,
+      },
     };
   },
   methods: {
