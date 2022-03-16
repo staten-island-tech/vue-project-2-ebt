@@ -4,6 +4,9 @@
     <h2 class="gallery-header">Famous people ye</h2>
     <div class="gallery-parent">
       <div class="gallery-card">
+        <button class="gallery-button" @click="switchImageLeft()"><--</button>
+        <button class="gallery-button" @click="switchImageRight()">--></button>
+        <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
       <div class="gallery-description">
@@ -11,12 +14,9 @@
         {{ currentImage.description }}
       </div>
     </div>
-    <button class="gallery-button" @click="switchImageLeft()">
-      left arrow
-    </button>
-    <button class="gallery-button" @click="switchImageRight()">
-      right arrow
-    </button>
+    <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
+    <button class="gallery-button" @click="switchImageRight()">-->
+    <!-- </button> -->
   </div>
 </template>
 
@@ -83,7 +83,6 @@ export default {
     },
     switchImageRight() {
       if (this.currentImage.id === 0) {
-        z;
         this.currentImage = this.images[4];
       } else {
         this.currentImage = this.images[this.currentImage.id - 1];
@@ -111,8 +110,8 @@ export default {
   align-items: center;
 }
 .gallery-card {
-  width: 37%;
-  height: 25rem;
+  width: 50rem;
+  height: 35rem;
   background-color: #f44336;
   color: #010101;
   display: flex;
@@ -127,7 +126,7 @@ export default {
 }
 .gallery-description {
   margin-bottom: 20rem;
-  margin-right: 5rem;
+  margin-right: 7.5rem;
 }
 /* find way to center card and image */
 .gallery-button {
