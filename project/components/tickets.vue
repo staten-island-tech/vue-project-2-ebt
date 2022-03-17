@@ -13,7 +13,7 @@
 
         <div class="display2">
         <main class="roomdisplay">
-          <img src="arcade.jpg" alt="hotelo" class="img2">
+          <img src="face.jpg" alt="hotelo" class="img2">
         <section class="space1">
           <div>Nights: {{ active.nights }}</div>
           <div>Small: {{pricetag(active.priceSmall)}} </div>
@@ -92,8 +92,9 @@ export default {
 
 <style>
 .img2 {
-  width: 250px;
-  height: auto;
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
 }
 .title-text {
   font-size: var(--h1);
