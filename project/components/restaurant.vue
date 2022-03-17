@@ -1,8 +1,10 @@
 <template>
   <div class="none">
-    <h2 class="title-text">Cuisine</h2>
-    <h3 class="head-text">Freshly Imported. Fairest Prices. Highly Rated.</h3>
-    <main class="home">
+    <h2 class="section-title">Cuisine</h2>
+    <h3 class="section-subtitle">
+      Freshly Imported. Fairest Prices. Highly Rated.
+    </h3>
+    <main class="home margin-auto">
       <section class="display flex-parent">
         <Card
           v-for="food in food"
@@ -69,24 +71,12 @@ export default {
 </script>
 
 <style>
-.title-text {
-  font-size: var(--h1);
-  text-align: center;
-}
-.head-text {
-  font-size: var(--h3);
-  text-align: center;
-}
-
 .home {
-  display: flex;
   width: 95%;
-  margin: auto;
 }
 
 .display {
   width: 80%;
-  height: auto;
   margin: 1rem auto;
 }
 </style>

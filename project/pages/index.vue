@@ -72,7 +72,7 @@ body,
 }
 .section {
   text-align: center;
-  background-color: black;
+  background-color: var(--primary);
   color: var(--primaryText);
   border-radius: 30px;
   width: 90%;
@@ -83,5 +83,17 @@ body,
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
+}
+.margin-auto {
+  margin: auto;
+}
+.height-auto {
+  height: auto;
+}
+.section-title {
+  font-size: var(--h1);
+}
+.section-subtitle {
+  font-size: var(--h3);
 }
 </style>

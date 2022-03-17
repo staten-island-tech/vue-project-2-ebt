@@ -1,9 +1,9 @@
 <template>
   <div class="none">
-    <h2 class="title-text">Tickets</h2>
-    <h3 class="head-text">Order!</h3>
-    <main class="home">
-      <section class="display">
+    <h2 class="section-title">Tickets</h2>
+    <h3 class="section-subtitle">Order!</h3>
+    <main class="home margin-auto">
+      <section class="display flex-parent">
         <div class="display2">
           <button @click="switchRoom(0)" class="btn1">3 Nights</button>
           <button @click="switchRoom(1)" class="btn1">6 Nights</button>
@@ -11,8 +11,8 @@
         </div>
 
         <div class="display2">
-          <main class="roomdisplay">
-            <img src="arcade.jpg" alt="hotelo" class="img2" />
+          <main class="display flex-parent">
+            <img src="arcade.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1">
               <div>Nights: {{ active.nights }}</div>
               <div>Small: {{ pricetag(active.priceSmall) }}</div>
@@ -91,31 +91,10 @@ export default {
 <style>
 .img2 {
   width: 250px;
-  height: auto;
-}
-.title-text {
-  font-size: var(--h1);
-  text-align: center;
-}
-.head-text {
-  font-size: var(--h3);
-  text-align: center;
 }
 
-.home {
-  display: flex;
-  width: 95%;
-  margin: auto;
-}
-
-.display,
-.roomDisplay {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.display {
   width: 80%;
-  height: auto;
-  margin: 1rem auto;
 }
 
 .display2 {
@@ -123,13 +102,11 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   width: 40%;
-  height: auto;
   margin: 1rem auto;
 }
 
 .space1 {
   width: 100%;
-  height: auto;
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }

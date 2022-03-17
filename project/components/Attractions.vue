@@ -1,7 +1,7 @@
 <template>
-  <div class="attractions-home">
-    <h2 class="attractions-title">Attractions</h2>
-    <h3 class="attractions-header">
+  <div>
+    <h2 class="section-title">Attractions</h2>
+    <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
     </h3>
     <section class="flex-parent">
@@ -10,7 +10,7 @@
         v-for="attraction in attractions"
         :key="attraction.name"
       >
-        <h3 class="attractions-card-title">{{ attraction.name }}</h3>
+        <h3>{{ attraction.name }}</h3>
         <img
           class="attractions-image"
           v-bind:src="attraction.image"
@@ -57,27 +57,12 @@ export default {
 </script>
 
 <style>
-.attractions-title {
-  font-size: var(--h1);
-  text-align: center;
-}
-.attractions-header {
-  font-size: var(--h3);
-  text-align: center;
-}
-.attractions-home {
-  text-align: center;
-}
 .attractions-card {
   width: 30rem;
   background-color: #f44336;
   height: 30rem;
   margin: 5rem;
   color: var(--primary);
-  text-align: center;
-}
-.attractions-card-title {
-  font-size: var(--h3);
 }
 .attractions-image {
   width: 85%;

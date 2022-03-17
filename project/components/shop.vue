@@ -1,7 +1,7 @@
 <template>
   <div class="none">
-    <h2 class="title-text">Shop</h2>
-    <h3 class="head-text">Bring home a memory with you!</h3>
+    <h2 class="section-title">Shop</h2>
+    <h3 class="section-subtitle">Bring home a memory with you!</h3>
     <main class="home">
       <section class="display flex-parent">
         <Card
@@ -69,24 +69,12 @@ export default {
 </script>
 
 <style>
-.title-text {
-  font-size: var(--h1);
-  text-align: center;
-}
-.head-text {
-  font-size: var(--h3);
-  text-align: center;
-}
-
 .home {
-  display: flex;
   width: 95%;
-  margin: auto;
 }
 
 .display {
   width: 80%;
-  height: auto;
   margin: 1rem auto;
 }
 </style>

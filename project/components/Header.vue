@@ -4,9 +4,9 @@
       <h1 class="header-topline-text">HOTEL²</h1>
     </div>
     <div class="bar"></div>
-    <div class="header-bottomline">
+    <div class="header-bottomline flex-parent">
       <h4
-        class="link"
+        class="link margin-auto"
         v-for="link in links"
         :key="link.label"
         @click="send(link.ref)"
@@ -65,7 +65,7 @@ export default {
   text-align: center;
 }
 .link {
-  margin: auto;
+  text-transform: uppercase;
 }
 .header-topline {
   top: 0;
@@ -82,8 +82,6 @@ export default {
   top: 57.5px;
   height: 30px;
   font-size: 7.5px;
-  display: flex;
-  justify-content: space-around;
 }
 .bar {
   width: 100%;
