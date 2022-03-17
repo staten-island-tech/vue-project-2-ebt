@@ -4,8 +4,20 @@
     <h2 class="gallery-header">Famous people ye</h2>
     <div class="gallery-parent">
       <div class="gallery-card">
-        <button class="gallery-button" @click="switchImageLeft()"><--</button>
-        <button class="gallery-button" @click="switchImageRight()">--></button>
+        <button
+          class="gallery-button"
+          id="left-button"
+          @click="switchImageLeft()"
+        >
+          <--
+        </button>
+        <button
+          class="gallery-button"
+          id="right-button"
+          @click="switchImageRight()"
+        >
+          -->
+        </button>
         <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
@@ -110,6 +122,7 @@ export default {
   align-items: center;
 }
 .gallery-card {
+  position: relative;
   width: 50rem;
   height: 35rem;
   background-color: #f44336;
@@ -126,11 +139,22 @@ export default {
 }
 .gallery-description {
   margin-bottom: 20rem;
+  margin-left: 3.5rem;
   margin-right: 7.5rem;
 }
 /* find way to center card and image */
 .gallery-button {
+  position: absolute;
+  top: 0.5%;
   color: red;
+  opacity: 50%;
+  font-size: 1.5rem;
+}
+#left-button {
+  left: 35%;
+}
+#right-button {
+  right: 35%;
 }
 #desc-title {
   font-size: 3rem;
