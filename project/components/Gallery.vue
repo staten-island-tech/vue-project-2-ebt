@@ -54,7 +54,7 @@ export default {
         },
         {
           name: "2",
-          url: "/statue.jpg",
+          url: "/pizza.jpg",
           alt: "stuff",
           description: "description 2",
           id: 1,
@@ -68,14 +68,14 @@ export default {
         },
         {
           name: "4",
-          url: "/statue.jpg",
+          url: "/terichick.jpg",
           alt: "stuff",
           description: "description 4",
           id: 3,
         },
         {
           name: "5",
-          url: "/statue.jpg",
+          url: "/kebabs.jpg",
           alt: "stuff",
           description: "description 5",
           id: 4,
@@ -86,14 +86,14 @@ export default {
   },
   mounted() {},
   methods: {
-    switchImageLeft() {
+    switchImageRight() {
       if (this.currentImage.id === 4) {
         this.currentImage = this.images[0];
       } else {
         this.currentImage = this.images[this.currentImage.id + 1];
       }
     },
-    switchImageRight() {
+    switchImageLeft() {
       if (this.currentImage.id === 0) {
         this.currentImage = this.images[4];
       } else {
