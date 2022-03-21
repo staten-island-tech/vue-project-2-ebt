@@ -9,21 +9,21 @@
           id="left-button"
           @click="switchImageLeft()"
         >
-          <--
+          <-----
         </button>
         <button
           class="gallery-button"
           id="right-button"
           @click="switchImageRight()"
         >
-          -->
+          ----->
         </button>
         <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
       <div class="gallery-description">
         <h2 id="desc-title">Description:</h2>
-        {{ currentImage.description }}
+        <p id="desc-text">{{ currentImage.description }}</p>
       </div>
     </div>
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
@@ -117,7 +117,7 @@ export default {
 .gallery-parent {
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   text-align: center;
   align-items: center;
 }
@@ -131,7 +131,8 @@ export default {
   justify-content: space-around;
   text-align: center;
   align-items: center;
-  margin: 2rem;
+  margin: 5rem;
+  margin-right: 20rem;
 }
 .gallery-img {
   width: 90%;
@@ -139,8 +140,7 @@ export default {
 }
 .gallery-description {
   margin-bottom: 20rem;
-  margin-left: 3.5rem;
-  margin-right: 7.5rem;
+  margin-right: 15rem;
 }
 /* find way to center card and image */
 .gallery-button {
@@ -158,5 +158,8 @@ export default {
 }
 #desc-title {
   font-size: 3rem;
+}
+#desc-text {
+  font-size: 2rem;
 }
 </style>
