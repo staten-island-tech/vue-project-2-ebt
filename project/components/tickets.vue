@@ -92,8 +92,8 @@ export default {
 
 <style>
 .img2 {
-  width: 300px;
-  height: 250px;
+  width: 290px;
+  height: 240px;
   object-fit: cover;
 }
 .title-text {
