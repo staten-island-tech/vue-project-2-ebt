@@ -1,5 +1,5 @@
 <template>
-  <div class="footer">
+  <div class="footer w100">
     <h2>israel</h2>
   </div>
 </template>
@@ -10,7 +10,6 @@
   position: absolute;
   color: var(--primaryText);
   background-color: var(--primary);
-  width: 100%;
   left: 0;
   text-align: center;
 }
