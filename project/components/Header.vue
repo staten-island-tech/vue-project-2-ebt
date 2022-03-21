@@ -1,10 +1,10 @@
 <template>
-  <div class="header">
-    <div class="header-topline">
+  <div class="header w100">
+    <div class="header-topline w100">
       <h1 class="header-topline-text">HOTEL²</h1>
     </div>
-    <div class="bar"></div>
-    <div class="header-bottomline flex-parent">
+    <div class="bar w100"></div>
+    <div class="header-bottomline w100 flex-parent">
       <h4
         class="link margin-auto"
         v-for="link in links"
@@ -60,7 +60,6 @@ export default {
   top: 0;
   position: fixed;
   color: var(--primaryText);
-  width: 100%;
   left: 0;
   text-align: center;
 }
@@ -69,7 +68,6 @@ export default {
 }
 .header-topline {
   top: 0;
-  width: 100%;
   position: fixed;
   height: 60px;
   margin-top: 0px;
@@ -78,13 +76,11 @@ export default {
 .header-bottomline {
   position: fixed;
   background-color: var(--primary);
-  width: 100%;
   top: 57.5px;
   height: 30px;
   font-size: 7.5px;
 }
 .bar {
-  width: 100%;
   top: 50px;
   position: fixed;
   background-color: white;

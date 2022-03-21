@@ -71,10 +71,6 @@ export default {
 </script>
 
 <style>
-.home {
-  width: 95%;
-}
-
 .display {
   width: 80%;
   margin: 1rem auto;

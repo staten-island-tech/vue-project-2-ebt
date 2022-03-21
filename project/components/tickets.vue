@@ -13,7 +13,7 @@
         <div class="display2">
           <main class="display flex-parent">
             <img src="arcade.jpg" alt="hotelo" class="img2 height-auto" />
-            <section class="space1">
+            <section class="space1 w100">
               <div>Nights: {{ active.nights }}</div>
               <div>Small: {{ pricetag(active.priceSmall) }}</div>
               <div>Medium: {{ pricetag(active.priceMedium) }}</div>
@@ -106,7 +106,6 @@ export default {
 }
 
 .space1 {
-  width: 100%;
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }

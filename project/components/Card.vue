@@ -1,7 +1,7 @@
 <template>
   <div class="card">
     <h3 class="title section-subtitle">{{ title }}</h3>
-    <img class="img1 margin-auto" :src="image" alt="" />
+    <img class="img-card margin-auto w90" :src="image" alt="" />
     <h4 class="pricetag">{{ desc }}</h4>
   </div>
 </template>
@@ -24,8 +24,7 @@ export default {
   margin: 2rem auto;
 }
 
-.img1 {
-  width: 90%;
+.img-card {
   display: block;
 }
 
