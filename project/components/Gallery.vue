@@ -1,7 +1,7 @@
 <template>
   <div class="gallery-home">
     <h1 class="gallery-title">Gallery</h1>
-    <h2 class="gallery-header">Famous people ye</h2>
+    <h2 class="gallery-header">See our famous visitors!</h2>
     <div class="gallery-parent">
       <div class="gallery-card">
         <button
@@ -9,14 +9,14 @@
           id="left-button"
           @click="switchImageLeft()"
         >
-          <-----
+          ⬅
         </button>
         <button
           class="gallery-button"
           id="right-button"
           @click="switchImageRight()"
         >
-          ----->
+          ➡
         </button>
         <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
@@ -151,10 +151,10 @@ export default {
   font-size: 1.5rem;
 }
 #left-button {
-  left: 35%;
+  left: 40%;
 }
 #right-button {
-  right: 35%;
+  right: 40%;
 }
 #desc-title {
   font-size: 3rem;
