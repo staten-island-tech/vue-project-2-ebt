@@ -1,11 +1,11 @@
 <template>
 <div>
     <h2 class="title-text">Reviews</h2>
-    <main>
+    <main class="reviews">
         <h2 class="head-text">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
-        <div class="display">
-            <img class="img2" src="reviewer2.jpg" alt="review1">
-              <p class="text-size"> "This is my favorite place to stay in after a day of hard work."</p>
+          <div class="display">
+            <img class="img2" src="reviewer5.jpg" alt="review1">
+              <p class="text-size"> "This hotel wouldn't exist without me. This hotel is awesome because of me!"</p>
         </div>
         <div class="display">
             <img class="img2" src="reviewer3.jpg" alt="review1">
@@ -13,9 +13,17 @@
         </div>
         <div class="display">
             <img class="img2" src="reviewer1.jpg" alt="review1">
-            <p class="text-size"> "I visted this hotel with my wife and we had plenty of lovely memories here. I love this hotel. It was a good place to relax after a busy day."</p>
+            <p class="text-size"> "I visited this hotel with my wife and we had plenty of lovely memories here. I love this hotel. It is a good place to relax after a busy day."</p>
         </div>
-        <h2 class="text-size underline display">READ MORE</h2>
+        <div class="display">
+            <img class="img2" src="reviewer4.jpg" alt="review1">
+            <p class="text-size"> "Safe hotel. No criminals."</p>
+        </div>
+                <div class="display">
+            <img class="img2" src="reviewer2.jpg" alt="review1">
+              <p class="text-size"> "This is my favorite place to stay in after a day of hard work."</p>
+        </div>
+      <a class="text-size display" href="https://mikewhalen.tech/">READ MORE REVIEWS</a>
     </main>
         
 </div>
@@ -63,8 +71,13 @@ export default {
 .text-size {
   font-size: 2.5rem;
   width: 50%;
+  margin: auto;
+  color: #ffffff;
 }
-.underline {
-text-decoration: underline;
+
+.reviews {
+  overflow: auto;
+  width: 100%;
+  height: 500px;
 }
 </style>
