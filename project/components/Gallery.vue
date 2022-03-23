@@ -1,7 +1,7 @@
 <template>
   <div class="gallery-home">
-    <h2 class="gallery-title">Gallery</h2>
-    <h3 class="gallery-header">Famous people ye</h3>
+    <h2 class="section-title">Gallery</h2>
+    <h3 class="section-subtitle">Famous people ye</h3>
     <div class="gallery-card">
       <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
     </div>
@@ -91,21 +91,11 @@ export default {
 </script>
 
 <style>
-.gallery-home {
-  text-align: center;
-}
-.gallery-title {
-  font-size: var(--h1);
-}
-.gallery-header {
-  font-size: var(--h3);
-}
 .gallery-card {
   width: 100%;
   background-color: #f44336;
   height: 70rem;
   color: var(--primary);
-  text-align: center;
 }
 .gallery-img {
   width: 85%;
