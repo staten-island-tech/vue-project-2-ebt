@@ -37,10 +37,11 @@ export default {
   data() {
     return {
       currentImage: {
-        name: "Blob",
+        name: "1",
         url: "/statue.jpg",
         alt: "stuff",
-        description: "Nrfhedhnmdrugebng",
+        description:
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
         id: 0,
       },
       //get images lol
@@ -49,7 +50,8 @@ export default {
           name: "1",
           url: "/statue.jpg",
           alt: "stuff",
-          description: "description 1",
+          description:
+            "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
           id: 0,
         },
         {
@@ -123,7 +125,7 @@ export default {
 }
 .gallery-card {
   position: relative;
-  width: 50rem;
+  width: 70rem;
   height: 35rem;
   background-color: #f44336;
   color: #010101;
@@ -132,17 +134,18 @@ export default {
   text-align: center;
   align-items: center;
   margin: 5rem;
-  margin-right: 20rem;
+  margin-right: 5rem;
 }
 .gallery-img {
   width: 90%;
   height: auto;
 }
 .gallery-description {
-  margin-bottom: 20rem;
-  margin-right: 15rem;
+  width: 50%;
+  margin-bottom: 5rem;
+  margin-right: 10rem;
 }
-/* find way to center card and image */
+/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
   position: absolute;
   top: 0.5%;
