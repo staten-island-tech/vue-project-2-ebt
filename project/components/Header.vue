@@ -1,25 +1,24 @@
 <template>
-  <div class="header">
-    <div class="header-topline">
-      <h1>EBT HOTEL</h1>
+  <div class="header w100">
+    <div class="header-topline w100">
+      <h1 class="header-topline-text">HOTEL²</h1>
     </div>
-    <div class="bar"></div>
-    <div class="header-bottomline">
-      <h2
-        class="link"
+    <div class="bar w100"></div>
+    <div class="header-bottomline w100 flex-parent">
+      <h4
+        class="link margin-auto"
         v-for="link in links"
         :key="link.label"
         @click="send(link.ref)"
       >
         {{ link.label }}
-      </h2>
+      </h4>
     </div>
   </div>
 </template>
 
 <script>
 import gsap from "gsap";
-import indexVue from "../pages/index.vue";
 export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });
@@ -52,36 +51,36 @@ export default {
 
 <style scoped>
 .link:hover {
-  background-color: gray;
+  background-color: var(--secondary);
+}
+.header-topline-text {
+  margin-top: 5px;
 }
 .header {
   top: 0;
   position: fixed;
   color: var(--primaryText);
-  width: 100%;
   left: 0;
   text-align: center;
 }
+.link {
+  text-transform: uppercase;
+}
 .header-topline {
-  top: 0px;
-  width: 100%;
+  top: 0;
   position: fixed;
   height: 60px;
-  margin-top: -10px;
+  margin-top: 0px;
   background-color: var(--primary);
 }
 .header-bottomline {
   position: fixed;
   background-color: var(--primary);
-  width: 100%;
   top: 57.5px;
   height: 30px;
   font-size: 7.5px;
-  display: flex;
-  justify-content: space-around;
 }
 .bar {
-  width: 100%;
   top: 50px;
   position: fixed;
   background-color: white;

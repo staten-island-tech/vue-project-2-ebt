@@ -1,9 +1,9 @@
 <template>
   <div class="none">
-    <h1 class="title-text">Shop</h1>
-    <h2 class="head-text">Bring home a memory with you!</h2>
+    <h2 class="section-title">Shop</h2>
+    <h3 class="section-subtitle">Bring home a memory with you!</h3>
     <main class="home">
-      <section class="display">
+      <section class="display flex-parent">
         <Card
           v-for="goods in goods"
           :key="goods.name"
@@ -69,27 +69,12 @@ export default {
 </script>
 
 <style>
-.title-text {
-  font-size: 4rem;
-  text-align: center;
-}
-.head-text {
-  font-size: 2rem;
-  text-align: center;
-}
-
 .home {
-  display: flex;
   width: 95%;
-  margin: auto;
 }
 
 .display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
   width: 80%;
-  height: auto;
   margin: 1rem auto;
 }
 </style>

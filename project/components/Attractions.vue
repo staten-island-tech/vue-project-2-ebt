@@ -1,22 +1,22 @@
 <template>
-  <div class="attractions-home">
-    <h1 class="attractions-title">Attractions</h1>
-    <h2 class="attractions-header">
+  <div>
+    <h2 class="section-title">Attractions</h2>
+    <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
-    </h2>
-    <section class="display">
+    </h3>
+    <section class="flex-parent">
       <div
         class="attractions-card"
         v-for="attraction in attractions"
         :key="attraction.name"
       >
-        <h2 class="attractions-card-title">{{ attraction.name }}</h2>
+        <h3>{{ attraction.name }}</h3>
         <img
-          class="attractions-image"
+          class="w90"
           v-bind:src="attraction.image"
           v-bind:alt="attraction.alt"
         />
-        <h3 class="attractions-description">{{ attraction.description }}</h3>
+        <h4 class="attractions-description">{{ attraction.description }}</h4>
       </div>
     </section>
   </div>
@@ -57,34 +57,11 @@ export default {
 </script>
 
 <style>
-.attractions-title {
-  font-size: 4rem;
-  text-align: center;
-}
-.attractions-header {
-  font-size: 2rem;
-  text-align: center;
-}
-.attractions-home {
-  text-align: center;
-}
-.display {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
 .attractions-card {
   width: 30rem;
   background-color: #f44336;
   height: 30rem;
   margin: 5rem;
-  color: #010101;
-  text-align: center;
-}
-.attractions-card-title {
-  font-size: 2rem;
-}
-.attractions-image {
-  width: 85%;
+  color: var(--primary);
 }
 </style>

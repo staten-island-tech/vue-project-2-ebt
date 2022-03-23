@@ -1,6 +1,6 @@
 <template>
-  <div class="footer">
-    <h2>I am not legally responsible for any stupid things you do here</h2>
+  <div class="footer w100">
+    <h2>israel</h2>
   </div>
 </template>
 
@@ -10,7 +10,6 @@
   position: absolute;
   color: var(--primaryText);
   background-color: var(--primary);
-  width: 100%;
   left: 0;
   text-align: center;
 }

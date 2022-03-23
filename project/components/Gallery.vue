@@ -25,6 +25,7 @@
         <h2 id="desc-title">Description:</h2>
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
+
     </div>
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
     <button class="gallery-button" @click="switchImageRight()">-->
@@ -135,6 +136,7 @@ export default {
   align-items: center;
   margin: 5rem;
   margin-right: 5rem;
+
 }
 .gallery-img {
   width: 90%;

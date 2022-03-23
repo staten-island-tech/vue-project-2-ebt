@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <h2 class="title">{{ title }}</h2>
-    <img class="img1" :src="image" alt="" />
-    <h3 class="pricetag">{{ desc }}</h3>
+    <h3 class="title section-subtitle">{{ title }}</h3>
+    <img class="img-card margin-auto w90" :src="image" alt="" />
+    <h4 class="pricetag">{{ desc }}</h4>
   </div>
 </template>
 
@@ -21,29 +21,20 @@ export default {
 .card {
   width: 30%;
   background-color: #42b983;
-  height: auto;
   margin: 2rem auto;
 }
 
-.img1 {
-  width: 90%;
-  height: auto;
+.img-card {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .title {
   color: #212121;
-  font-size: 2rem;
   box-sizing: border-box;
-  margin: auto;
-  text-align: center;
 }
 .pricetag {
   color: #212121;
   font-size: 1.5rem;
   margin: 1rem auto;
-  text-align: center;
 }
 </style>
