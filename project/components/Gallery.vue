@@ -25,7 +25,6 @@
         <h2 id="desc-title">Description:</h2>
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-
     </div>
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
     <button class="gallery-button" @click="switchImageRight()">-->
@@ -127,7 +126,6 @@ export default {
 .gallery-card {
   position: relative;
   width: 70rem;
-  height: 35rem;
   background-color: #f44336;
   color: #010101;
   display: flex;
@@ -136,11 +134,11 @@ export default {
   align-items: center;
   margin: 5rem;
   margin-right: 5rem;
-
 }
 .gallery-img {
   width: 90%;
   height: auto;
+  margin: 5rem;
 }
 .gallery-description {
   width: 50%;
@@ -153,7 +151,7 @@ export default {
   top: 0.5%;
   color: red;
   opacity: 50%;
-  font-size: 1.5rem;
+  font-size: 3rem;
 }
 #left-button {
   left: 40%;
