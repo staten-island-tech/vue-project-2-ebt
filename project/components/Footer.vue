@@ -1,28 +1,45 @@
 <template>
   <div class="footer w100">
     <div class="footer-inner flex-parent margin-auto w90">
-      <a href="https://www.discord.com" class="footer-btn">
+      <a href="https://www.discord.com" class="footer-btn" target="_blank">
         <img src="/icons/discord.png" alt="discord" class="footer-img" />
       </a>
-      <a href="https://www.facebook.com/zuck" class="footer-btn">
+      <a
+        href="https://www.facebook.com/zuck"
+        class="footer-btn"
+        target="_blank"
+      >
         <img src="/icons/fb.png" alt="facebook" class="footer-img" />
       </a>
-      <a href="https://www.instagram.com/officialpeppa/?" class="footer-btn">
+      <a
+        href="https://www.instagram.com/officialpeppa/?"
+        class="footer-btn"
+        target="_blank"
+      >
         <img src="/icons/insta.png" alt="instagram" class="footer-img" />
       </a>
       <a
         href="https://www.linkedin.com/company/mrbeastyoutube/"
         class="footer-btn"
+        target="_blank"
       >
         <img src="/icons/linkedin.png" alt="linkedin" class="footer-img" />
       </a>
-      <a href="https://www.reddit.com" class="footer-btn">
+      <a href="https://www.reddit.com" class="footer-btn" target="_blank">
         <img src="/icons/reddit.png" alt="reddit" class="footer-img" />
       </a>
-      <a href="https://www.twitter.com/POTUS?" class="footer-btn">
+      <a
+        href="https://www.twitter.com/POTUS?"
+        class="footer-btn"
+        target="_blank"
+      >
         <img src="/icons/twitter.png" alt="twitter" class="footer-img" />
       </a>
-      <a href="https://www.youtube.com/watch?v=b_DcQHbJIfE" class="footer-btn">
+      <a
+        href="https://www.youtube.com/watch?v=b_DcQHbJIfE"
+        class="footer-btn"
+        target="_blank"
+      >
         <img src="/icons/yt.png" alt="youtube" class="footer-img" />
       </a>
     </div>
