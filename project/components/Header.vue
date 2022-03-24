@@ -62,6 +62,7 @@ export default {
   color: var(--primaryText);
   left: 0;
   text-align: center;
+  z-index: 5;
 }
 .link {
   text-transform: uppercase;
