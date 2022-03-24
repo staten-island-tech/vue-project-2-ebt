@@ -126,7 +126,7 @@ export default {
 .gallery-card {
   position: relative;
   width: 70rem;
-  background-color: #f44336;
+  background-color: #ff5000;
   color: #010101;
   display: flex;
   justify-content: space-around;
