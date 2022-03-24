@@ -1,33 +1,45 @@
 <template>
-<div>
+  <div>
     <h2 class="title-text">Reviews</h2>
     <main class="reviews">
-        <h2 class="head-text">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
-          <div class="review-card">
-            <img class="img2" src="reviewer5.jpg" alt="review1">
-              <p class="text-size"> "This hotel wouldn't exist without me. This hotel is awesome because of me!"</p>
-        </div>
-        <div class="review-card">
-            <img class="img2" src="reviewer3.jpg" alt="review1">
-            <p class="text-size"> "I am planning to announce a collaboration with this hotel because this hotel is so successful and will be beneficial to my business."</p>
-        </div>
-        <div class="review-card">
-            <img class="img2" src="reviewer1.jpg" alt="review1">
-            <p class="text-size"> "I visited this hotel with my wife and we had plenty of lovely memories here. I love this hotel. It is a good place to relax after a busy day."</p>
-        </div>
-        <div class="review-card">
-            <img class="img2" src="reviewer4.jpg" alt="review1">
-            <p class="text-size"> "Safe hotel. No criminals."</p>
-        </div>
-                <div class="review-card">
-            <img class="img2" src="reviewer2.jpg" alt="review1">
-              <p class="text-size"> "This is my favorite place to stay in after a day of hard work."</p>
-        </div>
-      <a class="text-size display" href="https://mikewhalen.tech/">READ MORE REVIEWS</a>
+      <h2 class="head-text">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
+      <div class="review-card">
+        <img class="img2" src="reviewer5.jpg" alt="review1" />
+        <p class="text-size">
+          "This hotel wouldn't exist without me. This hotel is awesome because
+          of me!"
+        </p>
+      </div>
+      <div class="review-card">
+        <img class="img2" src="reviewer3.jpg" alt="review1" />
+        <p class="text-size">
+          "I am planning to announce a collaboration with this hotel because
+          this hotel is so successful and will be beneficial to my business."
+        </p>
+      </div>
+      <div class="review-card">
+        <img class="img2" src="reviewer1.jpg" alt="review1" />
+        <p class="text-size">
+          "I visited this hotel with my wife and we had plenty of lovely
+          memories here. I love this hotel. It is a good place to relax after a
+          busy day."
+        </p>
+      </div>
+      <div class="review-card">
+        <img class="img2" src="reviewer4.jpg" alt="review1" />
+        <p class="text-size">"Safe hotel. No criminals."</p>
+      </div>
+      <div class="review-card">
+        <img class="img2" src="reviewer2.jpg" alt="review1" />
+        <p class="text-size">
+          "This is my favorite place to stay in after a day of hard work."
+        </p>
+      </div>
+      <a class="text-size display" href="https://mikewhalen.tech/"
+        >READ MORE REVIEWS</a
+      >
     </main>
-        
-</div>
-
+  </div>
 </template>
 
 <script>
@@ -37,11 +49,9 @@ export default {
   name: "Home",
 
   data() {
-    return {
-    };
+    return {};
   },
-  methods: {
-  },
+  methods: {},
 };
 </script>
 
@@ -88,11 +98,9 @@ export default {
 
 .reviews {
   overflow: auto;
-  overflow-x:hidden;
+  overflow-x: hidden;
   width: 100%;
   height: 500px;
-}
-::-webkit-scrollbar {
-    display:none;
+  scrollbar-width: none;
 }
 </style>
