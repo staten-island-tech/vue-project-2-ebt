@@ -1,29 +1,28 @@
 <template>
   <div class="none">
-    <h2 class="title-text">Tickets</h2>
-    <h3 class="head-text">Order!</h3>
-    <main class="home">
-      <section class="display">
+    <h2 class="section-title">Tickets</h2>
+    <h3 class="section-subtitle">Order!</h3>
+    <main class="home margin-auto">
+      <section class="display flex-parent">
         <div class="display2">
-
-        <button @click="switchRoom(0)" class="btn1">3 Nights</button>
-        <button @click="switchRoom(1)" class="btn1">6 Nights</button>
-        <button @click="switchRoom(2)" class="btn1">12 Nights</button>
+          <button @click="switchRoom(0)" class="btn1">3 Nights</button>
+          <button @click="switchRoom(1)" class="btn1">6 Nights</button>
+          <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
         <div class="display2">
-        <main class="roomdisplay">
-          <img src="arcade.jpg" alt="hotelo" class="img2">
-        <section class="space1">
-          <div>Nights: {{ active.nights }}</div>
-          <div>Small: {{pricetag(active.priceSmall)}} </div>
-          <div>Medium: {{pricetag(active.priceMedium)}}</div>
-          <div>Large: {{pricetag(active.priceLarge)}}</div>  
-        </section>
-        </main>
 
+          <main class="display flex-parent">
+            <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
+            <section class="space1 w100">
+              <div>Nights: {{ active.nights }}</div>
+              <div>Small: {{ pricetag(active.priceSmall) }}</div>
+              <div>Medium: {{ pricetag(active.priceMedium) }}</div>
+              <div>Large: {{ pricetag(active.priceLarge) }}</div>
+            </section>
+          </main>
 
-<!--         <main v-if="active" class="roomdisplay">
+          <!--         <main v-if="active" class="roomdisplay">
           <img src="arcade.jpg" alt="hotelo" class="img2">
         <section class="space1" v-for="items in order" :key="items.nights">
           <div>Nights: {{ items.nights }}</div>
@@ -32,8 +31,8 @@
           <div>Large: {{pricetag(items.priceLarge)}}</div>  
         </section>
         </main> -->
-        <button class="checkout-btn">More options</button>
-      </div>
+          <button class="checkout-btn">More options</button>
+        </div>
       </section>
     </main>
   </div>
@@ -71,11 +70,11 @@ export default {
       ],
 
       active: {
-          nights: 0,
-          priceSmall: 0, 
-          priceMedium: 0, 
-          priceLarge: 0, 
-        },
+        nights: 0,
+        priceSmall: 0,
+        priceMedium: 0,
+        priceLarge: 0,
+      },
     };
   },
   methods: {
@@ -92,8 +91,9 @@ export default {
 
 <style>
 .img2 {
-  width: 250px;
-  height: auto;
+  width: 290px;
+  height: 240px;
+  object-fit: cover;
 }
 .title-text {
   font-size: var(--h1);
@@ -110,14 +110,8 @@ export default {
   margin: auto;
 }
 
-.display,
-.roomDisplay {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
+.display {
   width: 80%;
-  height: auto;
-  margin: 1rem auto;
 }
 
 .display2 {
@@ -125,13 +119,10 @@ export default {
   flex-direction: column;
   justify-content: space-evenly;
   width: 40%;
-  height: auto;
   margin: 1rem auto;
 }
 
 .space1 {
-  width: 100%;
-  height: auto;
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }
