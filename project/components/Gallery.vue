@@ -1,7 +1,7 @@
 <template>
   <div class="gallery-home">
-    <h1 class="gallery-title">Gallery</h1>
-    <h2 class="gallery-header">See our famous visitors!</h2>
+    <h1 class="section-title">Gallery</h1>
+    <h2 class="section-subtitle">See our famous visitors!</h2>
     <div class="gallery-parent">
       <div class="gallery-card">
         <button

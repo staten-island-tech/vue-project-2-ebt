@@ -1,7 +1,7 @@
 <template>
   <div>
-    <h2 class="attractions-title">Attractions</h2>
-    <h3 class="attractions-subtitle">
+    <h2 class="section-title">Attractions</h2>
+    <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
     </h3>
     <section class="flex-parent">
@@ -18,6 +18,7 @@
         />
         <h4 class="attractions-description">{{ attraction.description }}</h4>
       </div>
+      <!--    <h3>and more </h3>  try to do more here-->
     </section>
   </div>
 </template>
@@ -64,9 +65,7 @@ export default {
   margin: 5rem;
   color: var(--primary);
 }
-.attractions-title {
-  font-size: 4rem;
-}
-.attractions-subtitle {
+.attractions-description {
+  font-size: 1.5rem;
 }
 </style>
