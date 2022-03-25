@@ -9,6 +9,7 @@
     <div ref="attractions"><Attractions class="section" /></div>
     <div ref="gallery"><Gallery class="section" /></div>
     <div ref="reviews"><Reviews class="section" /></div>
+    <div ref="contact"><Contact class="section" /></div>
     <Footer class="footer" />
   </div>
 </template>
@@ -66,6 +67,10 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+body{
+    background-color: #191817;
+}
+
 #page {
   margin: 0;
   padding: 0;
