@@ -86,7 +86,6 @@ export default {
     };
     //need to v-bind images, look at whatever
   },
-  mounted() {},
   methods: {
     switchImageRight() {
       if (this.currentImage.id === 4) {

@@ -20,12 +20,14 @@ export default {
 <style>
 .card {
   width: 30%;
-  background-color: #42b983;
+  background-color: var(--secondary);
   margin: 2rem auto;
+  border-radius: 1.5rem;
 }
 
 .img-card {
   display: block;
+  border-radius: 1.5rem;
 }
 
 .title {
