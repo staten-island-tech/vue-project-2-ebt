@@ -5,7 +5,7 @@
     <div class="home flex-parent"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
-    <div ref="shop"><Shop class="section" /></div>
+    <div ref="shop" id="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
     <div ref="gallery"><Gallery class="section" /></div>
@@ -15,9 +15,22 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
 export default {
-  mounted() {},
+  mounted() {
+    const sections = gsap.utils.toArray(".section");
+    sections.forEach((section) => {
+      const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
+      tlScroll.from(section, {
+        y: 100,
+        opacity: 0,
+        duration: 1,
+        ease: "ease-out",
+      });
+    });
+  },
   data() {},
   name: "IndexPage",
   methods: {
