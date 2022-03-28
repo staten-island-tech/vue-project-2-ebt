@@ -15,7 +15,9 @@
 <script>
 import gsap from "gsap";
 export default {
-  mounted() {},
+  mounted() {
+    // try to make an animation for gallery/attractions
+  },
   data() {},
   name: "IndexPage",
   methods: {
