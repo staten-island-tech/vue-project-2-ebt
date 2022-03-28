@@ -27,34 +27,34 @@ export default {
     return {
       goods: [
         {
-          name: "EBT Hoodie",
+          name: "Squared Hoodie",
           price: 14.99,
           img: "/steak.jpg",
         },
         {
-          name: "EBT Tee",
+          name: "Squared Tee",
           price: 4.99,
           img: "/pizza.jpg",
         },
         {
-          name: "EBT Umbrella",
+          name: "Squared Umbrella",
           price: 7.99,
           img: "/pie.jpg",
         },
         {
-          name: "EBT Cards",
+          name: "Squared Cards",
           price: 14.99,
           img: "/ramen.jpg",
         },
         {
-          name: "EBT Stuffie",
+          name: "Squared Stuffie",
           price: 8.99,
           img: "/kebabs.jpg",
         },
         {
-          name: "EBT Replica",
+          name: "Tesseract",
           price: 13.99,
-          img: "/terichick.jpg",
+          img: "/tesseract.jpg",
         },
       ],
     };

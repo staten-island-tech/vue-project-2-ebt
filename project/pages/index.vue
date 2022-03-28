@@ -35,7 +35,7 @@ export default {
 </script>
 <style>
 :root {
-  --primary: black;
+  --primary: #191817;
   --secondary: gray;
   --primaryText: white;
 
@@ -68,7 +68,7 @@ body,
   box-sizing: border-box;
 }
 body{
-    background-color: #191817;
+    background-color: white;
 }
 
 #page {

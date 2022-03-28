@@ -29,7 +29,7 @@ export default {
     return {
       food: [
         {
-          name: "EBT Steak",
+          name: "Squared Steak",
           price: 14.99,
           img: "/steak.jpg",
         },
