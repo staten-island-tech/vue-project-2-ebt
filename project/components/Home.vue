@@ -1,6 +1,7 @@
 <template>
   <div>
     <h2 class="welcome">WELCOME</h2>
+    <h3 class="welcome-sub">to Hotel²</h3>
   </div>
 </template>
 
@@ -13,5 +14,10 @@ export default {};
   color: var(--primaryText);
   background-color: var(--primary);
   padding: 1rem;
+}
+.welcome-sub {
+  color: var(--primaryText);
+  background-color: var(--primary);
+  text-align: center;
 }
 </style>
