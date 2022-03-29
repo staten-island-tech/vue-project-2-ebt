@@ -12,7 +12,7 @@
       >
         <h3>{{ attraction.name }}</h3>
         <img
-          class="w90"
+          class="attractions-img"
           v-bind:src="attraction.image"
           v-bind:alt="attraction.alt"
         />
@@ -83,6 +83,10 @@ export default {
   height: 30rem;
   margin: 5rem;
   color: var(--primary);
+}
+.attractions-img {
+  width: 90%;
+  max-height: 18rem;
 }
 .attractions-description {
   font-size: 1.5rem;
