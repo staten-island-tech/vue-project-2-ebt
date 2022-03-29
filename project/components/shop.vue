@@ -12,7 +12,7 @@
           :desc="pricetag(goods.price)"
         >
         </Card>
-      </section>
+      </section> 
     </main>
   </div>
 </template>
@@ -29,7 +29,7 @@ export default {
         {
           name: "Squared Hoodie",
           price: 14.99,
-          img: "/steak.jpg",
+          img: "/hoodie.jpg",
         },
         {
           name: "Squared Tee",
@@ -44,7 +44,7 @@ export default {
         {
           name: "Squared Cards",
           price: 14.99,
-          img: "/ramen.jpg",
+          img: "/poker.jpg",
         },
         {
           name: "Squared Stuffie",
@@ -52,7 +52,7 @@ export default {
           img: "/kebabs.jpg",
         },
         {
-          name: "Tesseract",
+          name: "Squared Tesseract",
           price: 13.99,
           img: "/tesseract.jpg",
         },
