@@ -86,7 +86,8 @@ export default {
 }
 .attractions-img {
   width: 90%;
-  max-height: 18rem;
+  height: 20rem;
+  object-fit: cover;
 }
 .attractions-description {
   font-size: 1.5rem;
