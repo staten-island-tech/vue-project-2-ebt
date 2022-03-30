@@ -27,8 +27,8 @@ export default {
 .img-card {
   display: block;
   width: 100%;
-  height: 23rem;
-  object-fit: cover;
+  height: 24rem;
+  object-fit: fill;
 }
 
 .title {

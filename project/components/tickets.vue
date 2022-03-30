@@ -2,7 +2,7 @@
   <div class="none">
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
-    <main class="home margin-auto">
+    <main class="home1 margin-auto">
       <section class="display flex-parent">
         <div class="display2">
           <button @click="switchRoom(0)" class="btn1">3 Nights</button>
@@ -104,7 +104,7 @@ export default {
   text-align: center;
 }
 
-.home {
+.home1 {
   display: flex;
   width: 95%;
   margin: auto;

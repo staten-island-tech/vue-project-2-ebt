@@ -17,7 +17,10 @@
         </h3>
       </div>
       <div class="flex-inner">
-
+        <h3>FAQ: </h3>
+        <h3>Cancellation Policy </h3>
+        <h3>Where can I find maps? </h3>
+        <h3>Transportation </h3>
       </div>
     </div>
     <div></div>

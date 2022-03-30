@@ -2,7 +2,7 @@
   <div class="none">
     <h2 class="section-title">Shop</h2>
     <h3 class="section-subtitle">Bring home a memory with you!</h3>
-    <main class="home">
+    <main class="">
       <section class="display flex-parent">
         <Card
           v-for="goods in goods"
@@ -34,7 +34,7 @@ export default {
         {
           name: "Squared Tee",
           price: 4.99,
-          img: "/pizza.jpg",
+          img: "/tee.jpg",
         },
         {
           name: "Squared Umbrella",
@@ -69,9 +69,6 @@ export default {
 </script>
 
 <style>
-.home {
-  width: 95%;
-}
 
 .display {
   width: 80%;
