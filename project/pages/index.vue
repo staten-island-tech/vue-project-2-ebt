@@ -2,7 +2,7 @@
   <div id="page">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
-    <div class="home flex-parent"><Home></Home></div>
+    <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop" id="shop"><Shop class="section" /></div>
@@ -29,10 +29,13 @@ export default {
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
       tlScroll.from(section, {
+        scrollTrigger: {
+          trigger: section,
+          toggleActions: "play complete reverse reset",
+        },
         y: 100,
         opacity: 0,
-        duration: 1,
-        ease: "ease-out",
+        duration: 3,
       });
     });
   },
@@ -90,7 +93,7 @@ body,
   padding: 0;
   position: relative;
 }
-.home {
+.home-page {
   margin-bottom: 40rem;
 }
 .section {
