@@ -8,6 +8,9 @@
     <div ref="shop" id="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
+    <div class="test"></div>
+    <span class="line1 line-purple"></span>
+    <div class="test"></div>
     <div ref="gallery"><Gallery class="section" /></div>
     <div ref="reviews"><Reviews class="section" /></div>
     <Footer class="footer" />
@@ -20,23 +23,42 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
+    gsap.from(".line-purple", {
+      scrollTrigger: {
+        trigger: ".line-purple",
+        toggleActions: "play complete reverse reset",
+      },
+      scaleX: 0,
+      duration: 10,
+      transformOrigin: "left center",
+      ease: "none",
+    });
     const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
     tlFooter.from(".footer", {
       x: 1000,
       duration: 2,
     });
-    const sections = gsap.utils.toArray(".section");
+    /*const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
       tlScroll.from(section, {
         scrollTrigger: {
           trigger: section,
-          toggleActions: "play complete reverse reset",
+          toggleActions: "play reset play reset",
         },
-        y: 100,
+        //y: 100,
         opacity: 0,
-        duration: 3,
+        duration: 0.1,
       });
+    });*/
+    const tlShopTest = gsap.timeline({ scrollTrigger: "#shop" });
+    tlShopTest.from("#shop", {
+      scrollTrigger: {
+        trigger: "#shop",
+        toggleActions: "play complete reverse reset",
+      },
+      opacity: 0,
+      duration: 1,
     });
   },
   data() {},
@@ -87,6 +109,18 @@ body,
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+.test {
+  height: 110vh;
+}
+.line1 {
+  width: 100%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: blue;
 }
 #page {
   margin: 0;
