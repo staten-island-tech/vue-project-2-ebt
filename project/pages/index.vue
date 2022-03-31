@@ -96,7 +96,7 @@ body,
   font-size: var(--h1);
 }
 .section-subtitle {
-  font-size: var(--h3);
+  font-size: var(--h2);
 }
 .w90 {
   width: 90%;
@@ -115,10 +115,10 @@ body,
     font-size: 3.75rem;
   }
   .section-title {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .section-subtitle {
-    font-size: 3.5rem;
+    font-size: 2.5rem;
   }
   .section-title:hover {
     transform: scale(1.25);
@@ -135,10 +135,10 @@ body,
     font-size: 3.25rem;
   }
   .section-title {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   .section-subtitle {
-    font-size: 3rem;
+    font-size: 2rem;
   }
   .section-title:hover {
     transform: scale(1.25);
@@ -154,10 +154,10 @@ body,
     font-size: 2.75rem;
   }
   .section-title {
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   .section-subtitle {
-    font-size: 2.5rem;
+    font-size: 1.5rem;
   }
   .section-title:hover {
     transform: scale(1.25);
