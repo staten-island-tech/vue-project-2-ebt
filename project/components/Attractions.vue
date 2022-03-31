@@ -10,7 +10,7 @@
         v-for="attraction in attractions"
         :key="attraction.name"
       >
-        <h3>{{ attraction.name }}</h3>
+        <h3 class="">{{ attraction.name }}</h3>
         <img
           class="attractions-img"
           v-bind:src="attraction.image"

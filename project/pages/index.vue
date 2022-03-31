@@ -104,4 +104,64 @@ body,
 .w100 {
   width: 100%;
 }
+/* media queries needed, basic things from flexbox gallery project but it needs more */
+@media (max-width: 1366px) {
+  .section {
+    transform: scale(0.9);
+    height: 150%;
+  }
+
+  h2 {
+    font-size: 3.75rem;
+  }
+  .section-title {
+    font-size: 4rem;
+  }
+  .section-subtitle {
+    font-size: 3.5rem;
+  }
+  .section-title:hover {
+    transform: scale(1.25);
+    color: #757575;
+  }
+}
+
+@media (max-width: 1024px) {
+  .section {
+    transform: scale(0.8);
+    height: 100%;
+  }
+  h2 {
+    font-size: 3.25rem;
+  }
+  .section-title {
+    font-size: 3.5rem;
+  }
+  .section-subtitle {
+    font-size: 3rem;
+  }
+  .section-title:hover {
+    transform: scale(1.25);
+    color: #757575;
+  }
+}
+@media (max-width: 750px) {
+  .section {
+    transform: scale(0.7);
+    height: 50%;
+  }
+  h2 {
+    font-size: 2.75rem;
+  }
+  .section-title {
+    font-size: 3rem;
+  }
+  .section-subtitle {
+    font-size: 2.5rem;
+  }
+  .section-title:hover {
+    transform: scale(1.25);
+    color: #757575;
+  }
+}
 </style>
