@@ -47,7 +47,7 @@ export default {
           img: "/poker.jpg",
         },
         {
-          name: "Squared Stuffie",
+          name: "Squared Pillow",
           price: 8.99,
           img: "/kebabs.jpg",
         },

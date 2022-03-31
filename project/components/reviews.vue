@@ -1,8 +1,11 @@
 <template>
   <div>
-    <h2 class="title-text">Reviews</h2>
+    <h2 class="section-title">Reviews</h2>
+    <h3 class="section-subtitle">
+      Why we are the best !!
+    </h3>
     <main class="reviews">
-      <h2 class="head-text">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
+      <h2 class="section-subtitle">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
       <div class="review-card">
         <img class="img2" src="reviewer5.jpg" alt="review1" />
         <p class="text-size">
@@ -32,7 +35,7 @@
       <div class="review-card">
         <img class="img2" src="reviewer2.jpg" alt="review1" />
         <p class="text-size">
-          "This is my favorite place to stay in after a day of hard work."
+          "This is my favorite place to be at after a day of hard work."
         </p>
       </div>
       <a class="text-size display" href="https://mikewhalen.tech/"
@@ -56,13 +59,6 @@ export default {
 </script>
 
 <style>
-.title-text {
-  font-size: var(--h1);
-}
-.head-text {
-  font-size: var(--h3);
-}
-
 .display {
   display: flex;
   flex-wrap: wrap;

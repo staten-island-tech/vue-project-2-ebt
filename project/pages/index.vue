@@ -101,6 +101,7 @@ body{
 }
 .section-subtitle {
   font-size: var(--h3);
+  margin: 0rem 0rem 2rem 0rem;
 }
 .w90 {
   width: 90%;
