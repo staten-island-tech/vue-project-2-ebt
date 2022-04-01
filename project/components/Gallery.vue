@@ -2,7 +2,7 @@
   <div class="gallery-home">
     <h1 class="section-title">Gallery</h1>
     <h2 class="section-subtitle">See our famous visitors!</h2>
-    <div class="gallery-parent">
+    <section class="gallery-parent">
       <div class="gallery-card">
         <button
           class="gallery-button"
@@ -25,7 +25,7 @@
         <h2 id="desc-title">Description:</h2>
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-    </div>
+    </section>
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
     <button class="gallery-button" @click="switchImageRight()">-->
     <!-- </button> -->
@@ -123,6 +123,7 @@ export default {
   text-align: center;
   align-items: center;
 }
+/* figure out to replace this with stuff from index.vue */
 .gallery-card {
   position: relative;
   width: 70rem;
