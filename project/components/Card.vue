@@ -28,7 +28,7 @@ export default {
   display: block;
   width: 100%;
   height: 24rem;
-  object-fit: fill;
+  object-fit: contain;
 }
 
 .title {

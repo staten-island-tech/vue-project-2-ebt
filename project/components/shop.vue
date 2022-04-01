@@ -28,32 +28,32 @@ export default {
       goods: [
         {
           name: "Squared Hoodie",
-          price: 14.99,
+          price: 74.99,
           img: "/hoodie.jpg",
         },
         {
           name: "Squared Tee",
-          price: 4.99,
+          price: 29.99,
           img: "/tee.jpg",
         },
         {
           name: "Squared Umbrella",
-          price: 7.99,
+          price: 20.99,
           img: "/pie.jpg",
         },
         {
           name: "Squared Cards",
-          price: 14.99,
+          price: 8.99,
           img: "/poker.jpg",
         },
         {
           name: "Squared Pillow",
-          price: 8.99,
-          img: "/kebabs.jpg",
+          price: 17.99,
+          img: "/pillow.jpg",
         },
         {
           name: "Squared Tesseract",
-          price: 13.99,
+          price: 23.99,
           img: "/tesseract.jpg",
         },
       ],
