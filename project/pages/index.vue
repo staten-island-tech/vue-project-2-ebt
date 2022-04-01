@@ -5,7 +5,7 @@
     <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
-    <div ref="shop" id="shop"><Shop class="section" /></div>
+    <div ref="shop" class="test2"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
     <div class="test"></div>
@@ -13,7 +13,7 @@
     <div class="test"></div>
     <div ref="gallery"><Gallery class="section" /></div>
     <div ref="reviews"><Reviews class="section" /></div>
-    <Footer class="footer" />
+    <!--     <Footer class="footer" /> -->
   </div>
 </template>
 
@@ -51,15 +51,23 @@ export default {
         duration: 0.1,
       });
     });*/
-    const tlShopTest = gsap.timeline({ scrollTrigger: "#shop" });
-    tlShopTest.from("#shop", {
+    gsap.from(".test2", {
       scrollTrigger: {
-        trigger: "#shop",
-        toggleActions: "play complete reverse reset",
+        trigger: ".test2",
+        toggleActions: "play reset play reset",
+      },
+      x: 100,
+      duration: 1,
+    });
+    /*const tlShopTest = gsap.timeline({ scrollTrigger: ".test2" });
+    tlShopTest.from(".test2", {
+      scrollTrigger: {
+        trigger: ".test2",
+        toggleActions: "play none none none",
       },
       opacity: 0,
       duration: 1,
-    });
+    });*/
   },
   data() {},
   name: "IndexPage",
