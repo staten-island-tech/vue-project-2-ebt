@@ -103,8 +103,29 @@ body{
   font-size: var(--h3);
   margin: 0rem 0rem 2rem 0rem;
 }
+.w10 {
+  width: 10%;
+}
+.w20 {
+  width: 20%;
+}
+.w30 {
+  width: 30%;
+}
+.w40 {
+  width: 40%;
+}
 .w50 {
   width: 50%;
+}
+.w60 {
+  width: 60%;
+}
+.w70 {
+  width: 70%;
+}
+.w80 {
+  width: 80%;
 }
 .w90 {
   width: 90%;
