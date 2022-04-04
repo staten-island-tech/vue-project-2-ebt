@@ -22,8 +22,8 @@
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
       <div class="gallery-description">
-        <h2 id="desc-title">Description:</h2>
-        <p id="desc-text">{{ currentImage.description }}</p>
+        <h2>Description:</h2>
+        <h3>{{ currentImage.description }}</h3>
       </div>
     </section>
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
@@ -159,11 +159,5 @@ export default {
 }
 #right-button {
   right: 40%;
-}
-#desc-title {
-  font-size: 3rem;
-}
-#desc-text {
-  font-size: 2rem;
 }
 </style>

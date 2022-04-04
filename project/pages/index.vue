@@ -109,20 +109,27 @@ body,
   .section {
     transform: scale(0.9);
     height: 150%;
+    margin: 2rem;
   }
 
   h2 {
-    font-size: 3.75rem;
+    font-size: 4rem;
   }
   .section-title {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
   .section-subtitle {
-    font-size: 2.5rem;
+    font-size: 4rem;
   }
-  .section-title:hover {
-    transform: scale(1.25);
-    color: #757575;
+  .gallery-card {
+    width: 80rem;
+    margin: 5rem;
+    margin-right: 5rem;
+  }
+  .gallery-img {
+    width: 90%;
+    height: auto;
+    margin: 5rem;
   }
 }
 
@@ -130,38 +137,56 @@ body,
   .section {
     transform: scale(0.8);
     height: 100%;
+    margin: 1.5rem;
   }
   h2 {
-    font-size: 3.25rem;
+    font-size: 5rem;
   }
   .section-title {
-    font-size: 3rem;
+    font-size: 6rem;
   }
   .section-subtitle {
-    font-size: 2rem;
+    font-size: 5rem;
   }
-  .section-title:hover {
-    transform: scale(1.25);
-    color: #757575;
+
+  .gallery-card {
+    width: 90rem;
+    margin: 5rem;
+    margin-right: 5rem;
+  }
+  .gallery-img {
+    width: 90%;
+    height: auto;
+    margin: 5rem;
   }
 }
 @media (max-width: 750px) {
   .section {
     transform: scale(0.7);
     height: 50%;
+    margin: 0.01rem;
   }
   h2 {
-    font-size: 2.75rem;
+    font-size: 6rem;
   }
   .section-title {
-    font-size: 2.5rem;
+    font-size: 7rem;
   }
   .section-subtitle {
-    font-size: 1.5rem;
+    font-size: 6rem;
   }
-  .section-title:hover {
-    transform: scale(1.25);
-    color: #757575;
+
+  .gallery-card {
+    width: 100rem;
+    background-color: #f44336;
+    color: #010101;
+    margin: 5rem;
+    margin-right: 5rem;
+  }
+  .gallery-img {
+    width: 90%;
+    height: auto;
+    margin: 5rem;
   }
 }
 </style>
