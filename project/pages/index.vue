@@ -5,15 +5,12 @@
     <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
-    <div ref="shop" class="test2"><Shop class="section" /></div>
+    <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
-    <div class="test"></div>
-    <span class="line1 line-purple"></span>
-    <div class="test"></div>
     <div ref="gallery"><Gallery class="section" /></div>
     <div ref="reviews"><Reviews class="section" /></div>
-    <!--     <Footer class="footer" /> -->
+    <Footer class="footer" />
   </div>
 </template>
 
@@ -23,51 +20,20 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
-    gsap.from(".line-purple", {
-      scrollTrigger: {
-        trigger: ".line-purple",
-        toggleActions: "play complete reverse reset",
-      },
-      scaleX: 0,
-      duration: 10,
-      transformOrigin: "left center",
-      ease: "none",
-    });
     /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
     tlFooter.from(".footer", {
-      x: 1000,
+      //scaleY: 0,
       duration: 2,
     });*/
-    /*const sections = gsap.utils.toArray(".section");
+    const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
       tlScroll.from(section, {
-        scrollTrigger: {
-          trigger: section,
-          toggleActions: "play reset play reset",
-        },
-        //y: 100,
+        y: 101,
         opacity: 0,
-        duration: 0.1,
+        duration: 1.5,
       });
-    });*/
-    gsap.from(".test2", {
-      scrollTrigger: {
-        trigger: ".test2",
-        toggleActions: "play reset play reset",
-      },
-      x: 100,
-      duration: 1,
     });
-    /*const tlShopTest = gsap.timeline({ scrollTrigger: ".test2" });
-    tlShopTest.from(".test2", {
-      scrollTrigger: {
-        trigger: ".test2",
-        toggleActions: "play none none none",
-      },
-      opacity: 0,
-      duration: 1,
-    });*/
   },
   name: "IndexPage",
   methods: {
@@ -76,9 +42,6 @@ export default {
       const top = el.offsetTop - 100;
       window.scrollTo(0, top);
       console.log(el);
-    },
-    test() {
-      console.log("hi");
     },
   },
 };
