@@ -33,11 +33,11 @@ export default {
       transformOrigin: "left center",
       ease: "none",
     });
-    const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
+    /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
     tlFooter.from(".footer", {
       x: 1000,
       duration: 2,
-    });
+    });*/
     /*const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
@@ -69,7 +69,6 @@ export default {
       duration: 1,
     });*/
   },
-  data() {},
   name: "IndexPage",
   methods: {
     scrollMeTo(ref) {
