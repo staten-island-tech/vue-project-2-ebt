@@ -35,9 +35,13 @@ export default {
 </script>
 <style>
 :root {
-  --primary: #191817;
+/*   --primary: #191817;
   --secondary: gray;
-  --primaryText: white;
+  --primaryText: white; */
+  --primary: #fab59e;
+  --secondary: #4a5759;
+  --primaryText: #0c0a09;
+  --thirdary: #e5d6df;
 
   --h1: 4rem;
   --h2: 3rem;
@@ -68,7 +72,7 @@ body,
   box-sizing: border-box;
 }
 body{
-    background-color: white;
+    background-color: #fdf3e5;
 }
 
 #page {
