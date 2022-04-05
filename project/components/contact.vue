@@ -2,9 +2,10 @@
   <div>
     <h2 class="section-title" >Contact Us</h2>
     <h3 class="section-subtitle">and FAQs!</h3>
-    <main class="flex-parent W90 margin-auto">
+    <main class="flex-evenly W90 ">
     <div class="w50">
       <h2>Connect with Us! </h2>
+
       <section class="flex-parent">
         <div class="w30">
         <img class="footer-img" src="/icons/phone.png" alt="abc"> </div>
@@ -33,22 +34,23 @@
         <div class="w30">
         <img class="footer-img" src="/icons/world.png" alt="abc"> </div>
         <div class="w70 margin-auto">   
-        <h3>Other Languages: Здравствуйте! 你好！أهلا! こんにちは！ Hello!
+        <h3>Other Languages: Здравствуйте! 你好! नमस्ते! こんにちは！ Hello!
         </h3></div>
       </section>
 
     </div>
 
 
-      <div class="faq">
-        <h2>FAQ:</h2>
- 
-          <h4 class="faq-list">Cancellation Policy </h4>
-          <h4 class="faq-list">Room Service </h4>
-          <h4 class="faq-list">VIP Rooms </h4>
-          <h4 class="faq-list">Planning Events </h4>
-          <h4 class="faq-list">Extensions </h4>
-          <h4 class="faq-list">Other </h4>
+      <div class="faq w30">
+        <h2 class="margin-auto">FAQ:</h2>
+        <ul>
+          <li class="faq-list"> Cancellation Policy </li>
+          <li class="faq-list"> Room Service </li>
+          <li class="faq-list"> VIP Rooms </li>
+          <li class="faq-list"> Planning Events </li>
+          <li class="faq-list"> Extensions </li>
+          <li class="faq-list"> Other </li>
+        </ul>
 
       </div>
     </main>
@@ -56,11 +58,17 @@
 </template>
 
 <style>
+.flex-evenly {
+display: flex;
+justify-content: space-evenly;
+}
 .faq {
   padding: 0rem 5rem;
+  margin: 2rem 0rem 0rem 0rem;
 }
 .faq-list{
  font-size: 2rem;
+ margin: 1rem auto;
 }
 .footer-img {
   height: 45px;
