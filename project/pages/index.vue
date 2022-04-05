@@ -113,7 +113,10 @@ body,
   }
 
   h2 {
-    font-size: 4rem;
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
   }
   .section-title {
     font-size: 5rem;
@@ -138,7 +141,10 @@ body,
     margin: 1.5rem;
   }
   h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 3.5rem;
   }
   .section-title {
     font-size: 6rem;
@@ -146,9 +152,9 @@ body,
   .section-subtitle {
     font-size: 4rem;
   }
-
+  /* figure out img and card media queries cuz thats the main issue */
   .gallery-card {
-    width: 90rem;
+    width: 100rem;
     margin: 7rem;
     margin-right: 7rem;
   }
@@ -165,7 +171,10 @@ body,
     margin: 0;
   }
   h2 {
-    font-size: 6rem;
+    font-size: 5.5rem;
+  }
+  h3 {
+    font-size: 4.5rem;
   }
   .section-title {
     font-size: 7rem;
