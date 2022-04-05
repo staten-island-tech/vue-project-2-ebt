@@ -119,12 +119,10 @@ body,
     font-size: 5rem;
   }
   .section-subtitle {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .gallery-card {
     width: 80rem;
-    margin: 5rem;
-    margin-right: 5rem;
   }
   .gallery-img {
     width: 90%;
@@ -146,13 +144,13 @@ body,
     font-size: 6rem;
   }
   .section-subtitle {
-    font-size: 5rem;
+    font-size: 4rem;
   }
 
   .gallery-card {
     width: 90rem;
-    margin: 5rem;
-    margin-right: 5rem;
+    margin: 7rem;
+    margin-right: 7rem;
   }
   .gallery-img {
     width: 90%;
@@ -164,7 +162,7 @@ body,
   .section {
     transform: scale(0.7);
     height: 50%;
-    margin: 0.01rem;
+    margin: 0;
   }
   h2 {
     font-size: 6rem;
@@ -173,15 +171,15 @@ body,
     font-size: 7rem;
   }
   .section-subtitle {
-    font-size: 6rem;
+    font-size: 5rem;
   }
 
   .gallery-card {
     width: 100rem;
     background-color: #f44336;
     color: #010101;
-    margin: 5rem;
-    margin-right: 5rem;
+    margin: 3rem;
+    margin-right: 3rem;
   }
   .gallery-img {
     width: 90%;
