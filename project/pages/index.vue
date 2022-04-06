@@ -8,7 +8,9 @@
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
-    <div ref="gallery"><Gallery class="section" /></div>
+    <div ref="gallery">
+      <Gallery class="section" />
+    </div>
     <div ref="reviews"><Reviews class="section" /></div>
     <Footer class="footer" />
   </div>

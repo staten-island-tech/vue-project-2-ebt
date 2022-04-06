@@ -44,6 +44,14 @@
 
 <script>
 // @ is an alias to /src
+
+export default {
+  data() {
+    return {};
+  },
+  methods: {},
+};
+
 </script>
 
 <style>
@@ -85,7 +93,7 @@
   overflow: auto;
   overflow-x: hidden;
   width: 100%;
-  height: 500px;
+  height: 50rem;
   scrollbar-width: none;
 }
 </style>
