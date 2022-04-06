@@ -26,6 +26,8 @@
         <h3>{{ currentImage.description }}</h3>
       </div>
     </section>
+    <!-- figure out how to replace this with card.vue -->
+
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
     <button class="gallery-button" @click="switchImageRight()">-->
     <!-- </button> -->

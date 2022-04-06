@@ -132,6 +132,9 @@ body,
     height: auto;
     margin: 5rem;
   }
+  .card {
+    width: 40%;
+  }
 }
 
 @media (max-width: 1024px) {
@@ -162,6 +165,9 @@ body,
     width: 90%;
     height: auto;
     margin: 5rem;
+  }
+  .card {
+    width: 55%;
   }
 }
 @media (max-width: 750px) {
@@ -194,6 +200,9 @@ body,
     width: 90%;
     height: auto;
     margin: 5rem;
+  }
+  .card {
+    width: 70%;
   }
 }
 </style>

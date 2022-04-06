@@ -10,6 +10,7 @@
         v-for="attraction in attractions"
         :key="attraction.name"
       >
+        <!-- replace this with card.vue -->
         <h3 class="">{{ attraction.name }}</h3>
         <img
           class="attractions-img"
