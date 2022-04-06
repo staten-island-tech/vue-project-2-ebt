@@ -1,4 +1,5 @@
 <template>
+<body class="default">
   <div>
     <h2 class="section-title">Attractions</h2>
     <h3 class="section-subtitle">
@@ -20,6 +21,7 @@
       </div>
     </section>
   </div>
+  </body>
 </template>
 
 <script>

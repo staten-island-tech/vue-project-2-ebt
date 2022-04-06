@@ -1,4 +1,5 @@
 <template>
+<body class="default">
   <div>
     <h2 class="section-title" >Contact Us</h2>
     <h3 class="section-subtitle">and FAQs!</h3>
@@ -55,6 +56,7 @@
       </div>
     </main>
   </div>
+  </body>
 </template>
 
 <style>

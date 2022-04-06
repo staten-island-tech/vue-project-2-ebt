@@ -35,19 +35,27 @@ export default {
 </script>
 <style>
 :root {
-/*   --primary: #191817;
-  --secondary: gray;
-  --primaryText: white; */
-  --primary: #fab59e;
-  --secondary: #4a5759;
-  --thirdary: #e5d6df;
-  --primaryText: #0c0a09;
+  
+  --pink: #fab59e;
+  --gray: #4a5759;
+  --light-purple: #e5d6df;
+  --black: #0c0a09;
 
   --h1: 4rem;
   --h2: 3rem;
   --h3: 2rem;
   --h4: 1.15rem;
 }
+.default {
+  --primary: var(--pink);
+  --secondary: var(--gray);
+  --thirdary: var(--light-purple);
+  --primaryText: var(--black);
+}
+.mono {
+
+}
+
 h1 {
   font-size: var(--h1);
 }

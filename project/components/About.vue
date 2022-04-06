@@ -1,4 +1,5 @@
 <template>
+<body class="default">
   <div>
     <h2>Our Mission</h2>
     <div class="flex-parent">
@@ -20,6 +21,7 @@
     </div>
     <div></div>
   </div>
+  </body>
 </template>
 
 <script>

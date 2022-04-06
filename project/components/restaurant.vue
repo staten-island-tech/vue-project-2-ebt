@@ -1,4 +1,6 @@
 <template>
+<body class="default">
+  
   <div class="none">
     <h2 class="section-title">Cuisine</h2>
     <h3 class="section-subtitle">
@@ -17,6 +19,7 @@
       </section>
     </main>
   </div>
+  </body>
 </template>
 
 <script>

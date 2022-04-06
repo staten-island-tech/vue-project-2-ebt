@@ -1,9 +1,11 @@
 <template>
+<body class="default">
   <div class="card">
     <h3 class="title section-subtitle">{{ title }}</h3>
     <img class="img-card margin-auto w90" :src="image" alt="" />
     <h4 class="pricetag">{{ desc }}</h4>
   </div>
+  </body>
 </template>
 
 <script>

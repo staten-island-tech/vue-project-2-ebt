@@ -1,4 +1,5 @@
 <template>
+  <body class="default">
   <div class="gallery-home">
     <h1 class="gallery-title">Gallery</h1>
     <h2 class="gallery-header">See our famous visitors!</h2>
@@ -30,6 +31,8 @@
     <button class="gallery-button" @click="switchImageRight()">-->
     <!-- </button> -->
   </div>
+    
+  </body>
 </template>
 
 <script>

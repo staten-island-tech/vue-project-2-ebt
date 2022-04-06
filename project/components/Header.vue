@@ -1,4 +1,5 @@
 <template>
+<body class="default">
   <div class="header w100">
     <div class="header-topline w100">
       <h1 class="header-topline-text">HOTEL²</h1>
@@ -15,6 +16,7 @@
       </h4>
     </div>
   </div>
+  </body>
 </template>
 
 <script>
