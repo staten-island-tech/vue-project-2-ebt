@@ -9,9 +9,10 @@
           ornare arcu dui vivamus arcu felis bibendum. In dictum non consectetur
           a erat nam at. Sit amet est placerat in egestas erat. Aliquam sem et
           tortor consequat id porta nibh venenatis. Platea dictumst vestibulum
-          rhoncus est pellentesque elit. Auctor eu augue ut lectus arcu bibendum
-          at.
+          rhoncus est pellentesque elit.
         </h3>
+        <h3>We hope you will enjoy your stay at Hotel².</h3>
+        <h3>Hotel Squared. Now to Forever.</h3>
       </div>
       <div class="flex-inner">
         <img src="/pie.jpg" alt="" class="about-img height-auto w90" />

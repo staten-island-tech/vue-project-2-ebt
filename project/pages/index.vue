@@ -40,8 +40,8 @@ export default {
   --primaryText: white; */
   --primary: #fab59e;
   --secondary: #4a5759;
-  --primaryText: #0c0a09;
   --thirdary: #e5d6df;
+  --primaryText: #0c0a09;
 
   --h1: 4rem;
   --h2: 3rem;
