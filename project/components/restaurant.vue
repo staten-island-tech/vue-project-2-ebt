@@ -4,7 +4,7 @@
     <h3 class="section-subtitle">
       Freshly Imported. Fairest Prices. Highly Rated.
     </h3>
-    <main class="home margin-auto">
+    <main class="margin-auto">
       <section class="display flex-parent">
         <Card
           v-for="food in food"
@@ -23,8 +23,6 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-
   data() {
     return {
       food: [

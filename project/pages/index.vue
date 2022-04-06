@@ -2,6 +2,7 @@
   <div id="page">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
+    <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
@@ -16,10 +17,26 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
 export default {
-  mounted() {},
-  data() {},
+  mounted() {
+    /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
+    tlFooter.from(".footer", {
+      //scaleY: 0,
+      duration: 2,
+    });*/
+    const sections = gsap.utils.toArray(".section");
+    sections.forEach((section) => {
+      const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
+      tlScroll.from(section, {
+        y: 101,
+        opacity: 0,
+        duration: 1.5,
+      });
+    });
+  },
   name: "IndexPage",
   methods: {
     scrollMeTo(ref) {
@@ -28,16 +45,13 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
-    test() {
-      console.log("hi");
-    },
   },
 };
 </script>
 <style>
 :root {
   --primary: black;
-  --secondary: gray;
+  --secondary: #818181;
   --primaryText: white;
 
   --h1: 4rem;
@@ -58,7 +72,7 @@ h4 {
   font-size: var(--h4);
 }
 .filler {
-  margin-bottom: 120px;
+  margin-bottom: 35rem;
 }
 html,
 body,
@@ -68,10 +82,25 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+.test {
+  height: 110vh;
+}
+.line1 {
+  width: 100%;
+  max-width: 800px;
+  height: 8px;
+  margin: 0 0 10px 0;
+  position: relative;
+  display: inline-block;
+  background-color: blue;
+}
 #page {
   margin: 0;
   padding: 0;
   position: relative;
+}
+.home-page {
+  margin-bottom: 40rem;
 }
 .section {
   text-align: center;

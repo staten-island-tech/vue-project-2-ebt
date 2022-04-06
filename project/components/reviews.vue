@@ -51,6 +51,7 @@ export default {
   },
   methods: {},
 };
+
 </script>
 
 <style>
@@ -59,12 +60,6 @@ export default {
 }
 .head-text {
   font-size: var(--h3);
-}
-
-.home {
-  display: flex;
-  width: 95%;
-  margin: auto;
 }
 
 .display {

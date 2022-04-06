@@ -11,7 +11,6 @@
         </div>
 
         <div class="display2">
-
           <main class="display flex-parent">
             <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
@@ -42,10 +41,6 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-
-  mounted() {},
-
   data() {
     return {
       rooms: [
