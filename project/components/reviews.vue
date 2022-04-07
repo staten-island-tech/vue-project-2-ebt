@@ -59,6 +59,15 @@ export default {
 </script>
 
 <style>
+.display {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  color: #ffffff;
+}
 
 .review-card {
   display: flex;
@@ -68,14 +77,13 @@ export default {
   height: auto;
   margin: 4rem auto;
   background-color: #ffffff;
-  color: var(--primaryText)
+  color: #000000;
 }
 
 .text-size {
   font-size: 2.5rem;
   width: 50%;
   margin: auto;
-
 }
 
 .reviews {
@@ -84,8 +92,5 @@ export default {
   width: 100%;
   height: 500px;
   scrollbar-width: none;
-}
-a:visited {
-  color:black;
 }
 </style>

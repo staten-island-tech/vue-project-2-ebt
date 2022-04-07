@@ -129,7 +129,7 @@ export default {
 .gallery-card {
   position: relative;
   width: 70rem;
-  background-color: var(--thirdary);
+  background-color: #ff5000;
   color: #010101;
   display: flex;
   justify-content: space-around;
@@ -155,14 +155,12 @@ export default {
   color: red;
   opacity: 50%;
   font-size: 3rem;
-  width: 7rem;
-  height: auto;
 }
 #left-button {
-  left: 30%;
+  left: 40%;
 }
 #right-button {
-  right: 30%;
+  right: 40%;
 }
 #desc-title {
   font-size: 3rem;

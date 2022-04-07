@@ -22,7 +22,7 @@ export default {
 <style>
 .card {
   width: 30%;
-  background-color: var(--thirdary);
+  background-color:#e5d6df ;
   margin: 2rem auto;
 }
 

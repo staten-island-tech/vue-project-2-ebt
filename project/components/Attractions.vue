@@ -61,9 +61,9 @@ export default {
 <style>
 .attractions-card {
   width: 30rem;
-  background-color: var(--thirdary);
+  background-color: #ff5000;
   height: 30rem;
   margin: 5rem;
-  color: var(--primaryText);
+  color: var(--primary);
 }
 </style>
