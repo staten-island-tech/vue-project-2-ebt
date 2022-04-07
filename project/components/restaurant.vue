@@ -46,7 +46,7 @@ export default {
         {
           name: "Ramen",
           price: 14.99,
-          img: "/ramen.jpg",
+          img: "/ramen.png",
         },
         {
           name: "Kebabs",
@@ -56,7 +56,7 @@ export default {
         {
           name: "Chicken Teriyaki",
           price: 13.99,
-          img: "/terichick.jpg",
+          img: "/terichick.png",
         },
       ],
     };
