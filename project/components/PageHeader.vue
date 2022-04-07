@@ -1,9 +1,9 @@
 <template>
   <div class="alt-header w100">
     <div class="back-button">
-      <a href="/">
-        <img src="/icons/arrow.jpg" alt="" />
-        <h1>Back to home</h1></a
+      <a href="/" class="flex-parent">
+        <img src="/icons/arrow.png" alt="" class="back-arrow" />
+        <h2 class="back-text">Back to home</h2></a
       >
     </div>
     <div class="bar w100"></div>
@@ -15,19 +15,28 @@ export default {};
 </script>
 
 <style scoped>
+.back-arrow {
+  width: 35px;
+}
 .bar {
-  top: 45px;
+  top: 35px;
   position: fixed;
   background-color: white;
-  height: 10px;
+  height: 5px;
+}
+.back-text {
+  text-decoration: none;
+  color: var(--primaryText);
+  box-shadow: none;
 }
 .back-button {
-  color: var(--primaryText);
+  margin-left: 2rem;
+  width: 25%;
 }
 .alt-header {
   background-color: black;
   position: fixed;
   top: 0;
-  height: 65px;
+  height: 50px;
 }
 </style>

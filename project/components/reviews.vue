@@ -35,7 +35,7 @@
           "This is my favorite place to stay in after a day of hard work."
         </p>
       </div>
-      <a class="text-size display" href="https://mikewhalen.tech/"
+      <a class="text-size display" href="/reviews"
         >READ MORE REVIEWS</a
       >
     </main>

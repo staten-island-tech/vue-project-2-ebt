@@ -1,7 +1,7 @@
 <template>
   <div id="page">
     <PageHeader></PageHeader>
-    <h1 class="alt-head">Shop</h1>
+    <h1 class="alt-head">Restaurant</h1>
     <div class="flex-parent w90 margin-auto alt-display">
       <Card
         v-for="item in items"
