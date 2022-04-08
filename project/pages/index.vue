@@ -49,6 +49,9 @@ export default {
   --secondary: #4a5759;
   --primaryText: #0c0a09;
   --thirdary: #e5d6df;
+<<<<<<< HEAD
+>>>>>>> parent of 5419acd (pinkytoe)
+=======
 >>>>>>> parent of 5419acd (pinkytoe)
 
   --h1: 4rem;
