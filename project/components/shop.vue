@@ -44,7 +44,7 @@ export default {
         {
           name: "EBT Cards",
           price: 14.99,
-          img: "/ramen.jpg",
+          img: "/ramen.png",
         },
         {
           name: "EBT Stuffie",
@@ -54,7 +54,7 @@ export default {
         {
           name: "EBT Replica",
           price: 13.99,
-          img: "/terichick.jpg",
+          img: "/terichick.png",
         },
       ],
     };
