@@ -3,25 +3,23 @@
     <h1 class="section-title">Gallery</h1>
     <h2 class="section-subtitle">See our famous visitors!</h2>
     <section class="flex-parent">
-      <Card>
-        <div class="gallery-card">
-          <button
-            class="gallery-button"
-            id="left-button"
-            @click="switchImageLeft()"
-          >
-            ⬅
-          </button>
-          <button
-            class="gallery-button"
-            id="right-button"
-            @click="switchImageRight()"
-          >
-            ➡
-          </button>
-          <!-- try to get buttons on top of image -->
-          <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
-        </div>
+      <Card class="gallery-card">
+        <button
+          class="gallery-button"
+          id="left-button"
+          @click="switchImageLeft()"
+        >
+          ⬅
+        </button>
+        <button
+          class="gallery-button"
+          id="right-button"
+          @click="switchImageRight()"
+        >
+          ➡
+        </button>
+        <!-- try to get buttons on top of image -->
+        <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </Card>
       <div class="gallery-description">
         <h2>Description:</h2>
