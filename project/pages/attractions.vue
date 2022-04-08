@@ -3,6 +3,16 @@
     <PageHeader></PageHeader>
     <h1 class="alt-head">Attractions!</h1>
     <h2>They're attracting! Probably! Visit to find out!</h2>
+    <section class="flex-parent">
+      <Card
+        class="attractions-card"
+        v-for="attraction in attractions"
+        :key="attraction.name"
+        :title="attraction.name"
+        :image="attraction.image"
+        :desc="attraction.description"
+      ></Card>
+    </section>
   </div>
 </template>
 
@@ -24,6 +34,78 @@ export default {
           alt: "nice flowers and grass",
           description:
             "You can come here and touch grass because most of you need to",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
+        },
+        {
+          name: "Arcade",
+          image: "/arcade.jpg",
+          alt: "videogames",
+          description: "We have all the videogames",
         },
         {
           name: "Arcade",

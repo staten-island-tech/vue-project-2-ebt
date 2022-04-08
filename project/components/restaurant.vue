@@ -15,6 +15,7 @@
         >
         </Card>
       </section>
+      <a href="/restaurant" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -68,7 +69,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .display {
   width: 80%;
   margin: 1rem auto;

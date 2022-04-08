@@ -20,17 +20,9 @@
               <div>Large: {{ pricetag(active.priceLarge) }}</div>
             </section>
           </main>
-
-          <!--         <main v-if="active" class="roomdisplay">
-          <img src="arcade.jpg" alt="hotelo" class="img2">
-        <section class="space1" v-for="items in order" :key="items.nights">
-          <div>Nights: {{ items.nights }}</div>
-          <div>Small: {{pricetag(items.priceSmall)}} </div>
-          <div>Medium: {{pricetag(items.priceMedium)}}</div>
-          <div>Large: {{pricetag(items.priceLarge)}}</div>  
-        </section>
-        </main> -->
-          <button class="checkout-btn">More options</button>
+          <a href="/tickets"
+            ><button class="checkout-btn">More options</button>
+          </a>
         </div>
       </section>
     </main>
@@ -84,7 +76,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .img2 {
   width: 290px;
   height: 240px;

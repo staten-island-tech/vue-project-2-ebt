@@ -5,20 +5,16 @@
       See all our wonderful and unique attractions!
     </h3>
     <section class="flex-parent">
-      <div
+      <Card
         class="attractions-card"
         v-for="attraction in attractions"
         :key="attraction.name"
-      >
-        <h3>{{ attraction.name }}</h3>
-        <img
-          class="w90"
-          v-bind:src="attraction.image"
-          v-bind:alt="attraction.alt"
-        />
-        <h4 class="attractions-description">{{ attraction.description }}</h4>
-      </div>
+        :title="attraction.name"
+        :image="attraction.image"
+        :desc="attraction.description"
+      ></Card>
     </section>
+    <a href="/attractions" class="link"> See More!</a>
   </div>
 </template>
 
@@ -53,7 +49,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .attractions-card {
   width: 30rem;
   background-color: #f44336;

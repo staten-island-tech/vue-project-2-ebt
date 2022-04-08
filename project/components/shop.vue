@@ -13,6 +13,7 @@
         >
         </Card>
       </section>
+      <a href="/shop" class="link"> See More!</a>
     </main>
   </div>
 </template>
