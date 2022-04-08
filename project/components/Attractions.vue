@@ -1,6 +1,6 @@
 <template>
-<body class="default">
-  <div>
+
+  <div class="default">
     <h2 class="section-title">Attractions</h2>
     <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
@@ -21,7 +21,7 @@
       </div>
     </section>
   </div>
-  </body>
+
 </template>
 
 <script>

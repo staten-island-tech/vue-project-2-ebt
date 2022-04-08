@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div id="page" class="page">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div ref="mission"><About class="section" /></div>
@@ -35,13 +35,10 @@ export default {
 </script>
 <style>
 :root {
-<<<<<<< HEAD
-  
   --pink: #fab59e;
   --gray: #4a5759;
   --light-purple: #e5d6df;
   --black: #0c0a09;
-=======
 /*   --primary: #191817;
   --secondary: gray;
   --primaryText: white; */
@@ -49,10 +46,6 @@ export default {
   --secondary: #4a5759;
   --primaryText: #0c0a09;
   --thirdary: #e5d6df;
-<<<<<<< HEAD
->>>>>>> parent of 5419acd (pinkytoe)
-=======
->>>>>>> parent of 5419acd (pinkytoe)
 
   --h1: 4rem;
   --h2: 3rem;
@@ -65,8 +58,12 @@ export default {
   --thirdary: var(--light-purple);
   --primaryText: var(--black);
 }
-.mono {
 
+.mono {
+  --primary: var(--black);
+  --secondary: var(--gray);
+  --thirdary: var(--light-purple);
+  --primaryText: var(--white);
 }
 
 h1 {
@@ -96,7 +93,7 @@ body{
     background-color: #fdf3e5;
 }
 
-#page {
+.page {
   margin: 0;
   padding: 0;
   position: relative;

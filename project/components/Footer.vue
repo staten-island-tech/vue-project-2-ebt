@@ -1,6 +1,6 @@
 <template>
-<body class="default">
-  <div class="footer w100">
+
+  <div class="footer w100 default">
     <div class="footer-inner flex-parent margin-auto w90">
       <a href="https://www.discord.com" class="footer-btn" target="_blank">
         <img src="/icons/discord.png" alt="discord" class="footer-img" />
@@ -47,7 +47,7 @@
     <h3>We are not legally responsible for any stupid things you do here.</h3>
     <h4 class="copyright-text">© 2022 Hotel Squared, Now to Forever.</h4>
   </div>
-  </body>
+
 </template>
 
 <style scoped>
