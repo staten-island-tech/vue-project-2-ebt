@@ -1,5 +1,5 @@
 <template>
-  <div class="footer w100">
+  <div class="footer w100 ">
     <div class="footer-inner flex-parent margin-auto w90">
       <a href="https://www.discord.com" class="footer-btn" target="_blank">
         <img src="/icons/discord.png" alt="discord" class="footer-img" />

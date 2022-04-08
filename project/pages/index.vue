@@ -1,8 +1,9 @@
 <template>
-  <div id="page">
+  <div id="page" class="default">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div ref="mission"><About class="section" /></div>
+    <button class="btn1" @click="theme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -27,6 +28,15 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
+  theme() { 
+    if (document.div.classList.contains("default")) {
+    document.div.classList.add("mono");
+    document.div.classList.remove("default");
+  } else {
+    document.div.classList.add("default");
+    document.div.classList.remove("mono");
+  }
+    },
     test() {
       console.log("hi");
     },
@@ -38,16 +48,31 @@ export default {
 /*   --primary: #191817;
   --secondary: gray;
   --primaryText: white; */
-  --primary: #fab59e;
-  --secondary: #4a5759;
-  --thirdary: #e5d6df;
-  --primaryText: #0c0a09;
+  --pink: #fab59e;
+  --gray: #4a5759;
+  --light-purple: #e5d6df;
+  --black: #0c0a09;
+  --white: #ffffff;
 
   --h1: 4rem;
   --h2: 3rem;
   --h3: 2rem;
   --h4: 1.15rem;
 }
+
+.default {
+  --primary: var(--pink);
+  --secondary: var(--gray);
+  --thirdary: var(--light-purple);
+  --primaryText: var(--black);
+}
+.mono {
+  --primary: var(--black);
+  --secondary: var(--white);
+  --thirdary: var(--gray);
+  --primaryText: var(--white);
+}
+
 h1 {
   font-size: var(--h1);
 }

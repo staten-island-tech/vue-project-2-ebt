@@ -1,5 +1,5 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Shop</h2>
     <h3 class="section-subtitle">Bring home a memory with you!</h3>
     <main class="">

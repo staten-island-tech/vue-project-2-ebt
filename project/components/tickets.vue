@@ -1,5 +1,5 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
     <main class="home1 margin-auto">

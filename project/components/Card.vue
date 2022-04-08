@@ -32,11 +32,9 @@ export default {
 }
 
 .title {
-  color: #212121;
   box-sizing: border-box;
 }
 .pricetag {
-  color: #212121;
   font-size: 1.5rem;
   margin: 1rem auto;
 }

@@ -1,5 +1,5 @@
 <template>
-  <div class="gallery-home">
+  <div class="gallery-home ">
     <h1 class="gallery-title">Gallery</h1>
     <h2 class="gallery-header">See our famous visitors!</h2>
     <div class="gallery-parent">

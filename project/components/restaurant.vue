@@ -1,5 +1,5 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Cuisine</h2>
     <h3 class="section-subtitle">
       Freshly Imported. Fairest Prices. Highly Rated.
