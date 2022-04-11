@@ -1,5 +1,5 @@
 <template>
-  <div id="page" class="default">
+  <div id="page"  class="default" :class="{'mono': altTheme === 0} ">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div ref="mission"><About class="section" /></div>
@@ -19,7 +19,12 @@
 import gsap from "gsap";
 export default {
   mounted() {},
-  data() {},
+  data() {
+    return {
+      altTheme: 1,
+    }
+  },
+
   name: "IndexPage",
   methods: {
     scrollMeTo(ref) {
@@ -29,13 +34,12 @@ export default {
       console.log(el);
     },
   theme() { 
-    if (document.div.classList.contains("default")) {
-    document.div.classList.add("mono");
-    document.div.classList.remove("default");
+ if ( this.altTheme === 1) {
+    this.altTheme = 0;
   } else {
-    document.div.classList.add("default");
-    document.div.classList.remove("mono");
+    this.altTheme = 1;
   }
+  console.log(this.altTheme);
     },
     test() {
       console.log("hi");

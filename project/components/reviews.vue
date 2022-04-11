@@ -68,7 +68,7 @@ export default {
   height: auto;
   margin: 4rem auto;
   background-color: #ffffff;
-  color: var(--primaryText)
+  color: #000000;
 }
 
 .text-size {
