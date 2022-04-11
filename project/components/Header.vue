@@ -1,5 +1,5 @@
 <template>
-  <div class="header w100">
+  <div class="header w100 ">
     <div class="header-topline w100">
       <h1 class="header-topline-text">HOTEL²</h1>
     </div>

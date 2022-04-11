@@ -20,22 +20,25 @@ export default {
 <style>
 .card {
   width: 30%;
-  background-color: var(--secondary);
+
+  background-color: var(--thirdary);
+
   margin: 2rem auto;
   border-radius: 1.5rem;
 }
 
 .img-card {
   display: block;
-  border-radius: 1.5rem;
+  width: 100%;
+  height: 24rem;
+  object-fit: contain;
+
 }
 
 .title {
-  color: #212121;
   box-sizing: border-box;
 }
 .pricetag {
-  color: #212121;
   font-size: 1.5rem;
   margin: 1rem auto;
 }

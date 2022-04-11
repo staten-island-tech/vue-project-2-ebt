@@ -1,8 +1,8 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
-    <main class="home margin-auto">
+    <main class="home1 margin-auto">
       <section class="display flex-parent">
         <div class="display2">
           <button @click="switchRoom(0)" class="btn1">3 Nights</button>
@@ -10,27 +10,21 @@
           <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
-        <div class="display2">
-          <main class="display flex-parent">
+
+        <div class="display-tickets">
+
+          <main class="flex-parent">
+
             <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
-              <div>Nights: {{ active.nights }}</div>
-              <div>Small: {{ pricetag(active.priceSmall) }}</div>
-              <div>Medium: {{ pricetag(active.priceMedium) }}</div>
-              <div>Large: {{ pricetag(active.priceLarge) }}</div>
+              <h3>Nights: {{ active.nights }}</h3>
+              <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
+              <h3>Medium: {{ pricetag(active.priceMedium) }}</h3>
+              <h3>Large: {{ pricetag(active.priceLarge) }}</h3>
             </section>
           </main>
 
-          <!--         <main v-if="active" class="roomdisplay">
-          <img src="arcade.jpg" alt="hotelo" class="img2">
-        <section class="space1" v-for="items in order" :key="items.nights">
-          <div>Nights: {{ items.nights }}</div>
-          <div>Small: {{pricetag(items.priceSmall)}} </div>
-          <div>Medium: {{pricetag(items.priceMedium)}}</div>
-          <div>Large: {{pricetag(items.priceLarge)}}</div>  
-        </section>
-        </main> -->
-          <button class="checkout-btn">More options</button>
+          <button class="btn1">More options</button>
         </div>
       </section>
     </main>
@@ -99,17 +93,14 @@ export default {
   text-align: center;
 }
 
-.home {
+.home1 {
   display: flex;
   width: 95%;
   margin: auto;
 }
 
-.display {
-  width: 80%;
-}
 
-.display2 {
+.display-tickets {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
@@ -131,8 +122,8 @@ export default {
   border-radius: 3px;
   padding: 12px 24px;
   border: 0;
-  color: #fff;
-  background: #ff5000;
+  color: var(--primaryText);
+  background-color: var(--thirdary);
   line-height: 1.15;
   font-size: 16px;
   margin: 2rem;

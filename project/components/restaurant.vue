@@ -1,5 +1,5 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Cuisine</h2>
     <h3 class="section-subtitle">
       Freshly Imported. Fairest Prices. Highly Rated.
@@ -27,7 +27,7 @@ export default {
     return {
       food: [
         {
-          name: "EBT Steak",
+          name: "Squared Steak",
           price: 14.99,
           img: "/steak.jpg",
         },

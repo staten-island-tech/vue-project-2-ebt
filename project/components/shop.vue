@@ -1,8 +1,8 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Shop</h2>
     <h3 class="section-subtitle">Bring home a memory with you!</h3>
-    <main class="home">
+    <main class="">
       <section class="display flex-parent">
         <Card
           v-for="goods in goods"
@@ -12,7 +12,7 @@
           :desc="pricetag(goods.price)"
         >
         </Card>
-      </section>
+      </section> 
     </main>
   </div>
 </template>
@@ -25,34 +25,34 @@ export default {
     return {
       goods: [
         {
-          name: "EBT Hoodie",
-          price: 14.99,
-          img: "/steak.jpg",
+          name: "Squared Hoodie",
+          price: 74.99,
+          img: "/hoodie.jpg",
         },
         {
-          name: "EBT Tee",
-          price: 4.99,
-          img: "/pizza.jpg",
+          name: "Squared Tee",
+          price: 29.99,
+          img: "/tee.jpg",
         },
         {
-          name: "EBT Umbrella",
-          price: 7.99,
+          name: "Squared Umbrella",
+          price: 20.99,
           img: "/pie.jpg",
         },
         {
-          name: "EBT Cards",
-          price: 14.99,
-          img: "/ramen.jpg",
-        },
-        {
-          name: "EBT Stuffie",
+          name: "Squared Cards",
           price: 8.99,
-          img: "/kebabs.jpg",
+          img: "/poker.jpg",
         },
         {
-          name: "EBT Replica",
-          price: 13.99,
-          img: "/terichick.jpg",
+          name: "Squared Pillow",
+          price: 17.99,
+          img: "/pillow.jpg",
+        },
+        {
+          name: "Squared Tesseract",
+          price: 23.99,
+          img: "/tesseract.jpg",
         },
       ],
     };
@@ -66,10 +66,9 @@ export default {
 };
 </script>
 
-<style scoped>
-.home {
-  width: 95%;
-}
+
+<style>
+
 
 .display {
   width: 80%;
