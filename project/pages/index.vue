@@ -2,13 +2,16 @@
   <div id="page"  class="default" :class="{'mono': altTheme === 0} ">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
+    <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <button class="btn1" @click="theme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
-    <div ref="gallery"><Gallery class="section" /></div>
+    <div ref="gallery">
+      <Gallery class="section" />
+    </div>
     <div ref="reviews"><Reviews class="section" /></div>
     <div ref="contact"><Contact class="section" /></div>
     <Footer class="footer" />
@@ -16,13 +19,33 @@
 </template>
 
 <script>
-import gsap from "gsap";
+import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
 export default {
-  mounted() {},
+
   data() {
     return {
       altTheme: 1,
     }
+  },
+
+
+  mounted() {
+    /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
+    tlFooter.from(".footer", {
+      //scaleY: 0,
+      duration: 2,
+    });*/
+    const sections = gsap.utils.toArray(".section");
+    sections.forEach((section) => {
+      const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
+      tlScroll.from(section, {
+        y: 101,
+        opacity: 0,
+        duration: 1.5,
+      });
+    });
   },
 
   name: "IndexPage",
@@ -33,6 +56,7 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
+
   theme() { 
  if ( this.altTheme === 1) {
     this.altTheme = 0;
@@ -44,11 +68,13 @@ export default {
     test() {
       console.log("hi");
     },
+
   },
 };
 </script>
 <style>
 :root {
+
 /*   --primary: #191817;
   --secondary: gray;
   --primaryText: white; */
@@ -90,7 +116,7 @@ h4 {
   font-size: var(--h4);
 }
 .filler {
-  margin-bottom: 120px;
+  margin-bottom: 35rem;
 }
 html,
 body,
@@ -100,6 +126,7 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
     background-color: #fdf3e5;
 }
@@ -108,6 +135,9 @@ body{
   margin: 0;
   padding: 0;
   position: relative;
+}
+.home-page {
+  margin-bottom: 40rem;
 }
 .section {
   text-align: center;

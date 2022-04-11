@@ -20,8 +20,11 @@ export default {
 <style>
 .card {
   width: 30%;
+
   background-color: var(--thirdary);
+
   margin: 2rem auto;
+  border-radius: 1.5rem;
 }
 
 .img-card {
@@ -29,6 +32,7 @@ export default {
   width: 100%;
   height: 24rem;
   object-fit: contain;
+
 }
 
 .title {

@@ -10,9 +10,11 @@
           <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
+
         <div class="display-tickets">
 
           <main class="flex-parent">
+
             <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
@@ -33,10 +35,6 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-
-  mounted() {},
-
   data() {
     return {
       rooms: [
