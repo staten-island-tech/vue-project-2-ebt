@@ -1,5 +1,5 @@
 <template>
-  <div id="page"  class="default" :class="{'mono': altTheme === 0} ">
+  <div id="page" class="default" :class="{ mono: altTheme === 0 }">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
@@ -23,13 +23,11 @@ import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
-
   data() {
     return {
       altTheme: 1,
-    }
+    };
   },
-
 
   mounted() {
     /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
@@ -57,25 +55,23 @@ export default {
       console.log(el);
     },
 
-  theme() { 
- if ( this.altTheme === 1) {
-    this.altTheme = 0;
-  } else {
-    this.altTheme = 1;
-  }
-  console.log(this.altTheme);
+    theme() {
+      if (this.altTheme === 1) {
+        this.altTheme = 0;
+      } else {
+        this.altTheme = 1;
+      }
+      console.log(this.altTheme);
     },
     test() {
       console.log("hi");
     },
-
   },
 };
 </script>
 <style>
 :root {
-
-/*   --primary: #191817;
+  /*   --primary: #191817;
   --secondary: gray;
   --primaryText: white; */
   --pink: #fab59e;
@@ -127,8 +123,8 @@ body,
   box-sizing: border-box;
 }
 
-body{
-    background-color: #fdf3e5;
+body {
+  background-color: #fdf3e5;
 }
 
 #page {
@@ -215,7 +211,7 @@ body{
 .btn1:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
-
+}
 .link {
   display: flex;
   flex-wrap: wrap;
@@ -227,6 +223,5 @@ body{
   font-size: 2.5rem;
   width: 50%;
   margin: auto;
-
 }
 </style>

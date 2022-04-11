@@ -1,9 +1,7 @@
 <template>
   <div>
     <h2 class="section-title">Reviews</h2>
-    <h3 class="section-subtitle">
-      Why we are the best !!
-    </h3>
+    <h3 class="section-subtitle">Why we are the best !!</h3>
     <main class="reviews">
       <h2 class="section-subtitle">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
       <div class="review-card">
@@ -55,8 +53,6 @@ export default {
 </script>
 
 <style>
-
-
 .review-card {
   display: flex;
   flex-wrap: wrap;
@@ -72,7 +68,6 @@ export default {
   font-size: 2.5rem;
   width: 50%;
   margin: auto;
-
 }
 
 .reviews {
@@ -83,6 +78,6 @@ export default {
   scrollbar-width: none;
 }
 a:visited {
-  color:black;
+  color: black;
 }
 </style>
