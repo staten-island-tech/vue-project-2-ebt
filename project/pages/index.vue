@@ -196,6 +196,7 @@ body{
 .w100 {
   width: 100%;
 }
+
 .btn1 {
   display: inline-block;
   text-transform: uppercase;
@@ -214,5 +215,18 @@ body{
 .btn1:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  color: #ffffff;
+  font-size: 2.5rem;
+  width: 50%;
+  margin: auto;
+
 }
 </style>

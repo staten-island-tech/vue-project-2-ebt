@@ -105,7 +105,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .gallery-home {
   text-align: center;
 }

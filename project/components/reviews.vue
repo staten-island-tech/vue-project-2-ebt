@@ -38,9 +38,7 @@
           "This is my favorite place to be at after a day of hard work."
         </p>
       </div>
-      <a class="text-size display" href="https://mikewhalen.tech/"
-        >READ MORE REVIEWS</a
-      >
+      <a class="link" href="/reviews">READ MORE REVIEWS</a>
     </main>
   </div>
 </template>
@@ -54,7 +52,6 @@ export default {
   },
   methods: {},
 };
-
 </script>
 
 <style>
