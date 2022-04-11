@@ -2,8 +2,8 @@
   <div class="section">
     <h1 class="section-title">Gallery</h1>
     <h2 class="section-subtitle">See our famous visitors!</h2>
-    <section class="flex-parent">
-      <Card class="gallery-card">
+    <section class="gallery-parent">
+      <div class="gallery-card">
         <button
           class="gallery-button"
           id="left-button"
@@ -20,7 +20,7 @@
         </button>
         <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
-      </Card>
+      </div>
       <div class="gallery-description">
         <h2>Description:</h2>
         <h3>{{ currentImage.description }}</h3>
@@ -130,6 +130,13 @@ export default {
   width: 50%;
   margin-bottom: 5rem;
   margin-right: 10rem;
+}
+.gallery-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
 }
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {

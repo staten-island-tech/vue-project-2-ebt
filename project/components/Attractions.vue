@@ -67,6 +67,7 @@ export default {
           description: "HAVE FUN :)",
           price: "$75",
         },
+        //problem is that the End of the World Simulator takes up too much space on the card in lower widths
         /* get one or two more attractions */
       ],
     };
