@@ -196,4 +196,16 @@ body{
 .w100 {
   width: 100%;
 }
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  color: #ffffff;
+  font-size: 2.5rem;
+  width: 50%;
+  margin: auto;
+}
 </style>

@@ -12,7 +12,8 @@
           :desc="pricetag(goods.price)"
         >
         </Card>
-      </section> 
+      </section>
+      <a href="/shop" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -68,8 +69,6 @@ export default {
 
 
 <style>
-
-
 .display {
   width: 80%;
   margin: 1rem auto;

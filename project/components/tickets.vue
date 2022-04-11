@@ -10,11 +10,8 @@
           <button @click="switchRoom(2)" class="btn1">12 Nights</button>
         </div>
 
-
         <div class="display-tickets">
-
           <main class="flex-parent">
-
             <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
@@ -23,8 +20,9 @@
               <h3>Large: {{ pricetag(active.priceLarge) }}</h3>
             </section>
           </main>
-
-          <button class="btn1">More options</button>
+          <a href="/tickets"
+            ><button class="checkout-btn">More options</button>
+          </a>
         </div>
       </section>
     </main>
@@ -78,7 +76,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .img2 {
   width: 290px;
   height: 240px;
@@ -98,7 +96,6 @@ export default {
   width: 95%;
   margin: auto;
 }
-
 
 .display-tickets {
   display: flex;
