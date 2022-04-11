@@ -66,6 +66,7 @@ export default {
 }
 .link {
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .header-topline {
   top: 0;

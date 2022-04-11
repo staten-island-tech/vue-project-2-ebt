@@ -79,11 +79,7 @@ export default {
 </script>
 
 <style>
-.img2 {
-  width: 290px;
-  height: 240px;
-  object-fit: cover;
-}
+
 .title-text {
   font-size: var(--h1);
   text-align: center;

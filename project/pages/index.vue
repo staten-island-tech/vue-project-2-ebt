@@ -166,6 +166,11 @@ body{
   font-size: var(--h3);
   margin: 0rem 0rem 2rem 0rem;
 }
+.img2 {
+  width: 290px;
+  height: 240px;
+  object-fit: cover;
+}
 .w10 {
   width: 10%;
 }
