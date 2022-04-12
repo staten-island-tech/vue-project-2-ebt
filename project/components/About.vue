@@ -14,7 +14,7 @@
         </h3>
       </div>
       <div class="flex-inner">
-        <img src="/pie.jpg" alt="" class="about-img height-auto w90" />
+        <img src="/pie.png" alt="" class="about-img height-auto w90" />
       </div>
     </div>
     <div></div>

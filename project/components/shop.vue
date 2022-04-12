@@ -29,17 +29,17 @@ export default {
         {
           name: "EBT Hoodie",
           price: 14.99,
-          img: "/steak.jpg",
+          img: "/steak.png",
         },
         {
           name: "EBT Tee",
           price: 4.99,
-          img: "/pizza.jpg",
+          img: "/pizza.png",
         },
         {
           name: "EBT Umbrella",
           price: 7.99,
-          img: "/pie.jpg",
+          img: "/pie.png",
         },
         {
           name: "EBT Cards",
@@ -49,7 +49,7 @@ export default {
         {
           name: "EBT Stuffie",
           price: 8.99,
-          img: "/kebabs.jpg",
+          img: "/kebabs.png",
         },
         {
           name: "EBT Replica",

@@ -11,9 +11,8 @@
         </div>
 
         <div class="display2">
-
           <main class="display flex-parent">
-            <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
+            <img src="face.png" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
               <div>Nights: {{ active.nights }}</div>
               <div>Small: {{ pricetag(active.priceSmall) }}</div>

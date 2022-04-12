@@ -39,7 +39,7 @@ export default {
       attractions: [
         {
           name: "Garden",
-          image: "/garden.jpg",
+          image: "/garden.png",
           alt: "nice flowers and grass",
           description:
             "You can come here and touch grass because most of you need to",
@@ -47,14 +47,14 @@ export default {
         },
         {
           name: "Arcade",
-          image: "/arcade.jpg",
+          image: "/arcade.png",
           alt: "videogames",
           description: "We have all the videogames",
           price: "$20",
         },
         {
           name: "Stone Temple",
-          image: "/statue.jpg",
+          image: "/statue.png",
           alt: "temple",
           description:
             "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",

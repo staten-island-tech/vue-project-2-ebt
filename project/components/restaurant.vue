@@ -31,17 +31,17 @@ export default {
         {
           name: "EBT Steak",
           price: 14.99,
-          img: "/steak.jpg",
+          img: "/steak.png",
         },
         {
           name: "Pizza",
           price: 4.99,
-          img: "/pizza.jpg",
+          img: "/pizza.png",
         },
         {
           name: "Apple Pie",
           price: 7.99,
-          img: "/pie.jpg",
+          img: "/pie.png",
         },
         {
           name: "Ramen",
@@ -51,7 +51,7 @@ export default {
         {
           name: "Kebabs",
           price: 8.99,
-          img: "/kebabs.jpg",
+          img: "/kebabs.png",
         },
         {
           name: "Chicken Teriyaki",
