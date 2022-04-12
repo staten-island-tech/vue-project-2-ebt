@@ -20,9 +20,10 @@
               <h3>Large: {{ pricetag(active.priceLarge) }}</h3>
             </section>
           </main>
-          <a href="/tickets"
-            ><button class="checkout-btn">More options</button>
-          </a>
+
+          <button class="checkout-btn">
+            <a href="/tickets">More options</a>
+          </button>
         </div>
       </section>
     </main>
@@ -109,5 +110,4 @@ export default {
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }
-
 </style>

@@ -1,7 +1,7 @@
 <template>
-  <div class="gallery-home ">
-    <h1 class="gallery-title">Gallery</h1>
-    <h2 class="gallery-header">See our famous visitors!</h2>
+  <div class="gallery-home">
+    <h2 class="section-title">Gallery</h2>
+    <h3 class="section-subtitle">See our famous visitors!</h3>
     <div class="gallery-parent">
       <div class="gallery-card">
         <button
@@ -19,10 +19,10 @@
           ➡
         </button>
         <!-- try to get buttons on top of image -->
-        <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
+        <img class="gallery-img w90" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="gallery-description">
-        <h2 id="desc-title">Description:</h2>
+      <div class="gallery-description w50">
+        <h2>Description:</h2>
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
     </div>
@@ -109,38 +109,24 @@ export default {
 .gallery-home {
   text-align: center;
 }
-.gallery-title {
-  font-size: 4rem;
-}
-.gallery-header {
-  font-size: 2rem;
-}
 .gallery-parent {
-  width: 100%;
   display: flex;
   justify-content: center;
-  text-align: center;
   align-items: center;
 }
 .gallery-card {
   position: relative;
   width: 70rem;
   background-color: var(--thirdary);
-  color: #010101;
   display: flex;
   justify-content: space-around;
-  text-align: center;
   align-items: center;
   margin: 5rem;
-  margin-right: 5rem;
 }
 .gallery-img {
-  width: 90%;
-  height: auto;
   margin: 5rem;
 }
 .gallery-description {
-  width: 50%;
   margin-bottom: 5rem;
   margin-right: 10rem;
 }
@@ -152,7 +138,6 @@ export default {
   opacity: 50%;
   font-size: 3rem;
   width: 7rem;
-  height: auto;
 }
 #left-button {
   left: 30%;
@@ -160,10 +145,7 @@ export default {
 #right-button {
   right: 30%;
 }
-#desc-title {
-  font-size: 3rem;
-}
 #desc-text {
-  font-size: 2rem;
+  font-size: var(--h3);
 }
 </style>

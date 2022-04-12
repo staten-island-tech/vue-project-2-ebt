@@ -5,21 +5,21 @@
     <main class="reviews">
       <h2 class="section-subtitle">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
       <div class="review-card">
-        <img class="img2" src="reviewer5.jpg" alt="review1" />
+        <img class="img3" src="reviewer5.jpg" alt="review1" />
         <p class="text-size">
           "This hotel wouldn't exist without me. This hotel is awesome because
           of me!"
         </p>
       </div>
       <div class="review-card">
-        <img class="img2" src="reviewer3.jpg" alt="review1" />
+        <img class="img3" src="reviewer3.jpg" alt="review1" />
         <p class="text-size">
           "I am planning to announce a collaboration with this hotel because
           this hotel is so successful and will be beneficial to my business."
         </p>
       </div>
       <div class="review-card">
-        <img class="img2" src="reviewer1.jpg" alt="review1" />
+        <img class="img3" src="reviewer1.jpg" alt="review1" />
         <p class="text-size">
           "I visited this hotel with my wife and we had plenty of lovely
           memories here. I love this hotel. It is a good place to relax after a
@@ -27,11 +27,11 @@
         </p>
       </div>
       <div class="review-card">
-        <img class="img2" src="reviewer4.jpg" alt="review1" />
+        <img class="img3" src="reviewer4.jpg" alt="review1" />
         <p class="text-size">"Safe hotel. No criminals."</p>
       </div>
       <div class="review-card">
-        <img class="img2" src="reviewer2.jpg" alt="review1" />
+        <img class="img3" src="reviewer2.jpg" alt="review1" />
         <p class="text-size">
           "This is my favorite place to be at after a day of hard work."
         </p>
@@ -79,5 +79,10 @@ export default {
 }
 a:visited {
   color: black;
+}
+.img3 {
+  width: 29rem;
+  height: 24rem;
+  object-fit: cover;
 }
 </style>

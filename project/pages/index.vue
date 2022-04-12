@@ -219,7 +219,7 @@ body {
   width: 80%;
   height: auto;
   margin: 1rem auto;
-  color: #ffffff;
+  color: var(--primaryText);
   font-size: 2.5rem;
   width: 50%;
   margin: auto;
