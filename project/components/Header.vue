@@ -1,5 +1,5 @@
 <template>
-  <div class="header w100 ">
+  <div class="header w100">
     <div class="header-topline w100">
       <h1 class="header-topline-text">HOTEL²</h1>
     </div>
@@ -23,7 +23,10 @@ export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });
     tl.from(".header", { y: -120, duration: 1 });
-    tl.from(".link", { opacity: 0, stagger: { each: 0.1, from: "left" } });
+    tl.from(".header-link", {
+      opacity: 0,
+      stagger: { each: 0.1, from: "left" },
+    });
   },
   data() {
     return {
