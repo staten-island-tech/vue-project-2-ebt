@@ -4,6 +4,9 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
+    bodyAttrs: {
+      class: 'default',
+    },
     title: 'project',
     htmlAttrs: {
       lang: 'en'

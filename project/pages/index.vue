@@ -1,10 +1,10 @@
 <template>
-  <div id="page" class="default" :class="{ mono: altTheme === 0 }">
+  <div id="page" class="default" :class="{ mono: altTheme === true }">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="btn1" @click="theme()">THEME CHANGE</button>
+    <button class="themeBtn" @click="theme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -25,7 +25,7 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
   data() {
     return {
-      altTheme: 1,
+      altTheme: false,
     };
   },
 
@@ -56,10 +56,10 @@ export default {
     },
 
     theme() {
-      if (this.altTheme === 1) {
-        this.altTheme = 0;
+      if (this.altTheme === false) {
+        this.altTheme = true;
       } else {
-        this.altTheme = 1;
+        this.altTheme = false;
       }
       console.log(this.altTheme);
     },
@@ -71,9 +71,7 @@ export default {
 </script>
 <style>
 :root {
-  /*   --primary: #191817;
-  --secondary: gray;
-  --primaryText: white; */
+  --yellow: #fdf3e5;
   --pink: #fab59e;
   --gray: #4a5759;
   --light-purple: #e5d6df;
@@ -85,20 +83,6 @@ export default {
   --h3: 2rem;
   --h4: 1.15rem;
 }
-
-.default {
-  --primary: var(--pink);
-  --secondary: var(--gray);
-  --thirdary: var(--light-purple);
-  --primaryText: var(--black);
-}
-.mono {
-  --primary: var(--black);
-  --secondary: var(--white);
-  --thirdary: var(--gray);
-  --primaryText: var(--white);
-}
-
 h1 {
   font-size: var(--h1);
 }
@@ -111,9 +95,6 @@ h3 {
 h4 {
   font-size: var(--h4);
 }
-.filler {
-  margin-bottom: 35rem;
-}
 html,
 body,
 * {
@@ -122,46 +103,30 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
-  background-color: #fdf3e5;
+  background-color: var(--background);
 }
-
 #page {
   margin: 0;
   padding: 0;
   position: relative;
 }
-.home-page {
-  margin-bottom: 40rem;
+/*Themes*/
+.default {
+  --primary: var(--pink);
+  --secondary: var(--gray);
+  --thirdary: var(--light-purple);
+  --primaryText: var(--black);
+  --background: var(--yellow);
 }
-.section {
-  text-align: center;
-  background-color: var(--primary);
-  color: var(--primaryText);
-  border-radius: 30px;
-  width: 90%;
-  height: auto;
-  margin: 50px auto;
+.mono {
+  --primary: var(--black);
+  --secondary: var(--white);
+  --thirdary: var(--gray);
+  --primaryText: var(--white);
+  --background: var(--white);
 }
-.flex-parent {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.margin-auto {
-  margin: auto;
-}
-.height-auto {
-  height: auto;
-}
-.section-title {
-  font-size: var(--h1);
-}
-.section-subtitle {
-  font-size: var(--h3);
-  margin: 0rem 0rem 2rem 0rem;
-}
+/*Preset Classes*/
 .w10 {
   width: 10%;
 }
@@ -192,8 +157,41 @@ body {
 .w100 {
   width: 100%;
 }
+.margin-auto {
+  margin: auto;
+}
+.height-auto {
+  height: auto;
+}
+.flex-parent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
-.btn1 {
+.filler {
+  margin-bottom: 35rem;
+}
+.home-page {
+  margin-bottom: 40rem;
+}
+.section {
+  text-align: center;
+  background-color: var(--primary);
+  color: var(--primaryText);
+  border-radius: 30px;
+  width: 90%;
+  height: auto;
+  margin: 50px auto;
+}
+.section-title {
+  font-size: var(--h1);
+}
+.section-subtitle {
+  font-size: var(--h3);
+  margin: 0rem 0rem 2rem 0rem;
+}
+.themeBtn {
   display: inline-block;
   text-transform: uppercase;
   outline: none;
@@ -208,7 +206,7 @@ body {
   font-size: 16px;
   margin: 2rem;
 }
-.btn1:hover {
+.themeBtn:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
