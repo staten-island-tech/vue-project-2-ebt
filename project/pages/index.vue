@@ -76,10 +76,10 @@ body,
   text-align: center;
   background-color: var(--primary);
   color: var(--primaryText);
-  border-radius: 30px;
+  border-radius: 3rem;
   width: 90%;
   height: auto;
-  margin: 50px auto;
+  margin: 5rem auto;
 }
 .flex-parent {
   display: flex;
@@ -109,7 +109,7 @@ body,
   .section {
     transform: scale(0.9);
     height: 150%;
-    margin: 2rem;
+    margin: 3rem auto;
   }
 
   h2 {
@@ -132,6 +132,8 @@ body,
     height: auto;
     margin: 5rem;
   }
+  .gallery-description {
+  }
   .card {
     width: 40%;
   }
@@ -140,8 +142,8 @@ body,
 @media (max-width: 1024px) {
   .section {
     transform: scale(0.8);
-    height: 100%;
-    margin: 1.5rem;
+    height: 200%;
+    margin: 1.5rem auto;
   }
   h2 {
     font-size: 4.5rem;
@@ -158,13 +160,14 @@ body,
   /* figure out img and card media queries cuz thats the main issue */
   .gallery-card {
     width: 100rem;
-    margin: 7rem;
     margin-right: 7rem;
   }
   .gallery-img {
     width: 90%;
     height: auto;
     margin: 5rem;
+  }
+  .gallery-description {
   }
   .card {
     width: 55%;
@@ -173,8 +176,8 @@ body,
 @media (max-width: 750px) {
   .section {
     transform: scale(0.7);
-    height: 50%;
-    margin: 0;
+    height: 250%;
+    margin: 0 auto;
   }
   h2 {
     font-size: 5.5rem;
@@ -193,13 +196,15 @@ body,
     width: 100rem;
     background-color: #f44336;
     color: #010101;
-    margin: 3rem;
     margin-right: 3rem;
   }
   .gallery-img {
     width: 90%;
     height: auto;
     margin: 5rem;
+  }
+  .gallery-description {
+    width: 25%;
   }
   .card {
     width: 70%;
