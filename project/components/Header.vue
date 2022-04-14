@@ -81,6 +81,7 @@ export default {
   top: 57.5px;
   height: 30px;
   font-size: 7.5px;
+  padding: 2rem;
 }
 .bar {
   top: 50px;

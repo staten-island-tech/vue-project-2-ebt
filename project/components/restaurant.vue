@@ -69,8 +69,5 @@ export default {
 </script>
 
 <style>
-.display {
-  width: 80%;
-  margin: 1rem auto;
-}
+
 </style>

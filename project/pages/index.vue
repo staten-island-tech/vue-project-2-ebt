@@ -167,8 +167,8 @@ body{
   margin: 0rem 0rem 2rem 0rem;
 }
 .img2 {
-  width: 290px;
-  height: 240px;
+  width: 400px;
+  height: auto;
   object-fit: cover;
 }
 .w10 {
