@@ -3,9 +3,25 @@ export default {
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
-  head: {
+  data() {
+    return{
+      
+    }
+  },
+  computed: {
+    isThemeAlt (){
+      return this.$store.theme.altTheme
+    }
+  },
+  watch: {
+    isThemeAlt () {
+      this.head()
+    }
+  },
+  head() {
+    return {
     bodyAttrs: {
-      class: 'default',
+      class: this.isThemeAlt ? 'mono' : 'default'
     },
     title: 'project',
     htmlAttrs: {
@@ -20,6 +36,7 @@ export default {
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
+  }
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css

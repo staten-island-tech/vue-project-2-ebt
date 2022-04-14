@@ -1,5 +1,5 @@
 <template>
-  <div id="page" class="default" :class="{ mono: altTheme === true }">
+  <div id="page" class="">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
@@ -23,11 +23,7 @@ import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
-  data() {
-    return {
-      altTheme: false,
-    };
-  },
+  data() {},
 
   mounted() {
     /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
@@ -56,12 +52,12 @@ export default {
     },
 
     theme() {
-      if (this.altTheme === false) {
-        this.altTheme = true;
+      if (this.$store.altTheme === false) {
+        this.$store.altTheme = true;
       } else {
-        this.altTheme = false;
+        this.$store.altTheme = false;
       }
-      console.log(this.altTheme);
+      console.log(this.$store.altTheme);
     },
     test() {
       console.log("hi");
