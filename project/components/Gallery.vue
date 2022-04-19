@@ -111,7 +111,7 @@ export default {
 <style>
 .gallery-card {
   position: relative;
-  width: 70rem;
+  width: 50%;
   background-color: #f44336;
   color: #010101;
   display: flex;

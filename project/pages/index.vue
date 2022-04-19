@@ -105,6 +105,7 @@ body,
   width: 100%;
 }
 /* media queries needed, basic things from flexbox gallery project but it needs more */
+/* gotta make a drop down menu for the header because it's too big*/
 @media (max-width: 1366px) {
   .section {
     transform: scale(0.9);
@@ -113,16 +114,19 @@ body,
   }
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 3.6rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 2.6rem;
+  }
+  h4 {
+    font-size: 1.6rem;
   }
   .section-title {
     font-size: 5rem;
   }
   .section-subtitle {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   .gallery-card {
     width: 80rem;
@@ -146,18 +150,24 @@ body,
     margin: 1.5rem auto;
   }
   h2 {
-    font-size: 4.5rem;
+    font-size: 4.2rem;
   }
   h3 {
-    font-size: 3.5rem;
+    font-size: 3.2rem;
+  }
+  h4 {
+    font-size: 2.2rem;
   }
   .section-title {
     font-size: 6rem;
   }
   .section-subtitle {
-    font-size: 4rem;
+    font-size: 5rem;
   }
-  /* figure out img and card media queries cuz thats the main issue */
+  /* figure out img and card media queries cuz thats the main issue 
+  headers increased by .6 each time 
+  section titles by 1 each time 
+  */
   .gallery-card {
     width: 100rem;
     margin-right: 7rem;
@@ -180,20 +190,23 @@ body,
     margin: 0 auto;
   }
   h2 {
-    font-size: 5.5rem;
+    font-size: 4.8rem;
   }
   h3 {
-    font-size: 4.5rem;
+    font-size: 3.8rem;
+  }
+  h4 {
+    font-size: 2.8rem;
   }
   .section-title {
     font-size: 7rem;
   }
   .section-subtitle {
-    font-size: 5rem;
+    font-size: 6rem;
   }
 
   .gallery-card {
-    width: 100rem;
+    width: 50%;
     background-color: #f44336;
     color: #010101;
     margin-right: 3rem;
@@ -204,7 +217,7 @@ body,
     margin: 5rem;
   }
   .gallery-description {
-    width: 25%;
+    width: 80%;
   }
   .card {
     width: 70%;
