@@ -27,7 +27,7 @@
         FIND MORE ATTRACTIONS NEARBY</a
       >
       <!-- check reviews.vue for the class of this link -->
-      <!--try to do more here-->
+      <!-- figure out what needs to be changed for media queries-->
     </section>
   </div>
 </template>

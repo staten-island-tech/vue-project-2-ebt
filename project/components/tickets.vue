@@ -120,12 +120,12 @@ export default {
   width: 40%;
   margin: 1rem auto;
 }
-
+/* gotta make display 2 width 100% for last media query */
 .space1 {
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }
-
+/* this font-size doesn't work */
 .btn1 {
   display: inline-block;
   text-transform: uppercase;

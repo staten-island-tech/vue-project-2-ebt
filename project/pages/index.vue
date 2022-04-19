@@ -114,13 +114,13 @@ body,
   }
 
   h2 {
-    font-size: 3.6rem;
+    font-size: 3.5rem;
   }
   h3 {
-    font-size: 2.6rem;
+    font-size: 2.5rem;
   }
   h4 {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .section-title {
     font-size: 5rem;
@@ -129,17 +129,34 @@ body,
     font-size: 4rem;
   }
   .gallery-card {
-    width: 80rem;
+    width: 50%;
   }
   .gallery-img {
     width: 90%;
     height: auto;
     margin: 5rem;
   }
-  .gallery-description {
+  /* .gallery-description {
+  } */
+  #left-button {
+    left: 30%;
+  }
+  #right-button {
+    right: 30%;
   }
   .card {
     width: 40%;
+  }
+  .attractions-card {
+    width: 32rem;
+    height: 32rem;
+  }
+  .space1 {
+    font-size: 2.5rem;
+  }
+  /*  fix this font-size */
+  .attractions-description {
+    font-size: 1.75rem;
   }
 }
 
@@ -150,13 +167,13 @@ body,
     margin: 1.5rem auto;
   }
   h2 {
-    font-size: 4.2rem;
+    font-size: 4rem;
   }
   h3 {
-    font-size: 3.2rem;
+    font-size: 3rem;
   }
   h4 {
-    font-size: 2.2rem;
+    font-size: 2rem;
   }
   .section-title {
     font-size: 6rem;
@@ -164,12 +181,15 @@ body,
   .section-subtitle {
     font-size: 5rem;
   }
-  /* figure out img and card media queries cuz thats the main issue 
-  headers increased by .6 each time 
-  section titles by 1 each time 
+  /* figure out img and card media queries cuz thats the main issue
+  headers increased by .5 each time
+  section titles by 1 each time
+  figure out card spacing
+
+  might want different style for gallery and home, fix cards for attractions.
   */
   .gallery-card {
-    width: 100rem;
+    width: 100%;
     margin-right: 7rem;
   }
   .gallery-img {
@@ -177,10 +197,27 @@ body,
     height: auto;
     margin: 5rem;
   }
-  .gallery-description {
+  /* .gallery-description {
+  } */
+  #left-button {
+    left: 20%;
   }
+  #right-button {
+    right: 20%;
+  }
+
   .card {
     width: 55%;
+  }
+  .attractions-card {
+    width: 34rem;
+    height: 34rem;
+  }
+  .attractions-description {
+    font-size: 2rem;
+  }
+  .space1 {
+    font-size: 2.5rem;
   }
 }
 @media (max-width: 750px) {
@@ -189,14 +226,21 @@ body,
     height: 250%;
     margin: 0 auto;
   }
+  .flex-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .flex-inner {
+    width: 100%;
+  }
   h2 {
-    font-size: 4.8rem;
+    font-size: 4.5rem;
   }
   h3 {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
   h4 {
-    font-size: 2.8rem;
+    font-size: 2.5rem;
   }
   .section-title {
     font-size: 7rem;
@@ -206,21 +250,52 @@ body,
   }
 
   .gallery-card {
-    width: 50%;
+    position: relative;
+    width: 70%;
     background-color: #f44336;
     color: #010101;
-    margin-right: 3rem;
+    display: flex;
+    margin-right: 5rem;
   }
   .gallery-img {
     width: 90%;
     height: auto;
     margin: 5rem;
   }
+
+  .gallery-parent {
+    flex-direction: column;
+  }
   .gallery-description {
-    width: 80%;
+    margin-right: 0rem;
+  }
+  #left-button {
+    left: 10%;
+  }
+  #right-button {
+    right: 10%;
   }
   .card {
     width: 70%;
+  }
+  .pricetag {
+    font-size: 2.5rem;
+  }
+  .attractions-card {
+    width: 36rem;
+    height: 36rem;
+  }
+  .attractions-description {
+    font-size: 2.25rem;
+  }
+  .space1 {
+    font-size: 7rem;
+  }
+
+  /* .btn1 {
+  } might want to make button smaller */
+  .display2 {
+    width: 100%;
   }
 }
 </style>
