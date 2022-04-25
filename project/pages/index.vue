@@ -126,7 +126,7 @@ body,
     font-size: 5rem;
   }
   .section-subtitle {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   .gallery-card {
     width: 50%;
@@ -179,7 +179,7 @@ body,
     font-size: 6rem;
   }
   .section-subtitle {
-    font-size: 5rem;
+    font-size: 4rem;
   }
   /* figure out img and card media queries cuz thats the main issue
   headers increased by .5 each time
@@ -246,7 +246,7 @@ body,
     font-size: 7rem;
   }
   .section-subtitle {
-    font-size: 6rem;
+    font-size: 4.5rem;
   }
 
   .gallery-card {
@@ -290,8 +290,10 @@ body,
   }
   .space1 {
     font-size: 7rem;
+    margin-left: 0rem;
   }
-
+  .img2 {
+  }
   /* .btn1 {
   } might want to make button smaller */
   .display2 {
