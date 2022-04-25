@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <h3 class="title section-subtitle">{{ title }}</h3>
+    <h3 class="title3">{{ title }}</h3>
     <img class="img-card margin-auto w90" :src="image" alt="" />
-    <h4 class="pricetag">{{ desc }}</h4>
+    <h3 class="pricetag">{{ desc }}</h3>
   </div>
 </template>
 
@@ -30,14 +30,15 @@ export default {
   width: 100%;
   height: 24rem;
   object-fit: contain;
-
 }
 
-.title {
+.title3 {
   box-sizing: border-box;
+  font-size: 3.5rem;
+  margin: 1rem auto;
 }
 .pricetag {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 1rem auto;
 }
 </style>

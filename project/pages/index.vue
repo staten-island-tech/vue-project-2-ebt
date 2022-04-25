@@ -74,10 +74,6 @@ export default {
 </script>
 <style>
 :root {
-
-/*   --primary: #191817;
-  --secondary: gray;
-  --primaryText: white; */
   --pink: #fab59e;
   --gray: #4a5759;
   --light-purple: #e5d6df;

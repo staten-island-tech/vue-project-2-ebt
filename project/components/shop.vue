@@ -68,8 +68,6 @@ export default {
 
 
 <style>
-
-
 .display {
   width: 80%;
   margin: 1rem auto;
