@@ -14,6 +14,7 @@
         {{ link.label }}
       </h4>
     </div>
+        <div class="bar2 w100"></div>
   </div>
 </template>
 
@@ -85,6 +86,12 @@ export default {
 }
 .bar {
   top: 5rem;
+  position: fixed;
+  background-color: white;
+  height: 2rem;
+}
+.bar2 {
+  top: 10rem;
   position: fixed;
   background-color: white;
   height: 2rem;
