@@ -38,7 +38,7 @@
           "This is my favorite place to be at after a day of hard work."
         </p>
       </div>
-      <a class="text-size display" href="https://mikewhalen.tech/"
+      <a class="text-size margin-auto w80" href="https://mikewhalen.tech/"
         >READ MORE REVIEWS</a
       >
     </main>

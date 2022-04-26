@@ -3,8 +3,8 @@
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
     <main class="home1 margin-auto">
-      <section class="display flex-parent">
-        <div class="display2">
+      <section class="w80 margin-auto flex-parent">
+        <div class="">
           <button @click="switchRoom(0)" class="btn1">3 Nights</button>
           <button @click="switchRoom(1)" class="btn1">6 Nights</button>
           <button @click="switchRoom(2)" class="btn1">12 Nights</button>
@@ -14,7 +14,6 @@
         <div class="display-tickets">
 
           <main class="flex-parent">
-
             <img src="tickets.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
@@ -94,7 +93,6 @@ export default {
   width: 95%;
   margin: auto;
 }
-
 
 .display-tickets {
   display: flex;

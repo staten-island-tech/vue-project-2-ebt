@@ -81,8 +81,8 @@ export default {
   --white: #ffffff;
 
   --h1: 4rem;
-  --h2: 3rem;
-  --h3: 2rem;
+  --h2: 4rem;
+  --h3: 3rem;
   --h4: 1.15rem;
 }
 
@@ -149,6 +149,7 @@ body{
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .margin-auto {
   margin: auto;
 }
