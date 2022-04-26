@@ -1,5 +1,5 @@
 <template>
-  <div id="page" class="">
+  <div id="page" class="default" :class="{ mono: currentTheme === true }">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
@@ -23,14 +23,12 @@ import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
-  data() {},
-
+  data() {
+    return {
+      test: 1,
+    };
+  },
   mounted() {
-    /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
-    tlFooter.from(".footer", {
-      //scaleY: 0,
-      duration: 2,
-    });*/
     const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
@@ -41,8 +39,12 @@ export default {
       });
     });
   },
-
   name: "IndexPage",
+  computed: {
+    currentTheme: function () {
+      return this.$store.altTheme;
+    },
+  },
   methods: {
     scrollMeTo(ref) {
       const el = this.$refs[ref];
@@ -58,9 +60,7 @@ export default {
         this.$store.altTheme = false;
       }
       console.log(this.$store.altTheme);
-    },
-    test() {
-      console.log("hi");
+      console.log(this.currentTheme);
     },
   },
 };

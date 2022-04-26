@@ -13,11 +13,6 @@ export default {
       return this.$store.theme.altTheme
     }
   },
-  watch: {
-    isThemeAlt () {
-      this.head()
-    }
-  },
   head() {
     return {
     bodyAttrs: {

@@ -1,1 +1,1 @@
-const theme = {altTheme: false};
+const altTheme = false;
