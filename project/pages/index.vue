@@ -210,7 +210,7 @@ body,
     width: 55%;
   }
   .attractions-card {
-    width: 30rem;
+    width: 34rem;
     height: 34rem;
   }
   .attractions-description {
@@ -282,8 +282,8 @@ body,
     font-size: 2.5rem;
   }
   .attractions-card {
-    width: 30rem;
-    height: 40rem;
+    width: 36rem;
+    height: 36rem;
   }
   .attractions-description {
     font-size: 2.25rem;
