@@ -109,7 +109,7 @@ body,
 @media (max-width: 1366px) {
   .section {
     transform: scale(0.9);
-    height: 150%;
+    /* height: 150%; don't know why this exists */
     margin: 3rem auto;
   }
 
@@ -210,7 +210,7 @@ body,
     width: 55%;
   }
   .attractions-card {
-    width: 34rem;
+    width: 30rem;
     height: 34rem;
   }
   .attractions-description {
@@ -282,8 +282,8 @@ body,
     font-size: 2.5rem;
   }
   .attractions-card {
-    width: 36rem;
-    height: 36rem;
+    width: 30rem;
+    height: 40rem;
   }
   .attractions-description {
     font-size: 2.25rem;
