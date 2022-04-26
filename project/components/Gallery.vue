@@ -58,7 +58,7 @@ export default {
         },
         {
           name: "2",
-          url: "/pizza.png",
+          url: "/face.jpg",
           alt: "stuff",
           description: "description 2",
           id: 1,
@@ -88,7 +88,6 @@ export default {
     };
     //need to v-bind images, look at whatever
   },
-  mounted() {},
   methods: {
     switchImageRight() {
       if (this.currentImage.id === 4) {
@@ -111,8 +110,8 @@ export default {
 <style>
 .gallery-card {
   position: relative;
-  width: 50%;
-  background-color: #f44336;
+  width: 70rem;
+  background-color: var(--thirdary);
   color: #010101;
   display: flex;
   justify-content: space-around;
@@ -125,6 +124,7 @@ export default {
   width: 90%;
   height: auto;
   margin: 5rem;
+  object-fit: cover;
 }
 .gallery-description {
   width: 50%;
@@ -145,11 +145,13 @@ export default {
   color: red;
   opacity: 50%;
   font-size: 3rem;
+  width: 7rem;
+  height: auto;
 }
 #left-button {
-  left: 40%;
+  left: 30%;
 }
 #right-button {
-  right: 40%;
+  right: 30%;
 }
 </style>

@@ -1,9 +1,9 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Shop</h2>
     <h3 class="section-subtitle">Bring home a memory with you!</h3>
-    <main class="home">
-      <section class="display flex-parent">
+    <main class="">
+      <section class="w80 margin-auto flex-parent">
         <Card
           v-for="goods in goods"
           :key="goods.name"
@@ -12,7 +12,7 @@
           :desc="pricetag(goods.price)"
         >
         </Card>
-      </section>
+      </section> 
     </main>
   </div>
 </template>
@@ -21,40 +21,38 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-
   data() {
     return {
       goods: [
         {
-          name: "EBT Hoodie",
-          price: 14.99,
-          img: "/steak.png",
+          name: "Squared Hoodie",
+          price: 74.99,
+          img: "/hoodie.jpg",
         },
         {
-          name: "EBT Tee",
-          price: 4.99,
-          img: "/pizza.png",
+          name: "Squared Tee",
+          price: 29.99,
+          img: "/tee.jpg",
         },
         {
-          name: "EBT Umbrella",
-          price: 7.99,
-          img: "/pie.png",
+          name: "Squared Umbrella",
+          price: 20.99,
+          img: "/pie.jpg",
         },
         {
-          name: "EBT Cards",
-          price: 14.99,
-          img: "/ramen.png",
-        },
-        {
-          name: "EBT Stuffie",
+          name: "Squared Cards",
           price: 8.99,
-          img: "/kebabs.png",
+          img: "/poker.jpg",
         },
         {
-          name: "EBT Replica",
-          price: 13.99,
-          img: "/terichick.png",
+          name: "Squared Pillow",
+          price: 17.99,
+          img: "/pillow.jpg",
+        },
+        {
+          name: "Squared Tesseract",
+          price: 23.99,
+          img: "/tesseract.jpg",
         },
       ],
     };
@@ -68,13 +66,7 @@ export default {
 };
 </script>
 
-<style>
-.home {
-  width: 95%;
-}
 
-.display {
-  width: 80%;
-  margin: 1rem auto;
-}
+<style>
+
 </style>

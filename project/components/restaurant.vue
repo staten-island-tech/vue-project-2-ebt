@@ -4,8 +4,8 @@
     <h3 class="section-subtitle">
       Freshly Imported. Fairest Prices. Highly Rated.
     </h3>
-    <main class="home margin-auto">
-      <section class="display flex-parent">
+    <main class="margin-auto">
+      <section class="w80 flex-parent margin-auto">
         <Card
           v-for="food in food"
           :key="food.name"
@@ -23,13 +23,11 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-
   data() {
     return {
       food: [
         {
-          name: "EBT Steak",
+          name: "Squared Steak",
           price: 14.99,
           img: "/steak.png",
         },
@@ -70,9 +68,4 @@ export default {
 };
 </script>
 
-<style>
-.display {
-  width: 80%;
-  margin: 1rem auto;
-}
-</style>
+<style></style>

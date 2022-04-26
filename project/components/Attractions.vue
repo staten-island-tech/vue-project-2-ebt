@@ -72,19 +72,16 @@ export default {
       ],
     };
   },
-  computed: {},
-
-  methods: {},
 };
 </script>
 
 <style>
 .attractions-card {
   width: 30rem;
-  background-color: #f44336;
+  background-color: var(--thirdary);
   height: 30rem;
   margin: 5rem;
-  color: var(--primary);
+  color: var(--primaryText);
 }
 .attractions-img {
   width: 90%;
