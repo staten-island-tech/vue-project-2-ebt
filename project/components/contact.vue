@@ -67,7 +67,8 @@ justify-content: space-evenly;
   margin: 2rem 0rem 0rem 0rem;
 }
 .faq-list{
- font-size: 2rem;
+ list-style-type: none;
+ font-size: 3rem;
  margin: 1rem auto;
 }
 .footer-img {
