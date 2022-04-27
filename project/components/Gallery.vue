@@ -58,7 +58,7 @@ export default {
         },
         {
           name: "2",
-          url: "/face.jpg",
+          url: "/face.png",
           alt: "stuff",
           description: "description 2",
           id: 1,

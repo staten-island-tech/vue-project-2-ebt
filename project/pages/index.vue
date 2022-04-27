@@ -120,8 +120,8 @@ body,
   box-sizing: border-box;
 }
 
-body{
-    background-color: #fdf3e5;
+body {
+  background-color: #fdf3e5;
 }
 
 #page {
@@ -335,12 +335,8 @@ body{
   .section {
     transform: scale(0.7);
     height: 250%;
-    margin: 0 auto;
   }
-  .flex-parent {
-    flex-direction: column;
-    align-items: center;
-  }
+
   .flex-inner {
     width: 100%;
   }
@@ -410,4 +406,5 @@ body{
   .display2 {
     width: 100%;
   }
+}
 </style>

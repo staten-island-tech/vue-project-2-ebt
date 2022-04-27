@@ -1,27 +1,25 @@
 <template>
   <div>
     <h2 class="section-title">Reviews</h2>
-    <h3 class="section-subtitle">
-      Why we are the best !!
-    </h3>
+    <h3 class="section-subtitle">Why we are the best !!</h3>
     <main class="reviews">
       <h2 class="section-subtitle">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
       <div class="review-card">
-        <img class="review-img" src="reviewer5.jpg" alt="review1" />
+        <img class="review-img" src="reviewer5.png" alt="review1" />
         <p class="text-size">
           "This hotel wouldn't exist without me. This hotel is awesome because
           of me!"
         </p>
       </div>
       <div class="review-card">
-        <img class="review-img" src="reviewer3.jpg" alt="review1" />
+        <img class="review-img" src="reviewer3.png" alt="review1" />
         <p class="text-size">
           "I am planning to announce a collaboration with this hotel because
           this hotel is so successful and will be beneficial to my business."
         </p>
       </div>
       <div class="review-card">
-        <img class="review-img" src="reviewer1.jpg" alt="review1" />
+        <img class="review-img" src="reviewer1.png" alt="review1" />
         <p class="text-size">
           "I visited this hotel with my wife and we had plenty of lovely
           memories here. I love this hotel. It is a good place to relax after a
@@ -29,11 +27,11 @@
         </p>
       </div>
       <div class="review-card">
-        <img class="review-img" src="reviewer4.jpg" alt="review1" />
+        <img class="review-img" src="reviewer4.png" alt="review1" />
         <p class="text-size">"Safe hotel. No criminals."</p>
       </div>
       <div class="review-card">
-        <img class="review-img" src="reviewer2.jpg" alt="review1" />
+        <img class="review-img" src="reviewer2.png" alt="review1" />
         <p class="text-size">
           "This is my favorite place to be at after a day of hard work."
         </p>
@@ -54,11 +52,9 @@ export default {
   },
   methods: {},
 };
-
 </script>
 
 <style>
-
 .review-card {
   display: flex;
   flex-wrap: wrap;
@@ -91,6 +87,6 @@ export default {
 }
 
 a:visited {
-  color:black;
+  color: black;
 }
 </style>
