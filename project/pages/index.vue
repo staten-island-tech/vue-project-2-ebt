@@ -1,5 +1,5 @@
 <template>
-  <div id="page" class="default" :class="{ mono: currentTheme === true }">
+  <div id="page" v-bind:class="[currentTheme ? 'mono' : 'default']">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
@@ -23,11 +23,6 @@ import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
-  data() {
-    return {
-      test: 1,
-    };
-  },
   mounted() {
     const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
@@ -40,9 +35,19 @@ export default {
     });
   },
   name: "IndexPage",
+  mutations: {
+    setTheme(state, value) {
+      state.altTheme = value;
+    },
+  },
   computed: {
-    currentTheme: function () {
-      return this.$store.altTheme;
+    currentTheme: {
+      get() {
+        return this.$store.altTheme;
+      },
+      set(value) {
+        this.$store.commit("setTheme", value);
+      },
     },
   },
   methods: {
@@ -106,6 +111,7 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  background-color: var(--background);
 }
 /*Themes*/
 .default {

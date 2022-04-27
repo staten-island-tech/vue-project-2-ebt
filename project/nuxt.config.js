@@ -3,22 +3,12 @@ export default {
   target: 'static',
 
   // Global page headers: https://go.nuxtjs.dev/config-head
-  data() {
-    return{
-      
-    }
-  },
-  computed: {
-    isThemeAlt (){
-      return this.$store.theme.altTheme
-    }
-  },
+
   head() {
     return {
     bodyAttrs: {
-      class: this.isThemeAlt ? 'mono' : 'default'
     },
-    title: 'project',
+    title: 'Hotel Squared',
     htmlAttrs: {
       lang: 'en'
     },
