@@ -37,7 +37,7 @@ export default {
         {
           name: "Squared Umbrella",
           price: 20.99,
-          img: "/pie.jpg",
+          img: "/umbrella.jpg",
         },
         {
           name: "Squared Cards",
