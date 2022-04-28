@@ -1,5 +1,5 @@
 <template>
-  <div id="page" v-bind:class="[currentTheme ? 'mono' : 'default']">
+  <div id="page" class="default">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
@@ -35,19 +35,14 @@ export default {
     });
   },
   name: "IndexPage",
-  mutations: {
-    setTheme(state, value) {
-      state.altTheme = value;
+  watch: {
+    currentTheme() {
+      this.$store.commit("setTheme");
     },
   },
   computed: {
-    currentTheme: {
-      get() {
-        return this.$store.altTheme;
-      },
-      set(value) {
-        this.$store.commit("setTheme", value);
-      },
+    currentTheme() {
+      return this.$store.state.altTheme;
     },
   },
   methods: {
@@ -59,12 +54,8 @@ export default {
     },
 
     theme() {
-      if (this.$store.altTheme === false) {
-        this.$store.altTheme = true;
-      } else {
-        this.$store.altTheme = false;
-      }
-      console.log(this.$store.altTheme);
+      //this.currentTheme = !this.currentTheme;
+      console.log(this.$store.state.altTheme);
       console.log(this.currentTheme);
     },
   },
