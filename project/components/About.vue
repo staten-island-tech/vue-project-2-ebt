@@ -4,7 +4,7 @@
     <div class="flex-parent">
       <h3 class="w30 margin-auto pop-text">We are Squared!</h3>
 
-      <img src="/pie.jpg" alt="" class="about-img height-auto w30" />
+      <img src="/pie.png" alt="" class="about-img height-auto w30" />
       <h3 class="w30 margin-auto about-text">
         We are a prestigious hotel, built on the foundation to produce the most
         luxurious experiences for the most fairest prices to customers all over

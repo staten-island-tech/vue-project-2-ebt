@@ -219,7 +219,7 @@ body {
 /* gotta make a drop down menu for the header because it's too big*/
 @media (max-width: 1366px) {
   .section {
-    transform: scale(0.9);
+    transform: scale(0.95);
     /* height: 150%; don't know why this exists */
     margin: 3rem auto;
   }
@@ -273,7 +273,7 @@ body {
 
 @media (max-width: 1024px) {
   .section {
-    transform: scale(0.8);
+    transform: scale(0.9);
     height: 200%;
     margin: 1.5rem auto;
   }
@@ -333,7 +333,7 @@ body {
 }
 @media (max-width: 750px) {
   .section {
-    transform: scale(0.7);
+    transform: scale(0.85);
     height: 250%;
   }
 
@@ -390,7 +390,7 @@ body {
   }
   .attractions-card {
     width: 36rem;
-    height: 36rem;
+    height: 37rem;
   }
   .attractions-description {
     font-size: 2.25rem;
@@ -403,8 +403,5 @@ body {
   }
   /* .btn1 {
   } might want to make button smaller */
-  .display2 {
-    width: 100%;
-  }
 }
 </style>
