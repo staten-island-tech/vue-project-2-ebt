@@ -30,6 +30,11 @@ export default {
   width: 100%;
   height: 24rem;
   object-fit: contain;
+  transition: 1.25s;
+}
+.img-card:hover {
+  transform: scale(1.2);
+  opacity: 90%;
 }
 
 .title3 {

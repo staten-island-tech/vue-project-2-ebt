@@ -4,21 +4,18 @@
     <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
     </h3>
-    <section class="flex-parent">
-      <div
-        class="attractions-card"
-        v-for="attraction in attractions"
-        :key="attraction.name"
-      >
-        <h3>{{ attraction.name }}</h3>
-        <img
-          class="w90"
-          v-bind:src="attraction.image"
-          v-bind:alt="attraction.alt"
-        />
-        <h4 class="attractions-description">{{ attraction.description }}</h4>
-      </div>
-    </section>
+      <main class="margin-auto">
+      <section class="w80 flex-parent margin-auto ">
+        <Card
+          v-for="places in places"
+          :key="places.name"
+          :title="places.name"
+          :image="places.img"
+          :desc="places.description"
+        >
+        </Card>
+      </section>
+    </main>
   </div>
 </template>
 
@@ -26,25 +23,22 @@
 export default {
   data() {
     return {
-      attractions: [
+      places: [
         {
           name: "Stone Temple",
-          image: "/statue.jpg",
-          alt: "wacky statue",
+          img: "/statue.jpg",
           description:
-            "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",
+            "Mysterious.",
         },
         {
           name: "Garden",
-          image: "/garden.jpg",
-          alt: "nice flowers and grass",
+          img: "/garden.jpg",
           description:
-            "You can come here and touch grass because most of you need to",
+            "Come here and touch grass because most of you need to.",
         },
         {
           name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
+          img: "/arcade.jpg",
           description: "We have all the videogames",
         },
       ],
@@ -54,11 +48,4 @@ export default {
 </script>
 
 <style>
-.attractions-card {
-  width: 30rem;
-  background-color: var(--thirdary);
-  height: 30rem;
-  margin: 5rem;
-  color: var(--primaryText);
-}
 </style>
