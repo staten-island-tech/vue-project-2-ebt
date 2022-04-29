@@ -40,6 +40,7 @@ export default {
 }
 .about-text {
   font-size: 2.5rem;
+  margin: 1rem;
 }
 .pop-text {
   font-size: 10rem;

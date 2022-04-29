@@ -247,8 +247,9 @@ body {
     height: auto;
     margin: 5rem;
   }
-  /* .gallery-description {
-  } */
+  .gallery-description {
+    width: 95%;
+  }
   #left-button {
     left: 30%;
   }
@@ -258,16 +259,18 @@ body {
   .card {
     width: 40%;
   }
-  .attractions-card {
-    width: 32rem;
-    height: 32rem;
-  }
   .space1 {
     font-size: 2.5rem;
   }
   /*  fix this font-size */
-  .attractions-description {
-    font-size: 1.75rem;
+  .at .about-img {
+    width: 40%;
+  }
+  .about-text {
+    width: 70%;
+  }
+  .pop-text {
+    margin: 3rem;
   }
 }
 
@@ -304,7 +307,7 @@ body {
     margin-right: 7rem;
   }
   .gallery-img {
-    width: 90%;
+    width: 93%;
     height: auto;
     margin: 5rem;
   }
@@ -320,15 +323,15 @@ body {
   .card {
     width: 55%;
   }
-  .attractions-card {
-    width: 34rem;
-    height: 34rem;
-  }
-  .attractions-description {
-    font-size: 2rem;
-  }
+
   .space1 {
     font-size: 2.5rem;
+  }
+  .about-img {
+    width: 70%;
+  }
+  .about-text {
+    width: 92.5%;
   }
 }
 @media (max-width: 750px) {
@@ -364,8 +367,9 @@ body {
     display: flex;
     margin-right: 5rem;
   }
+  /* fix this thick background*/
   .gallery-img {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 5rem;
   }
@@ -388,18 +392,19 @@ body {
   .pricetag {
     font-size: 2.5rem;
   }
-  .attractions-card {
-    width: 36rem;
-    height: 37rem;
-  }
-  .attractions-description {
-    font-size: 2.25rem;
-  }
+
   .space1 {
     font-size: 7rem;
     margin-left: 0rem;
   }
+  .about-img {
+    width: 80%;
+  }
+  .about-text {
+    width: 95%;
+  }
   .img2 {
+    width: ;
   }
   /* .btn1 {
   } might want to make button smaller */
