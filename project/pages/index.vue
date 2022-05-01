@@ -62,6 +62,7 @@ export default {
 };
 </script>
 <style>
+
 :root {
   --yellow: #fdf3e5;
   --pink: #fab59e;
