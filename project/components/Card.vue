@@ -20,9 +20,7 @@ export default {
 <style>
 .card {
   width: 30%;
-
   background-color: var(--thirdary);
-
   margin: 2rem auto;
   border-radius: 1.5rem;
 }

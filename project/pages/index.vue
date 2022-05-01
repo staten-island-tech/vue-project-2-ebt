@@ -28,6 +28,9 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
+    //The next two lines are so stupid, but they work so it doesn't really matter
+    this.theme = !this.theme
+    this.theme = !this.theme
     const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
@@ -39,7 +42,9 @@ export default {
     });
   },
   name: "IndexPage",
-
+  watch:{'$store.state.theme': function(){
+    console.log(this.theme)
+  }},
   computed :{
     theme: {
       get() {

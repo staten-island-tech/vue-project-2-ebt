@@ -1,5 +1,5 @@
 <template>
-  <div id="page">
+  <div id="page" class="default" v-bind:class="{mono: theme}">
     <PageHeader></PageHeader>
     <h1 class="alt-head">Restaurant</h1>
     <div class="flex-parent w90 margin-auto alt-display">
@@ -17,11 +17,26 @@
 
 <script>
 export default {
+   mounted() {
+    //The next two lines are so stupid, but they work so it doesn't really matter
+    this.theme = !this.theme
+    this.theme = !this.theme
+   },
   methods: {
     pricetag: function (prices) {
       let pricenum = Number(prices).toFixed(2);
       return `$${pricenum}`;
     },
+  },
+  computed :{
+    theme: {
+      get() {
+        return this.$store.state.theme
+      },
+      set(value){
+       this.$store.commit('setTheme', value)
+      }
+    }
   },
   data() {
     return {
