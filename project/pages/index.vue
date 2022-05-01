@@ -1,10 +1,14 @@
 <template>
-  <div id="page" class="default">
+  <div id="page" class="default" v-bind:class="{mono: theme}">
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="themeBtn" @click="theme()">THEME CHANGE</button>
+            <h1> State: {{theme}}</h1>
+    <button class="themeBtn" @click="toggleTheme()">THEME CHANGE</button>
+    <a href="test">
+      <h2>to Test page</h2>
+    </a>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -35,15 +39,16 @@ export default {
     });
   },
   name: "IndexPage",
-  watch: {
-    currentTheme() {
-      this.$store.commit("setTheme");
-    },
-  },
-  computed: {
-    currentTheme() {
-      return this.$store.state.altTheme;
-    },
+
+  computed :{
+    theme: {
+      get() {
+        return this.$store.state.theme
+      },
+      set(value){
+       this.$store.commit('setTheme', value)
+      }
+    }
   },
   methods: {
     scrollMeTo(ref) {
@@ -53,10 +58,8 @@ export default {
       console.log(el);
     },
 
-    theme() {
-      //this.currentTheme = !this.currentTheme;
-      console.log(this.$store.state.altTheme);
-      console.log(this.currentTheme);
+    toggleTheme(){
+      this.theme = !this.theme
     },
   },
 };

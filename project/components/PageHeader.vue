@@ -34,7 +34,7 @@ export default {};
   width: 25%;
 }
 .alt-header {
-  background-color: black;
+  background-color: var(--primary);
   position: fixed;
   top: 0;
   height: 50px;

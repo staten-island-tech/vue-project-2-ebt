@@ -2,7 +2,7 @@
     <div>
         <div v-bind:class="{red : theme}"> <h1>hi</h1></div>
         <h1> State: {{theme}}</h1>
-        <a href="test2">to Home</a>
+        <a href="test">to Home</a>
         <button @click="testFunction1()">Run function 1</button>
         <button @click="testFunction2()">Run function 2</button>
         <button @click="toggle()">Run toggle</button>
