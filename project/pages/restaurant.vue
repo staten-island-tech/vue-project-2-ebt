@@ -2,6 +2,7 @@
   <div id="page" class="default" v-bind:class="{mono: theme}">
     <PageHeader></PageHeader>
     <h1 class="alt-head">Restaurant</h1>
+                <h1> State: {{theme}}</h1>
     <div class="flex-parent w90 margin-auto alt-display">
       <Card
         v-for="item in items"
@@ -22,13 +23,7 @@ export default {
     this.theme = !this.theme
     this.theme = !this.theme
    },
-  methods: {
-    pricetag: function (prices) {
-      let pricenum = Number(prices).toFixed(2);
-      return `$${pricenum}`;
-    },
-  },
-  computed :{
+   computed :{
     theme: {
       get() {
         return this.$store.state.theme
@@ -37,6 +32,12 @@ export default {
        this.$store.commit('setTheme', value)
       }
     }
+  },
+  methods: {
+    pricetag: function (prices) {
+      let pricenum = Number(prices).toFixed(2);
+      return `$${pricenum}`;
+    },
   },
   data() {
     return {
@@ -158,9 +159,12 @@ export default {
 </script>
 <style>
 :root {
-  --primary: black;
-  --secondary: #818181;
-  --primaryText: white;
+    --yellow: #fdf3e5;
+  --pink: #fab59e;
+  --gray: #4a5759;
+  --light-purple: #e5d6df;
+  --black: #0c0a09;
+  --white: #ffffff;
 
   --h1: 4rem;
   --h2: 3rem;
@@ -178,6 +182,20 @@ h3 {
 }
 h4 {
   font-size: var(--h4);
+}
+.default {
+  --primary: var(--pink);
+  --secondary: var(--gray);
+  --thirdary: var(--light-purple);
+  --primaryText: var(--black);
+  --background: var(--yellow);
+}
+.mono {
+  --primary: var(--black);
+  --secondary: var(--white);
+  --thirdary: var(--gray);
+  --primaryText: var(--white);
+  --background: var(--white);
 }
 .filler {
   margin-bottom: 35rem;

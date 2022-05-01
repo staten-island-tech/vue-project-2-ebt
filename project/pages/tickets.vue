@@ -7,7 +7,23 @@
 </template>
 
 <script>
-export default {};
+export default {
+     mounted() {
+    //The next two lines are so stupid, but they work so it doesn't really matter
+    this.theme = !this.theme
+    this.theme = !this.theme
+   },
+   computed :{
+    theme: {
+      get() {
+        return this.$store.state.theme
+      },
+      set(value){
+       this.$store.commit('setTheme', value)
+      }
+    }
+  },
+};
 </script>
 <style>
 :root {
