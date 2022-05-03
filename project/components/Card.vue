@@ -30,10 +30,10 @@ export default {
   width: 100%;
   height: 24rem;
   object-fit: contain;
-  transition: 1.25s;
+  transition: 1.2s;
 }
 .img-card:hover {
-  transform: scale(1.2);
+  transform: scale(1.15);
   opacity: 90%;
 }
 

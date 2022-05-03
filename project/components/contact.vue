@@ -4,7 +4,7 @@
     <h3 class="section-subtitle">and FAQs!</h3>
     <main class="flex-evenly W90 ">
     <div class="w50">
-      <h2>Connect with Us! </h2>
+
 
       <section class="flex-parent">
         <div class="w30">
