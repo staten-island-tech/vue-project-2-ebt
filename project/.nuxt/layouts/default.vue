@@ -90,8 +90,6 @@ body {
 .w100 {
   width: 100%;
 }
-.test {
-}
 .margin-auto {
   margin: auto;
 }
