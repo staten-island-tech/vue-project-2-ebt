@@ -35,8 +35,8 @@ export default {
   width: 50%;
 }
 .about-img {
-  border-radius: 30px;
-  margin: 20px auto;
+  border-radius: 3rem;
+  margin: 2rem auto;
 }
 .about-text {
   font-size: 2.5rem;
