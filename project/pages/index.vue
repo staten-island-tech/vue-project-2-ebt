@@ -4,11 +4,7 @@
     <div class="filler" ref="home"></div>
     <div class="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-            <h1> State: {{theme}}</h1>
     <button class="themeBtn" @click="toggleTheme()">THEME CHANGE</button>
-    <a href="test">
-      <h2>to Test page</h2>
-    </a>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>

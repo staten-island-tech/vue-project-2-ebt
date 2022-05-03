@@ -2,7 +2,6 @@
   <div id="page" class="default" v-bind:class="{mono: theme}">
     <PageHeader></PageHeader>
     <h1 class="alt-head">Restaurant</h1>
-                <h1> State: {{theme}}</h1>
     <div class="flex-parent w90 margin-auto alt-display">
       <Card
         v-for="item in items"
