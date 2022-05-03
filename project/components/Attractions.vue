@@ -17,8 +17,8 @@
           v-bind:src="attraction.image"
           v-bind:alt="attraction.alt"
         />
-        <h4 class="attractions-description">{{ attraction.description }}</h4>
-        <h4 class="attractions-description">{{ attraction.price }}</h4>
+        <h4>{{ attraction.description }}</h4>
+        <h4>{{ attraction.price }}</h4>
       </div>
       <a
         class="text-size display"
@@ -79,7 +79,7 @@ export default {
 .attractions-card {
   width: 30rem;
   background-color: var(--thirdary);
-  height: 30rem;
+  height: 50%;
   margin: 5rem;
   color: var(--primaryText);
 }
@@ -87,8 +87,5 @@ export default {
   width: 90%;
   height: 20rem;
   object-fit: cover;
-}
-.attractions-description {
-  font-size: 1.5rem;
 }
 </style>

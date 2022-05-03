@@ -80,7 +80,7 @@ export default {
   --h1: 4rem;
   --h2: 4rem;
   --h3: 3rem;
-  --h4: 1.15rem;
+  --h4: 2rem;
 }
 
 .default {
@@ -225,13 +225,13 @@ body {
   }
 
   h2 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   h3 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   h4 {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
   }
   .section-title {
     font-size: 5rem;
@@ -281,13 +281,13 @@ body {
     margin: 1.5rem auto;
   }
   h2 {
-    font-size: 4rem;
+    font-size: 5rem;
   }
   h3 {
-    font-size: 3rem;
+    font-size: 4rem;
   }
   h4 {
-    font-size: 2rem;
+    font-size: 3rem;
   }
   .section-title {
     font-size: 6rem;
@@ -344,13 +344,13 @@ body {
     width: 100%;
   }
   h2 {
-    font-size: 4.5rem;
+    font-size: 5.5rem;
   }
   h3 {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
   h4 {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
   }
   .section-title {
     font-size: 7rem;
@@ -361,7 +361,7 @@ body {
 
   .gallery-card {
     position: relative;
-    width: 70%;
+    width: 90%;
     background-color: #f44336;
     color: #010101;
     display: flex;
@@ -373,11 +373,11 @@ body {
     height: auto;
     margin: 5rem;
   }
-
   .gallery-parent {
     flex-direction: column;
   }
   .gallery-description {
+    font-size: 10%;
     margin-right: 0rem;
   }
   #left-button {
