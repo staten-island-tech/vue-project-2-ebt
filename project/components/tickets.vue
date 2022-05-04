@@ -12,11 +12,7 @@
 
         <div class="display-tickets">
           <main class="flex-parent">
-            <<<<<<< HEAD
-            <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
-            =======
             <img src="tickets.jpg" alt="hotelo" class="img2 height-auto" />
-            >>>>>>> 8662c27011db794bd3d62c373f6644479e7448ca
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
               <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
