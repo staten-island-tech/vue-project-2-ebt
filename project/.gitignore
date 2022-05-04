@@ -68,11 +68,7 @@ typings/
 nuxt
 
 # nuxt.js build output
-.nuxt/*
-
-# keep layouts/default.vue
-!.nuxt/layouts
-
+.nuxt
 # Nuxt generate
 dist
 

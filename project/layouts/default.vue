@@ -35,9 +35,6 @@ body,
   padding: 0;
   box-sizing: border-box;
 }
-body {
-  background-color: var(--background);
-}
 #page {
   margin: 0;
   padding: 0;
@@ -97,6 +94,11 @@ body {
   height: auto;
 }
 .flex-parent {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+</style>lex-parent {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

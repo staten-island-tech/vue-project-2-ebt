@@ -1,8 +1,7 @@
 <template>
-  <div id="page" class="default" v-bind:class="{mono: theme}">
+  <div id="page" class="default" v-bind:class="{ mono: theme }">
     <Header class="header" @send="scrollMeTo($event)" />
-    <div class="filler" ref="home"></div>
-    <div class="home"><Home></Home></div>
+    <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
     <button class="themeBtn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
@@ -25,8 +24,8 @@ gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
     //The next two lines are so stupid, but they work so it doesn't really matter
-    this.theme = !this.theme
-    this.theme = !this.theme
+    this.theme = !this.theme;
+    this.theme = !this.theme;
     const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
@@ -38,18 +37,20 @@ export default {
     });
   },
   name: "IndexPage",
-  watch:{'$store.state.theme': function(){
-    console.log(this.theme)
-  }},
-  computed :{
+  watch: {
+    "$store.state.theme": function () {
+      console.log(this.theme);
+    },
+  },
+  computed: {
     theme: {
       get() {
-        return this.$store.state.theme
+        return this.$store.state.theme;
       },
-      set(value){
-       this.$store.commit('setTheme', value)
-      }
-    }
+      set(value) {
+        this.$store.commit("setTheme", value);
+      },
+    },
   },
   methods: {
     scrollMeTo(ref) {
@@ -59,18 +60,16 @@ export default {
       console.log(el);
     },
 
-    toggleTheme(){
-      this.theme = !this.theme
+    toggleTheme() {
+      this.theme = !this.theme;
     },
   },
 };
 </script>
 <style >
 /*Generic classes are now in .nuxt/layout/default.vue*/
-.filler {
-  margin-bottom: 35rem;
-}
 .home-page {
+  padding-top: 35rem;
   margin-bottom: 40rem;
 }
 .section {
