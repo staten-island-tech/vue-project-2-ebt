@@ -4,17 +4,19 @@
     <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
     </h3>
-    <section class="flex-parent">
-      <Card
-        class="attractions-card"
-        v-for="attraction in attractions"
-        :key="attraction.name"
-        :title="attraction.name"
-        :image="attraction.image"
-        :desc="attraction.description"
-      ></Card>
-    </section>
-    <a href="/attractions" class="link"> See More!</a>
+    <main class="margin-auto">
+      <section class="w80 flex-parent margin-auto">
+        <Card
+          v-for="places in places"
+          :key="places.name"
+          :title="places.name"
+          :image="places.img"
+          :desc="places.description"
+        >
+        </Card>
+      </section>
+      <a href="/attractions" class="link"> See More!</a>
+    </main>
   </div>
 </template>
 
@@ -22,25 +24,20 @@
 export default {
   data() {
     return {
-      attractions: [
+      places: [
         {
           name: "Stone Temple",
-          image: "/statue.jpg",
-          alt: "wacky statue",
-          description:
-            "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",
+          img: "/statue.jpg",
+          description: "Mysterious.",
         },
         {
           name: "Garden",
-          image: "/garden.jpg",
-          alt: "nice flowers and grass",
-          description:
-            "You can come here and touch grass because most of you need to",
+          img: "/garden.jpg",
+          description: "Come here and touch grass because most of you need to.",
         },
         {
           name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
+          img: "/arcade.jpg",
           description: "We have all the videogames",
         },
       ],
@@ -48,13 +45,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.attractions-card {
-  width: 30rem;
-  background-color: var(--thirdary);
-  height: 30rem;
-  margin: 5rem;
-  color: var(--primaryText);
-}
-</style>

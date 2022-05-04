@@ -44,7 +44,7 @@
       </a>
     </div>
     <h3>We are not legally responsible for any stupid things you do here.</h3>
-    <h4 class="copyright-text">© 2022 Hotel Squared, Now to Forever.</h4>
+    <h4 class="copyright-text">© 2022 Hotel Squared. Now to Forever.</h4>
   </div>
 </template>
 

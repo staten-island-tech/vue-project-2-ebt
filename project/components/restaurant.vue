@@ -5,7 +5,7 @@
       Freshly Imported. Fairest Prices. Highly Rated.
     </h3>
     <main class="margin-auto">
-      <section class="display flex-parent">
+      <section class="w80 flex-parent margin-auto">
         <Card
           v-for="food in food"
           :key="food.name"
@@ -68,10 +68,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.display {
-  width: 80%;
-  margin: 1rem auto;
-}
-</style>

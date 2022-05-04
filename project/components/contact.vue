@@ -4,8 +4,6 @@
     <h3 class="section-subtitle">and FAQs!</h3>
     <main class="flex-evenly W90">
       <div class="w50">
-        <h2>Connect with Us!</h2>
-
         <section class="flex-parent">
           <div class="w30">
             <img class="contact-img" src="/icons/phone.png" alt="Phone Icon" />
@@ -78,7 +76,8 @@
   margin: 2rem 0rem 0rem 0rem;
 }
 .faq-list {
-  font-size: 2rem;
+  list-style-type: none;
+  font-size: 3rem;
   margin: 1rem auto;
 }
 .contact-img {

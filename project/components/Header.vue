@@ -14,6 +14,7 @@
         {{ link.label }}
       </h4>
     </div>
+        <div class="bar2 w100"></div>
   </div>
 </template>
 
@@ -57,7 +58,7 @@ export default {
   background-color: var(--secondary);
 }
 .header-topline-text {
-  margin-top: 5px;
+  margin-top: 1rem;
 }
 .header {
   top: 0;
@@ -69,25 +70,33 @@ export default {
 }
 .header-link {
   text-transform: uppercase;
+  font-size: 2rem;
 }
 .header-topline {
   top: 0;
   position: fixed;
-  height: 60px;
+  height: 10rem;
   margin-top: 0px;
   background-color: var(--primary);
 }
 .header-bottomline {
   position: fixed;
   background-color: var(--primary);
-  top: 57.5px;
-  height: 30px;
-  font-size: 7.5px;
+  top: 5.75rem;
+  height: 4rem;
+  font-size: 1rem;
+  padding: 2rem;
 }
 .bar {
-  top: 50px;
+  top: 5rem;
   position: fixed;
   background-color: white;
-  height: 10px;
+  height: 2rem;
+}
+.bar2 {
+  top: 10rem;
+  position: fixed;
+  background-color: white;
+  height: 2rem;
 }
 </style>
