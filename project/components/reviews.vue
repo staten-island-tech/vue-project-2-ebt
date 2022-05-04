@@ -5,33 +5,22 @@
     <main class="reviews">
       <h2 class="section-subtitle">5 Star Ratings ⭐⭐⭐⭐⭐</h2>
       <div class="review-card">
-        <<<<<<< HEAD
-        <img class="img3" src="reviewer5.jpg" alt="review1" />
-        =======
         <img class="review-img" src="reviewer5.jpg" alt="review1" />
-        >>>>>>> Color-Change
         <p class="text-size">
           "This hotel wouldn't exist without me. This hotel is awesome because
           of me!"
         </p>
       </div>
       <div class="review-card">
-        <<<<<<< HEAD
-        <img class="img3" src="reviewer3.jpg" alt="review1" />
-        =======
         <img class="review-img" src="reviewer3.jpg" alt="review1" />
-        >>>>>>> Color-Change
         <p class="text-size">
           "I am planning to announce a collaboration with this hotel because
           this hotel is so successful and will be beneficial to my business."
         </p>
       </div>
       <div class="review-card">
-        <<<<<<< HEAD
-        <img class="img3" src="reviewer1.jpg" alt="review1" />
-        =======
         <img class="review-img" src="reviewer1.jpg" alt="review1" />
-        >>>>>>> Color-Change
+
         <p class="text-size">
           "I visited this hotel with my wife and we had plenty of lovely
           memories here. I love this hotel. It is a good place to relax after a
