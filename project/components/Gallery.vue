@@ -120,12 +120,12 @@ export default {
   margin: 5rem;
   margin-right: 5rem;
 }
-.gallery-img {
-  width: 90%;
+img.gallery-img {
+  width: 95%;
   height: auto;
   margin: 5rem;
-  object-fit: cover;
 }
+/* img margin is what determines red amount */
 .gallery-description {
   width: 50%;
   margin-bottom: 5rem;

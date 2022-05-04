@@ -11,7 +11,7 @@
         :key="attraction.name"
       >
         <!-- replace this with card.vue -->
-        <h3 class="">{{ attraction.name }}</h3>
+        <h3>{{ attraction.name }}</h3>
         <img
           class="attractions-img"
           v-bind:src="attraction.image"

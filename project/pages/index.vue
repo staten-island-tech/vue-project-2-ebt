@@ -222,6 +222,7 @@ body {
     transform: scale(0.95);
     /* height: 150%; don't know why this exists */
     margin: 3rem auto;
+    padding: 3rem;
   }
 
   h2 {
@@ -250,6 +251,11 @@ body {
   .gallery-description {
     width: 95%;
   }
+  img.gallery-img {
+    width: 95%;
+    height: auto;
+    margin: 5rem;
+  }
   #left-button {
     left: 30%;
   }
@@ -263,7 +269,7 @@ body {
     font-size: 2.5rem;
   }
   /*  fix this font-size */
-  .at .about-img {
+  .about-img {
     width: 40%;
   }
   .about-text {
@@ -306,10 +312,12 @@ body {
     width: 100%;
     margin-right: 7rem;
   }
-  .gallery-img {
-    width: 93%;
-    height: auto;
-    margin: 5rem;
+  img.gallery-img {
+    margin: 4rem;
+  }
+  .gallery-description {
+    font-size: 10%;
+    margin-right: 0rem;
   }
   /* .gallery-description {
   } */
@@ -368,10 +376,10 @@ body {
     margin-right: 5rem;
   }
   /* fix this thick background*/
-  .gallery-img {
-    width: 100%;
+  img.gallery-img {
+    width: 95%;
     height: auto;
-    margin: 5rem;
+    margin: 3rem;
   }
   .gallery-parent {
     flex-direction: column;
@@ -382,9 +390,13 @@ body {
   }
   #left-button {
     left: 10%;
+    font-size: 1.5rem;
+    width: 5rem;
   }
   #right-button {
     right: 10%;
+    font-size: 1.5rem;
+    width: 5rem;
   }
   .card {
     width: 70%;
