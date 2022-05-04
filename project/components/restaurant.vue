@@ -1,10 +1,10 @@
 <template>
-  <div class="none">
+  <div>
     <h2 class="section-title">Cuisine</h2>
     <h3 class="section-subtitle">
       Freshly Imported. Fairest Prices. Highly Rated.
     </h3>
-    <main class="home margin-auto">
+    <main class="margin-auto">
       <section class="display flex-parent">
         <Card
           v-for="food in food"
@@ -15,6 +15,7 @@
         >
         </Card>
       </section>
+      <a href="/restaurant" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -23,13 +24,11 @@
 // @ is an alias to /src
 
 export default {
-  name: "Home",
-
   data() {
     return {
       food: [
         {
-          name: "EBT Steak",
+          name: "Squared Steak",
           price: 14.99,
           img: "/steak.jpg",
         },
@@ -70,7 +69,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .display {
   width: 80%;
   margin: 1rem auto;

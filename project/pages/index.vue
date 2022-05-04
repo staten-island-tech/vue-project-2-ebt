@@ -1,24 +1,57 @@
 <template>
-  <div id="page">
+  <div id="page" class="default" v-bind:class="{ mono: theme }">
     <Header class="header" @send="scrollMeTo($event)" />
-    <div class="filler" ref="home"></div>
+    <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
+    <button class="themeBtn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
     <div ref="attractions"><Attractions class="section" /></div>
-    <div ref="gallery"><Gallery class="section" /></div>
+    <div ref="gallery">
+      <Gallery class="section" />
+    </div>
     <div ref="reviews"><Reviews class="section" /></div>
+    <div ref="contact"><Contact class="section" /></div>
     <Footer class="footer" />
   </div>
 </template>
 
 <script>
-import gsap from "gsap";
+import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
 export default {
-  mounted() {},
-  data() {},
+  mounted() {
+    //The next two lines are so stupid, but they work so it doesn't really matter
+    this.theme = !this.theme;
+    this.theme = !this.theme;
+    const sections = gsap.utils.toArray(".section");
+    sections.forEach((section) => {
+      const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
+      tlScroll.from(section, {
+        y: 101,
+        opacity: 0,
+        duration: 1.5,
+      });
+    });
+  },
   name: "IndexPage",
+  watch: {
+    "$store.state.theme": function () {
+      console.log(this.theme);
+    },
+  },
+  computed: {
+    theme: {
+      get() {
+        return this.$store.state.theme;
+      },
+      set(value) {
+        this.$store.commit("setTheme", value);
+      },
+    },
+  },
   methods: {
     scrollMeTo(ref) {
       const el = this.$refs[ref];
@@ -26,50 +59,18 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
-    test() {
-      console.log("hi");
+
+    toggleTheme() {
+      this.theme = !this.theme;
     },
   },
 };
 </script>
-<style>
-:root {
-  --primary: black;
-  --secondary: gray;
-  --primaryText: white;
-
-  --h1: 4rem;
-  --h2: 3rem;
-  --h3: 2rem;
-  --h4: 1.15rem;
-}
-h1 {
-  font-size: var(--h1);
-}
-h2 {
-  font-size: var(--h2);
-}
-h3 {
-  font-size: var(--h3);
-}
-h4 {
-  font-size: var(--h4);
-}
-.filler {
-  margin-bottom: 120px;
-}
-html,
-body,
-* {
-  font-size: 10px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-#page {
-  margin: 0;
-  padding: 0;
-  position: relative;
+<style >
+/*Generic classes are now in .nuxt/layout/default.vue*/
+.home-page {
+  padding-top: 35rem;
+  margin-bottom: 40rem;
 }
 .section {
   text-align: center;
@@ -80,27 +81,42 @@ body,
   height: auto;
   margin: 50px auto;
 }
-.flex-parent {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-.margin-auto {
-  margin: auto;
-}
-.height-auto {
-  height: auto;
-}
 .section-title {
   font-size: var(--h1);
 }
 .section-subtitle {
   font-size: var(--h3);
+  margin: 0rem 0rem 2rem 0rem;
 }
-.w90 {
-  width: 90%;
+.themeBtn {
+  display: inline-block;
+  text-transform: uppercase;
+  outline: none;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 3px;
+  padding: 12px 24px;
+  border: 0;
+  color: var(--primaryText);
+  background-color: var(--thirdary);
+  line-height: 1.15;
+  font-size: 16px;
+  margin: 2rem;
 }
-.w100 {
-  width: 100%;
+.themeBtn:hover {
+  transition: all 0.1s ease;
+  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  color: var(--primaryText);
+  font-size: 2.5rem;
+  width: 50%;
+  margin: auto;
 }
 </style>

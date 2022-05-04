@@ -6,7 +6,7 @@
     <div class="bar w100"></div>
     <div class="header-bottomline w100 flex-parent">
       <h4
-        class="link margin-auto"
+        class="header-link margin-auto"
         v-for="link in links"
         :key="link.label"
         @click="send(link.ref)"
@@ -23,7 +23,10 @@ export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });
     tl.from(".header", { y: -120, duration: 1 });
-    tl.from(".link", { opacity: 0, stagger: { each: 0.1, from: "left" } });
+    tl.from(".header-link", {
+      opacity: 0,
+      stagger: { each: 0.1, from: "left" },
+    });
   },
   data() {
     return {
@@ -50,7 +53,7 @@ export default {
 
 
 <style scoped>
-.link:hover {
+.header-link:hover {
   background-color: var(--secondary);
 }
 .header-topline-text {
@@ -64,7 +67,7 @@ export default {
   text-align: center;
   z-index: 5;
 }
-.link {
+.header-link {
   text-transform: uppercase;
 }
 .header-topline {

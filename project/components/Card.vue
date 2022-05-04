@@ -2,7 +2,7 @@
   <div class="card">
     <h3 class="title section-subtitle">{{ title }}</h3>
     <img class="img-card margin-auto w90" :src="image" alt="" />
-    <h4 class="pricetag">{{ desc }}</h4>
+    <h4 class="desc">{{ desc }}</h4>
   </div>
 </template>
 
@@ -20,20 +20,22 @@ export default {
 <style>
 .card {
   width: 30%;
-  background-color: #42b983;
+  background-color: var(--thirdary);
   margin: 2rem auto;
+  border-radius: 1.5rem;
 }
 
 .img-card {
   display: block;
+  width: 100%;
+  height: 24rem;
+  object-fit: contain;
 }
 
 .title {
-  color: #212121;
   box-sizing: border-box;
 }
-.pricetag {
-  color: #212121;
+.desc {
   font-size: 1.5rem;
   margin: 1rem auto;
 }
