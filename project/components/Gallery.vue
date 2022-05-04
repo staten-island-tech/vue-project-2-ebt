@@ -56,7 +56,7 @@ export default {
         },
         {
           name: "2",
-          url: "/pizza.jpg",
+          url: "/face.jpg",
           alt: "stuff",
           description: "description 2",
           id: 1,
@@ -138,6 +138,7 @@ export default {
   width: 90%;
   height: auto;
   margin: 5rem;
+  object-fit: cover;
 }
 .gallery-description {
   width: 50%;

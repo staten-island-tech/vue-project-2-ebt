@@ -1,8 +1,8 @@
 <template>
   <div class="card">
-    <h3 class="title section-subtitle">{{ title }}</h3>
+    <h3 class="title3">{{ title }}</h3>
     <img class="img-card margin-auto w90" :src="image" alt="" />
-    <h4 class="pricetag">{{ desc }}</h4>
+    <h3 class="pricetag">{{ desc }}</h3>
   </div>
 </template>
 
@@ -20,9 +20,7 @@ export default {
 <style>
 .card {
   width: 30%;
-
   background-color: var(--thirdary);
-
   margin: 2rem auto;
   border-radius: 1.5rem;
 }
@@ -32,14 +30,20 @@ export default {
   width: 100%;
   height: 24rem;
   object-fit: contain;
-
+  transition: 1.2s;
+}
+.img-card:hover {
+  transform: scale(1.15);
+  opacity: 90%;
 }
 
-.title {
+.title3 {
   box-sizing: border-box;
+  font-size: 3.5rem;
+  margin: 1rem auto;
 }
 .pricetag {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   margin: 1rem auto;
 }
 </style>

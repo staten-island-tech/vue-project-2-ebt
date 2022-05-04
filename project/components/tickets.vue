@@ -3,8 +3,8 @@
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
     <main class="home1 margin-auto">
-      <section class="display flex-parent">
-        <div class="display2">
+      <section class="w80 margin-auto flex-parent">
+        <div class="">
           <button @click="switchRoom(0)" class="btn1">3 Nights</button>
           <button @click="switchRoom(1)" class="btn1">6 Nights</button>
           <button @click="switchRoom(2)" class="btn1">12 Nights</button>
@@ -12,7 +12,11 @@
 
         <div class="display-tickets">
           <main class="flex-parent">
+            <<<<<<< HEAD
             <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
+            =======
+            <img src="tickets.jpg" alt="hotelo" class="img2 height-auto" />
+            >>>>>>> 8662c27011db794bd3d62c373f6644479e7448ca
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
               <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
@@ -76,12 +80,7 @@ export default {
 };
 </script>
 
-<style scoped>
-.img2 {
-  width: 290px;
-  height: 240px;
-  object-fit: cover;
-}
+<style>
 .title-text {
   font-size: var(--h1);
   text-align: center;
@@ -109,5 +108,4 @@ export default {
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }
-
 </style>

@@ -74,10 +74,6 @@ export default {
 </script>
 <style>
 :root {
-
-/*   --primary: #191817;
-  --secondary: gray;
-  --primaryText: white; */
   --pink: #fab59e;
   --gray: #4a5759;
   --light-purple: #e5d6df;
@@ -85,8 +81,8 @@ export default {
   --white: #ffffff;
 
   --h1: 4rem;
-  --h2: 3rem;
-  --h3: 2rem;
+  --h2: 4rem;
+  --h3: 3rem;
   --h4: 1.15rem;
 }
 
@@ -153,6 +149,7 @@ body{
   justify-content: space-around;
   flex-wrap: wrap;
 }
+
 .margin-auto {
   margin: auto;
 }
@@ -165,6 +162,11 @@ body{
 .section-subtitle {
   font-size: var(--h3);
   margin: 0rem 0rem 2rem 0rem;
+}
+.img2 {
+  width: 400px;
+  height: auto;
+  object-fit: cover;
 }
 .w10 {
   width: 10%;
