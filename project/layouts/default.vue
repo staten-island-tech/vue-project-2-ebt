@@ -39,7 +39,9 @@ body,
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: var(--background);
+}
+.background {
+  background-color: var(--yellow);
 }
 /*Themes*/
 .default {
@@ -94,11 +96,6 @@ body,
   height: auto;
 }
 .flex-parent {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-</style>lex-parent {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
