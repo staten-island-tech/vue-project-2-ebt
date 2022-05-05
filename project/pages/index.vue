@@ -72,11 +72,6 @@ export default {
   padding-top: 35rem;
   margin-bottom: 40rem;
 }
-.img2 {
-  width: 40rem;
-  height: auto;
-  object-fit: cover;
-}
 .section {
   text-align: center;
   background-color: var(--primary);
