@@ -404,7 +404,7 @@ body {
     width: 95%;
   }
   .img2 {
-    width: ;
+    width: 90%;
   }
   /* .btn1 {
   } might want to make button smaller */
