@@ -25,7 +25,9 @@
         <h2>Description:</h2>
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-    </div>
+    </section>
+    <!-- figure out how to replace this with card.vue -->
+
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
     <button class="gallery-button" @click="switchImageRight()">-->
     <!-- </button> -->
@@ -38,7 +40,7 @@ export default {
     return {
       currentImage: {
         name: "1",
-        url: "/statue.jpg",
+        url: "/statue.png",
         alt: "stuff",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -48,7 +50,7 @@ export default {
       images: [
         {
           name: "1",
-          url: "/statue.jpg",
+          url: "/statue.png",
           alt: "stuff",
           description:
             "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -56,28 +58,28 @@ export default {
         },
         {
           name: "2",
-          url: "/face.jpg",
+          url: "/face.png",
           alt: "stuff",
           description: "description 2",
           id: 1,
         },
         {
           name: "3",
-          url: "/arcade.jpg",
+          url: "/arcade.png",
           alt: "stuff",
           description: "description 3",
           id: 2,
         },
         {
           name: "4",
-          url: "/terichick.jpg",
+          url: "/terichick.png",
           alt: "stuff",
           description: "description 4",
           id: 3,
         },
         {
           name: "5",
-          url: "/kebabs.jpg",
+          url: "/kebabs.png",
           alt: "stuff",
           description: "description 5",
           id: 4,
@@ -105,15 +107,7 @@ export default {
 };
 </script>
 
-<style scoped>
-.gallery-home {
-  text-align: center;
-}
-.gallery-parent {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+<style>
 .gallery-card {
   position: relative;
   width: 70rem;
@@ -131,6 +125,13 @@ export default {
   margin-bottom: 5rem;
   margin-right: 10rem;
 }
+.gallery-parent {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
   position: absolute;
@@ -145,8 +146,5 @@ export default {
 }
 #right-button {
   right: 30%;
-}
-#desc-text {
-  font-size: var(--h3);
 }
 </style>

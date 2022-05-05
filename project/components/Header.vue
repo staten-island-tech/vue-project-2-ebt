@@ -52,7 +52,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .header-link:hover {
   background-color: var(--secondary);
@@ -61,6 +60,7 @@ export default {
   margin-top: 1rem;
 }
 .header {
+  z-index: 1;
   top: 0;
   position: fixed;
   color: var(--primaryText);

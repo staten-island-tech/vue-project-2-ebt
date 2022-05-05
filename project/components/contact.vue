@@ -80,8 +80,8 @@
   font-size: 3rem;
   margin: 1rem auto;
 }
-.contact-img {
-  height: 45px;
-  margin: 12.5px auto;
+.footer-img {
+  height: 4.5rem;
+  margin: 1.25rem auto;
 }
 </style>

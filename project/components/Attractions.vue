@@ -26,20 +26,37 @@ export default {
     return {
       places: [
         {
-          name: "Stone Temple",
-          img: "/statue.jpg",
-          description: "Mysterious.",
-        },
-        {
           name: "Garden",
-          img: "/garden.jpg",
-          description: "Come here and touch grass because most of you need to.",
+          image: "/garden.png",
+          alt: "nice flowers and grass",
+          description:
+            "You can come here and touch grass because most of you need to",
+          price: "$10",
         },
         {
           name: "Arcade",
-          img: "/arcade.jpg",
+          image: "/arcade.png",
+          alt: "videogames",
           description: "We have all the videogames",
+          price: "$20",
         },
+        {
+          name: "Stone Temple",
+          image: "/statue.png",
+          alt: "temple",
+          description:
+            "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",
+          price: "$50",
+        },
+        {
+          name: "End of the World Simulator",
+          image: "/endoftheworld.png",
+          alt: "city on fire",
+          description: "HAVE FUN :)",
+          price: "$75",
+        },
+        //problem is that the End of the World Simulator takes up too much space on the card in lower widths
+        /* get one or two more attractions */
       ],
     };
   },
