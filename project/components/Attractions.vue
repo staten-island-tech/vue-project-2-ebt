@@ -63,7 +63,7 @@ export default {
         {
           name: "End of the World Simulator",
           image: "/endoftheworld.png",
-          alt: "city on fire",
+          alt: "city On fire",
           description: "HAVE FUN :)",
           price: "$75",
         },
