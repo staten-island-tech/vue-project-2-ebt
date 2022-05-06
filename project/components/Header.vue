@@ -14,7 +14,7 @@
         {{ link.label }}
       </h4>
     </div>
-        <div class="bar2 w100"></div>
+    <div class="bar2 w100"></div>
   </div>
 </template>
 
@@ -55,10 +55,11 @@ export default {
 
 <style scoped>
 .header-link:hover {
-  background-color: var(--secondary);
+  background-color: var(--thirdary);
+  border-radius: 0.5rem;
 }
 .header-topline-text {
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 .header {
   top: 0;
@@ -71,6 +72,8 @@ export default {
 .header-link {
   text-transform: uppercase;
   font-size: 2rem;
+  margin-top: -1.5rem;
+  transition: all 0.075s;
 }
 .header-topline {
   top: 0;
@@ -91,12 +94,12 @@ export default {
   top: 5rem;
   position: fixed;
   background-color: white;
-  height: 2rem;
+  height: 1rem;
 }
 .bar2 {
-  top: 10rem;
+  top: 9rem;
   position: fixed;
   background-color: white;
-  height: 2rem;
+  height: 1rem;
 }
 </style>
