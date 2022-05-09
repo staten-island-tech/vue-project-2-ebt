@@ -1,5 +1,6 @@
 <template>
   <div class="footer w100">
+    <div class="filler"></div>
     <div class="footer-inner flex-parent margin-auto w90">
       <a href="https://www.discord.com" class="footer-btn" target="_blank">
         <img src="/icons/discord.png" alt="discord" class="footer-img" />
@@ -53,14 +54,16 @@ import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
   mounted() {
-    const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0.2 });
+    const tlFooter = gsap.timeline({ scrollTrigger: ".footer" });
     /*clip-path: polygon describes where each vertex should be, ordered left to right and up to down. the percent things are ordered as horizontal, vertical*/
-    tlFooter.from(".footer", {
-      clipPath: "polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%)",
-      duration: 2,
+    tlFooter.to(".footer", {
+      clipPath: "polygon(0% 60px, 100% 0px, 100% 100%, 0% 100%)",
+      duration: 0,
     });
     tlFooter.to(".footer", {
-      opacity: 100,
+      clipPath: "polygon(0% 50px, 100% 50px, 100% 100%, 0% 100%)",
+      delay: 0.5,
+      duration: 0.5,
     });
   },
 };
@@ -89,5 +92,8 @@ export default {
 }
 .copyright-text {
   margin: 7px auto;
+}
+.filler {
+  height: 50px;
 }
 </style>
