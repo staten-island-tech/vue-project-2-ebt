@@ -5,14 +5,14 @@
     <main class="home1 margin-auto">
       <section class="w80 margin-auto flex-parent">
         <div class="">
-          <button @click="switchRoom(0)" class="btn1">3 Nights</button>
-          <button @click="switchRoom(1)" class="btn1">6 Nights</button>
-          <button @click="switchRoom(2)" class="btn1">12 Nights</button>
+          <button @click="switchRoom(0)" class="main-btn">3 Nights</button>
+          <button @click="switchRoom(1)" class="main-btn">6 Nights</button>
+          <button @click="switchRoom(2)" class="main-btn">12 Nights</button>
         </div>
 
         <div class="display-tickets">
           <main class="flex-parent">
-            <img src="tickets.png" alt="hotelo" class="img2 height-auto" />
+            <img src="tickets.jpg" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
               <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
@@ -21,7 +21,9 @@
             </section>
           </main>
 
-          <button class="btn1">More options</button>
+          <a href="/tickets">
+          <button class="main-btn" >more</button>
+          </a>
         </div>
       </section>
     </main>
@@ -98,7 +100,7 @@ export default {
   width: 40%;
   margin: 1rem auto;
 }
-/* gotta make display 2 width 100% for last media query */
+
 .space1 {
   margin: 0.5rem auto;
   font-size: 1.5rem;

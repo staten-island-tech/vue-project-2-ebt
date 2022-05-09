@@ -1,4 +1,4 @@
-<template>
+`<template>
   <div>
     <h2 class="section-title">Reviews</h2>
     <h3 class="section-subtitle">Why we are the best !!</h3>
@@ -30,27 +30,27 @@ export default {
         {
           name: "Mr. Whalen",
           comment: "This hotel wouldn't exist without me. This hotel is awesome because of me!",
-          img: "/reviewer5.png",
+          img: "/reviewer5.jpg",
         },
         {
           name: "KFC Man",
           comment: "I am planning to announce a collaboration with this hotel because this hotel is so successful and will be beneficial to my business.",
-          img: "/reviewer3.png",
+          img: "/reviewer3.jpg",
         },
         {
           name: "Washton",
           comment: "I visited this hotel with my wife and we made plenty of memories here. I love this hotel. It is a good place to relax after a busy day.",
-          img: "/reviewer1.png",
+          img: "/reviewer1.jpg",
         },
         {
           name: "Bat",
           comment: "Safe hotel. No criminals.",
-          img: "/reviewer4.png",
+          img: "/reviewer4.jpg",
         },
         {
           name: "Mario",
           comment: "This is my favorite place to be at after a day of hard work.",
-          img: "/reviewer2.png",
+          img: "/reviewer2.jpg",
         },
 
       ],

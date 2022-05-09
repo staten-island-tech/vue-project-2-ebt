@@ -4,31 +4,19 @@
     <h3 class="section-subtitle">
       See all our wonderful and unique attractions!
     </h3>
-    <section class="flex-parent">
-      <div
-        class="attractions-card"
-        v-for="attraction in attractions"
-        :key="attraction.name"
-      >
-        <!-- replace this with card.vue -->
-        <h3 class="">{{ attraction.name }}</h3>
-        <img
-          class="attractions-img"
-          v-bind:src="attraction.image"
-          v-bind:alt="attraction.alt"
-        />
-        <h4 class="attractions-description">{{ attraction.description }}</h4>
-        <h4 class="attractions-description">{{ attraction.price }}</h4>
-      </div>
-      <a
-        class="text-size display"
-        href="https://www.sightseeingpass.com/en/new-york/attractions#"
-      >
-        FIND MORE ATTRACTIONS NEARBY</a
-      >
-      <!-- check reviews.vue for the class of this link -->
-      <!-- figure out what needs to be changed for media queries-->
-    </section>
+    <main class="margin-auto">
+      <section class="w80 flex-parent margin-auto">
+        <Card
+          v-for="places in places"
+          :key="places.name"
+          :title="places.name"
+          :image="places.img"
+          :desc="places.description"
+        >
+        </Card>
+      </section>
+      <a href="/attractions" class="link"> See More!</a>
+    </main>
   </div>
 </template>
 
@@ -36,21 +24,21 @@
 export default {
   data() {
     return {
-      attractions: [
+      places: [
+        {
+          name: "Stone Temple",
+          img: "/statue.jpg",
+          description: "Mysterious.",
+        },
         {
           name: "Garden",
-          image: "/garden.png",
-          alt: "nice flowers and grass",
-          description:
-            "You can come here and touch grass because most of you need to",
-          price: "$10",
+          img: "/garden.jpg",
+          description: "Come here and touch grass because most of you need to.",
         },
         {
           name: "Arcade",
-          image: "/arcade.png",
-          alt: "videogames",
+          img: "/arcade.jpg",
           description: "We have all the videogames",
-          price: "$20",
         },
         {
           name: "Stone Temple",
@@ -74,21 +62,3 @@ export default {
   },
 };
 </script>
-
-<style>
-.attractions-card {
-  width: 30rem;
-  background-color: var(--thirdary);
-  height: 30rem;
-  margin: 5rem;
-  color: var(--primaryText);
-}
-.attractions-img {
-  width: 90%;
-  height: 20rem;
-  object-fit: cover;
-}
-.attractions-description {
-  font-size: 1.5rem;
-}
-</style>

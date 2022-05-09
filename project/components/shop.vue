@@ -13,6 +13,7 @@
         >
         </Card>
       </section>
+      <a href="/shop" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -27,32 +28,32 @@ export default {
         {
           name: "Squared Hoodie",
           price: 74.99,
-          img: "/hoodie.png",
+          img: "/hoodie.jpg",
         },
         {
           name: "Squared Tee",
           price: 29.99,
-          img: "/tee.png",
+          img: "/tee.jpg",
         },
         {
           name: "Squared Umbrella",
           price: 20.99,
-          img: "/pie.png",
+          img: "/umbrella.jpg",
         },
         {
           name: "Squared Cards",
           price: 8.99,
-          img: "/poker.png",
+          img: "/poker.jpg",
         },
         {
           name: "Squared Pillow",
           price: 17.99,
-          img: "/pillow.png",
+          img: "/pillow.jpg",
         },
         {
           name: "Squared Tesseract",
           price: 23.99,
-          img: "/tesseract.png",
+          img: "/tesseract.jpg",
         },
       ],
     };
@@ -65,5 +66,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

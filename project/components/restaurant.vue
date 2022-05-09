@@ -1,5 +1,5 @@
 <template>
-  <div class="section">
+  <div>
     <h2 class="section-title">Cuisine</h2>
     <h3 class="section-subtitle">
       Freshly Imported. Fairest Prices. Highly Rated.
@@ -15,6 +15,7 @@
         >
         </Card>
       </section>
+      <a href="/restaurant" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -29,32 +30,32 @@ export default {
         {
           name: "Squared Steak",
           price: 14.99,
-          img: "/steak.png",
+          img: "/steak.jpg",
         },
         {
           name: "Pizza",
           price: 4.99,
-          img: "/pizza.png",
+          img: "/pizza.jpg",
         },
         {
           name: "Apple Pie",
           price: 7.99,
-          img: "/pie.png",
+          img: "/pie.jpg",
         },
         {
           name: "Ramen",
           price: 14.99,
-          img: "/ramen.png",
+          img: "/ramen.jpg",
         },
         {
           name: "Kebabs",
           price: 8.99,
-          img: "/kebabs.png",
+          img: "/kebabs.jpg",
         },
         {
           name: "Chicken Teriyaki",
           price: 13.99,
-          img: "/terichick.png",
+          img: "/terichick.jpg",
         },
       ],
     };
@@ -67,5 +68,3 @@ export default {
   },
 };
 </script>
-
-<style></style>

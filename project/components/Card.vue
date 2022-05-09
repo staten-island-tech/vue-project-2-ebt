@@ -2,7 +2,7 @@
   <div class="card">
     <h3 class="title3">{{ title }}</h3>
     <img class="img-card margin-auto w90" :src="image" alt="" />
-    <h3 class="desc">{{ desc }}</h3>
+    <h4 class="desc">{{ desc }}</h4>
   </div>
 </template>
 
@@ -30,6 +30,11 @@ export default {
   width: 100%;
   height: 24rem;
   object-fit: contain;
+  transition: 1.2s;
+}
+.img-card:hover {
+  transform: scale(1.15);
+  opacity: 90%;
 }
 
 .title3 {

@@ -1,8 +1,8 @@
 <template>
-  <div class="section">
-    <h1 class="section-title">Gallery</h1>
-    <h2 class="section-subtitle">See our famous visitors!</h2>
-    <section class="gallery-parent">
+  <div class="gallery-home">
+    <h2 class="section-title">Gallery</h2>
+    <h3 class="section-subtitle">See our famous visitors!</h3>
+    <div class="gallery-parent">
       <div class="gallery-card">
         <button
           class="gallery-button"
@@ -19,15 +19,13 @@
           ➡
         </button>
         <!-- try to get buttons on top of image -->
-        <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
+        <img class="gallery-img w90" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="gallery-description">
+      <div class="gallery-description w50">
         <h2>Description:</h2>
-        <h3>{{ currentImage.description }}</h3>
+        <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-    </section>
-    <!-- figure out how to replace this with card.vue -->
-
+    </div>
     <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
     <button class="gallery-button" @click="switchImageRight()">-->
     <!-- </button> -->
@@ -40,7 +38,7 @@ export default {
     return {
       currentImage: {
         name: "1",
-        url: "/statue.png",
+        url: "/statue.jpg",
         alt: "stuff",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -50,7 +48,7 @@ export default {
       images: [
         {
           name: "1",
-          url: "/statue.png",
+          url: "/statue.jpg",
           alt: "stuff",
           description:
             "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -58,28 +56,28 @@ export default {
         },
         {
           name: "2",
-          url: "/face.png",
+          url: "/face.jpg",
           alt: "stuff",
           description: "description 2",
           id: 1,
         },
         {
           name: "3",
-          url: "/arcade.png",
+          url: "/arcade.jpg",
           alt: "stuff",
           description: "description 3",
           id: 2,
         },
         {
           name: "4",
-          url: "/terichick.png",
+          url: "/terichick.jpg",
           alt: "stuff",
           description: "description 4",
           id: 3,
         },
         {
           name: "5",
-          url: "/kebabs.png",
+          url: "/kebabs.jpg",
           alt: "stuff",
           description: "description 5",
           id: 4,
@@ -107,36 +105,31 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.gallery-home {
+  text-align: center;
+}
+.gallery-parent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .gallery-card {
   position: relative;
   width: 70rem;
   background-color: var(--thirdary);
-  color: #010101;
   display: flex;
   justify-content: space-around;
-  text-align: center;
   align-items: center;
   margin: 5rem;
-  margin-right: 5rem;
 }
 .gallery-img {
-  width: 90%;
-  height: auto;
   margin: 5rem;
   object-fit: cover;
 }
 .gallery-description {
-  width: 50%;
   margin-bottom: 5rem;
   margin-right: 10rem;
-}
-.gallery-parent {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
 }
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
@@ -146,12 +139,14 @@ export default {
   opacity: 50%;
   font-size: 3rem;
   width: 7rem;
-  height: auto;
 }
 #left-button {
   left: 30%;
 }
 #right-button {
   right: 30%;
+}
+#desc-text {
+  font-size: var(--h3);
 }
 </style>

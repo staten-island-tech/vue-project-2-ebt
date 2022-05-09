@@ -1,5 +1,5 @@
 <template>
-  <div class="footer w100 ">
+  <div class="footer w100">
     <div class="footer-inner flex-parent margin-auto w90">
       <a href="https://www.discord.com" class="footer-btn" target="_blank">
         <img src="/icons/discord.png" alt="discord" class="footer-img" />
@@ -47,6 +47,25 @@
     <h4 class="copyright-text">© 2022 Hotel Squared. Now to Forever.</h4>
   </div>
 </template>
+<script>
+import { gsap } from "gsap/dist/gsap.js";
+import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
+gsap.registerPlugin(ScrollTrigger);
+export default {
+  mounted() {
+    const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0.2 });
+    /*clip-path: polygon describes where each vertex should be, ordered left to right and up to down. the percent things are ordered as horizontal, vertical*/
+    tlFooter.from(".footer", {
+      clipPath: "polygon(0% 50%, 100% 0%, 100% 100%, 0% 100%)",
+      duration: 2,
+    });
+    tlFooter.to(".footer", {
+      opacity: 100,
+    });
+  },
+};
+</script>
+
 
 <style scoped>
 .footer {

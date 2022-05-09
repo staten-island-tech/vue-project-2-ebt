@@ -1,10 +1,9 @@
 <template>
-  <div id="page" class="default" :class="{ mono: altTheme === 0 }">
+  <div id="page" class="default" v-bind:class="{ mono: theme }">
     <Header class="header" @send="scrollMeTo($event)" />
-    <div class="filler" ref="home"></div>
-    <div class="home"><Home></Home></div>
+    <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="btn1" @click="theme()">THEME CHANGE</button>
+    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -23,18 +22,10 @@ import { gsap } from "gsap/dist/gsap.js";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger.js";
 gsap.registerPlugin(ScrollTrigger);
 export default {
-  data() {
-    return {
-      altTheme: 1,
-    };
-  },
-
   mounted() {
-    /*const tlFooter = gsap.timeline({ scrollTrigger: ".footer", delay: 0 });
-    tlFooter.from(".footer", {
-      //scaleY: 0,
-      duration: 2,
-    });*/
+    //The next two lines are so stupid, but they work so it doesn't really matter
+    this.theme = !this.theme;
+    this.theme = !this.theme;
     const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });
@@ -45,8 +36,22 @@ export default {
       });
     });
   },
-
   name: "IndexPage",
+  watch: {
+    "$store.state.theme": function () {
+      console.log(this.theme);
+    },
+  },
+  computed: {
+    theme: {
+      get() {
+        return this.$store.state.theme;
+      },
+      set(value) {
+        this.$store.commit("setTheme", value);
+      },
+    },
+  },
   methods: {
     scrollMeTo(ref) {
       const el = this.$refs[ref];
@@ -55,103 +60,31 @@ export default {
       console.log(el);
     },
 
-    theme() {
-      if (this.altTheme === 1) {
-        this.altTheme = 0;
-      } else {
-        this.altTheme = 1;
-      }
-      console.log(this.altTheme);
-    },
-    test() {
-      console.log("hi");
+    toggleTheme() {
+      this.theme = !this.theme;
     },
   },
 };
 </script>
-<style>
-:root {
-  --pink: #fab59e;
-  --gray: #4a5759;
-  --light-purple: #e5d6df;
-  --black: #0c0a09;
-  --white: #ffffff;
-
-  --h1: 4rem;
-  --h2: 4rem;
-  --h3: 3rem;
-  --h4: 1.15rem;
-}
-
-.default {
-  --primary: var(--pink);
-  --secondary: var(--gray);
-  --thirdary: var(--light-purple);
-  --primaryText: var(--black);
-}
-.mono {
-  --primary: var(--black);
-  --secondary: var(--white);
-  --thirdary: var(--gray);
-  --primaryText: var(--white);
-}
-
-h1 {
-  font-size: var(--h1);
-}
-h2 {
-  font-size: var(--h2);
-}
-h3 {
-  font-size: var(--h3);
-}
-h4 {
-  font-size: var(--h4);
-}
-.filler {
-  margin-bottom: 35rem;
-}
-html,
-body,
-* {
-  font-size: 10px;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  background-color: #fdf3e5;
-}
-
-#page {
-  margin: 0;
-  padding: 0;
-  position: relative;
-}
+<style >
+/*Generic classes are now in .nuxt/layout/default.vue*/
 .home-page {
+  padding-top: 35rem;
   margin-bottom: 40rem;
+}
+.img2 {
+  width: 40rem;
+  height: auto;
+  object-fit: cover;
 }
 .section {
   text-align: center;
   background-color: var(--primary);
   color: var(--primaryText);
-  border-radius: 3rem;
+  border-radius: 30px;
   width: 90%;
   height: auto;
-  margin: 5rem auto;
-}
-.flex-parent {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.margin-auto {
-  margin: auto;
-}
-.height-auto {
-  height: auto;
+  margin: 50px auto;
 }
 .section-title {
   font-size: var(--h1);
@@ -160,43 +93,7 @@ body {
   font-size: var(--h3);
   margin: 0rem 0rem 2rem 0rem;
 }
-.img2 {
-  width: 400px;
-  height: auto;
-  object-fit: cover;
-}
-.w10 {
-  width: 10%;
-}
-.w20 {
-  width: 20%;
-}
-.w30 {
-  width: 30%;
-}
-.w40 {
-  width: 40%;
-}
-.w50 {
-  width: 50%;
-}
-.w60 {
-  width: 60%;
-}
-.w70 {
-  width: 70%;
-}
-.w80 {
-  width: 80%;
-}
-.w90 {
-  width: 90%;
-}
-.w100 {
-  width: 100%;
-}
-
-.btn1 {
+.main-btn {
   display: inline-block;
   text-transform: uppercase;
   outline: none;
@@ -211,7 +108,7 @@ body {
   font-size: 16px;
   margin: 2rem;
 }
-.btn1:hover {
+.main-btn:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
@@ -272,6 +169,18 @@ body {
   .pop-text {
     margin: 3rem;
   }
+  .link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
+  color: var(--primaryText);
+  font-size: 2.5rem;
+  width: 50%;
+  margin: auto;
+}
 }
 
 @media (max-width: 1024px) {

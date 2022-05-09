@@ -1,12 +1,12 @@
 <template>
-  <div class="header w100 ">
+  <div class="header w100">
     <div class="header-topline w100">
       <h1 class="header-topline-text">HOTEL²</h1>
     </div>
     <div class="bar w100"></div>
     <div class="header-bottomline w100 flex-parent">
       <h4
-        class="link margin-auto"
+        class="header-link margin-auto"
         v-for="link in links"
         :key="link.label"
         @click="send(link.ref)"
@@ -14,7 +14,7 @@
         {{ link.label }}
       </h4>
     </div>
-        <div class="bar2 w100"></div>
+    <div class="bar2 w100"></div>
   </div>
 </template>
 
@@ -24,7 +24,10 @@ export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });
     tl.from(".header", { y: -120, duration: 1 });
-    tl.from(".link", { opacity: 0, stagger: { each: 0.1, from: "left" } });
+    tl.from(".header-link", {
+      opacity: 0,
+      stagger: { each: 0.1, from: "left" },
+    });
   },
   data() {
     return {
@@ -49,15 +52,16 @@ export default {
 };
 </script>
 
+
 <style scoped>
-.link:hover {
-  background-color: var(--secondary);
+.header-link:hover {
+  background-color: var(--thirdary);
+  border-radius: 0.5rem;
 }
 .header-topline-text {
-  margin-top: 1rem;
+  margin-top: 0.2rem;
 }
 .header {
-  z-index: 1;
   top: 0;
   position: fixed;
   color: var(--primaryText);
@@ -65,9 +69,11 @@ export default {
   text-align: center;
   z-index: 5;
 }
-.link {
+.header-link {
   text-transform: uppercase;
   font-size: 2rem;
+  margin-top: -1.5rem;
+  transition: all 0.075s;
 }
 .header-topline {
   top: 0;
@@ -88,12 +94,12 @@ export default {
   top: 5rem;
   position: fixed;
   background-color: white;
-  height: 2rem;
+  height: 1rem;
 }
 .bar2 {
-  top: 10rem;
+  top: 9rem;
   position: fixed;
   background-color: white;
-  height: 2rem;
+  height: 1rem;
 }
 </style>
