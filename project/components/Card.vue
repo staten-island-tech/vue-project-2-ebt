@@ -2,7 +2,7 @@
   <div class="card">
     <h3 class="title3">{{ title }}</h3>
     <img class="img-card margin-auto w90" :src="image" alt="" />
-    <h3 class="pricetag">{{ desc }}</h3>
+    <h3 class="desc">{{ desc }}</h3>
   </div>
 </template>
 
@@ -37,7 +37,7 @@ export default {
   font-size: 3.5rem;
   margin: 1rem auto;
 }
-.pricetag {
+.desc {
   font-size: 2.5rem;
   margin: 1rem auto;
 }
