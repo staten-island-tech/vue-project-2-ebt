@@ -41,14 +41,6 @@ export default {
           description: "We have all the videogames",
         },
         {
-          name: "Stone Temple",
-          image: "/statue.png",
-          alt: "temple",
-          description:
-            "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",
-          price: "$50",
-        },
-        {
           name: "End of the World Simulator",
           image: "/endoftheworld.png",
           alt: "city On fire",
