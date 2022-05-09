@@ -5,9 +5,9 @@
     <main class="home1 margin-auto">
       <section class="w80 margin-auto flex-parent">
         <div class="">
-          <button @click="switchRoom(0)" class="btn1">3 Nights</button>
-          <button @click="switchRoom(1)" class="btn1">6 Nights</button>
-          <button @click="switchRoom(2)" class="btn1">12 Nights</button>
+          <button @click="switchRoom(0)" class="main-btn">3 Nights</button>
+          <button @click="switchRoom(1)" class="main-btn">6 Nights</button>
+          <button @click="switchRoom(2)" class="main-btn">12 Nights</button>
         </div>
 
         <div class="display-tickets">
@@ -21,9 +21,9 @@
             </section>
           </main>
 
-          <button class="checkout-btn">
-            <a href="/tickets">More options</a>
-          </button>
+          <a href="/tickets">
+          <button class="main-btn" >more</button>
+          </a>
         </div>
       </section>
     </main>

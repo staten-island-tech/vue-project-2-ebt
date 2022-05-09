@@ -3,7 +3,7 @@
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="themeBtn" @click="toggleTheme()">THEME CHANGE</button>
+    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -93,7 +93,7 @@ export default {
   font-size: var(--h3);
   margin: 0rem 0rem 2rem 0rem;
 }
-.themeBtn {
+.main-btn {
   display: inline-block;
   text-transform: uppercase;
   outline: none;
@@ -108,7 +108,7 @@ export default {
   font-size: 16px;
   margin: 2rem;
 }
-.themeBtn:hover {
+.main-btn:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
