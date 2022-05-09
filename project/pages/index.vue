@@ -79,8 +79,8 @@ export default {
 
   --h1: 4rem;
   --h2: 4rem;
-  --h3: 3rem;
-  --h4: 2rem;
+  --h3: 2.5rem;
+  --h4: 1.75rem;
 }
 
 .default {
@@ -229,10 +229,10 @@ body {
     font-size: 4.5rem;
   }
   h3 {
-    font-size: 3.5rem;
+    font-size: 3rem;
   }
   h4 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
   }
   .section-title {
     font-size: 5rem;
@@ -290,10 +290,10 @@ body {
     font-size: 5rem;
   }
   h3 {
-    font-size: 4rem;
+    font-size: 3.5rem;
   }
   h4 {
-    font-size: 3rem;
+    font-size: 2.75rem;
   }
   .section-title {
     font-size: 6rem;
@@ -355,10 +355,10 @@ body {
     font-size: 5.5rem;
   }
   h3 {
-    font-size: 4.5rem;
+    font-size: 4rem;
   }
   h4 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   }
   .section-title {
     font-size: 7rem;
