@@ -125,8 +125,8 @@ export default {
 }
 .gallery-img {
   margin: 5rem;
-  object-fit: cover;
 }
+/* img margin is what determines red amount */
 .gallery-description {
   margin-bottom: 5rem;
   margin-right: 10rem;

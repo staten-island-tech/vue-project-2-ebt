@@ -66,7 +66,7 @@ export default {
   },
 };
 </script>
-<style >
+<style>
 /*Generic classes are now in .nuxt/layout/default.vue*/
 .home-page {
   padding-top: 35rem;
@@ -123,5 +123,210 @@ export default {
   font-size: 2.5rem;
   width: 50%;
   margin: auto;
+/* media queries needed, basic things from flexbox gallery project but it needs more */
+/* gotta make a drop down menu for the header because it's too big*/
+@media (max-width: 1366px) {
+  .section {
+    transform: scale(0.95);
+    /* height: 150%; don't know why this exists */
+    margin: 3rem auto;
+    padding: 3rem;
+  }
+
+  h2 {
+    font-size: 4.5rem;
+  }
+  h3 {
+    font-size: 3rem;
+  }
+  h4 {
+    font-size: 2.25rem;
+  }
+  .section-title {
+    font-size: 5rem;
+  }
+  .section-subtitle {
+    font-size: 3.5rem;
+  }
+  .gallery-card {
+    width: 50%;
+  }
+  .gallery-img {
+    width: 90%;
+    height: auto;
+    margin: 5rem;
+  }
+  .gallery-description {
+    width: 95%;
+  }
+  img.gallery-img {
+    width: 95%;
+    height: auto;
+    margin: 5rem;
+  }
+  #left-button {
+    left: 30%;
+  }
+  #right-button {
+    right: 30%;
+  }
+  .card {
+    width: 40%;
+  }
+  .space1 {
+    font-size: 2.5rem;
+  }
+  /*  fix this font-size */
+  .about-img {
+    width: 40%;
+  }
+  .about-text {
+    width: 70%;
+  }
+  .pop-text {
+    margin: 3rem;
+  }
 }
+
+@media (max-width: 1024px) {
+  .section {
+    transform: scale(0.9);
+    height: 200%;
+    margin: 1.5rem auto;
+  }
+  h2 {
+    font-size: 5rem;
+  }
+  h3 {
+    font-size: 3.5rem;
+  }
+  h4 {
+    font-size: 2.75rem;
+  }
+  .section-title {
+    font-size: 6rem;
+  }
+  .section-subtitle {
+    font-size: 4rem;
+  }
+  /* figure out img and card media queries cuz thats the main issue
+  headers increased by .5 each time
+  section titles by 1 each time
+  figure out card spacing
+
+  might want different style for gallery and home, fix cards for attractions.
+  */
+  .gallery-card {
+    width: 100%;
+    margin-right: 7rem;
+  }
+  img.gallery-img {
+    margin: 4rem;
+  }
+  .gallery-description {
+    font-size: 10%;
+    margin-right: 0rem;
+  }
+  /* .gallery-description {
+  } */
+  #left-button {
+    left: 20%;
+  }
+  #right-button {
+    right: 20%;
+  }
+
+  .card {
+    width: 55%;
+  }
+
+  .space1 {
+    font-size: 2.5rem;
+  }
+  .about-img {
+    width: 70%;
+  }
+  .about-text {
+    width: 92.5%;
+  }
+}
+@media (max-width: 750px) {
+  .section {
+    transform: scale(0.85);
+    height: 250%;
+  }
+
+  .flex-inner {
+    width: 100%;
+  }
+  h2 {
+    font-size: 5.5rem;
+  }
+  h3 {
+    font-size: 4rem;
+  }
+  h4 {
+    font-size: 3.25rem;
+  }
+  .section-title {
+    font-size: 7rem;
+  }
+  .section-subtitle {
+    font-size: 4.5rem;
+  }
+
+  .gallery-card {
+    position: relative;
+    width: 90%;
+    background-color: #f44336;
+    color: #010101;
+    display: flex;
+    margin-right: 5rem;
+  }
+  /* fix this thick background*/
+  img.gallery-img {
+    width: 95%;
+    height: auto;
+    margin: 3rem;
+  }
+  .gallery-parent {
+    flex-direction: column;
+  }
+  .gallery-description {
+    font-size: 10%;
+    margin-right: 0rem;
+  }
+  #left-button {
+    left: 10%;
+    font-size: 1.5rem;
+    width: 5rem;
+  }
+  #right-button {
+    right: 10%;
+    font-size: 1.5rem;
+    width: 5rem;
+  }
+  .card {
+    width: 70%;
+  }
+  .pricetag {
+    font-size: 2.5rem;
+  }
+
+  .space1 {
+    font-size: 7rem;
+    margin-left: 0rem;
+  }
+  .about-img {
+    width: 80%;
+  }
+  .about-text {
+    width: 95%;
+  }
+  .img2 {
+    width: ;
+  }
+  /* .btn1 {
+  } might want to make button smaller */
+}}
 </style>
