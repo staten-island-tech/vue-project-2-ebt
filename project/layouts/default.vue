@@ -14,6 +14,8 @@
   --h2: 3rem;
   --h3: 2rem;
   --h4: 1.15rem;
+  --sub: 2rem;
+  --title: 4rem;
 }
 h1 {
   font-size: var(--h1);

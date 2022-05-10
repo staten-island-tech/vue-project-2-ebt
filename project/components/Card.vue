@@ -28,7 +28,7 @@ export default {
 .img-card {
   display: block;
   width: 100%;
-  height: 24rem;
+  height: auto;
   object-fit: contain;
   transition: 1.2s;
 }

@@ -50,17 +50,6 @@
           </div>
         </section>
       </div>
-
-      <section class="flex-parent">
-        <div class="w30">
-          <img class="footer-img" src="/icons/world.png" alt="abc" />
-        </div>
-        <div class="w70 margin-auto">
-          <h3>
-            Other Languages: Здравствуйте! 你好! नमस्ते! こんにちは！ Hello!
-          </h3>
-        </div>
-      </section>
       <!-- fix this, the margin makes it fall off at low width -->
       <div class="faq w30">
         <h2 class="margin-auto">FAQ:</h2>
