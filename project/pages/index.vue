@@ -215,71 +215,9 @@ body {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
-/* media queries needed, basic things from flexbox gallery project but it needs more */
-/* gotta make a drop down menu for the header because it's too big*/
-@media (max-width: 1366px) {
-  .section {
-    transform: scale(0.95);
-    /* height: 150%; don't know why this exists */
-    margin: 3rem auto;
-    padding: 3rem;
-  }
 
-  h2 {
-    font-size: 4.5rem;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 2.25rem;
-  }
-  .section-title {
-    font-size: 5rem;
-  }
-  .section-subtitle {
-    font-size: 3.5rem;
-  }
-  .gallery-card {
-    width: 50%;
-  }
-  .gallery-img {
-    width: 90%;
-    height: auto;
-    margin: 5rem;
-  }
-  .gallery-description {
-    width: 95%;
-  }
-  img.gallery-img {
-    width: 95%;
-    height: auto;
-    margin: 5rem;
-  }
-  #left-button {
-    left: 30%;
-  }
-  #right-button {
-    right: 30%;
-  }
-  .card {
-    width: 40%;
-  }
-  .space1 {
-    font-size: 2.5rem;
-  }
-  /*  fix this font-size */
-  .about-img {
-    width: 40%;
-  }
-  .about-text {
-    width: 70%;
-  }
-  .pop-text {
-    margin: 3rem;
-  }
-}
-
+/* inefficient media queries, make a root for everything wanted to be changed */
+/* USE LINKS FROM CLOUDINARY TO USE FOR IMAGES so other ppl can work on it. */
 @media (max-width: 1024px) {
   .section {
     transform: scale(0.9);
@@ -287,7 +225,7 @@ body {
     margin: 1.5rem auto;
   }
   h2 {
-    font-size: 5rem;
+    font-size: 4.5rem;
   }
   h3 {
     font-size: 3.5rem;
@@ -301,13 +239,7 @@ body {
   .section-subtitle {
     font-size: 4rem;
   }
-  /* figure out img and card media queries cuz thats the main issue
-  headers increased by .5 each time
-  section titles by 1 each time
-  figure out card spacing
 
-  might want different style for gallery and home, fix cards for attractions.
-  */
   .gallery-card {
     width: 100%;
     margin-right: 7rem;
@@ -342,6 +274,7 @@ body {
     width: 92.5%;
   }
 }
+
 @media (max-width: 750px) {
   .section {
     transform: scale(0.85);
@@ -414,9 +347,6 @@ body {
   }
   .about-text {
     width: 95%;
-  }
-  .img2 {
-    width: ;
   }
   /* .btn1 {
   } might want to make button smaller */
