@@ -5,7 +5,7 @@
       <h3 class="w30 margin-auto pop-text">We are Squared!</h3>
 
       <img
-        src="/face.jpg"
+        src="/face.png"
         alt="https://www.youtube.com/watch?v=nHPNBMjg73I"
         class="about-img height-auto w30"
       />
