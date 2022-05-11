@@ -128,6 +128,7 @@ export default {
 /* gotta make a drop down menu for the header because it's too big*/
 @media (max-width: 1024px) {
 }
+
 @media (max-width: 750px) {
   :root {
     --h1: 7.5rem;
