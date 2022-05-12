@@ -1,10 +1,16 @@
 <template>
-  <div class="header w100">
-    <div class="header-topline w100">
-      <h1 class="header-topline-text">HOTEL²</h1>
+  <div class="header w100 flex-parent">
+    <h1 class="header-title">HOTEL²</h1>
+    <div class="header-sections flex-parent">
+      <div
+        class="header-category"
+        v-for="section in sections"
+        :key="section.name"
+      >
+        <h2>{{ section.name }}</h2>
+      </div>
     </div>
-    <div class="bar w100"></div>
-    <div class="header-bottomline w100 flex-parent">
+    <!--     <div class="header-bottomline w100 flex-parent">
       <h3
         class="header-link margin-auto"
         v-for="link in links"
@@ -13,8 +19,7 @@
       >
         {{ link.label }}
       </h3>
-    </div>
-    <div class="bar2 w100"></div>
+    </div> -->
   </div>
 </template>
 
@@ -31,6 +36,32 @@ export default {
   },
   data() {
     return {
+      sections: [
+        {
+          name: "Sec 1",
+          links: [
+            { label: "HOME", ref: "home" },
+            { label: "FOOD", ref: "restaurant" },
+            { label: "MISSION", ref: "mission" },
+          ],
+        },
+        {
+          name: "Sec 2",
+          links: [
+            { label: "TICKETS", ref: "tickets" },
+            { label: "CONTACT", ref: "contact" },
+            { label: "SHOP", ref: "shop" },
+          ],
+        },
+        {
+          name: "Sec 3",
+          links: [
+            { label: "ATTRACTIONS", ref: "attractions" },
+            { label: "REVIEWS", ref: "reviews" },
+            { label: "GALLERY", ref: "gallery" },
+          ],
+        },
+      ],
       links: [
         { label: "HOME", ref: "home" },
         { label: "FOOD", ref: "restaurant" },
@@ -51,15 +82,17 @@ export default {
   },
 };
 </script>
-
-
 <style scoped>
 .header-link:hover {
   background-color: var(--thirdary);
   border-radius: 0.5rem;
 }
-.header-topline-text {
+.header-title {
   margin-top: 0.2rem;
+  width: 33%;
+}
+.header-sections {
+  width: 67%;
 }
 .header {
   top: 0;
@@ -68,6 +101,7 @@ export default {
   left: 0;
   text-align: center;
   z-index: 5;
+  background-color: var(--primary);
 }
 .header-link {
   text-transform: uppercase;
