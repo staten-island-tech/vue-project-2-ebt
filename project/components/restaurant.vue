@@ -6,14 +6,16 @@
     </h3>
     <main class="margin-auto">
       <section class="w80 flex-parent margin-auto">
-        <Card
+<!--         <Card
           v-for="food in food"
           :key="food.name"
           :title="food.name"
           :image="food.img"
           :desc="pricetag(food.price)"
         >
-        </Card>
+        </Card> -->
+        
+        
       </section>
       <a href="/restaurant" class="link"> See More!</a>
     </main>
