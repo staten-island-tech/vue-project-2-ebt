@@ -86,6 +86,7 @@ export default {
   height: auto;
   margin: 50px auto;
 }
+
 .section-title {
   font-size: var(--title);
 }
@@ -138,5 +139,10 @@ export default {
     --sub: 3.5rem;
     --title: 6.5rem;
   }
+  .gallery-parent {
+    display: block;
+    flex-wrap: wrap;
+  }
+  /* figure this out */
 }
 </style>
