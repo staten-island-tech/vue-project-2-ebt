@@ -14,6 +14,8 @@
   --h2: 3rem;
   --h3: 2rem;
   --h4: 1.15rem;
+  --sub: 2rem;
+  --title: 4rem;
 }
 h1 {
   font-size: var(--h1);
@@ -39,7 +41,9 @@ body,
   margin: 0;
   padding: 0;
   position: relative;
-  background-color: var(--background);
+}
+.background {
+  background-color: var(--yellow);
 }
 /*Themes*/
 .default {
@@ -48,6 +52,7 @@ body,
   --thirdary: var(--light-purple);
   --primaryText: var(--black);
   --background: var(--yellow);
+  --iconOpac: 40%;
 }
 .mono {
   --primary: var(--black);
@@ -55,6 +60,7 @@ body,
   --thirdary: var(--gray);
   --primaryText: var(--white);
   --background: var(--white);
+  --iconOpac: 100%;
 }
 /*Preset Classes*/
 .w10 {
@@ -94,11 +100,6 @@ body,
   height: auto;
 }
 .flex-parent {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-</style>lex-parent {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;

@@ -5,7 +5,7 @@
       Freshly Imported. Fairest Prices. Highly Rated.
     </h3>
     <main class="margin-auto">
-      <section class="display flex-parent">
+      <section class="w80 flex-parent margin-auto">
         <Card
           v-for="food in food"
           :key="food.name"
@@ -30,32 +30,32 @@ export default {
         {
           name: "Squared Steak",
           price: 14.99,
-          img: "/steak.jpg",
+          img: "/steak.png",
         },
         {
           name: "Pizza",
           price: 4.99,
-          img: "/pizza.jpg",
+          img: "/pizza.png",
         },
         {
           name: "Apple Pie",
           price: 7.99,
-          img: "/pie.jpg",
+          img: "/pie.png",
         },
         {
           name: "Ramen",
           price: 14.99,
-          img: "/ramen.jpg",
+          img: "/ramen.png",
         },
         {
           name: "Kebabs",
           price: 8.99,
-          img: "/kebabs.jpg",
+          img: "/kebabs.png",
         },
         {
           name: "Chicken Teriyaki",
           price: 13.99,
-          img: "/terichick.jpg",
+          img: "/terichick.png",
         },
       ],
     };
@@ -68,10 +68,3 @@ export default {
   },
 };
 </script>
-
-<style scoped>
-.display {
-  width: 80%;
-  margin: 1rem auto;
-}
-</style>

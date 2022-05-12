@@ -6,7 +6,9 @@ export default {
 
   head() {
     return {
-      bodyAttrs: {},
+      bodyAttrs: {
+        class: "background"
+      },
       title: "Hotel Squared",
       htmlAttrs: {
         lang: "en",

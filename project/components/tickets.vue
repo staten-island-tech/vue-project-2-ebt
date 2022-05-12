@@ -3,16 +3,16 @@
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
     <main class="home1 margin-auto">
-      <section class="display flex-parent">
-        <div class="display2">
-          <button @click="switchRoom(0)" class="btn1">3 Nights</button>
-          <button @click="switchRoom(1)" class="btn1">6 Nights</button>
-          <button @click="switchRoom(2)" class="btn1">12 Nights</button>
+      <section class="w80 margin-auto flex-parent">
+        <div class="">
+          <button @click="switchRoom(0)" class="main-btn">3 Nights</button>
+          <button @click="switchRoom(1)" class="main-btn">6 Nights</button>
+          <button @click="switchRoom(2)" class="main-btn">12 Nights</button>
         </div>
 
         <div class="display-tickets">
           <main class="flex-parent">
-            <img src="face.jpg" alt="hotelo" class="img2 height-auto" />
+            <img src="tickets.png" alt="hotelo" class="img2 height-auto" />
             <section class="space1 w100">
               <h3>Nights: {{ active.nights }}</h3>
               <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
@@ -21,9 +21,9 @@
             </section>
           </main>
 
-          <button class="checkout-btn">
-            <a href="/tickets">More options</a>
-          </button>
+          <a href="/tickets">
+            <button class="main-btn">more</button>
+          </a>
         </div>
       </section>
     </main>
@@ -77,12 +77,7 @@ export default {
 };
 </script>
 
-<style scoped>
-.img2 {
-  width: 290px;
-  height: 240px;
-  object-fit: cover;
-}
+<style>
 .title-text {
   font-size: var(--h1);
   text-align: center;

@@ -2,7 +2,7 @@
   <div id="page" class="default" v-bind:class="{mono: theme}">
     <PageHeader></PageHeader>
     <h1 class="alt-head">Attractions!</h1>
-    <h2>They're attracting! Probably! Visit to find out!</h2>
+    <h2>You've made a mistake.</h2>
     <section class="flex-parent">
       <Card
         class="attractions-card"
@@ -37,97 +37,111 @@ export default {
     return {
       attractions: [
         {
-          name: "Stone Temple",
-          image: "/statue.jpg",
-          alt: "wacky statue",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
           description:
-            "Yeah um we don't know where this came from, we are not responsible for what happens to you in there",
+            "DANGER",
         },
         {
-          name: "Garden",
-          image: "/garden.jpg",
-          alt: "nice flowers and grass",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
           description:
-            "You can come here and touch grass because most of you need to",
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
         {
-          name: "Arcade",
-          image: "/arcade.jpg",
-          alt: "videogames",
-          description: "We have all the videogames",
+          name: "The End.",
+          image: "/doom.png",
+          alt: "nothing",
+          description:
+            "DANGER",
         },
+     
       ],
     };
   },

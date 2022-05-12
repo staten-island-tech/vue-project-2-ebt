@@ -3,7 +3,7 @@
     <h2 class="section-title">Shop</h2>
     <h3 class="section-subtitle">Bring home a memory with you!</h3>
     <main class="">
-      <section class="display flex-parent">
+      <section class="w80 margin-auto flex-parent">
         <Card
           v-for="goods in goods"
           :key="goods.name"
@@ -28,32 +28,32 @@ export default {
         {
           name: "Squared Hoodie",
           price: 74.99,
-          img: "/hoodie.jpg",
+          img: "/hoodie.png",
         },
         {
           name: "Squared Tee",
           price: 29.99,
-          img: "/tee.jpg",
+          img: "/tee.png",
         },
         {
           name: "Squared Umbrella",
           price: 20.99,
-          img: "/pie.jpg",
+          img: "/umbrella.png",
         },
         {
           name: "Squared Cards",
           price: 8.99,
-          img: "/poker.jpg",
+          img: "/poker.png",
         },
         {
           name: "Squared Pillow",
           price: 17.99,
-          img: "/pillow.jpg",
+          img: "/pillow.png",
         },
         {
           name: "Squared Tesseract",
           price: 23.99,
-          img: "/tesseract.jpg",
+          img: "/tesseract.png",
         },
       ],
     };
@@ -66,11 +66,3 @@ export default {
   },
 };
 </script>
-
-
-<style>
-.display {
-  width: 80%;
-  margin: 1rem auto;
-}
-</style>

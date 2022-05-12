@@ -3,7 +3,7 @@
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="themeBtn" @click="toggleTheme()">THEME CHANGE</button>
+    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -66,11 +66,16 @@ export default {
   },
 };
 </script>
-<style >
+<style>
 /*Generic classes are now in .nuxt/layout/default.vue*/
 .home-page {
   padding-top: 35rem;
   margin-bottom: 40rem;
+}
+.img2 {
+  width: 40rem;
+  height: auto;
+  object-fit: cover;
 }
 .section {
   text-align: center;
@@ -82,13 +87,13 @@ export default {
   margin: 50px auto;
 }
 .section-title {
-  font-size: var(--h1);
+  font-size: var(--title);
 }
 .section-subtitle {
-  font-size: var(--h3);
+  font-size: var(--sub);
   margin: 0rem 0rem 2rem 0rem;
 }
-.themeBtn {
+.main-btn {
   display: inline-block;
   text-transform: uppercase;
   outline: none;
@@ -103,7 +108,7 @@ export default {
   font-size: 16px;
   margin: 2rem;
 }
-.themeBtn:hover {
+.main-btn:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
@@ -118,5 +123,20 @@ export default {
   font-size: 2.5rem;
   width: 50%;
   margin: auto;
+}
+/* media queries needed, basic things from flexbox gallery project but it needs more */
+/* gotta make a drop down menu for the header because it's too big*/
+@media (max-width: 1024px) {
+}
+
+@media (max-width: 750px) {
+  :root {
+    --h1: 7.5rem;
+    --h2: 6.5rem;
+    --h3: 2.5rem;
+    --h4: 1.15rem;
+    --sub: 3.5rem;
+    --title: 6.5rem;
+  }
 }
 </style>
