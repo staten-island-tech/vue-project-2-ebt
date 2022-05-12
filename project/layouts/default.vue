@@ -52,6 +52,7 @@ body,
   --thirdary: var(--light-purple);
   --primaryText: var(--black);
   --background: var(--yellow);
+  --iconOpac: 40%;
 }
 .mono {
   --primary: var(--black);
@@ -59,6 +60,7 @@ body,
   --thirdary: var(--gray);
   --primaryText: var(--white);
   --background: var(--white);
+  --iconOpac: 100%;
 }
 /*Preset Classes*/
 .w10 {

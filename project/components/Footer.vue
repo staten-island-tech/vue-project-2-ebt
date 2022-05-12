@@ -86,7 +86,7 @@ export default {
 .footer-img {
   height: 45px;
   margin: 12.5px auto;
-  filter: brightness(40%);
+  filter: brightness(var(--iconOpac));
 }
 .footer-btn:hover {
   filter: brightness(100%);
