@@ -128,8 +128,7 @@ export default {
 }
 /* img margin is what determines red amount */
 .gallery-description {
-  margin-bottom: 5rem;
-  margin-right: 10rem;
+  padding: 5rem;
 }
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
@@ -141,10 +140,10 @@ export default {
   width: 7rem;
 }
 #left-button {
-  left: 30%;
+  left: 20%;
 }
 #right-button {
-  right: 30%;
+  right: 20%;
 }
 #desc-text {
   font-size: var(--h3);

@@ -143,6 +143,7 @@ export default {
     display: block;
     flex-wrap: wrap;
   }
-  /* figure this out */
+
+  /* figure this out changing rem here does nothing */
 }
 </style>
