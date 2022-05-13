@@ -1,25 +1,34 @@
 <template>
-  <div class="header w100 flex-parent">
-    <h1 class="header-title">HOTEL²</h1>
-    <div class="header-sections flex-parent">
-      <div
-        class="header-category"
-        v-for="section in sections"
-        :key="section.name"
-      >
-        <h2>{{ section.name }}</h2>
+  <div class="w100">
+    <div class="header w100 flex-parent">
+      <h1 class="header-title w33">HOTEL²</h1>
+      <div class="w67"></div>
+    </div>
+    <!--separating section links from main header-->
+    <div class="header-under flex-parent w100">
+      <div class="w33"></div>
+      <div class="header-sections flex-parent w67">
+        <div
+          class="header-category w33"
+          v-for="section in sections"
+          :key="section.name"
+          @mouseover="section.active = true"
+          @mouseleave="section.active = false"
+        >
+          <h2>{{ section.name }}</h2>
+          <div v-if="section.active">
+            <div
+              v-for="link in section.links"
+              :key="link.label"
+              @click="send(link.ref)"
+              class="header-link"
+            >
+              <h2>{{ link.label }}</h2>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-    <!--     <div class="header-bottomline w100 flex-parent">
-      <h3
-        class="header-link margin-auto"
-        v-for="link in links"
-        :key="link.label"
-        @click="send(link.ref)"
-      >
-        {{ link.label }}
-      </h3>
-    </div> -->
   </div>
 </template>
 
@@ -44,6 +53,7 @@ export default {
             { label: "FOOD", ref: "restaurant" },
             { label: "MISSION", ref: "mission" },
           ],
+          active: false,
         },
         {
           name: "Sec 2",
@@ -52,6 +62,7 @@ export default {
             { label: "CONTACT", ref: "contact" },
             { label: "SHOP", ref: "shop" },
           ],
+          active: false,
         },
         {
           name: "Sec 3",
@@ -60,6 +71,7 @@ export default {
             { label: "REVIEWS", ref: "reviews" },
             { label: "GALLERY", ref: "gallery" },
           ],
+          active: false,
         },
       ],
       links: [
@@ -84,15 +96,13 @@ export default {
 </script>
 <style scoped>
 .header-link:hover {
-  background-color: var(--thirdary);
-  border-radius: 0.5rem;
 }
 .header-title {
   margin-top: 0.2rem;
-  width: 33%;
 }
-.header-sections {
-  width: 67%;
+.header-under {
+  z-index: 10;
+  position: fixed;
 }
 .header {
   top: 0;
@@ -105,8 +115,10 @@ export default {
 }
 .header-link {
   text-transform: uppercase;
-  margin-top: -1.5rem;
-  transition: all 0.075s;
+}
+.header-category {
+  padding-left: 50px;
+  padding-right: 50px;
 }
 .header-topline {
   top: 0;

@@ -72,6 +72,9 @@ body,
 .w30 {
   width: 30%;
 }
+.w33 {
+  width: 33%;
+}
 .w40 {
   width: 40%;
 }
@@ -80,6 +83,9 @@ body,
 }
 .w60 {
   width: 60%;
+}
+.w67 {
+  width: 67%;
 }
 .w70 {
   width: 70%;
