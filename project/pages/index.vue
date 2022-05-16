@@ -128,14 +128,27 @@ export default {
 /* media queries needed, basic things from flexbox gallery project but it needs more */
 /* gotta make a drop down menu for the header because it's too big*/
 @media (max-width: 1024px) {
+  :root {
+    --h1: 5rem;
+    --h2: 4rem;
+    --h3: 3rem;
+    --h4: 1.5rem;
+    --sub: 3rem;
+    --title: 5.5rem;
+  }
+  .w30 {
+    width: 70%;
+  }
+  .w50 {
+    width: 70%;
+  }
 }
-
 @media (max-width: 750px) {
   :root {
     --h1: 7.5rem;
     --h2: 6.5rem;
     --h3: 2.5rem;
-    --h4: 1.15rem;
+    --h4: 1.5rem;
     --sub: 3.5rem;
     --title: 6.5rem;
   }
@@ -143,7 +156,12 @@ export default {
     display: block;
     flex-wrap: wrap;
   }
-
+  .w30 {
+    width: 100%;
+  }
+  .w50 {
+    width: 100%;
+  }
   /* figure this out changing rem here does nothing */
 }
 </style>

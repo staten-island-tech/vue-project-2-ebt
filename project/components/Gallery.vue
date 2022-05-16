@@ -128,9 +128,10 @@ export default {
 }
 /* img margin is what determines red amount */
 .gallery-description {
-  padding: 5rem;
+  padding: 2rem;
 }
-/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
+/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries)
+figure somethnig out for second media query */
 .gallery-button {
   position: absolute;
   top: 0.5%;
@@ -147,5 +148,10 @@ export default {
 }
 #desc-text {
   font-size: var(--h3);
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
 }
 </style>

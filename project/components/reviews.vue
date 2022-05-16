@@ -80,4 +80,10 @@ export default {
 a:visited {
   color: black;
 }
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 750px) {
+
+}
 </style>

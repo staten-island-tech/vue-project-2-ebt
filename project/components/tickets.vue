@@ -105,4 +105,8 @@ export default {
   margin: 0.5rem auto;
   font-size: 1.5rem;
 }
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
+}
 </style>

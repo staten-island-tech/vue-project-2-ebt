@@ -49,4 +49,8 @@ export default {
 .pop-text {
   font-size: 10rem;
 }
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
+}
 </style>

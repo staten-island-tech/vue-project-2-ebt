@@ -84,4 +84,11 @@
   height: 45px;
   margin: 12.5px auto;
 }
+
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 750px) {
+
+}
 </style>

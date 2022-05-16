@@ -52,7 +52,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .header-link:hover {
   background-color: var(--thirdary);
@@ -100,5 +99,9 @@ export default {
   position: fixed;
   background-color: white;
   height: 1rem;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
 }
 </style>
