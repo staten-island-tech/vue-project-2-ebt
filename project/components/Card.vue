@@ -42,7 +42,10 @@ export default {
   transition: .5s ease;
   backface-visibility: hidden;
   align-content:center;
-    border-radius: 1.5rem;
+  border-radius: .5rem;
+   object-fit: cover;
+  
+    
 }
 
 .card-info {
