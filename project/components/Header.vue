@@ -5,9 +5,9 @@
       <div class="w67"></div>
     </div>
     <!--separating section links from main header-->
-    <div class="header-under flex-parent w100">
-      <div class="w33"></div>
-      <div class="header-sections flex-parent w67">
+    <div class="header-under flex-header w100">
+      <div class="w30"></div>
+      <div class="header-sections flex-parent w60">
         <div
           class="header-category w33"
           v-for="section in sections"
@@ -16,7 +16,7 @@
           @mouseleave="section.active = false"
         >
           <h2>{{ section.name }}</h2>
-          <div v-if="section.active">
+          <div v-if="section.active" class="header-link-outer w100">
             <div
               v-for="link in section.links"
               :key="link.label"
@@ -27,6 +27,9 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="w10">
+        <img src="icons/settings.png" alt="settings" class="settings-img" />
       </div>
     </div>
   </div>
@@ -49,18 +52,18 @@ export default {
         {
           name: "Sec 1",
           links: [
-            { label: "HOME", ref: "home" },
             { label: "FOOD", ref: "restaurant" },
             { label: "MISSION", ref: "mission" },
+            { label: "SHOP", ref: "shop" },
           ],
           active: false,
         },
         {
-          name: "Sec 2",
+          name: "EXPLORE",
           links: [
+            { label: "HOME", ref: "home" },
             { label: "TICKETS", ref: "tickets" },
             { label: "CONTACT", ref: "contact" },
-            { label: "SHOP", ref: "shop" },
           ],
           active: false,
         },
@@ -97,8 +100,18 @@ export default {
 <style scoped>
 .header-link:hover {
 }
+.settings-img {
+  width: 50%;
+}
 .header-title {
   margin-top: 0.2rem;
+}
+.flex-header {
+  display: flex;
+}
+.header-link-outer {
+  margin-top: 1rem;
+  background-color: lightblue;
 }
 .header-under {
   z-index: 10;
@@ -117,34 +130,8 @@ export default {
   text-transform: uppercase;
 }
 .header-category {
+  margin-top: 7px;
   padding-left: 50px;
   padding-right: 50px;
-}
-.header-topline {
-  top: 0;
-  position: fixed;
-  height: 10rem;
-  margin-top: 0px;
-  background-color: var(--primary);
-}
-.header-bottomline {
-  position: fixed;
-  background-color: var(--primary);
-  top: 5.75rem;
-  height: 4rem;
-  font-size: 1rem;
-  padding: 2rem;
-}
-.bar {
-  top: 5rem;
-  position: fixed;
-  background-color: white;
-  height: 1rem;
-}
-.bar2 {
-  top: 9rem;
-  position: fixed;
-  background-color: white;
-  height: 1rem;
 }
 </style>
