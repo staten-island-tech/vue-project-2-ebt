@@ -29,7 +29,15 @@
         </div>
       </div>
       <div class="w10">
-        <img src="icons/settings.png" alt="settings" class="settings-img" />
+        <img
+          src="icons/settings.png"
+          alt="settings"
+          class="settings-img"
+          @click="settingsActive = !settingsActive"
+        />
+        <div v-if="settingsActive" class="settings-tab">
+          <Theme-Btn></Theme-Btn>
+        </div>
       </div>
     </div>
   </div>
@@ -48,27 +56,28 @@ export default {
   },
   data() {
     return {
+      settingsActive: false,
       sections: [
         {
-          name: "Sec 1",
+          name: "ABOUT",
           links: [
-            { label: "FOOD", ref: "restaurant" },
             { label: "MISSION", ref: "mission" },
+            { label: "CONTACT", ref: "contact" },
+            { label: "HOME", ref: "home" },
+          ],
+          active: false,
+        },
+        {
+          name: "BUY",
+          links: [
             { label: "SHOP", ref: "shop" },
+            { label: "FOOD", ref: "restaurant" },
+            { label: "TICKETS", ref: "tickets" },
           ],
           active: false,
         },
         {
           name: "EXPLORE",
-          links: [
-            { label: "HOME", ref: "home" },
-            { label: "TICKETS", ref: "tickets" },
-            { label: "CONTACT", ref: "contact" },
-          ],
-          active: false,
-        },
-        {
-          name: "Sec 3",
           links: [
             { label: "ATTRACTIONS", ref: "attractions" },
             { label: "REVIEWS", ref: "reviews" },
@@ -98,10 +107,13 @@ export default {
 };
 </script>
 <style scoped>
-.header-link:hover {
-}
 .settings-img {
-  width: 50%;
+  height: 5rem;
+  transition: transform 1s ease-in-out;
+  filter: brightness(var(--iconOpac));
+}
+.settings-img:hover {
+  transform: rotate(-90deg);
 }
 .header-title {
   margin-top: 0.2rem;
@@ -133,5 +145,9 @@ export default {
   margin-top: 7px;
   padding-left: 50px;
   padding-right: 50px;
+}
+.settings-tab {
+  background-color: var(--primary);
+  border-radius: 1rem;
 }
 </style>
