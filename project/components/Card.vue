@@ -47,6 +47,9 @@ export default {
   margin: 1rem auto;
 }
 @media (max-width: 1024px) {
+  .title3 {
+    font-size: var(--h3);
+  } /* or something like this */
 }
 @media (max-width: 750px) {
 }

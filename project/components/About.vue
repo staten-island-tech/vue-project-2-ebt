@@ -50,6 +50,7 @@ export default {
   font-size: 10rem;
 }
 @media (max-width: 1024px) {
+  /* look up how to do media queries for many classes */
 }
 @media (max-width: 750px) {
 }
