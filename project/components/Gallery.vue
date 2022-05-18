@@ -151,6 +151,8 @@ figure somethnig out for second media query */
 }
 
 @media (max-width: 1024px) {
+  #desc-text {
+  }
 }
 @media (max-width: 750px) {
 }

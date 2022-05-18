@@ -131,7 +131,7 @@ export default {
   :root {
     --h1: 5rem;
     --h2: 4rem;
-    --h3: 3rem;
+    --h3: 2.25rem;
     --h4: 1.5rem;
     --sub: 3rem;
     --title: 5.5rem;
@@ -147,11 +147,12 @@ export default {
   :root {
     --h1: 7.5rem;
     --h2: 6.5rem;
-    --h3: 2.5rem;
+    --h3: 2rem;
     --h4: 1.5rem;
-    --sub: 3.5rem;
-    --title: 6.5rem;
+    --sub: 2.5rem;
+    --title: 4.5rem;
   }
+  
   .gallery-parent {
     display: block;
     flex-wrap: wrap;

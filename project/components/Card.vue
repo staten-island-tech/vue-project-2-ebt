@@ -48,8 +48,14 @@ export default {
 }
 @media (max-width: 1024px) {
   .title3 {
-    font-size: var(--h3);
+    font-size: 3.5rem;
   } /* or something like this */
+  .desc {
+    font-size: 2rem;
+  }
+  .card {
+    width: 45%;
+  }
 }
 @media (max-width: 750px) {
 }
