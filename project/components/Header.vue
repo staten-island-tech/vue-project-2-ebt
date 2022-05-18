@@ -34,8 +34,9 @@
           alt="settings"
           class="settings-img"
           @click="settingsActive = !settingsActive"
+          :class="{ animated: settingsActive }"
         />
-        <div v-if="settingsActive" class="settings-tab">
+        <div class="settings-tab" :class="{ animatedTab: !settingsActive }">
           <Theme-Btn></Theme-Btn>
         </div>
       </div>
@@ -49,7 +50,7 @@ export default {
   mounted() {
     const tl = gsap.timeline({ delay: 0.2 });
     tl.from(".header", { y: -120, duration: 1 });
-    tl.from(".header-link", {
+    tl.from(".header-category", {
       opacity: 0,
       stagger: { each: 0.1, from: "left" },
     });
@@ -111,9 +112,13 @@ export default {
   height: 5rem;
   transition: transform 1s ease-in-out;
   filter: brightness(var(--iconOpac));
+  position: relative;
 }
-.settings-img:hover {
+.animated {
   transform: rotate(-90deg);
+}
+.animatedTab {
+  transform: translateY(-10rem);
 }
 .header-title {
   margin-top: 0.2rem;
@@ -126,7 +131,7 @@ export default {
   background-color: lightblue;
 }
 .header-under {
-  z-index: 10;
+  z-index: 1;
   position: fixed;
 }
 .header {
@@ -135,7 +140,7 @@ export default {
   color: var(--primaryText);
   left: 0;
   text-align: center;
-  z-index: 5;
+  z-index: 1;
   background-color: var(--primary);
 }
 .header-link {
@@ -149,5 +154,7 @@ export default {
 .settings-tab {
   background-color: var(--primary);
   border-radius: 1rem;
+  transition: all 1s ease-in-out;
+  z-index: 0;
 }
 </style>

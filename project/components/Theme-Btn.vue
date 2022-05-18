@@ -1,6 +1,6 @@
 <template>
-  <div>
-    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
+  <div class="theme">
+    <button class="theme-btn" @click="toggleTheme()">THEME CHANGE</button>
   </div>
 </template>
 
@@ -25,7 +25,7 @@ export default {
 </script>
 
 <style scoped>
-.main-btn {
+.theme-btn {
   display: inline-block;
   text-transform: uppercase;
   outline: none;
@@ -38,12 +38,18 @@ export default {
   background-color: var(--thirdary);
   line-height: 1.15;
   font-size: 16px;
-  margin: 2rem;
-  right: 0;
-  position: absolute;
+  margin: 1.5rem;
+  position: relative;
 }
-.main-btn:hover {
+.theme-btn:hover {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+}
+.theme {
+  background-color: var(--primary);
+  right: 0;
+  position: absolute;
+  border-radius: 1rem;
+  z-index: 0;
 }
 </style>
