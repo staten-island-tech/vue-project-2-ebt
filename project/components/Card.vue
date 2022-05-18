@@ -4,13 +4,15 @@
     <img class="img-card margin-auto w90" :src="image" alt="" />
 
   </div> -->
-  <div class="card">
+  <section class="card">
   <img :src="image" class="img-card" alt="">
   <div class="card-info">
-    <div class="text">{{title}}</div>
-    <div class="text">{{desc}}</div>
+    <div class="text-box">
+      <div class="text">{{title}}</div>
+      <div class="text">{{desc}}</div>
+    </div>
   </div>
-</div>
+  </section>
 </template>
 
 <script>
@@ -43,9 +45,7 @@ export default {
   backface-visibility: hidden;
   align-content:center;
   border-radius: .5rem;
-   object-fit: cover;
-  
-    
+  object-fit: cover;
 }
 
 .card-info {
@@ -57,6 +57,7 @@ export default {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
+  
 }
 
 .card:hover .img-card {
@@ -67,44 +68,19 @@ export default {
   opacity: 1;
 }
 
-.text {
+.text-box {
   background-color: white;
   color: black;
   width: 22rem;
   height: auto;
   font-size: 2rem;
   padding: 2rem 3rem;
+  border-radius: 1rem;
 }
-
-
-
-
-
-/* .card {
-  width: 30%;
-  margin: 2rem auto;
-  border-radius: 1.5rem;
+.text {
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
 }
-
-.img-card {
-  display: block;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
-  transition: 1.2s;
-}
-.img-card:hover {
-  transform: scale(1.15);
-  opacity: 0%;
-}
-.card:hover {
-  background-color: white;
-}
-
-.title3 {
-  box-sizing: border-box;
-  font-size: 3.5rem;
-  margin: 1rem auto;
-} */
 
 </style>
