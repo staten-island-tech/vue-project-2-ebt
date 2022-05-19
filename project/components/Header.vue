@@ -5,7 +5,7 @@
       <div class="w67"></div>
     </div>
     <!--separating section links from main header-->
-    <div class="header-under flex-header w100">
+    <div class="header-over flex-header w100">
       <div class="w30"></div>
       <div class="header-sections flex-parent w60">
         <div
@@ -23,12 +23,12 @@
               @click="send(link.ref)"
               class="header-link"
             >
-              <h2>{{ link.label }}</h2>
+              <h3>{{ link.label }}</h3>
             </div>
           </div>
         </div>
       </div>
-      <div class="w10">
+      <div class="w20">
         <img
           src="icons/settings.png"
           alt="settings"
@@ -36,9 +36,11 @@
           @click="settingsActive = !settingsActive"
           :class="{ animated: settingsActive }"
         />
-        <div class="settings-tab" :class="{ animatedTab: !settingsActive }">
-          <Theme-Btn></Theme-Btn>
-        </div>
+      </div>
+    </div>
+    <div class="header-under w100">
+      <div class="settings-tab w20" :class="{ animatedTab: !settingsActive }">
+        <Theme-Btn></Theme-Btn>
       </div>
     </div>
   </div>
@@ -113,6 +115,7 @@ export default {
   transition: transform 1s ease-in-out;
   filter: brightness(var(--iconOpac));
   position: relative;
+  z-index: 2;
 }
 .animated {
   transform: rotate(-90deg);
@@ -128,11 +131,16 @@ export default {
 }
 .header-link-outer {
   margin-top: 1rem;
-  background-color: lightblue;
+  background-color: var(--thirdary);
+}
+.header-over {
+  z-index: 2;
+  position: fixed;
 }
 .header-under {
   z-index: 1;
   position: fixed;
+  top: 4rem;
 }
 .header {
   top: 0;
@@ -140,21 +148,29 @@ export default {
   color: var(--primaryText);
   left: 0;
   text-align: center;
-  z-index: 1;
+  z-index: 2;
   background-color: var(--primary);
 }
 .header-link {
   text-transform: uppercase;
+  padding: 0.25rem;
+  margin: 0.5rem;
+  cursor: pointer;
+}
+.header-link:hover {
+  background-color: var(--primary);
 }
 .header-category {
   margin-top: 7px;
-  padding-left: 50px;
-  padding-right: 50px;
+  z-index: 2;
+  cursor: pointer;
 }
 .settings-tab {
   background-color: var(--primary);
   border-radius: 1rem;
-  transition: all 1s ease-in-out;
-  z-index: 0;
+  transition: all 0.85s ease-in-out;
+  z-index: 1;
+  right: 0;
+  position: absolute;
 }
 </style>
