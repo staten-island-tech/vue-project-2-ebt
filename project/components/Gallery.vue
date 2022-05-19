@@ -1,28 +1,20 @@
 <template>
-  <div class="gallery-home">
+  <div>
     <h2 class="section-title">Gallery</h2>
     <h3 class="section-subtitle">See our famous visitors!</h3>
-    <div class="gallery-parent">
+    <div class="flex-parent center">
       <div class="gallery-card">
-        <button
-          class="gallery-button"
-          id="left-button"
-          @click="switchImageLeft()"
-        >
+        <button class="gallery-button" id="left-button" @click="switchImageLeft()">
           ⬅
         </button>
-        <button
-          class="gallery-button"
-          id="right-button"
-          @click="switchImageRight()"
-        >
+        <button class="gallery-button" id="right-button" @click="switchImageRight()">
           ➡
         </button>
         <!-- try to get buttons on top of image -->
-        <img class="gallery-img w90" v-bind:src="currentImage.url" alt="" />
+        <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="gallery-description w50">
-        <h2>Description:</h2>
+      <div class="gallery-description">
+
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
     </div>
@@ -38,17 +30,17 @@ export default {
     return {
       currentImage: {
         name: "1",
-        url: "/statue.png",
+        url: "/face.png",
         alt: "stuff",
         description:
-          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+          "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
         id: 0,
       },
       //get images lol
       images: [
         {
           name: "1",
-          url: "/statue.png",
+          url: "/face.png",
           alt: "stuff",
           description:
             "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -56,7 +48,7 @@ export default {
         },
         {
           name: "2",
-          url: "/face.png",
+          url: "/statue.png",
           alt: "stuff",
           description: "description 2",
           id: 1,
@@ -106,30 +98,32 @@ export default {
 </script>
 
 <style scoped>
-.gallery-home {
-  text-align: center;
-}
-.gallery-parent {
-  display: flex;
+.center {
   justify-content: center;
   align-items: center;
 }
 .gallery-card {
   position: relative;
-  width: 70rem;
+  width: 35%;
+  height: 40rem;
   background-color: var(--thirdary);
   display: flex;
   justify-content: space-around;
   align-items: center;
   margin: 5rem;
+  border-radius: 1rem;
 }
 .gallery-img {
+  width: 90%;
+  height: 75%;
   margin: 5rem;
+  border-radius: 0.5rem ;
+  object-fit: cover;
 }
 /* img margin is what determines red amount */
 .gallery-description {
-  margin-bottom: 5rem;
-  margin-right: 10rem;
+  width: 40%;
+ text-align: center;
 }
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
@@ -138,7 +132,8 @@ export default {
   color: red;
   opacity: 50%;
   font-size: 3rem;
-  width: 7rem;
+  width: 8rem;
+  border-radius: 1rem;
 }
 #left-button {
   left: 30%;
