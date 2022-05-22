@@ -89,10 +89,12 @@ export default {
 
 .section-title {
   font-size: var(--title);
+  /* figure out whether to add padding 1 rem or not, whichever looks better */
 }
 .section-subtitle {
   font-size: var(--sub);
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0rem 2rem 2rem 2rem;
+  /* allows for space at lowest media query, changes restuarant thing and seemingly nothing else */
 }
 .main-btn {
   display: inline-block;
@@ -131,10 +133,10 @@ export default {
   :root {
     --h1: 5rem;
     --h2: 4rem;
-    --h3: 2.25rem;
+    --h3: 2.5rem;
     --h4: 1.5rem;
-    --sub: 3rem;
-    --title: 5.5rem;
+    --sub: 2.5rem;
+    --title: 4.5rem;
   }
   .w30 {
     width: 70%;
@@ -145,14 +147,14 @@ export default {
 }
 @media (max-width: 750px) {
   :root {
-    --h1: 7.5rem;
-    --h2: 6.5rem;
-    --h3: 2rem;
-    --h4: 1.5rem;
-    --sub: 2.5rem;
-    --title: 4.5rem;
+    --h1: 6rem;
+    --h2: 5rem;
+    --h3: 3rem;
+    --h4: 2rem;
+    --sub: 3rem;
+    --title: 5.5rem;
   }
-  
+
   .gallery-parent {
     display: block;
     flex-wrap: wrap;

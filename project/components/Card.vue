@@ -39,7 +39,7 @@ export default {
 
 .title3 {
   box-sizing: border-box;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 1rem auto;
 }
 .desc {
@@ -48,7 +48,7 @@ export default {
 }
 @media (max-width: 1024px) {
   .title3 {
-    font-size: 3.5rem;
+    font-size: 3.25rem;
   } /* or something like this */
   .desc {
     font-size: 2rem;
@@ -58,5 +58,9 @@ export default {
   }
 }
 @media (max-width: 750px) {
+  .card {
+    width: 45%;
+  }
+  /* change width to 85% to make it look good in one row if needed */
 }
 </style>

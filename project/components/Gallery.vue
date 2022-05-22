@@ -149,10 +149,8 @@ figure somethnig out for second media query */
 #desc-text {
   font-size: var(--h3);
 }
-
+/* might wanna make text smaller */
 @media (max-width: 1024px) {
-  #desc-text {
-  }
 }
 @media (max-width: 750px) {
 }
