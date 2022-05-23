@@ -3,7 +3,7 @@
     <h2 class="section-title">Gallery</h2>
     <h3 class="section-subtitle">See our famous visitors!</h3>
     <div class="flex-parent center">
-      <div class="gallery-card">
+      <div class="gallery-card ">
         <button class="gallery-button" id="left-button" @click="switchImageLeft()">
           ⬅
         </button>
@@ -13,7 +13,7 @@
         <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="gallery-description">
+      <div class="w40">
 
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
@@ -43,7 +43,7 @@ export default {
           url: "/face.png",
           alt: "stuff",
           description:
-            "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
           id: 0,
         },
         {
@@ -104,7 +104,7 @@ export default {
 }
 .gallery-card {
   position: relative;
-  width: 35%;
+  width: 50%;
   height: 40rem;
   background-color: var(--thirdary);
   display: flex;
@@ -121,10 +121,6 @@ export default {
   object-fit: cover;
 }
 /* img margin is what determines red amount */
-.gallery-description {
-  width: 40%;
- text-align: center;
-}
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
   position: absolute;
