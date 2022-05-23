@@ -132,7 +132,8 @@ export default {
   width: 40%;
   text-align: center;
 }
-/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
+/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries)
+figure somethnig out for second media query */
 .gallery-button {
   position: absolute;
   top: 0.5%;
@@ -144,10 +145,10 @@ export default {
   margin: 0 -3rem;
 }
 #left-button {
-  left: 30%;
+  left: 20%;
 }
 #right-button {
-  right: 30%;
+  right: 20%;
 }
 #desc-text {
   font-size: var(--h3);

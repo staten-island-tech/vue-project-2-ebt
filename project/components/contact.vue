@@ -77,11 +77,23 @@
 }
 .faq-list {
   list-style-type: none;
-  font-size: 3rem;
+  font-size: var(--h3);
   margin: 1rem auto;
 }
 .contact-img {
   height: 45px;
   margin: 12.5px auto;
+}
+
+@media (max-width: 1024px) {
+  .faq-list {
+    margin-bottom: 6rem;
+  }
+}
+@media (max-width: 750px) {
+  .faq-list {
+    margin-bottom: 11rem;
+  }
+  /* possible solution but idk */
 }
 </style>

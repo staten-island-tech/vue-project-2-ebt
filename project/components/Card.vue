@@ -48,15 +48,10 @@ export default {
   object-fit: cover;
 }
 
-.card-info {
-  transition: 0.5s ease;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  text-align: center;
+.title3 {
+  box-sizing: border-box;
+  font-size: 3rem;
+  margin: 1rem auto;
 }
 
 .card:hover .img-card {
@@ -80,5 +75,22 @@ export default {
   color: black;
   font-size: 2rem;
   padding: 1rem;
+}
+@media (max-width: 1024px) {
+  .title3 {
+    font-size: 3.25rem;
+  } /* or something like this */
+  .desc {
+    font-size: 2rem;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .card {
+    width: 85%;
+  }
+  /* change width to 85% to make it look good in one row if needed */
 }
 </style>

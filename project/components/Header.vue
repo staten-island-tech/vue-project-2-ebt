@@ -183,4 +183,8 @@ export default {
   right: 0;
   position: absolute;
 }
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
+}
 </style>

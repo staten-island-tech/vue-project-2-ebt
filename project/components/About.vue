@@ -1,9 +1,9 @@
 <template>
   <div>
-    <h2>Our Mission</h2>
+    <h2 class="section-title">Our Mission</h2>
     <div class="flex-parent">
       <h3 class="w30 margin-auto pop-text">We are Squared!</h3>
-
+      <!-- need to deal with spacing between these, not in media queries though -->
       <img
         src="/face.png"
         alt="https://www.youtube.com/watch?v=nHPNBMjg73I"
@@ -48,5 +48,15 @@ export default {
 }
 .pop-text {
   font-size: 10rem;
+}
+@media (max-width: 1024px) {
+  .about-img {
+    width: 70%;
+  }
+  @media (max-width: 750px) {
+    .about-img {
+      width: 95%;
+    }
+  }
 }
 </style>
