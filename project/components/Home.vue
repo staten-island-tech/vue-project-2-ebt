@@ -1,6 +1,6 @@
 <template>
 
-    <div class="w100 home-page">
+    <div class="w100 home-page main-image">
     <div class="w100 flex-parent">
       <h2 class="welcome">WELCOME</h2>
     </div>
@@ -21,7 +21,7 @@ export default {
 
 <style scoped>
 .main-image {
-  background-image: url(/main.jpg);
+ 
 
 }
 .welcome {

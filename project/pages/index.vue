@@ -70,7 +70,11 @@ export default {
 /*Generic classes are now in .nuxt/layout/default.vue*/
 .home-page {
   padding-top: 35rem;
-  margin-bottom: 40rem;
+  padding-bottom: 65rem;
+}
+.home{
+  background-image: url('/masterpiece.png');
+  background-size: cover;
 }
 .img2 {
   width: 40rem;
