@@ -3,7 +3,6 @@
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -59,10 +58,6 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
-
-    toggleTheme() {
-      this.theme = !this.theme;
-    },
   },
 };
 </script>
@@ -92,25 +87,6 @@ export default {
 .section-subtitle {
   font-size: var(--sub);
   margin: 0rem 0rem 2rem 0rem;
-}
-.main-btn {
-  display: inline-block;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 3px;
-  padding: 12px 24px;
-  border: 0;
-  color: var(--primaryText);
-  background-color: var(--thirdary);
-  line-height: 1.15;
-  font-size: 16px;
-  margin: 2rem;
-}
-.main-btn:hover {
-  transition: all 0.1s ease;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
 .link {
   display: flex;
