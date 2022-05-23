@@ -86,6 +86,7 @@ export default {
 .footer-img {
   height: 45px;
   margin: 12.5px auto;
+  filter: brightness(var(--iconOpac));
 }
 .footer-btn:hover {
   filter: brightness(100%);
@@ -95,5 +96,12 @@ export default {
 }
 .filler {
   height: 50px;
+}
+
+@media (max-width: 1024px) {
+
+}
+@media (max-width: 750px) {
+
 }
 </style>

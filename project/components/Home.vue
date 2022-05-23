@@ -1,12 +1,10 @@
 <template>
-
-    <div class="w100 home-page">
+  <div class="w100 home-page">
     <div class="w100 flex-parent">
       <h2 class="welcome">WELCOME</h2>
     </div>
     <div class="w100 flex-parent"><h3 class="welcome-sub">to Hotel²</h3></div>
   </div>
-
 </template>
 
 <script>
@@ -22,7 +20,6 @@ export default {
 <style scoped>
 .main-image {
   background-image: url(/main.jpg);
-
 }
 .welcome {
   color: var(--primaryText);
@@ -38,5 +35,10 @@ export default {
   color: var(--primaryText);
   background-color: var(--primary);
   text-align: center;
+}
+
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
 }
 </style>

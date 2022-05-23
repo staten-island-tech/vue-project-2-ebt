@@ -38,7 +38,7 @@ export default {
     return {
       currentImage: {
         name: "1",
-        url: "/statue.jpg",
+        url: "/statue.png",
         alt: "stuff",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -48,7 +48,7 @@ export default {
       images: [
         {
           name: "1",
-          url: "/statue.jpg",
+          url: "/statue.png",
           alt: "stuff",
           description:
             "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
@@ -56,28 +56,28 @@ export default {
         },
         {
           name: "2",
-          url: "/face.jpg",
+          url: "/face.png",
           alt: "stuff",
           description: "description 2",
           id: 1,
         },
         {
           name: "3",
-          url: "/arcade.jpg",
+          url: "/arcade.png",
           alt: "stuff",
           description: "description 3",
           id: 2,
         },
         {
           name: "4",
-          url: "/terichick.jpg",
+          url: "/terichick.png",
           alt: "stuff",
           description: "description 4",
           id: 3,
         },
         {
           name: "5",
-          url: "/kebabs.jpg",
+          url: "/kebabs.png",
           alt: "stuff",
           description: "description 5",
           id: 4,
@@ -125,13 +125,13 @@ export default {
 }
 .gallery-img {
   margin: 5rem;
-  object-fit: cover;
 }
+/* img margin is what determines red amount */
 .gallery-description {
-  margin-bottom: 5rem;
-  margin-right: 10rem;
+  padding: 2rem;
 }
-/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
+/* need to find a way to make the gallery picture not shorten into nothingness (probably media queries)
+figure somethnig out for second media query */
 .gallery-button {
   position: absolute;
   top: 0.5%;
@@ -141,12 +141,17 @@ export default {
   width: 7rem;
 }
 #left-button {
-  left: 30%;
+  left: 20%;
 }
 #right-button {
-  right: 30%;
+  right: 20%;
 }
 #desc-text {
   font-size: var(--h3);
+}
+/* might wanna make text smaller */
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
 }
 </style>

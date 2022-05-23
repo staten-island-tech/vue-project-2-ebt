@@ -27,17 +27,17 @@ export default {
       places: [
         {
           name: "Stone Temple",
-          img: "/statue.jpg",
+          img: "/statue.png",
           description: "Mysterious.",
         },
         {
           name: "Garden",
-          img: "/garden.jpg",
+          img: "/garden.png",
           description: "Come here and touch grass because most of you need to.",
         },
         {
           name: "Arcade",
-          img: "/arcade.jpg",
+          img: "/arcade.png",
           description: "We have all the videogames",
         },
         {

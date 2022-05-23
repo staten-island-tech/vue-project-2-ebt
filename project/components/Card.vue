@@ -28,7 +28,7 @@ export default {
 .img-card {
   display: block;
   width: 100%;
-  height: 24rem;
+  height: auto;
   object-fit: contain;
   transition: 1.2s;
 }
@@ -39,11 +39,28 @@ export default {
 
 .title3 {
   box-sizing: border-box;
-  font-size: 3.5rem;
+  font-size: 3rem;
   margin: 1rem auto;
 }
 .desc {
   font-size: 2.5rem;
   margin: 1rem auto;
+}
+@media (max-width: 1024px) {
+  .title3 {
+    font-size: 3.25rem;
+  } /* or something like this */
+  .desc {
+    font-size: 2rem;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .card {
+    width: 85%;
+  }
+  /* change width to 85% to make it look good in one row if needed */
 }
 </style>

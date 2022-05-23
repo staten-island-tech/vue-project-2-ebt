@@ -66,7 +66,7 @@ export default {
   },
 };
 </script>
-<style >
+<style>
 /*Generic classes are now in .nuxt/layout/default.vue*/
 .home-page {
   padding-top: 35rem;
@@ -86,12 +86,15 @@ export default {
   height: auto;
   margin: 50px auto;
 }
+
 .section-title {
-  font-size: var(--h1);
+  font-size: var(--title);
+  /* figure out whether to add padding 1 rem or not, whichever looks better */
 }
 .section-subtitle {
-  font-size: var(--h3);
-  margin: 0rem 0rem 2rem 0rem;
+  font-size: var(--sub);
+  margin: 0rem 2rem 2rem 2rem;
+  /* allows for space at lowest media query, changes restuarant thing and seemingly nothing else */
 }
 .main-btn {
   display: inline-block;
@@ -170,152 +173,59 @@ export default {
     margin: 3rem;
   }
   .link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  height: auto;
-  margin: 1rem auto;
-  color: var(--primaryText);
-  font-size: 2.5rem;
-  width: 50%;
-  margin: auto;
-}
-}
-
-@media (max-width: 1024px) {
-  .section {
-    transform: scale(0.9);
-    height: 200%;
-    margin: 1.5rem auto;
-  }
-  h2 {
-    font-size: 4rem;
-  }
-  h3 {
-    font-size: 3rem;
-  }
-  h4 {
-    font-size: 2rem;
-  }
-  .section-title {
-    font-size: 6rem;
-  }
-  .section-subtitle {
-    font-size: 4rem;
-  }
-  /* figure out img and card media queries cuz thats the main issue
-  headers increased by .5 each time
-  section titles by 1 each time
-  figure out card spacing
-
-  might want different style for gallery and home, fix cards for attractions.
-  */
-  .gallery-card {
-    width: 100%;
-    margin-right: 7rem;
-  }
-  .gallery-img {
-    width: 93%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
     height: auto;
-    margin: 5rem;
-  }
-  /* .gallery-description {
-  } */
-  #left-button {
-    left: 20%;
-  }
-  #right-button {
-    right: 20%;
-  }
-
-  .card {
-    width: 55%;
-  }
-
-  .space1 {
+    margin: 1rem auto;
+    color: var(--primaryText);
     font-size: 2.5rem;
+    width: 50%;
+    margin: auto;
   }
-  .about-img {
+}
+/* media queries needed, basic things from flexbox gallery project but it needs more */
+/* gotta make a drop down menu for the header because it's too big*/
+@media (max-width: 1024px) {
+  :root {
+    --h1: 5rem;
+    --h2: 4rem;
+    --h3: 2.5rem;
+    --h4: 1.5rem;
+    --sub: 2.5rem;
+    --title: 4.5rem;
+  }
+  .w30 {
     width: 70%;
   }
-  .about-text {
-    width: 92.5%;
+  .w50 {
+    width: 70%;
   }
 }
 @media (max-width: 750px) {
-  .section {
-    transform: scale(0.85);
-    height: 250%;
-  }
-
-  .flex-inner {
-    width: 100%;
-  }
-  h2 {
-    font-size: 4.5rem;
-  }
-  h3 {
-    font-size: 3.5rem;
-  }
-  h4 {
-    font-size: 2.5rem;
-  }
-  .section-title {
-    font-size: 7rem;
-  }
-  .section-subtitle {
-    font-size: 4.5rem;
-  }
-
-  .gallery-card {
-    position: relative;
-    width: 70%;
-    background-color: #f44336;
-    color: #010101;
-    display: flex;
-    margin-right: 5rem;
-  }
-  /* fix this thick background*/
-  .gallery-img {
-    width: 100%;
-    height: auto;
-    margin: 5rem;
+  :root {
+    --h1: 6rem;
+    --h2: 5rem;
+    --h3: 2.5rem;
+    --h4: 2rem;
+    --sub: 3rem;
+    --title: 5.5rem;
   }
 
   .gallery-parent {
-    flex-direction: column;
+    display: block;
+    flex-wrap: wrap;
   }
-  .gallery-description {
-    margin-right: 0rem;
+  .w30 {
+    width: 100%;
   }
-  #left-button {
-    left: 10%;
+  .w50 {
+    width: 100%;
   }
-  #right-button {
-    right: 10%;
-  }
-  .card {
-    width: 70%;
-  }
-  .pricetag {
-    font-size: 2.5rem;
-  }
+  /* figure this out changing rem here does nothing */
+}
 
-  .space1 {
-    font-size: 7rem;
-    margin-left: 0rem;
-  }
-  .about-img {
-    width: 80%;
-  }
-  .about-text {
-    width: 95%;
-  }
-  .img2 {
-    width: 90%;
-  }
-  /* .btn1 {
-  } might want to make button smaller */
+@media (max-width: 400px) {
 }
 </style>

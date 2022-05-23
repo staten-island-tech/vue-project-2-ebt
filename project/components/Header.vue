@@ -5,14 +5,14 @@
     </div>
     <div class="bar w100"></div>
     <div class="header-bottomline w100 flex-parent">
-      <h4
+      <h3
         class="header-link margin-auto"
         v-for="link in links"
         :key="link.label"
         @click="send(link.ref)"
       >
         {{ link.label }}
-      </h4>
+      </h3>
     </div>
     <div class="bar2 w100"></div>
   </div>
@@ -52,7 +52,6 @@ export default {
 };
 </script>
 
-
 <style scoped>
 .header-link:hover {
   background-color: var(--thirdary);
@@ -71,7 +70,6 @@ export default {
 }
 .header-link {
   text-transform: uppercase;
-  font-size: 2rem;
   margin-top: -1.5rem;
   transition: all 0.075s;
 }
@@ -101,5 +99,9 @@ export default {
   position: fixed;
   background-color: white;
   height: 1rem;
+}
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
 }
 </style>

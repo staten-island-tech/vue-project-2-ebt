@@ -39,4 +39,8 @@ export default {};
   top: 0;
   height: 50px;
 }
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
+}
 </style>
