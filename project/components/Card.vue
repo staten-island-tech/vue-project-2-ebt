@@ -1,17 +1,17 @@
 <template>
-<!--  <div class="card">
+  <!--  <div class="card">
 
     <img class="img-card margin-auto w90" :src="image" alt="" />
 
   </div> -->
   <section class="card">
-  <img :src="image" class="img-card" alt="">
-  <div class="card-info">
-    <div class="text-box">
-      <div class="text">{{title}}</div>
-      <div class="text">{{desc}}</div>
+    <img :src="image" class="img-card" alt="" />
+    <div class="card-info">
+      <div class="text-box">
+        <div class="text">{{ title }}</div>
+        <div class="text">{{ desc }}</div>
+      </div>
     </div>
-  </div>
   </section>
 </template>
 
@@ -41,15 +41,15 @@ export default {
   display: block;
   width: 100%;
   height: auto;
-  transition: .5s ease;
+  transition: 0.5s ease;
   backface-visibility: hidden;
-  align-content:center;
-  border-radius: .5rem;
+  align-content: center;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 
 .card-info {
-  transition: .5s ease;
+  transition: 0.5s ease;
   opacity: 0;
   position: absolute;
   top: 50%;
@@ -57,7 +57,6 @@ export default {
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   text-align: center;
-  
 }
 
 .card:hover .img-card {
@@ -82,5 +81,4 @@ export default {
   font-size: 2rem;
   padding: 1rem;
 }
-
 </style>

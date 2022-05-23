@@ -17,7 +17,7 @@
         
         
       </section>
-      <a href="/restaurant" class="link"> See More!</a>
+      <a href="/restaurant" class="link"><button class="main-btn"> See More!</button></a>
     </main>
   </div>
 </template>
