@@ -149,7 +149,7 @@ export default {
   :root {
     --h1: 6rem;
     --h2: 5rem;
-    --h3: 3rem;
+    --h3: 2.5rem;
     --h4: 2rem;
     --sub: 3rem;
     --title: 5.5rem;
@@ -166,5 +166,8 @@ export default {
     width: 100%;
   }
   /* figure this out changing rem here does nothing */
+}
+
+@media (max-width: 400px) {
 }
 </style>

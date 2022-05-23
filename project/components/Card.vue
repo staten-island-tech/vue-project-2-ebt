@@ -59,7 +59,7 @@ export default {
 }
 @media (max-width: 750px) {
   .card {
-    width: 45%;
+    width: 85%;
   }
   /* change width to 85% to make it look good in one row if needed */
 }
