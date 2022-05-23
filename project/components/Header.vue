@@ -43,6 +43,7 @@
         <Theme-Btn></Theme-Btn>
       </div>
     </div>
+    <div class="bar"></div>
   </div>
 </template>
 
@@ -123,6 +124,13 @@ export default {
 .animatedTab {
   transform: translateY(-10rem);
 }
+.bar {
+  width: 100%;
+  height: 1rem;
+  background-color: var(--yellow);
+  position: fixed;
+  top: 4.1rem;
+}
 .header-title {
   margin-top: 0.2rem;
 }
@@ -130,8 +138,10 @@ export default {
   display: flex;
 }
 .header-link-outer {
-  margin-top: 1rem;
   background-color: var(--thirdary);
+  margin-top: 0.7rem;
+  padding-bottom: 0.1rem;
+  padding-top: 0.1rem;
 }
 .header-over {
   z-index: 2;
@@ -153,7 +163,7 @@ export default {
 }
 .header-link {
   text-transform: uppercase;
-  padding: 0.25rem;
+  padding: 0.4rem;
   margin: 0.5rem;
   cursor: pointer;
 }
