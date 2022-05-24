@@ -3,18 +3,25 @@
     <h2 class="section-title">Gallery</h2>
     <h3 class="section-subtitle">See our famous visitors!</h3>
     <div class="flex-parent center">
-      <div class="gallery-card ">
-        <button class="gallery-button" id="left-button" @click="switchImageLeft()">
+      <div class="gallery-card">
+        <button
+          class="gallery-button"
+          id="left-button"
+          @click="switchImageLeft()"
+        >
           ⬅
         </button>
-        <button class="gallery-button" id="right-button" @click="switchImageRight()">
+        <button
+          class="gallery-button"
+          id="right-button"
+          @click="switchImageRight()"
+        >
           ➡
         </button>
         <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="w40">
-
+      <div class="gallery-description">
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
     </div>
@@ -117,10 +124,14 @@ export default {
   width: 90%;
   height: 75%;
   margin: 5rem;
-  border-radius: 0.5rem ;
+  border-radius: 0.5rem;
   object-fit: cover;
 }
 /* img margin is what determines red amount */
+.gallery-description {
+  width: 40%;
+  text-align: center;
+}
 /* need to find a way to make the gallery picture not shorten into nothingness (probably media queries) */
 .gallery-button {
   position: absolute;
@@ -130,6 +141,7 @@ export default {
   font-size: 3rem;
   width: 8rem;
   border-radius: 1rem;
+  margin: 0 -3rem;
 }
 #left-button {
   left: 30%;
@@ -139,5 +151,23 @@ export default {
 }
 #desc-text {
   font-size: var(--h3);
+}
+@media (max-width: 400px) {
+  .gallery-card {
+    width: 100%;
+    margin: 2rem;
+  }
+  .gallery-img {
+    margin: 2rem;
+    margin-bottom: 0;
+  }
+  .gallery-description {
+    width: 100%;
+    margin: 2rem;
+    margin-top: 0rem;
+  }
+  .section-subtitle {
+    margin-bottom: 0;
+  }
 }
 </style>
