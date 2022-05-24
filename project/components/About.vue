@@ -49,12 +49,13 @@ export default {
 .pop-text {
   font-size: 10rem;
 }
-@media (max-width: 1024px) {
-  .about-img {
+@media (max-width: 1200px) {
+  .about-img,
+  .pop-text {
     width: 70%;
   }
-  @media (max-width: 750px) {
-    .about-img {
+  @media (max-width: 400px) {
+    .about-img .pop-text {
       width: 95%;
     }
   }

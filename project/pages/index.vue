@@ -114,14 +114,11 @@ export default {
     --sub: 2.5rem;
     --title: 4.5rem;
   }
-  .w30 {
-    width: 70%;
-  }
   .w50 {
     width: 70%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 400px) {
   :root {
     --h1: 6rem;
     --h2: 5rem;
