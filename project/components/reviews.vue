@@ -14,6 +14,7 @@
             :desc="reviews.comment"
           >
           </Review-card>
+          <!-- need to find a way to make card work  with media queries -->
         </section>
       </main>
       <a
@@ -81,9 +82,7 @@ a:visited {
   color: black;
 }
 @media (max-width: 1024px) {
-
 }
 @media (max-width: 750px) {
-
 }
 </style>

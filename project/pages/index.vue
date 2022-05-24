@@ -89,10 +89,12 @@ export default {
 
 .section-title {
   font-size: var(--title);
+  /* figure out whether to add padding 1 rem or not, whichever looks better */
 }
 .section-subtitle {
   font-size: var(--sub);
-  margin: 0rem 0rem 2rem 0rem;
+  margin: 0rem 2rem 2rem 2rem;
+  /* allows for space at lowest media query, changes restuarant thing and seemingly nothing else */
 }
 .main-btn {
   display: inline-block;
@@ -113,17 +115,75 @@ export default {
   transition: all 0.1s ease;
   box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
 }
-.link {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  width: 80%;
-  height: auto;
-  margin: 1rem auto;
-  color: var(--primaryText);
-  font-size: 2.5rem;
-  width: 50%;
-  margin: auto;
+/* media queries needed, basic things from flexbox gallery project but it needs more */
+/* gotta make a drop down menu for the header because it's too big*/
+@media (max-width: 1366px) {
+  .section {
+    transform: scale(0.95);
+    /* height: 150%; don't know why this exists */
+    margin: 3rem auto;
+  }
+
+  h2 {
+    font-size: 3.5rem;
+  }
+  h3 {
+    font-size: 2.5rem;
+  }
+  h4 {
+    font-size: 1.5rem;
+  }
+  .section-title {
+    font-size: 5rem;
+  }
+  .section-subtitle {
+    font-size: 3.5rem;
+  }
+  .gallery-card {
+    width: 50%;
+  }
+  .gallery-img {
+    width: 90%;
+    height: auto;
+    margin: 5rem;
+  }
+  .gallery-description {
+    width: 95%;
+  }
+  #left-button {
+    left: 30%;
+  }
+  #right-button {
+    right: 30%;
+  }
+  .card {
+    width: 40%;
+  }
+  .space1 {
+    font-size: 2.5rem;
+  }
+  /*  fix this font-size */
+  .at .about-img {
+    width: 40%;
+  }
+  .about-text {
+    width: 70%;
+  }
+  .pop-text {
+    margin: 3rem;
+  }
+  .link {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    width: 80%;
+    height: auto;
+    margin: 1rem auto;
+    color: var(--primaryText);
+    font-size: 2.5rem;
+    width: 50%;
+    margin: auto;
+  }
 }
 /* media queries needed, basic things from flexbox gallery project but it needs more */
 /* gotta make a drop down menu for the header because it's too big*/
@@ -131,10 +191,10 @@ export default {
   :root {
     --h1: 5rem;
     --h2: 4rem;
-    --h3: 2.25rem;
+    --h3: 2.5rem;
     --h4: 1.5rem;
-    --sub: 3rem;
-    --title: 5.5rem;
+    --sub: 2.5rem;
+    --title: 4.5rem;
   }
   .w30 {
     width: 70%;
@@ -145,14 +205,14 @@ export default {
 }
 @media (max-width: 750px) {
   :root {
-    --h1: 7.5rem;
-    --h2: 6.5rem;
-    --h3: 2rem;
-    --h4: 1.5rem;
-    --sub: 2.5rem;
-    --title: 4.5rem;
+    --h1: 6rem;
+    --h2: 5rem;
+    --h3: 2.5rem;
+    --h4: 2rem;
+    --sub: 3rem;
+    --title: 5.5rem;
   }
-  
+
   .gallery-parent {
     display: block;
     flex-wrap: wrap;
@@ -164,5 +224,8 @@ export default {
     width: 100%;
   }
   /* figure this out changing rem here does nothing */
+}
+
+@media (max-width: 400px) {
 }
 </style>
