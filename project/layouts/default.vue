@@ -52,6 +52,7 @@ body,
   --thirdary: var(--light-purple);
   --primaryText: var(--black);
   --background: var(--yellow);
+  --backimage: url('/masterpiece2.png');
 }
 .mono {
   --primary: var(--black);
@@ -59,6 +60,7 @@ body,
   --thirdary: var(--gray);
   --primaryText: var(--white);
   --background: var(--white);
+  --backimage: url('/masterpiece.png');
 }
 /*Preset Classes*/
 .w10 {

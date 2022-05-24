@@ -20,10 +20,7 @@ export default {
 </script>
 
 <style scoped>
-.main-image {
- 
 
-}
 .welcome {
   color: var(--primaryText);
   background-color: var(--primary);

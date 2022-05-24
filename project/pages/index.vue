@@ -73,7 +73,7 @@ export default {
   padding-bottom: 65rem;
 }
 .home{
-  background-image: url('/masterpiece.png');
+  background-image: var(--backimage);
   background-size: cover;
 }
 .img2 {
