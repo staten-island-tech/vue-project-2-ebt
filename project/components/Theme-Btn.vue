@@ -31,13 +31,13 @@ export default {
   outline: none;
   cursor: pointer;
   font-weight: 600;
-  border-radius: 3px;
-  padding: 12px 24px;
+  border-radius: 0.3rem;
+  padding: 1.2rem 2.4rem;
   border: 0;
   color: var(--primaryText);
   background-color: var(--thirdary);
   line-height: 1.15;
-  font-size: 16px;
+  font-size: 1.6rem;
   margin: 1.5rem;
   position: relative;
 }
