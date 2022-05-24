@@ -6,7 +6,7 @@
     </h3>
     <main class="margin-auto">
       <section class="w80 flex-parent margin-auto">
-        <Card
+         <Card
           v-for="food in food"
           :key="food.name"
           :title="food.name"
@@ -14,6 +14,8 @@
           :desc="pricetag(food.price)"
         >
         </Card>
+        
+        
       </section>
       <a href="/restaurant" class="link"><button class="main-btn"> See More!</button></a>
     </main>

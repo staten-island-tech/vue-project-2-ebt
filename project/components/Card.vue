@@ -1,9 +1,18 @@
 <template>
-  <div class="card">
-    <h3 class="title3">{{ title }}</h3>
+  <!--  <div class="card">
+
     <img class="img-card margin-auto w90" :src="image" alt="" />
-    <h4 class="desc">{{ desc }}</h4>
-  </div>
+
+  </div> -->
+  <section class="card">
+    <img :src="image" class="img-card" alt="" />
+    <div class="card-info">
+      <div class="text-box">
+        <div class="text">{{ title }}</div>
+        <div class="text">{{ desc }}</div>
+      </div>
+    </div>
+  </section>
 </template>
 
 <script>
@@ -19,22 +28,24 @@ export default {
 
 <style>
 .card {
-  width: 30%;
-  background-color: var(--thirdary);
+  position: relative;
+  width: 32%;
   margin: 2rem auto;
   border-radius: 1.5rem;
+
+  border: solid 1rem var(--thirdary);
 }
 
 .img-card {
+  opacity: 1;
   display: block;
   width: 100%;
   height: auto;
-  object-fit: contain;
-  transition: 1.2s;
-}
-.img-card:hover {
-  transform: scale(1.15);
-  opacity: 90%;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+  align-content: center;
+  border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 .title3 {
@@ -62,5 +73,38 @@ export default {
     width: 85%;
   }
   /* change width to 85% to make it look good in one row if needed */
+}
+.card-info {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card:hover .img-card {
+  opacity: 0.25;
+}
+
+.card:hover .card-info {
+  opacity: 1;
+}
+
+.text-box {
+  background-color: white;
+  color: black;
+  width: 22rem;
+  height: auto;
+  font-size: 2rem;
+  padding: 2rem 3rem;
+  border-radius: 1rem;
+}
+.text {
+  color: black;
+  font-size: 2rem;
+  padding: 1rem;
 }
 </style>
