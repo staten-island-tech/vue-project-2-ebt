@@ -5,7 +5,7 @@
       <div class="w67"></div>
     </div>
     <!--separating section links from main header-->
-    <div class="header-over flex-header w100">
+    <div class="header-over w100">
       <div class="w30"></div>
       <div class="header-sections flex-parent w60">
         <div
@@ -23,7 +23,7 @@
               @click="send(link.ref)"
               class="header-link"
             >
-              <h3>{{ link.label }}</h3>
+              <h3 class="header-link-label">{{ link.label }}</h3>
             </div>
           </div>
         </div>
@@ -111,6 +111,12 @@ export default {
 };
 </script>
 <style scoped>
+.w33 {
+  width: 33%;
+}
+.w67 {
+  width: 67%;
+}
 .settings-img {
   height: 5rem;
   transition: transform 1s ease-in-out;
@@ -134,9 +140,6 @@ export default {
 .header-title {
   margin-top: 0.2rem;
 }
-.flex-header {
-  display: flex;
-}
 .header-link-outer {
   background-color: var(--thirdary);
   margin-top: 0.7rem;
@@ -146,6 +149,7 @@ export default {
 .header-over {
   z-index: 2;
   position: fixed;
+  display: flex;
 }
 .header-under {
   z-index: 1;
@@ -170,6 +174,9 @@ export default {
 .header-link:hover {
   background-color: var(--primary);
 }
+.header-link-label {
+  font-size: 2rem;
+}
 .header-category {
   margin-top: 7px;
   z-index: 2;
@@ -182,5 +189,15 @@ export default {
   z-index: 1;
   right: 0;
   position: absolute;
+}
+@media (max-width: 1024px) {
+  .bar {
+    top: 5.25rem;
+  }
+}
+@media (max-width: 400px) {
+  .bar {
+    top: 6.25rem;
+  }
 }
 </style>
