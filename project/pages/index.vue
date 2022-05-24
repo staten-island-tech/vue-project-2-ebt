@@ -163,7 +163,7 @@ export default {
     font-size: 2.5rem;
   }
   /*  fix this font-size */
-  .at .about-img {
+  .about-img {
     width: 40%;
   }
   .about-text {

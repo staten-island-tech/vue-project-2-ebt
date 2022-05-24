@@ -15,7 +15,9 @@
         >
         </Card>
       </section>
-      <a href="/attractions" class="link"> <button class="main-btn"> See More!</button></a>
+      <a href="/attractions" class="link">
+        <button class="main-btn">See More!</button></a
+      >
     </main>
   </div>
 </template>
@@ -42,7 +44,7 @@ export default {
         },
         {
           name: "End of the World Simulator",
-          image: "/endoftheworld.png",
+          image: "/doom.png",
           alt: "city On fire",
           description: "HAVE FUN :)",
           price: "$75",
