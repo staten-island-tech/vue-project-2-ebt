@@ -53,6 +53,7 @@ body,
   --primaryText: var(--black);
   --background: var(--yellow);
   --iconOpac: 40%;
+  --backimage: url('/masterpiece2.png');
 }
 .mono {
   --primary: var(--black);
@@ -61,6 +62,7 @@ body,
   --primaryText: var(--white);
   --background: var(--white);
   --iconOpac: 100%;
+  --backimage: url('/masterpiece.png');
 }
 /*Preset Classes*/
 .w10 {

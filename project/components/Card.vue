@@ -1,17 +1,17 @@
 <template>
-  <!--  <div class="card">
+<!--  <div class="card">
 
     <img class="img-card margin-auto w90" :src="image" alt="" />
 
   </div> -->
   <section class="card">
-    <img :src="image" class="img-card" alt="" />
-    <div class="card-info">
-      <div class="text-box">
-        <div class="text">{{ title }}</div>
-        <div class="text">{{ desc }}</div>
-      </div>
+  <img :src="image" class="img-card" alt="">
+  <div class="card-info">
+    <div class="text-box">
+      <div class="text">{{title}}</div>
+      <div class="text">{{desc}}</div>
     </div>
+  </div>
   </section>
 </template>
 
@@ -41,17 +41,23 @@ export default {
   display: block;
   width: 100%;
   height: auto;
-  transition: 0.5s ease;
+  transition: .5s ease;
   backface-visibility: hidden;
-  align-content: center;
-  border-radius: 0.5rem;
+  align-content:center;
+  border-radius: .5rem;
   object-fit: cover;
 }
 
-.title3 {
-  box-sizing: border-box;
-  font-size: 3rem;
-  margin: 1rem auto;
+.card-info {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+  
 }
 
 .card:hover .img-card {
@@ -76,6 +82,7 @@ export default {
   font-size: 2rem;
   padding: 1rem;
 }
+
 @media (max-width: 1024px) {
   .title3 {
     font-size: 3.25rem;
@@ -94,3 +101,4 @@ export default {
   /* change width to 85% to make it look good in one row if needed */
 }
 </style>
+
