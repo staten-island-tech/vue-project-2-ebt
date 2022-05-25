@@ -54,10 +54,13 @@ export default {
   .pop-text {
     width: 70%;
   }
-  @media (max-width: 400px) {
-    .about-img .pop-text {
-      width: 95%;
-    }
+}
+@media (max-width: 520px) {
+  .about-img .pop-text {
+    width: 95%;
+  }
+  .pop-text {
+    font-size: 4rem;
   }
 }
 </style>
