@@ -1,9 +1,12 @@
 <template>
   <div>
     <h2 class="section-title">Gallery</h2>
-    <h3 class="section-subtitle">See our famous visitors!</h3>
+    <h3 class="section-subtitle">Pictures taken by guests like you!</h3>
     <div class="flex-parent center">
-      <div class="gallery-card">
+      <div class="gallery-description">
+        <p id="desc-text">{{ currentImage.description }}</p>
+      </div>
+        <div class="gallery-card">
         <button
           class="gallery-button"
           id="left-button"
@@ -18,16 +21,9 @@
         >
           ➡
         </button>
-        <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="gallery-description">
-        <p id="desc-text">{{ currentImage.description }}</p>
-      </div>
     </div>
-    <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
-    <button class="gallery-button" @click="switchImageRight()">-->
-    <!-- </button> -->
   </div>
 </template>
 

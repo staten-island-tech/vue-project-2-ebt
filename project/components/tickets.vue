@@ -2,30 +2,25 @@
   <div>
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
-    <main class="home1 margin-auto">
-      <section class="w80 margin-auto flex-parent">
+    <main class="margin-auto">
+      <section class="w60 margin-auto flex-parent">
         <div class="">
           <button @click="switchRoom(0)" class="buy-ticket">3 Nights</button>
           <button @click="switchRoom(1)" class="buy-ticket">6 Nights</button>
           <button @click="switchRoom(2)" class="buy-ticket">12 Nights</button>
         </div>
-
-        <div class="display-tickets">
-          <main class="flex-parent">
-            <img src="tickets.png" alt="hotelo" class="img2 height-auto" />
-            <section class="space1 w100">
-              <h3>Nights: {{ active.nights }}</h3>
-              <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
-              <h3>Medium: {{ pricetag(active.priceMedium) }}</h3>
-              <h3>Large: {{ pricetag(active.priceLarge) }}</h3>
-            </section>
-          </main>
-
-          <a href="/tickets">
-            <button class="buy-ticket">More</button>
-          </a>
-        </div>
       </section>
+        <div class="flex-parent w100">
+          <img src="tickets.png" alt="hotelo" class="ticket-img w50" />
+          <div class="w50">
+            <h3>Nights: {{ active.nights }}</h3>
+            <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
+            <h3>Medium: {{ pricetag(active.priceMedium) }}</h3>
+            <h3>Large: {{ pricetag(active.priceLarge) }}</h3>
+            <a href="/tickets"><button class="buy-ticket">More</button></a>
+          </div>
+        </div>
+
     </main>
   </div>
 </template>
@@ -78,26 +73,21 @@ export default {
 </script>
 
 <style>
-.home1 {
-  display: flex;
-  width: 95%;
-  margin: auto;
+
+.ticket-img {
+  width: 50rem;
+  height: auto;
+  object-fit: cover;
+
 }
 
-.display-tickets {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 40%;
-  margin: 1rem auto;
-}
 
 .buy-ticket {
   display: inline-block;
   cursor: pointer;
   border: none;
   padding: 0 5rem;
-  margin: 1rem 2rem 2rem 2rem;
+  margin: 1rem 3rem 2rem 2rem;
   height: 4rem;
   font-weight: 600;
   line-height: 1.15;
@@ -117,6 +107,7 @@ export default {
 .space1 {
   margin: 0.5rem auto;
   font-size: 1.5rem;
+  position: center;
 }
 @media (max-width: 1024px) {
 }
