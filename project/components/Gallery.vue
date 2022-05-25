@@ -111,7 +111,7 @@ export default {
 }
 .gallery-card {
   position: relative;
-  width: 50%;
+  width: 45%;
   height: 40rem;
   background-color: var(--thirdary);
   display: flex;
@@ -126,10 +126,13 @@ export default {
   margin: 5rem;
   border-radius: 0.5rem;
   object-fit: cover;
+  /* what am I supposed to do with the image */
 }
 /* img margin is what determines red amount */
 .gallery-description {
   padding: 2rem;
+  margin: 2rem;
+  margin-top: 0rem;
   width: 40%;
   text-align: center;
 }
@@ -154,10 +157,33 @@ figure somethnig out for second media query */
 #desc-text {
   font-size: var(--h3);
 }
+.section-subtitle {
+  margin-bottom: 0;
+}
 /* might wanna make text smaller */
 @media (max-width: 1024px) {
+  .gallery-card {
+    width: 70%;
+    margin: 4rem;
+  }
+  .gallery-img {
+    margin: 4rem;
+  }
+  .gallery-description {
+    width: 70%;
+  }
 }
 @media (max-width: 750px) {
+  .gallery-card {
+    width: 85%;
+    margin: 3rem;
+  }
+  .gallery-img {
+    margin: 3rem;
+  }
+  .gallery-description {
+    width: 85%;
+  }
 }
 @media (max-width: 400px) {
   .gallery-card {
@@ -170,11 +196,9 @@ figure somethnig out for second media query */
   }
   .gallery-description {
     width: 100%;
-    margin: 2rem;
-    margin-top: 0rem;
   }
-  .section-subtitle {
-    margin-bottom: 0;
+  #desc-text {
+    font-size: var(--h3);
   }
 }
 </style>
