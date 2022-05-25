@@ -15,7 +15,7 @@
         >
         </Card>
       </section>
-      <a href="/attractions" class="link"> <button class="main-btn"> See More!</button></a>
+      <a href="/attractions" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -40,13 +40,13 @@ export default {
           img: "/arcade.png",
           description: "We have all the videogames",
         },
-        {
+/*         {
           name: "End of the World Simulator",
           image: "/endoftheworld.png",
           alt: "city On fire",
           description: "HAVE FUN :)",
           price: "$75",
-        },
+        }, */
         //problem is that the End of the World Simulator takes up too much space on the card in lower widths
         /* get one or two more attractions */
       ],

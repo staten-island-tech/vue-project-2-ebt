@@ -5,9 +5,9 @@
     <main class="home1 margin-auto">
       <section class="w80 margin-auto flex-parent">
         <div class="">
-          <button @click="switchRoom(0)" class="main-btn">3 Nights</button>
-          <button @click="switchRoom(1)" class="main-btn">6 Nights</button>
-          <button @click="switchRoom(2)" class="main-btn">12 Nights</button>
+          <button @click="switchRoom(0)" class="buy-ticket">3 Nights</button>
+          <button @click="switchRoom(1)" class="buy-ticket">6 Nights</button>
+          <button @click="switchRoom(2)" class="buy-ticket">12 Nights</button>
         </div>
 
         <div class="display-tickets">
@@ -22,7 +22,7 @@
           </main>
 
           <a href="/tickets">
-            <button class="main-btn">more</button>
+            <button class="buy-ticket">More</button>
           </a>
         </div>
       </section>
@@ -78,15 +78,6 @@ export default {
 </script>
 
 <style>
-.title-text {
-  font-size: var(--h1);
-  text-align: center;
-}
-.head-text {
-  font-size: var(--h3);
-  text-align: center;
-}
-
 .home1 {
   display: flex;
   width: 95%;
@@ -99,6 +90,28 @@ export default {
   justify-content: space-evenly;
   width: 40%;
   margin: 1rem auto;
+}
+
+.buy-ticket {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  padding: 0 5rem;
+  margin: 1rem 2rem 2rem 2rem;
+  height: 4rem;
+  font-weight: 600;
+  line-height: 1.15;
+  font-size: 1.6rem;
+  line-height: 4rem;
+  border-radius: .75rem;
+  background-color: var(--thirdary);
+  box-shadow: 0 0.5rem 1.5rem 0 rgb(0 118 255 / 39%);
+  transition: background 0.2s ease, color 0.2s ease,box-shadow 0.2s ease;
+}
+
+.buy-ticket:hover{
+ background: rgba(0,118,255,0.9);
+ box-shadow: 0 .6rem 2rem rgb(0 118 255 / 23%);
 }
 
 .space1 {
