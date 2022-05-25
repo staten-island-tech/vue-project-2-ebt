@@ -1,12 +1,13 @@
 <template>
   <div class="w100">
+    <!--Name-->
     <div class="header w100 flex-parent">
       <h1 class="header-title w33">HOTEL²</h1>
       <div class="w67"></div>
     </div>
-    <!--separating section links from main header-->
+    <!--sections & gear icon-->
     <div class="header-over w100">
-      <div class="w30"></div>
+      <div class="w30 header-over-gap"></div>
       <div class="header-sections flex-parent w60">
         <div
           class="header-category w33"
@@ -15,7 +16,7 @@
           @mouseover="section.active = true"
           @mouseleave="section.active = false"
         >
-          <h2>{{ section.name }}</h2>
+          <h2 class="header-section-name">{{ section.name }}</h2>
           <div v-if="section.active" class="header-link-outer w100">
             <div
               v-for="link in section.links"
@@ -38,6 +39,7 @@
         />
       </div>
     </div>
+    <!--settings tab-->
     <div class="header-under w100">
       <div class="settings-tab w20" :class="{ animatedTab: !settingsActive }">
         <Theme-Btn></Theme-Btn>
@@ -195,9 +197,53 @@ export default {
     top: 5.25rem;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 900px) {
+  .w67 {
+    width: 0%;
+  }
+  .header-title {
+    width: 100%;
+  }
+  .header-over {
+    top: 5rem;
+  }
+  .header-over-gap {
+    width: 0%;
+  }
+  .header-sections {
+    width: 100%;
+  }
+  .header {
+    height: 9.6rem;
+  }
   .bar {
-    top: 6.25rem;
+    top: 8.85rem;
+  }
+  .header-section-name {
+    font-size: 3rem;
+  }
+  .settings-tab {
+    top: 4.5rem;
+  }
+}
+@media (max-width: 600px) {
+  .header-link-label {
+    font-size: 1.5rem;
+  }
+  .header-section-name {
+    font-size: 2rem;
+  }
+  .settings-img {
+    top: -3rem;
+  }
+  .header {
+    height: 8rem;
+  }
+  .bar {
+    top: 7.25rem;
+  }
+  .settings-tab {
+    top: 3rem;
   }
 }
 </style>
