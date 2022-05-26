@@ -12,14 +12,14 @@
           id="left-button"
           @click="switchImageLeft()"
         >
-          <=
+          <img src="/icons/arrow.png" alt="" class="arrow" />
         </button>
         <button
           class="gallery-button"
           id="right-button"
           @click="switchImageRight()"
         >
-          =>
+          <img src="/icons/arrow.png" alt="" class="arrow right" />
         </button>
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
@@ -102,6 +102,13 @@ export default {
 </script>
 
 <style scoped>
+.arrow{
+  filter: brightness(0%);
+  height: 3rem;
+}
+.right{
+  transform: rotate(180deg);
+}
 .center {
   justify-content: center;
   align-items: center;
