@@ -43,7 +43,7 @@ export default {
         {
           name: "1",
           url: "https://res.cloudinary.com/dneegtvpa/image/upload/v1651079170/fried_kqw0hz-Square_p4swik-c_scale_h_300_q_auto_w_300_png_hoawp3.png",
-          alt: "stuff",
+          alt: "Giant fries in the lobby",
           description:
             "Giant fries with huge forks, took 15 days to make. You can find sights like these in our lobby.",
           id: 0,
@@ -51,7 +51,7 @@ export default {
         {
           name: "2",
           url: "https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_300/v1653584200/Caterina_Fountain_in_Basin_600x_zr0wyo.png",
-          alt: "stuff",
+          alt: "Fountain in front of hotel",
           description:
             "Come to our front entrance, where we have a nice fountain to catch up with friends.",
           id: 1,
@@ -59,7 +59,7 @@ export default {
         {
           name: "3",
           url: "https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_300/v1653584425/1314155417_nwbcxb.png",
-          alt: "stuff",
+          alt: "average room picture",
           description:
             "All our hotel rooms are cozy and comfortable with (relatively) low prices.",
           id: 2,
@@ -67,14 +67,15 @@ export default {
         {
           name: "4",
           url: "https://res.cloudinary.com/dneegtvpa/image/upload/q_auto/v1653583775/building_tvafdj.png",
-          alt: "stuff",
-          description: "Building so high that you can't see the bottom of it.",
+          alt: "Tall building nearby",
+          description:
+            "Building next door, so high that you can't see the bottom of it.",
           id: 3,
         },
         {
           name: "5",
           url: "https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_400/v1653584063/the-london-eye-2-640x360_ggy5ne.png",
-          alt: "stuff",
+          alt: "Ferris wheel view",
           description: "Come and see the great view of this ferris wheel.",
           id: 4,
         },
