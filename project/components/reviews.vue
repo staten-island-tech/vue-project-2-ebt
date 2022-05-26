@@ -37,30 +37,30 @@ export default {
           name: "Mr. Whalen",
           comment:
             "This hotel wouldn't exist without me. This hotel is awesome because of me!",
-          img: "/reviewer5.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649696501/reviewer5_ajpmeg-c_scale_h_238_q_auto_png_cvh5gh.png",
         },
         {
           name: "KFC Man",
           comment:
             "I am planning to announce a collaboration with this hotel because this hotel is so successful and will be beneficial to my business.",
-          img: "/reviewer3.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649696802/reviewer3_rn6htw-c_scale_h_238_q_auto_png_uktcjg.png",
         },
         {
           name: "Washton",
           comment:
             "I visited this hotel with my wife and we made plenty of memories here. I love this hotel. It is a good place to relax after a busy day.",
-          img: "/reviewer1.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649696848/reviewer1_ikoujp-c_scale_h_188_q_auto_ruacvc.png",
         },
         {
           name: "Bat",
           comment: "Safe hotel. No criminals.",
-          img: "/reviewer4.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649696577/reviewer4_rkpqlj-c_scale_h_238_q_auto_png_tmtvfn.png",
         },
         {
           name: "Mario",
           comment:
             "This is my favorite place to be at after a day of hard work.",
-          img: "/reviewer2.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649696802/reviewer2_wq9wh8-c_scale_h_240_q_auto_png_igfq8r.png",
         },
       ],
     };
