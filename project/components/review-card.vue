@@ -3,7 +3,6 @@
     <img class="review-img" :src="image" alt="reviewers" />
     <p class="text-size-review">{{ desc }}</p>
   </div>
-
 </template>
 
 <script>
@@ -40,5 +39,8 @@ export default {
   width: 50%;
   margin: auto;
 }
-
+@media (max-width: 1024px) {
+}
+@media (max-width: 750px) {
+}
 </style>

@@ -3,7 +3,6 @@
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -59,10 +58,6 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
-
-    toggleTheme() {
-      this.theme = !this.theme;
-    },
   },
 };
 </script>
@@ -70,7 +65,11 @@ export default {
 /*Generic classes are now in .nuxt/layout/default.vue*/
 .home-page {
   padding-top: 35rem;
-  margin-bottom: 40rem;
+  padding-bottom: 65rem;
+}
+.home{
+  background-image: var(--backimage);
+  background-size: cover;
 }
 .img2 {
   width: 40rem;
@@ -86,31 +85,15 @@ export default {
   height: auto;
   margin: 50px auto;
 }
+
 .section-title {
   font-size: var(--title);
+  /* figure out whether to add padding 1 rem or not, whichever looks better */
 }
 .section-subtitle {
   font-size: var(--sub);
-  margin: 0rem 0rem 2rem 0rem;
-}
-.main-btn {
-  display: inline-block;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 3px;
-  padding: 12px 24px;
-  border: 0;
-  color: var(--primaryText);
-  background-color: var(--thirdary);
-  line-height: 1.15;
-  font-size: 16px;
-  margin: 2rem;
-}
-.main-btn:hover {
-  transition: all 0.1s ease;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+  margin: 0rem 2rem 2rem 2rem;
+  /* allows for space at lowest media query, changes restuarant thing and seemingly nothing else */
 }
 .link {
   display: flex;
@@ -127,16 +110,41 @@ export default {
 /* media queries needed, basic things from flexbox gallery project but it needs more */
 /* gotta make a drop down menu for the header because it's too big*/
 @media (max-width: 1024px) {
+  :root {
+    --h1: 5rem;
+    --h2: 4rem;
+    --h3: 2.5rem;
+    --h4: 1.5rem;
+    --sub: 2.5rem;
+    --title: 4.5rem;
+  }
+  .w50 {
+    width: 70%;
+  }
+}
+@media (max-width: 400px) {
+  :root {
+    --h1: 6rem;
+    --h2: 5rem;
+    --h3: 2.5rem;
+    --h4: 2rem;
+    --sub: 3rem;
+    --title: 5.5rem;
+  }
+
+  .gallery-parent {
+    display: block;
+    flex-wrap: wrap;
+  }
+  .w30 {
+    width: 100%;
+  }
+  .w50 {
+    width: 100%;
+  }
+  /* figure this out changing rem here does nothing */
 }
 
-@media (max-width: 750px) {
-  :root {
-    --h1: 7.5rem;
-    --h2: 6.5rem;
-    --h3: 2.5rem;
-    --h4: 1.15rem;
-    --sub: 3.5rem;
-    --title: 6.5rem;
-  }
+@media (max-width: 400px) {
 }
 </style>

@@ -97,4 +97,9 @@ export default {
 .filler {
   height: 50px;
 }
+@media (max-width: 400px) {
+  .footer-img {
+    height: 30px;
+  }
+}
 </style>
