@@ -102,11 +102,11 @@ export default {
 </script>
 
 <style scoped>
-.arrow{
+.arrow {
   filter: brightness(0%);
   height: 3rem;
 }
-.right{
+.right {
   transform: rotate(180deg);
 }
 .center {
