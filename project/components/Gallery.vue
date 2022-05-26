@@ -43,17 +43,18 @@ export default {
       images: [
         {
           name: "1",
-          url: "/face.png",
+          url: "https://res.cloudinary.com/dneegtvpa/image/upload/v1651079170/fried_kqw0hz-Square_p4swik-c_scale_h_300_q_auto_w_300_png_hoawp3.png",
           alt: "stuff",
           description:
-            "    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+            "Giant fries with huge forks, took 15 days to make. You can find sights like these in our lobby.",
           id: 0,
         },
         {
           name: "2",
-          url: "/statue.png",
+          url: "https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_300/v1653584200/Caterina_Fountain_in_Basin_600x_zr0wyo.png",
           alt: "stuff",
-          description: "description 2",
+          description:
+            "Come to our front entrance, where we have a nice fountain to catch up with friends.",
           id: 1,
         },
         {
@@ -65,16 +66,16 @@ export default {
         },
         {
           name: "4",
-          url: "/terichick.png",
+          url: "https://res.cloudinary.com/dneegtvpa/image/upload/q_auto/v1653583775/building_tvafdj.png",
           alt: "stuff",
-          description: "description 4",
+          description: "Building so high that you can't see the bottom of it.",
           id: 3,
         },
         {
           name: "5",
-          url: "/kebabs.png",
+          url: "https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_400/v1653584063/the-london-eye-2-640x360_ggy5ne.png",
           alt: "stuff",
-          description: "description 5",
+          description: "Come and see the great view of this ferris wheel.",
           id: 4,
         },
       ],
