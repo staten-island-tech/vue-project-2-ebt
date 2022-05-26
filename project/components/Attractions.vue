@@ -40,9 +40,9 @@ export default {
           img: "/arcade.png",
           description: "We have all the videogames",
         },
-/*         {
+        /*         {
           name: "End of the World Simulator",
-          image: "/endoftheworld.png",
+          image: "/doom.png",
           alt: "city On fire",
           description: "HAVE FUN :)",
           price: "$75",
