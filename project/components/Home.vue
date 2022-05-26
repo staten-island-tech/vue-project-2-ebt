@@ -1,9 +1,9 @@
 <template>
   <div class="w100 home-page main-page">
     <div class="w100 flex-parent">
-      <h2 class="welcome">WELCOME</h2>
+      <h1 class="welcome">WELCOME</h1>
     </div>
-    <div class="w100 flex-parent"><h3 class="welcome-sub">to Hotel²</h3></div>
+    <div class="w100 flex-parent"><h2 class="welcome-sub">to Hotel²</h2></div>
   </div>
 </template>
 
