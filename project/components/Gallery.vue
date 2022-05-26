@@ -7,10 +7,20 @@
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
       <div class="gallery-card">
-          <img src="/icons/arrow.png" alt="" class="arrow gallery-button"           id="left-button"
-          @click="switchImageLeft()" />
-          <img src="/icons/arrow.png" alt="" class="arrow right gallery-button"           id="right-button"
-          @click="switchImageRight()" />
+          <button
+          class="gallery-button"
+          id="left-button"
+          @click="switchImageLeft()"
+        >
+          Previous
+        </button>
+        <button
+          class="gallery-button"
+          id="right-button"
+          @click="switchImageRight()"
+        >
+          Next
+        </button>
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
     </div>
