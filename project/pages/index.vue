@@ -25,7 +25,7 @@ export default {
     //The next two lines are so stupid, but they work so it doesn't really matter
     this.theme = !this.theme;
     this.theme = !this.theme;
-    console.log("test 3")
+    console.log("test 4")
     const sections = gsap.utils.toArray(".section");
     sections.forEach((section) => {
       const tlScroll = gsap.timeline({ scrollTrigger: section, delay: 0.1 });

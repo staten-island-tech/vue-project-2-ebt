@@ -18,7 +18,7 @@
         </section>
       </main>
       <a
-        class="text-size-review margin-auto w80"
+        class="text-size-review margin-auto w80 link"
         href="https://mikewhalen.tech/"
         >READ MORE REVIEWS</a
       >

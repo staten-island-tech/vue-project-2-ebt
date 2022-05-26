@@ -6,21 +6,21 @@
       <div class="gallery-description">
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-                <button
-          class="gallery-button"
+      <div class="gallery-card">
+        <button
+          class="gallery-button1"
           id="left-button"
           @click="switchImageLeft()"
         >
           ⬅
         </button>
         <button
-          class="gallery-button"
+          class="gallery-button1"
           id="right-button"
           @click="switchImageRight()"
         >
           ➡
         </button>
-      <div class="gallery-card">
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
     </div>
@@ -102,13 +102,6 @@ export default {
 </script>
 
 <style scoped>
-.arrow {
-  filter: brightness(0%);
-  height: 3rem;
-}
-.right {
-  transform: rotate(180deg);
-}
 .center {
   justify-content: center;
   align-items: center;

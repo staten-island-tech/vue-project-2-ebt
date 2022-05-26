@@ -23,7 +23,7 @@
           <h3 class="purchase-text">
             Large: {{ pricetag(active.priceLarge) }}
           </h3>
-          <a href="/tickets"><button class="buy-ticket">More</button></a>
+          <a href="/tickets"><button class="buy-ticket link">More</button></a>
         </div>
       </div>
     </main>
