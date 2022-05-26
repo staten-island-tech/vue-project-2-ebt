@@ -6,7 +6,11 @@
       <div class="w50">
         <section class="flex-parent">
           <div class="w30">
-            <img class="contact-img" src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/phone_l6qj6w-c_scale_q_auto_w_200_ob8bag.png" alt="Phone Icon" />
+            <img
+              class="contact-img"
+              src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/phone_l6qj6w-c_scale_q_auto_w_200_ob8bag.png"
+              alt="Phone Icon"
+            />
           </div>
           <div class="w70 margin-auto">
             <h3>Call [ 18 hours a day, Mon-Fri ]: (718)-667-3222</h3>
@@ -41,7 +45,11 @@
 
         <section class="flex-parent">
           <div class="w30">
-            <img class="contact-img" src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/world_hccbln-c_scale_q_auto_w_200_liki0y.png" alt="World Icon" />
+            <img
+              class="contact-img"
+              src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/world_hccbln-c_scale_q_auto_w_200_liki0y.png"
+              alt="World Icon"
+            />
           </div>
           <div class="w70 margin-auto">
             <h3>
@@ -86,27 +94,27 @@
 }
 
 @media (max-width: 1024px) {
-  .w70{
+  .w70 {
     width: 50%;
   }
-  .w30{
+  .w30 {
     width: 50%;
   }
 }
 @media (max-width: 750px) {
-  h3{
+  h3 {
     font-size: 2rem;
   }
   /* possible solution but idk */
 }
 @media (max-width: 400px) {
-  h3{
+  h3 {
     font-size: 1.5rem;
   }
-  .faq-list{
+  .faq-list {
     font-size: 2rem;
   }
-  h2{
+  h2 {
     font-size: 3rem;
   }
   /* possible solution but idk */
