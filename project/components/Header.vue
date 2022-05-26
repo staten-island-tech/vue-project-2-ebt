@@ -31,7 +31,7 @@
       </div>
       <div class="w20">
         <img
-          src="icons/settings.png"
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608941/settings_oxmdh8-c_scale_q_auto_w_200_mprelt.png"
           alt="settings"
           class="settings-img"
           @click="settingsActive = !settingsActive"
