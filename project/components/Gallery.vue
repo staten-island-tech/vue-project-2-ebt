@@ -12,14 +12,14 @@
           id="left-button"
           @click="switchImageLeft()"
         >
-          ⬅
+          <=
         </button>
         <button
           class="gallery-button"
           id="right-button"
           @click="switchImageRight()"
         >
-          ➡
+          =>
         </button>
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
