@@ -151,6 +151,33 @@ figure somethnig out for second media query */
 #desc-text {
   font-size: var(--h3);
 }
+@media (max-width: 1024px) {
+  .gallery-card {
+    width: 70%;
+    margin: 4rem;
+  }
+  .gallery-img {
+    margin: 4rem;
+  }
+  .gallery-description {
+    width: 70%;
+  }
+  #desc-text {
+    font-size: var(--h3);
+  }
+}
+@media (max-width: 750px) {
+  .gallery-card {
+    width: 85%;
+    margin: 3rem;
+  }
+  .gallery-img {
+    margin: 3rem;
+  }
+  .gallery-description {
+    width: 85%;
+  }
+}
 @media (max-width: 400px) {
   .gallery-card {
     width: 100%;
@@ -162,9 +189,6 @@ figure somethnig out for second media query */
   }
   .gallery-description {
     width: 100%;
-  }
-  #desc-text {
-    font-size: var(--h3);
   }
 }
 </style>
