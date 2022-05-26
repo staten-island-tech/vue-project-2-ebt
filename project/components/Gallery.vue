@@ -62,9 +62,10 @@ export default {
         },
         {
           name: "3",
-          url: "/arcade.png",
+          url: "https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_300/v1653584425/1314155417_nwbcxb.png",
           alt: "stuff",
-          description: "description 3",
+          description:
+            "All our hotel rooms are cozy and comfortable with (relatively) low prices.",
           id: 2,
         },
         {
