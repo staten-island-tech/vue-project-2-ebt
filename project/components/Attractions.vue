@@ -38,7 +38,7 @@ export default {
         {
           name: "Arcade",
           img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649697228/arcade_rspgzo-c_scale_h_229_q_auto_png_ududlw.png",
-          description: "We have all the videogames",
+          description: "We have all the videogames.",
         },
         /*         {
           name: "End of the World Simulator",

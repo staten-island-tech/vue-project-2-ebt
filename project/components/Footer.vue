@@ -3,45 +3,73 @@
     <div class="filler"></div>
     <div class="footer-inner flex-parent margin-auto w90">
       <a href="https://www.discord.com" class="footer-btn" target="_blank">
-        <img src="/icons/discord.png" alt="discord" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608941/discord_chs0g3-c_scale_q_auto_w_200_ku3yl9.png"
+          alt="discord"
+          class="footer-img"
+        />
       </a>
       <a
         href="https://www.facebook.com/zuck"
         class="footer-btn"
         target="_blank"
       >
-        <img src="/icons/fb.png" alt="facebook" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608941/fb_cci5tg-c_scale_q_auto_w_200_coytuw.png"
+          alt="facebook"
+          class="footer-img"
+        />
       </a>
       <a
         href="https://www.instagram.com/officialpeppa/?"
         class="footer-btn"
         target="_blank"
       >
-        <img src="/icons/insta.png" alt="instagram" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608942/insta_y4g5c3-c_scale_q_auto_w_200_pynjbx.png"
+          alt="instagram"
+          class="footer-img"
+        />
       </a>
       <a
         href="https://www.linkedin.com/company/mrbeastyoutube/"
         class="footer-btn"
         target="_blank"
       >
-        <img src="/icons/linkedin.png" alt="linkedin" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608941/linkedin_tasxa8-c_scale_q_auto_w_200_fhvnxi.png"
+          alt="linkedin"
+          class="footer-img"
+        />
       </a>
       <a href="https://www.reddit.com" class="footer-btn" target="_blank">
-        <img src="/icons/reddit.png" alt="reddit" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608941/reddit_wrimal-c_scale_q_auto_w_200_xgxvhe.png"
+          alt="reddit"
+          class="footer-img"
+        />
       </a>
       <a
         href="https://www.twitter.com/POTUS?"
         class="footer-btn"
         target="_blank"
       >
-        <img src="/icons/twitter.png" alt="twitter" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_200/v1653584629/twitter_nxjqyr.png"
+          alt="twitter"
+          class="footer-img"
+        />
       </a>
       <a
         href="https://www.youtube.com/watch?v=b_DcQHbJIfE"
         class="footer-btn"
         target="_blank"
       >
-        <img src="/icons/yt.png" alt="youtube" class="footer-img" />
+        <img
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608942/yt_ppfpn6-c_scale_q_auto_w_200_khqle1.png"
+          alt="youtube"
+          class="footer-img"
+        />
       </a>
     </div>
     <h3>We are not legally responsible for any stupid things you do here.</h3>
@@ -68,7 +96,6 @@ export default {
   },
 };
 </script>
-
 
 <style scoped>
 .footer {
