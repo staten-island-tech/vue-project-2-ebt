@@ -1,8 +1,11 @@
 <template>
   <div>
     <h2 class="section-title">Gallery</h2>
-    <h3 class="section-subtitle">See our famous visitors!</h3>
+    <h3 class="section-subtitle">Pictures taken by guests like you!</h3>
     <div class="flex-parent center">
+      <div class="gallery-description">
+        <p id="desc-text">{{ currentImage.description }}</p>
+      </div>
       <div class="gallery-card">
         <button
           class="gallery-button"
@@ -18,16 +21,9 @@
         >
           ➡
         </button>
-        <!-- try to get buttons on top of image -->
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
-      <div class="gallery-description">
-        <p id="desc-text">{{ currentImage.description }}</p>
-      </div>
     </div>
-    <!--     <button class="gallery-button" @click="switchImageLeft()"><--</button>
-    <button class="gallery-button" @click="switchImageRight()">-->
-    <!-- </button> -->
   </div>
 </template>
 
@@ -131,9 +127,6 @@ export default {
 }
 /* img margin is what determines red amount */
 .gallery-description {
-  padding: 2rem;
-  margin: 2rem;
-  margin-top: 0rem;
   width: 40%;
   text-align: center;
 }
@@ -158,10 +151,6 @@ figure somethnig out for second media query */
 #desc-text {
   font-size: 2.5rem;
 }
-.section-subtitle {
-  margin-bottom: 0;
-}
-/* might wanna make text smaller */
 @media (max-width: 1024px) {
   .gallery-card {
     width: 70%;

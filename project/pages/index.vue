@@ -3,7 +3,6 @@
     <Header class="header" @send="scrollMeTo($event)" />
     <div class="home" ref="home"><Home></Home></div>
     <div ref="mission"><About class="section" /></div>
-    <button class="main-btn" @click="toggleTheme()">THEME CHANGE</button>
     <div ref="restaurant"><Restaurant class="section" /></div>
     <div ref="shop"><Shop class="section" /></div>
     <div ref="tickets"><Tickets class="section" /></div>
@@ -59,10 +58,6 @@ export default {
       window.scrollTo(0, top);
       console.log(el);
     },
-
-    toggleTheme() {
-      this.theme = !this.theme;
-    },
   },
 };
 </script>
@@ -72,7 +67,7 @@ export default {
   padding-top: 35rem;
   padding-bottom: 65rem;
 }
-.home{
+.home {
   background-image: var(--backimage);
   background-size: cover;
 }
@@ -100,94 +95,17 @@ export default {
   margin: 0rem 2rem 2rem 2rem;
   /* allows for space at lowest media query, changes restuarant thing and seemingly nothing else */
 }
-.main-btn {
-  display: inline-block;
-  text-transform: uppercase;
-  outline: none;
-  cursor: pointer;
-  font-weight: 600;
-  border-radius: 3px;
-  padding: 12px 24px;
-  border: 0;
+.link {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 80%;
+  height: auto;
+  margin: 1rem auto;
   color: var(--primaryText);
-  background-color: var(--thirdary);
-  line-height: 1.15;
-  font-size: 16px;
-  margin: 2rem;
-}
-.main-btn:hover {
-  transition: all 0.1s ease;
-  box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
-}
-/* media queries needed, basic things from flexbox gallery project but it needs more */
-/* gotta make a drop down menu for the header because it's too big*/
-@media (max-width: 1366px) {
-  .section {
-    transform: scale(0.95);
-    /* height: 150%; don't know why this exists */
-    margin: 3rem auto;
-  }
-
-  h2 {
-    font-size: 3.5rem;
-  }
-  h3 {
-    font-size: 2.5rem;
-  }
-  h4 {
-    font-size: 1.5rem;
-  }
-  .section-title {
-    font-size: 5rem;
-  }
-  .section-subtitle {
-    font-size: 3.5rem;
-  }
-  .gallery-card {
-    width: 50%;
-  }
-  .gallery-img {
-    width: 90%;
-    height: auto;
-    margin: 5rem;
-  }
-  .gallery-description {
-    width: 95%;
-  }
-  #left-button {
-    left: 30%;
-  }
-  #right-button {
-    right: 30%;
-  }
-  .card {
-    width: 40%;
-  }
-  .space1 {
-    font-size: 2.5rem;
-  }
-  /*  fix this font-size */
-  .about-img {
-    width: 40%;
-  }
-  .about-text {
-    width: 70%;
-  }
-  .pop-text {
-    margin: 3rem;
-  }
-  .link {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    width: 80%;
-    height: auto;
-    margin: 1rem auto;
-    color: var(--primaryText);
-    font-size: 2.5rem;
-    width: 50%;
-    margin: auto;
-  }
+  font-size: 2.5rem;
+  width: 50%;
+  margin: auto;
 }
 /* media queries needed, basic things from flexbox gallery project but it needs more */
 /* gotta make a drop down menu for the header because it's too big*/
@@ -200,14 +118,11 @@ export default {
     --sub: 2.5rem;
     --title: 4.5rem;
   }
-  .w30 {
-    width: 70%;
-  }
   .w50 {
     width: 70%;
   }
 }
-@media (max-width: 750px) {
+@media (max-width: 400px) {
   :root {
     --h1: 6rem;
     --h2: 5rem;

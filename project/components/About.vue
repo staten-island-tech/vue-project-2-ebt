@@ -5,7 +5,7 @@
       <h3 class="w30 margin-auto pop-text">We are Squared!</h3>
       <!-- need to deal with spacing between these, not in media queries though -->
       <img
-        src="/face.png"
+        src="https://res.cloudinary.com/dneegtvpa/image/upload/v1649697280/face_cmxjvb-Square_o7osuy-c_scale_h_300_q_auto_png_gxmbpv.png"
         alt="https://www.youtube.com/watch?v=nHPNBMjg73I"
         class="about-img height-auto w30"
       />
@@ -49,14 +49,18 @@ export default {
 .pop-text {
   font-size: 10rem;
 }
-@media (max-width: 1024px) {
-  .about-img {
+@media (max-width: 1200px) {
+  .about-img,
+  .pop-text {
     width: 70%;
   }
-  @media (max-width: 750px) {
-    .about-img {
-      width: 95%;
-    }
+}
+@media (max-width: 520px) {
+  .about-img .pop-text {
+    width: 95%;
+  }
+  .pop-text {
+    font-size: 4rem;
   }
 }
 </style>

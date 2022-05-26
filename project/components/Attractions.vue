@@ -15,9 +15,7 @@
         >
         </Card>
       </section>
-      <a href="/attractions" class="link">
-        <button class="main-btn">See More!</button></a
-      >
+      <a href="/attractions" class="link"> See More!</a>
     </main>
   </div>
 </template>
@@ -29,26 +27,27 @@ export default {
       places: [
         {
           name: "Stone Temple",
-          img: "/statue.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649695417/statue_ozz8l3-c_scale_h_229_q_auto_png_byqsmb.png",
           description: "Mysterious.",
         },
         {
           name: "Garden",
-          img: "/garden.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649697228/garden_b47xlm-c_scale_h_229_q_auto_png_ddbske.png",
           description: "Come here and touch grass because most of you need to.",
         },
         {
           name: "Arcade",
-          img: "/arcade.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1649697228/arcade_rspgzo-c_scale_h_229_q_auto_png_ududlw.png",
           description: "We have all the videogames",
         },
-        {
+        /*         {
           name: "End of the World Simulator",
-          image: "/doom.png",
+          image:
+            "https://res.cloudinary.com/dneegtvpa/image/upload/v1649695252/endoftheworld_hvdmpm-c_scale_h_300_q_auto_png_yok2nm.png",
           alt: "city On fire",
           description: "HAVE FUN :)",
           price: "$75",
-        },
+        }, */
         //problem is that the End of the World Simulator takes up too much space on the card in lower widths
         /* get one or two more attractions */
       ],

@@ -48,32 +48,6 @@ export default {
   object-fit: cover;
 }
 
-.title3 {
-  box-sizing: border-box;
-  font-size: 3rem;
-  margin: 1rem auto;
-}
-.desc {
-  font-size: 2.5rem;
-  margin: 1rem auto;
-}
-@media (max-width: 1024px) {
-  .title3 {
-    font-size: 3.25rem;
-  } /* or something like this */
-  .desc {
-    font-size: 2rem;
-  }
-  .card {
-    width: 45%;
-  }
-}
-@media (max-width: 750px) {
-  .card {
-    width: 85%;
-  }
-  /* change width to 85% to make it look good in one row if needed */
-}
 .card-info {
   transition: 0.5s ease;
   opacity: 0;
@@ -107,4 +81,23 @@ export default {
   font-size: 2rem;
   padding: 1rem;
 }
+
+@media (max-width: 1024px) {
+  .title3 {
+    font-size: 3.25rem;
+  } /* or something like this */
+  .desc {
+    font-size: 2rem;
+  }
+  .card {
+    width: 45%;
+  }
+}
+@media (max-width: 750px) {
+  .card {
+    width: 85%;
+  }
+  /* change width to 85% to make it look good in one row if needed */
+}
 </style>
+

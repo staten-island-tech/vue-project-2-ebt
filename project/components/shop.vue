@@ -13,7 +13,7 @@
         >
         </Card>
       </section>
-      <a href="/shop" class="link"><button class="main-btn"> See More!</button></a>
+      <a href="/shop" class="link">See More!</a>
     </main>
   </div>
 </template>
@@ -28,32 +28,32 @@ export default {
         {
           name: "Squared Hoodie",
           price: 74.99,
-          img: "/hoodie.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1652893792/hoodie_gtlmvb.png",
         },
         {
           name: "Squared Tee",
           price: 29.99,
-          img: "/tee.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1652893792/tee_lgmp3z.png",
         },
         {
           name: "Squared Umbrella",
           price: 20.99,
-          img: "/umbrella.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1652893792/umbrella_wfwf9f.png",
         },
         {
           name: "Squared Cards",
           price: 8.99,
-          img: "/poker.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1652893792/poker_dntjtb.png",
         },
         {
           name: "Squared Pillow",
           price: 17.99,
-          img: "/pillow.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1652893792/pillow_b4uvom.png",
         },
         {
           name: "Squared Tesseract",
           price: 23.99,
-          img: "/tesseract.png",
+          img: "https://res.cloudinary.com/dneegtvpa/image/upload/v1652893792/tesseract_v1yb8v.png",
         },
       ],
     };
