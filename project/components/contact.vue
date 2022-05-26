@@ -86,13 +86,28 @@
 }
 
 @media (max-width: 1024px) {
-  .faq-list {
-    margin-bottom: 6rem;
+  .w70{
+    width: 50%;
+  }
+  .w30{
+    width: 50%;
   }
 }
 @media (max-width: 750px) {
-  .faq-list {
-    margin-bottom: 11rem;
+  h3{
+    font-size: 2rem;
+  }
+  /* possible solution but idk */
+}
+@media (max-width: 400px) {
+  h3{
+    font-size: 1.5rem;
+  }
+  .faq-list{
+    font-size: 2rem;
+  }
+  h2{
+    font-size: 3rem;
   }
   /* possible solution but idk */
 }
