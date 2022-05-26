@@ -5,7 +5,7 @@
       <h3 class="w30 margin-auto pop-text">We are Squared!</h3>
       <!-- need to deal with spacing between these, not in media queries though -->
       <img
-        src="/face.png"
+        src="https://res.cloudinary.com/dneegtvpa/image/upload/v1649697280/face_cmxjvb-Square_o7osuy-c_scale_h_300_q_auto_png_gxmbpv.png"
         alt="https://www.youtube.com/watch?v=nHPNBMjg73I"
         class="about-img height-auto w30"
       />
