@@ -2,7 +2,7 @@
   <div class="alt-header w100">
     <div class="back-button">
       <a href="/" class="flex-parent">
-        <img src="/icons/arrow.png" alt="" class="back-arrow" />
+        <img src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608941/arrow_q5k0c7-c_scale_q_auto_w_200_qcu4xq.png" alt="" class="back-arrow" />
         <h2 class="back-text">Back to home</h2></a
       >
     </div>

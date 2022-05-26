@@ -6,7 +6,7 @@
       <div class="w50">
         <section class="flex-parent">
           <div class="w30">
-            <img class="contact-img" src="/icons/phone.png" alt="Phone Icon" />
+            <img class="contact-img" src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/phone_l6qj6w-c_scale_q_auto_w_200_ob8bag.png" alt="Phone Icon" />
           </div>
           <div class="w70 margin-auto">
             <h3>Call [ 18 hours a day, Mon-Fri ]: (718)-667-3222</h3>
@@ -17,7 +17,7 @@
           <div class="w30">
             <img
               class="contact-img"
-              src="/icons/chat.png"
+              src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/chat_wrcirb-c_scale_q_auto_w_200_xspqxd.png"
               alt="Speech Bubble"
             />
           </div>
@@ -30,7 +30,7 @@
           <div class="w30">
             <img
               class="contact-img"
-              src="/icons/mail.png"
+              src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/mail_unyo5n-c_scale_q_auto_w_200_sg3qoc.png"
               alt="Envelope Icon"
             />
           </div>
@@ -41,7 +41,7 @@
 
         <section class="flex-parent">
           <div class="w30">
-            <img class="contact-img" src="/icons/world.png" alt="World Icon" />
+            <img class="contact-img" src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608699/world_hccbln-c_scale_q_auto_w_200_liki0y.png" alt="World Icon" />
           </div>
           <div class="w70 margin-auto">
             <h3>
