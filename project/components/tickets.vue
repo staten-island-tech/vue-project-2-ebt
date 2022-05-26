@@ -3,24 +3,29 @@
     <h2 class="section-title">Tickets</h2>
     <h3 class="section-subtitle">Order!</h3>
     <main class="margin-auto">
-      <section class="w60 margin-auto flex-parent">
+      <section class="w60 buy-ticket-area margin-auto flex-parent">
         <div class="">
           <button @click="switchRoom(0)" class="buy-ticket">3 Nights</button>
           <button @click="switchRoom(1)" class="buy-ticket">6 Nights</button>
           <button @click="switchRoom(2)" class="buy-ticket">12 Nights</button>
         </div>
       </section>
-        <div class="flex-parent w100">
-          <img src="tickets.png" alt="hotelo" class="ticket-img w50" />
-          <div class="w50">
-            <h3>Nights: {{ active.nights }}</h3>
-            <h3>Small: {{ pricetag(active.priceSmall) }}</h3>
-            <h3>Medium: {{ pricetag(active.priceMedium) }}</h3>
-            <h3>Large: {{ pricetag(active.priceLarge) }}</h3>
-            <a href="/tickets"><button class="buy-ticket">More</button></a>
-          </div>
+      <div class="flex-parent w100 purchase-area">
+        <img src="tickets.png" alt="hotelo" class="ticket-img w50" />
+        <div class="w50 margin-auto">
+          <h3 class="purchase-text">Nights: {{ active.nights }}</h3>
+          <h3 class="purchase-text">
+            Small: {{ pricetag(active.priceSmall) }}
+          </h3>
+          <h3 class="purchase-text">
+            Medium: {{ pricetag(active.priceMedium) }}
+          </h3>
+          <h3 class="purchase-text">
+            Large: {{ pricetag(active.priceLarge) }}
+          </h3>
+          <a href="/tickets"><button class="buy-ticket">More</button></a>
         </div>
-
+      </div>
     </main>
   </div>
 </template>
@@ -73,13 +78,12 @@ export default {
 </script>
 
 <style>
-
 .ticket-img {
-  width: 50rem;
   height: auto;
   object-fit: cover;
   margin: auto;
-
+  border-radius: 2rem;
+  margin-bottom: 2rem;
 }
 
 .buy-ticket {
@@ -93,15 +97,18 @@ export default {
   line-height: 1.15;
   font-size: 1.6rem;
   line-height: 4rem;
-  border-radius: .75rem;
+  border-radius: 0.75rem;
   background-color: var(--thirdary);
   box-shadow: 0 0.5rem 1.5rem 0 rgb(0 118 255 / 39%);
-  transition: background 0.2s ease, color 0.2s ease,box-shadow 0.2s ease;
+  transition: background 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+.purchase-area {
+  margin: auto;
 }
 
-.buy-ticket:hover{
- background: rgba(0,118,255,0.9);
- box-shadow: 0 .6rem 2rem rgb(0 118 255 / 23%);
+.buy-ticket:hover {
+  background: rgba(0, 118, 255, 0.9);
+  box-shadow: 0 0.6rem 2rem rgb(0 118 255 / 23%);
 }
 
 .space1 {
@@ -109,8 +116,21 @@ export default {
   font-size: 1.5rem;
   position: center;
 }
-@media (max-width: 1024px) {
+@media (min-width: 1100px) {
+  .purchase-area {
+    width: 70%;
+  }
+  .purchase-text {
+    font-size: 3rem;
+  }
 }
-@media (max-width: 750px) {
+@media (max-width: 400px) {
+  .purchase-area {
+    width: 90%;
+    margin-top: 1rem;
+  }
+  .buy-ticket-area {
+    width: 70%;
+  }
 }
 </style>
