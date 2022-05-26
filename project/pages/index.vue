@@ -67,7 +67,7 @@ export default {
   padding-top: 35rem;
   padding-bottom: 65rem;
 }
-.home{
+.home {
   background-image: var(--backimage);
   background-size: cover;
 }

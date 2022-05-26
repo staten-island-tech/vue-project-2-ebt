@@ -6,7 +6,7 @@
       <div class="gallery-description">
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-        <div class="gallery-card">
+      <div class="gallery-card">
         <button
           class="gallery-button"
           id="left-button"
@@ -107,7 +107,7 @@ export default {
 }
 .gallery-card {
   position: relative;
-  width: 50%;
+  width: 45%;
   height: 40rem;
   background-color: var(--thirdary);
   display: flex;
@@ -122,6 +122,7 @@ export default {
   margin: 5rem;
   border-radius: 0.5rem;
   object-fit: cover;
+  /* what am I supposed to do with the image */
 }
 /* img margin is what determines red amount */
 .gallery-description {
@@ -160,11 +161,9 @@ figure somethnig out for second media query */
   }
   .gallery-description {
     width: 100%;
-    margin: 2rem;
-    margin-top: 0rem;
   }
-  .section-subtitle {
-    margin-bottom: 0;
+  #desc-text {
+    font-size: var(--h3);
   }
 }
 </style>
