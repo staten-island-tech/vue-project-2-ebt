@@ -8,14 +8,14 @@
       </div>
       <div class="gallery-card">
         <button
-          class="gallery-button1"
+          class="gallery-button"
           id="left-button"
           @click="switchImageLeft()"
         >
           ⬅
         </button>
         <button
-          class="gallery-button1"
+          class="gallery-button"
           id="right-button"
           @click="switchImageRight()"
         >
@@ -135,8 +135,7 @@ figure somethnig out for second media query */
 .gallery-button {
   position: absolute;
   top: 0.5%;
-  color: red;
-  opacity: 50%;
+  color: rgb(192, 100, 100);
   font-size: 3rem;
   width: 8rem;
   border-radius: 1rem;
