@@ -78,9 +78,9 @@ export default {
   width: 50rem;
   height: auto;
   object-fit: cover;
+  margin: auto;
 
 }
-
 
 .buy-ticket {
   display: inline-block;
