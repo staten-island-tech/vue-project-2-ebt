@@ -6,21 +6,21 @@
       <div class="gallery-description">
         <p id="desc-text">{{ currentImage.description }}</p>
       </div>
-      <div class="gallery-card">
-          <button
+                <button
           class="gallery-button"
           id="left-button"
           @click="switchImageLeft()"
         >
-          Previous
+          ⬅
         </button>
         <button
           class="gallery-button"
           id="right-button"
           @click="switchImageRight()"
         >
-          Next
+          ➡
         </button>
+      <div class="gallery-card">
         <img class="gallery-img" v-bind:src="currentImage.url" alt="" />
       </div>
     </div>
