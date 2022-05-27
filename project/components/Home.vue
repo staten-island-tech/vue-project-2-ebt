@@ -19,7 +19,7 @@ export default {
 
 <style scoped>
 .welcome {
-  color: var(--primaryText);``````````````````
+  color: var(--primaryText);
   background-color: var(--primary);
   padding: 1rem;
   text-align: center;
