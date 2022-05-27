@@ -55,7 +55,7 @@
         target="_blank"
       >
         <img
-          src="https://res.cloudinary.com/dneegtvpa/image/upload/c_scale,q_auto,w_200/v1653584629/twitter_nxjqyr.png"
+          src="https://res.cloudinary.com/dneegtvpa/image/upload/v1653608942/twitter_nxjqyr-c_scale_q_auto_w_200_szsjgw.png"
           alt="twitter"
           class="footer-img"
         />

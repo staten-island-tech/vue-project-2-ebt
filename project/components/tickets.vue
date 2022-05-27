@@ -11,7 +11,7 @@
         </div>
       </section>
       <div class="flex-parent w100 purchase-area">
-        <img src="tickets.png" alt="hotelo" class="ticket-img w50" />
+        <img src="https://res.cloudinary.com/dneegtvpa/image/upload/v1651079184/tickets_cwtwpz-c_scale_q_auto_w_350_png_ttpph3.png" alt="hotelo" class="ticket-img w50" />
         <div class="w50 margin-auto">
           <h3 class="purchase-text">Nights: {{ active.nights }}</h3>
           <h3 class="purchase-text">
